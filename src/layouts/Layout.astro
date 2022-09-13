@@ -1,102 +1,220 @@
 ---
 import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer.astro';
-import Nav from '../components/Nav.astro';
+// import MainPage from '../components/Main-Page.vue';
+// import Header from '../components/Header.astro';
+// import Footer from '../components/Footer.astro';
 
 const { content } = Astro.props;
 ---
+<script>
+import anime from "animejs";
+import * as bootstrap from "bootstrap";
+import AOS from 'aos';
+import '../../node_modules/aos/dist/aos.css';
+import Typewriter from 'typewriter-effect/dist/core';
+
+	document.onreadystatechange = function () {
+    AOS.init();
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(tooltipTriggerEl => {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+	
+    const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    popoverTriggerList.map(popoverTriggerEl => {
+        return new bootstrap.Popover(popoverTriggerEl);
+    })
+
+
+    arrowScroller();
+    overlayMenu();
+    anime({
+        targets: '.stag-nav',
+        translateY: [-50, 0],
+        opacity: [0, 1],
+        duration: 100,
+        easing: 'easeOutBounce',
+        delay: anime.stagger(100) // increase delay by 100ms for each elements.
+    });
+    startTypwriter();
+};
+
+
+const startTypwriter = () => {
+
+    var app = document.getElementById('typewriter');
+
+    var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 35,
+        deleteSpeed: 0.1
+    });
+
+
+
+
+    const typewriterStrings = [
+        document.getElementById('typewriter-hidden-1'),
+        document.getElementById('typewriter-hidden-2'),
+        document.getElementById('typewriter-hidden-3')];
+
+    if (typewriterStrings[0] !== null) {
+        typewriter
+            .pauseFor(800)
+            .typeString(typewriterStrings[0].innerHTML)
+            .deleteChars(typewriterStrings[0].innerHTML.length)
+            .pauseFor(100)
+            .typeString(typewriterStrings[1].innerHTML)
+            .deleteChars(typewriterStrings[1].innerHTML.length)
+            .pauseFor(300)
+            .typeString(typewriterStrings[2].innerHTML)
+            .deleteChars(typewriterStrings[2].innerHTML.length)
+            .pauseFor(500)
+            .start();
+    }
+
+}
+
+
+/*
+* Open Navmenu
+*/
+const overlayMenu = () => {
+
+    const navbarOpen = document.getElementById('navbar-toggle-open');
+    const navbarClose = document.getElementById('navbar-toggle-close');
+    const overlay = document.getElementById('overlay-menu');
+
+    const HamburgerEfx = (id, direction = 'out') => {
+
+        let dir = [1, 0];
+        if (direction == 'in') {
+            dir = [0, 1];
+        }
+        const ani = anime({
+            targets: '#' + id,
+            rotate: {
+                value: 360,
+                duration: 1200,
+                easing: 'easeInOutSine',
+            },
+            opacity: dir,
+            baseFrequency: 0,
+            loop: false,
+            direction: 'alternate',
+            easing: 'easeInOutExpo',
+            complete: function (anim) {
+                anim.reverse();
+            }
+        });
+        //ani.reset();
+    }
+
+    navbarOpen.onclick = e => {
+        e.preventDefault();
+        //Hamburger
+        HamburgerEfx('hamburger-bars', 'out');
+        //Overlay  
+        overlay.style.display = 'block';
+        anime({
+            targets: '#overlay-menu',
+            opacity: [0, 1],
+            display: 'block',
+            baseFrequency: 0,
+            loop: false,
+            direction: 'alternate',
+            easing: 'easeInOutExpo'
+        });
+
+        anime({
+            targets: '.overlay-middle .stag-nav',
+            opacity: [0, 1],
+            delay: anime.stagger(150, { start: 1200 }) // increase delay by 100ms for each elements.
+        });
+
+        HamburgerEfx('hamburger-close', 'in');
+    };
+
+    navbarClose.onclick = e => {
+        e.preventDefault();
+
+        anime({
+            targets: '#overlay-menu',
+            opacity: [1, 0],
+            baseFrequency: 0,
+            duration: 1200,
+            loop: false,
+            direction: 'alternate',
+            easing: 'easeInOutExpo',
+            complete: function (anim) {
+                overlay.style.display = 'none';
+            }
+        });
+
+        HamburgerEfx('hamburger-close', 'out');
+        HamburgerEfx('hamburger-bars', 'in');
+    }
+
+
+
+}
+
+
+/**
+ *  Scroll Arrow
+ */
+const arrowScroller = () => {
+    const arrows = document.getElementsByClassName('title-arrow-down');
+    const scrollToElement = document.getElementById('contentStart');
+
+    anime({
+        targets: '.title-arrow-down',
+        translateY: [-100, 0],
+        delay: 500,
+        opacity: [0, 1],
+        duration: 500,
+        easing: 'easeOutBounce'
+    });
+
+	
+    if (arrows.length > 0 || scrollToElement != null) {
+        arrows[0].onclick = e => {
+            e.preventDefault();
+            scrollToFunc(scrollToElement.id, 60);
+        }
+    } else {
+        if (arrows[0] != null) {
+            arrows[0].style.display = 'none';
+            //debug
+            console.error('scrollToElement not found');
+        }
+    }
+}
+
+/**
+ *  Scroll Function
+ */
+const scrollToFunc = (id, offset = 60) => {
+    const element = document.getElementById(id);
+    const headerOffset = offset;
+    const elementPosition = element.offsetTop;
+    const offsetPosition = elementPosition - headerOffset;
+    document.documentElement.scrollTop = offsetPosition;
+    document.body.scrollTop = offsetPosition; // For Safari
+}
+</script>
 
 <html lang={content.lang || 'en'}>
-	<head>
-		<MainHead title={content.title} description={content.description} />
-		<style>
-			.hero {
-				padding: 8rem;
-				display: flex;
-				background-color: var(--t-fg);
-				background-repeat: no-repeat;
-				background-size: cover;
-				min-height: 25vw;
-				color: white;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-			}
-
-			.tag {
-				margin-left: 0.5em;
-				margin-right: 0.5em;
-				text-transform: uppercase;
-			}
-
-			.tag:nth-of-type(1n) {
-				color: var(--c-green);
-			}
-			.tag:nth-of-type(2n) {
-				color: var(--c-orange);
-			}
-			.tag:nth-of-type(3n) {
-				color: var(--c-blue);
-			}
-			.tag:nth-of-type(4n) {
-				color: var(--c-pink);
-			}
-
-			.title {
-				font-size: var(--f-u10);
-				font-weight: 900;
-				text-transform: uppercase;
-				letter-spacing: 0.0625em;
-			}
-
-			.leadIn {
-				padding-top: 4em;
-				color: var(--t-bg);
-				background-color: var(--t-fg);
-				text-align: center;
-			}
-
-			.tagline {
-				font-weight: 300;
-				font-size: var(--f-u3);
-				line-height: 1.5;
-			}
-
-			.content {
-				font-size: var(--f-u1);
-				line-height: 2.2;
-				max-width: 50em;
-				margin: auto;
-			}
-
-			.wrapper {
-				padding-bottom: 4em;
-				margin-bottom: 4em;
-			}
-
-			footer {
-				text-align: center;
-				margin-top: 3rem;
-			}
-		</style>
+	<head>	
+		<MainHead
+			title="Tobeworks Websolutions"
+			description="Tobeworks, Freelance Websolutions since 2018"
+		/>
 	</head>
 	<body>
-		<Nav />
-		<header style={`background-image:url(${content.img})`} class="hero">
-			<h1 class="title">{content.title}</h1>
-		</header>
-		<div class="leadIn">
-			<div class="wrapper">
-				{content.tags.map((t) => <span class="tag">{t}</span>)}
-				<h3 class="tagline">{content.description}</h3>
-			</div>
+		<div class="container p-0">
+			<slot />
 		</div>
-		<div class="wrapper">
-			<div class="content"><slot /></div>
-		</div>
-		<footer>
-			<a href="/projects" class="button">View More</a>
-		</footer>
-		<Footer />
 	</body>
 </html>

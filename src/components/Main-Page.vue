@@ -1,4 +1,5 @@
 <template>
+
     <div id="overlay-menu" class="bg-erieblack">
         <div class="navbar-toggle" id="navbar-toggle-close">
             <img src="../assets/images/hamburger/_times.svg" id="hamburger-close" alt="hamburger" />
@@ -17,474 +18,334 @@
             <img src="../assets/images/logos/TW-EB5E28.svg" alt="logo overlay" data-aos="fade-top" data-aos-delay="200">
         </div>
     </div>
+    <main id="content-middle">
 
+        <section class="bg-erieblack text-orange mainsection titlesection  d-none d-xl-block">
+            <div class="row">
+                <div class="col-sm-6 align-self-end">
+                    <div id="mover">
+                        <h2 class="cover my-2" data-aos="fade-up" data-aos-duration="300">Das Große Ganze
+                            <br>im Blick.
+                        </h2>
 
-    <div class="container p-0">
-        <header class="sticky-top">
-            <nav class="navbar navbar-expand-lg navbar-orange bg-erieblack">
-                <div class="container-fluid mx-3">
-                    <a class="navbar-brand" href="/"><img src="../assets/images/logos/TW-EB5E28.svg" class="d-none d-lg-block" alt="logo" data-aos="fade-top" data-aos-delay="200">
-                    </a>
-                    <div class="navbar-toggle d-block d-lg-none" id="navbar-toggle-open">
-                        <img src="../assets/images/hamburger/_bars.svg" id="hamburger-bars" alt="hamburger" />
-                    </div>
+                        <p id="typewriter" class="lead" data-aos="fade-up" data-aos-duration="500">
+                            TOBEWORKS bietet zeitgerechte, maßgeschneiderte,<br>
+                            digitale
+                            <strong>Kommunikationslösungen.</strong>
+                        </p>
 
-                    <div class="collapse navbar-collapse justify-content-end" id="topnavi">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link stag-nav" href="{{ path('about') }}">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link stag-nav" href="{{ path('leistungen') }}">Lösungen</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link stag-nav" href="{{ path('portfolio') }}">Projekte</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link stag-nav" href="{{ path('kontakt') }}">Kontakt</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-
-        <main id="content-middle">
-
-
-            <section class="bg-erieblack text-orange mainsection titlesection  d-none d-xl-block">
-                <div class="row">
-                    <div class="col-sm-6 align-self-end">
-                        <div id="mover">
-                            <h2 class="cover my-2" data-aos="fade-up" data-aos-duration="300">Das Große Ganze
-                                <br>im Blick.
-                            </h2>
-
-                            <p id="typewriter" class="lead" data-aos="fade-up" data-aos-duration="500">
+                        <div id="typewriter-hidden">
+                            <div id="typewriter-hidden-1">
                                 TOBEWORKS bietet zeitgerechte, maßgeschneiderte,<br>
                                 digitale
                                 <strong>Kommunikationslösungen.</strong>
-                            </p>
-
-                            <div id="typewriter-hidden">
-                                <div id="typewriter-hidden-1">
-                                    TOBEWORKS bietet zeitgerechte, maßgeschneiderte,<br>
-                                    digitale
-                                    <strong>Kommunikationslösungen.</strong>
-                                </div>
-                                <div id="typewriter-hidden-2">
-                                    TOBEWORKS designt, automatisiert und programmiert. Damit Sie sich noch besser um Ihr
-                                    <b>Kerngeschäft</b>
-                                    kümmern können.
-                                </div>
-
-                                <div id="typewriter-hidden-3">
-                                    TOBEWORKS bringt Ihr Geschäft durch
-                                    <b>Automation</b>
-                                    und
-                                    <b>Digitalisierung</b>
-                                    auf ein neues Level
-                                </div>
+                            </div>
+                            <div id="typewriter-hidden-2">
+                                TOBEWORKS designt, automatisiert und programmiert. Damit Sie sich noch besser um Ihr
+                                <b>Kerngeschäft</b>
+                                kümmern können.
                             </div>
 
-                            <div>
-                                <a href="{{ path('about') }}" class="btn btn-erieblack" data-aos="fade-up" data-aos-delay="200">Mehr erfahren</a>
-                                <a href="{{ path('kontakt') }}" class="btn btn-orange" data-aos="fade-up" data-aos-delay="300">Projekt anfragen</a>
+                            <div id="typewriter-hidden-3">
+                                TOBEWORKS bringt Ihr Geschäft durch
+                                <b>Automation</b>
+                                und
+                                <b>Digitalisierung</b>
+                                auf ein neues Level
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 align-self-end ">
-                        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
-                            <div class="carousel-inner">
-                                <div class="carousel-item">
-                                    <div class="carousel-block" id="carousel-page1">
 
-                                        <div class="carousel-img">
-                                            <img src="../assets/images/carousel/react.svg" class="img-fluid" alt="app development react logo" />
-                                        </div>
-                                        <div class="carousel-body">
-                                            <div class="carousel-flex d-flex justify-content-between">
-                                                <div class="p-2 bd-highlight">
-                                                    <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="prev">
-                                                        <i class="bi bi-caret-left-fill"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="p-2 bd-highlight">
-                                                    <h4>App Development</h4>
-                                                </div>
-                                                <div class="p-2 bd-highlight">
-                                                    <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="next">
-                                                        <i class="bi bi-caret-right-fill"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-text">Wir entwicklen mobile Apps für nahezu alle Usecases. Hybrid für iOS und Android.</div>
-                                        </div>
-                                        <div class="carousel-footer text-center p-2">
-                                            <img src="../assets/images/tech/npm.svg" alt="npm" />
-                                            <img src="../assets/images/tech/react.svg" alt="npm" />
-                                            <img src="../assets/images/tech/js.svg" alt="npm" />
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="carousel-item active">
-                                    <div class="carousel-block" id="carousel-page2">
-
-                                        <div class="carousel-img">
-                                            <img src="../assets/images/carousel/gears.svg" class="img-fluid" alt="app development react logo" />
-                                        </div>
-                                        <div class="carousel-body">
-                                            <div class="carousel-flex d-flex justify-content-between">
-                                                <div class="p-2 bd-highlight">
-                                                    <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="prev">
-                                                        <i class="bi bi-caret-left-fill"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="p-2 bd-highlight">
-                                                    <h4>Web Development</h4>
-                                                </div>
-                                                <div class="p-2 bd-highlight">
-                                                    <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="next">
-                                                        <i class="bi bi-caret-right-fill"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-text">Gute Programmierung ist leicht zu erweitern, funktional, gut lesbar und vor allem schnell. Ihre individuelle Anwendung wird intuitiv und einfach zu bedienen sein.</div>
-                                        </div>
-                                        <div class="carousel-footer text-center p-2">
-                                            <img src="../assets/images/tech/php.svg" alt="npm" />
-                                            <img src="../assets/images/tech/react.svg" alt="npm" />
-                                            <img src="../assets/images/tech/js.svg" alt="npm" />
-                                            <img src="../assets/images/tech/github.svg" alt="npm" />
-                                            <img src="../assets/images/tech/npm.svg" alt="npm" />
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="carousel-item">
-                                    <div class="carousel-block" id="carousel-page4">
-                                        <div class="carousel-img">
-                                            <img src="../assets/images/carousel/wordpress_stroke.svg" class="img-fluid" alt="Wordpress logo" />
-                                        </div>
-                                        <div class="carousel-body">
-                                            <div class="carousel-flex d-flex justify-content-between">
-                                                <div class="p-2 bd-highlight">
-                                                    <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="prev">
-                                                        <i class="bi bi-caret-left-fill"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="p-2 bd-highlight">
-                                                    <h4>Wordpress Entwicklung</h4>
-                                                </div>
-                                                <div class="p-2 bd-highlight">
-                                                    <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="next">
-                                                        <i class="bi bi-caret-right-fill"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-text">Tobeworks findet die passende Komplett-Lösung für Ihr Wordpress-Projekt von Landingpages über Shops, bis zu individuellen Plugins und Themes.</div>
-                                        </div>
-                                        <div class="carousel-footer text-center p-2">
-                                            <img src="../assets/images/tech/wordpress.svg" alt="wordpress" />
-                                            <img src="../assets/images/tech/HTML.svg" alt="npm" />
-                                            <img src="../assets/images/tech/CSS.svg" alt="npm" />
-                                            <img src="../assets/images/tech/js.svg" alt="npm" />
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="carousel-item">
-                                    <div class="carousel-block" id="carousel-page3">
-                                        <div class="carousel-img">
-                                            <img src="../assets/images/carousel/figma.svg" class="img-fluid" alt="webdesign logo" />
-                                        </div>
-                                        <div class="carousel-body">
-                                            <div class="carousel-flex d-flex justify-content-between">
-                                                <div class="p-2 bd-highlight">
-                                                    <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="prev">
-                                                        <i class="bi bi-caret-left-fill"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="p-2 bd-highlight">
-                                                    <h4>Webdesign</h4>
-                                                </div>
-                                                <div class="p-2 bd-highlight">
-                                                    <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="next">
-                                                        <i class="bi bi-caret-right-fill"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-text">Gutes Design erkennt man an einfacher Bedienbarkeit und übersichtlichem Aufbau. Vom Entwurf bis zum fertigen, individuellen Produkt.</div>
-                                        </div>
-                                        <div class="carousel-footer text-center p-2">
-                                            <img src="../assets/images/tech/HTML.svg" alt="npm" />
-                                            <img src="../assets/images/tech/CSS.svg" alt="npm" />
-                                            <img src="../assets/images/tech/js.svg" alt="npm" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
+                        <div>
+                            <a href="{{ path('about') }}" class="btn btn-erieblack" data-aos="fade-up" data-aos-delay="200">Mehr erfahren</a>
+                            <a href="{{ path('kontakt') }}" class="btn btn-orange" data-aos="fade-up" data-aos-delay="300">Projekt anfragen</a>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div class="col-sm-6 align-self-end ">
+                    <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <div class="carousel-block" id="carousel-page1">
 
-            <section class="bg-silver text-erieblack mainsection">
-                <div class="w-50 mx-auto">
-                    <img src="../assets/images/logos/TobeworksLogo.svg" class="img-fluid" alt="logo" data-aos="fade-up" />
-                    <h3 class="text-center my-3" data-aos="fade-up">Full-Service seit 2018</h3>
-                    <p class="text-center" data-aos="fade-up">Wir bieten zeitgerechte, massgeschneiderte Kommunikationslösungen.
-                        Dazu kombinieren wir die kreativen Leistungen einer Werbeagentur mit dem technologischen Know-how einer Webagentur. Von der Idee bis zum fertigen Produkt erhalten Sie bei uns alles aus einer Hand. Ohne Schnickschnack, mit modernster Technik.</p>
-                    <p class="text-center">
-                        <a href="{{ path('kontakt') }}" class="btn btn-erieblack" data-aos="fade-up" data-aos-delay="300">Kontakt</a>
-                    </p>
-                </div>
+                                    <div class="carousel-img">
+                                        <img src="../assets/images/carousel/react.svg" class="img-fluid" alt="app development react logo" />
+                                    </div>
+                                    <div class="carousel-body">
+                                        <div class="carousel-flex d-flex justify-content-between">
+                                            <div class="p-2 bd-highlight">
+                                                <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="prev">
+                                                    <i class="bi bi-caret-left-fill"></i>
+                                                </a>
+                                            </div>
+                                            <div class="p-2 bd-highlight">
+                                                <h4>App Development</h4>
+                                            </div>
+                                            <div class="p-2 bd-highlight">
+                                                <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="next">
+                                                    <i class="bi bi-caret-right-fill"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-text">Wir entwicklen mobile Apps für nahezu alle Usecases. Hybrid für iOS und Android.</div>
+                                    </div>
+                                    <div class="carousel-footer text-center p-2">
+                                        <img src="../assets/images/tech/npm.svg" alt="npm" />
+                                        <img src="../assets/images/tech/react.svg" alt="npm" />
+                                        <img src="../assets/images/tech/js.svg" alt="npm" />
+                                    </div>
 
-            </section>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="carousel-block" id="carousel-page2">
 
-            <section class="bg-orange text-erieblack cutsection" id="special">
-                <div class="row">
-                    <div class="col-sm-7 align-self-center text-silver">
-                        <div class="cut-left" data-aos="fade-right">
-                            <h3>Warum Tobeworks?</h3>
-                            <p>Weil wir Lösungen haben. Tobeworks ist fullstack und interdiszpilinär. Von studierten Spezialisten mit jahrelanger Branchen-Erfahrung.<br>
-                                Vom Designentwurf bis zur fertigen Softwarelösung, bis zum sicheren Hosting kommt hier alles aus einer Hand.</p>
-                            <p>
-                                <a href="{{ path('kontakt') }}" class="btn btn-erieblack">Kontakt</a>
-                            </p>
-                        </div>
-                    </div>
+                                    <div class="carousel-img">
+                                        <img src="../assets/images/carousel/gears.svg" class="img-fluid" alt="app development react logo" />
+                                    </div>
+                                    <div class="carousel-body">
+                                        <div class="carousel-flex d-flex justify-content-between">
+                                            <div class="p-2 bd-highlight">
+                                                <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="prev">
+                                                    <i class="bi bi-caret-left-fill"></i>
+                                                </a>
+                                            </div>
+                                            <div class="p-2 bd-highlight">
+                                                <h4>Web Development</h4>
+                                            </div>
+                                            <div class="p-2 bd-highlight">
+                                                <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="next">
+                                                    <i class="bi bi-caret-right-fill"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-text">Gute Programmierung ist leicht zu erweitern, funktional, gut lesbar und vor allem schnell. Ihre individuelle Anwendung wird intuitiv und einfach zu bedienen sein.</div>
+                                    </div>
+                                    <div class="carousel-footer text-center p-2">
+                                        <img src="../assets/images/tech/php.svg" alt="npm" />
+                                        <img src="../assets/images/tech/react.svg" alt="npm" />
+                                        <img src="../assets/images/tech/js.svg" alt="npm" />
+                                        <img src="../assets/images/tech/github.svg" alt="npm" />
+                                        <img src="../assets/images/tech/npm.svg" alt="npm" />
 
-                    <div class="col-sm-5 align-self-start p-5">
+                                    </div>
 
-                        <div class="card" data-aos="fade-top">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <i class="bi bi-broadcast"></i>
-                                    Beratung
-                                </h5>
-                                <p class="card-text">Nur die richtige Beratung im Vorfeld führt zum Ziel. Tobeworks entwickelt mit Ihnen zusammen Ihr individuelles Konzept.
-                                </p>
-                                <a href="{{ path('kontakt') }}" class="btn btn-silver btn-sm">Mehr erfahren</a>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="carousel-block" id="carousel-page4">
+                                    <div class="carousel-img">
+                                        <img src="../assets/images/carousel/wordpress_stroke.svg" class="img-fluid" alt="Wordpress logo" />
+                                    </div>
+                                    <div class="carousel-body">
+                                        <div class="carousel-flex d-flex justify-content-between">
+                                            <div class="p-2 bd-highlight">
+                                                <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="prev">
+                                                    <i class="bi bi-caret-left-fill"></i>
+                                                </a>
+                                            </div>
+                                            <div class="p-2 bd-highlight">
+                                                <h4>Wordpress Entwicklung</h4>
+                                            </div>
+                                            <div class="p-2 bd-highlight">
+                                                <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="next">
+                                                    <i class="bi bi-caret-right-fill"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-text">Tobeworks findet die passende Komplett-Lösung für Ihr Wordpress-Projekt von Landingpages über Shops, bis zu individuellen Plugins und Themes.</div>
+                                    </div>
+                                    <div class="carousel-footer text-center p-2">
+                                        <img src="../assets/images/tech/wordpress.svg" alt="wordpress" />
+                                        <img src="../assets/images/tech/HTML.svg" alt="npm" />
+                                        <img src="../assets/images/tech/CSS.svg" alt="npm" />
+                                        <img src="../assets/images/tech/js.svg" alt="npm" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="carousel-block" id="carousel-page3">
+                                    <div class="carousel-img">
+                                        <img src="../assets/images/carousel/figma.svg" class="img-fluid" alt="webdesign logo" />
+                                    </div>
+                                    <div class="carousel-body">
+                                        <div class="carousel-flex d-flex justify-content-between">
+                                            <div class="p-2 bd-highlight">
+                                                <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="prev">
+                                                    <i class="bi bi-caret-left-fill"></i>
+                                                </a>
+                                            </div>
+                                            <div class="p-2 bd-highlight">
+                                                <h4>Webdesign</h4>
+                                            </div>
+                                            <div class="p-2 bd-highlight">
+                                                <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="next">
+                                                    <i class="bi bi-caret-right-fill"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-text">Gutes Design erkennt man an einfacher Bedienbarkeit und übersichtlichem Aufbau. Vom Entwurf bis zum fertigen, individuellen Produkt.</div>
+                                    </div>
+                                    <div class="carousel-footer text-center p-2">
+                                        <img src="../assets/images/tech/HTML.svg" alt="npm" />
+                                        <img src="../assets/images/tech/CSS.svg" alt="npm" />
+                                        <img src="../assets/images/tech/js.svg" alt="npm" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card" data-aos="fade-top">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <i class="bi bi-broadcast"></i>
-                                    Entwicklung
-                                </h5>
-                                <p class="card-text">Projekte werden #agil in ständiger Kommunikation mit dem Kunden realisiert.
-                                </p>
-                                <a href="{{ path('kontakt') }}" class="btn btn-silver btn-sm">Mehr erfahren</a>
-                            </div>
-                        </div>
 
-                        <div class="card" data-aos="fade-top">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <i class="bi bi-broadcast"></i>
-                                    Infrastruktur
-                                </h5>
-                                <p class="card-text">Der Erfolg Ihres Projekts ist nur mit der richtigen Infrastruktur gesichert. Tobeworks kümmert sich um alles vom Server über Sicherheit, bis zum Backup.
-                                </p>
-                                <a href="{{ path('kontakt') }}" class="btn btn-silver btn-sm">Mehr erfahren</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-
-
-            <section class="bg-silver text-erieblack mainsection" id="brands">
-                <h2 data-aos="fade-up" class="text-center">Software-Technologien
-                </h2>
-                <p class="lead text-center">Für unsere Kunden nur vom Feinsten</p>
-                <div class="w-50 mx-auto mt-5">
-
-                    <div class="row">
-                        <div class="d-flex align-items-center justify-content-around" data-aos="fade-up">
-                            <i class="fab fa-php" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP"></i>
-                            <i class="fab fa-js-square" data-bs-toggle="tooltip" data-bs-placement="top" title="Javascript (ES 6)"></i>
-                            <i class="fab fa-html5" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML 5"></i>
-                            <i class="fab fa-css3-alt" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS 3"></i>
-                            <i class="fab fa-wordpress" data-bs-toggle="tooltip" data-bs-placement="top" title="Wordpress Professional"></i>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="d-flex align-items-center justify-content-around" data-aos="fade-up">
-                            <i class="fab fa-react" data-bs-toggle="tooltip" data-bs-placement="top" title="React"></i>
-                            <i class="fab fa-github" data-bs-toggle="tooltip" data-bs-placement="top" title="Github"></i>
-                            <i class="fab fa-apple" data-bs-toggle="tooltip" data-bs-placement="top" title="Apple"></i>
-                            <i class="fab fa-centos" data-bs-toggle="tooltip" data-bs-placement="top" title="CentOS"></i>
-                            <i class="fab fa-linux" data-bs-toggle="tooltip" data-bs-placement="top" title="Linux"></i>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="d-flex align-items-center justify-content-around" data-aos="fade-up">
-                            <i class="fab fa-bitcoin" data-bs-toggle="tooltip" data-bs-placement="top" title="Bitcoin"></i>
-                            <i class="fab fa-ethereum" data-bs-toggle="tooltip" data-bs-placement="top" title="Ethereum"></i>
-                            <i class="fab fa-git-square" data-bs-toggle="tooltip" data-bs-placement="top" title="Git"></i>
-                            <i class="fab fa-cc-paypal" data-bs-toggle="tooltip" data-bs-placement="top" title="Paypal (API)"></i>
-                            <i class="fab fa-bootstrap" data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap Framwork"></i>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class=" d-flex align-items-center justify-content-around" data-aos="fade-up">
-                            <i class="fab fa-google" data-bs-toggle="tooltip" data-bs-placement="top" title="Google API"></i>
-                            <i class="fab fa-sass" data-bs-toggle="tooltip" data-bs-placement="top" title="SASS"></i>
-                            <i class="fab fa-slack" data-bs-toggle="tooltip" data-bs-placement="top" title="Slack"></i>
-                            <i class="fab fa-yarn" data-bs-toggle="tooltip" data-bs-placement="top" title="yarn"></i>
-                            <i class="fab fa-symfony" data-bs-toggle="tooltip" data-bs-placement="top" title="Symfony"></i>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="container" id="main-footer">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h4>navigation.</h4>
-                        <ul class="nav flex-column footer-nav mb-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ path('index') }}">Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ path('kontakt') }}">Kontakt</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ path('leistungen')}}">Leistungen</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ path('portfolio')}}">Referenzen und Partner</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ path('about') }}">Über</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4">
-                        <h4>tobeworks.</h4>
-                        <ul class="nav flex-column footer-nav mb-3">
-                            <li class="nav-item pr-2">
-                                <a class="nav-link" href="">Tobias Lorsbach</a>
-                            </li>
-                            <li class="nav-item pr-2">
-                                <a class="nav-link" href="">Neue Universitätsstraße 7, 55116 Mainz</a>
-                            </li>
-                            <li class="nav-item pr-2">
-                                <a class="nav-link" href="">0179/1259004</a>
-                            </li>
-                            <li class="nav-item pr-2">
-                                <a class="reverse nav-link" href="{{ path('kontakt') }}">ed.skrowebot@ollah</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4">
-                        <h4>leistungen.</h4>
-                        <ul class="nav flex-column footer-nav mb-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ path('webdesign-mainz') }}">Responsive Webdesign
-                                    Mainz</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ path('wordpress') }}">Wordpress</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ path('wordpress-programmierung') }}">Wordpress-Programmierer</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ path('wordpress-wartung') }}">Wordpress-Wartung</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#portfolio-modal" data-bs-toggle="modal" href="#">Webentwicklung und Mobile Apps aus Mainz</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#portfolio-modal" data-bs-toggle="modal" href="#">Rootserver-Administration</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#portfolio-modal" data-bs-toggle="modal" href="#">Suchmaschinen-Optimierung (SEO)</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="text-center pb-3 text-orange">
-                <div class="p-3"><img src="../assets/images/dreieck.svg" alt="Logo Dreieck" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000"></div>
-                <b>{{ year }}</b>
-                -
-                {{ Version }}
-                - letzte Änderung: 05.2022<br>
-                <a class="popover-link" data-bs-content="Dieses Theme wurde individuell in HTML 5, CSS, Symfony 4.4 unter Verwendung von Bootstrap 5.1 erstellt. Falls Sie Fragen zur Erstellung von individuellen Themes für z.B. Wordpress haben, nehmen Sie Kontakt zu uns auf. <a href='/kontakt'>Klick</a>" data-bs-placement="top" data-bs-toggle="popover" title="Themedesign">Theme by Tobeworks ©{{
-                year }}</a>
+        </section>
 
-                <div class="my-2">
-                    Made with
-                    <i class="fas fa-heart"></i>
-                    &&
-                    <i class="fab fa-symfony"></i>
-                </div>
-
-                <div class="fs-1 my-2">
-                    <a href="https://github.com/Tobeworks" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <p>
-                    <a href="{{ path('impressum') }}">Impressum</a>
-                    <a href="{{ path('datenschutz') }}">Datenschutz</a>
+        <section class="bg-silver text-erieblack mainsection">
+            <div class="w-50 mx-auto">
+                <img src="../assets/images/logos/TobeworksLogo.svg" class="img-fluid" alt="logo" data-aos="fade-up" />
+                <h3 class="text-center my-3" data-aos="fade-up">Full-Service seit 2018</h3>
+                <p class="text-center" data-aos="fade-up">Wir bieten zeitgerechte, massgeschneiderte Kommunikationslösungen.
+                    Dazu kombinieren wir die kreativen Leistungen einer Werbeagentur mit dem technologischen Know-how einer Webagentur. Von der Idee bis zum fertigen Produkt erhalten Sie bei uns alles aus einer Hand. Ohne Schnickschnack, mit modernster Technik.</p>
+                <p class="text-center">
+                    <a href="{{ path('kontakt') }}" class="btn btn-erieblack" data-aos="fade-up" data-aos-delay="300">Kontakt</a>
                 </p>
-                <a href="{{ path('app_login') }}">
-                    <i class="bi bi-box-arrow-in-right"></i>
-                </a>
             </div>
-        </footer>
 
+        </section>
 
-        <!-- Modal -->
-        <div aria-hidden="true" aria-labelledby="portfolio-modal" class="modal fade" id="portfolio-modal" role="dialog" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content bg-silver">
-                    <div class="modal-header">
-                        <h5 class="modal-title">ZzzZzz</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <section class="bg-orange text-erieblack cutsection" id="special">
+            <div class="row">
+                <div class="col-sm-7 align-self-center text-silver">
+                    <div class="cut-left" data-aos="fade-right">
+                        <h3>Warum Tobeworks?</h3>
+                        <p>Weil wir Lösungen haben. Tobeworks ist fullstack und interdiszpilinär. Von studierten Spezialisten mit jahrelanger Branchen-Erfahrung.<br>
+                            Vom Designentwurf bis zur fertigen Softwarelösung, bis zum sicheren Hosting kommt hier alles aus einer Hand.</p>
+                        <p>
+                            <a href="{{ path('kontakt') }}" class="btn btn-erieblack">Kontakt</a>
+                        </p>
                     </div>
-                    <div class="modal-body">
-                        <div class="row no-gutters">
-                            <div class="col-sm-6"><img alt="In Arbeit" class="img-fluid d-none d-sm-none d-md-inline" src="images/modal-bg.jpg"></div>
-                            <div class="col-sm-6 p-2 px-sm-5 my-auto">
-                                <h2 class="pt-sm-3">In Arbeit</h2>
-                                <div class="text-muted">
-                                    Dieser Link ist vorübergehend unbelegt. Sooner or later!
-                                    <div class="text-center m-2"></div>
-                                </div>
-                                <p>
-                                    <a class="btn btn-outline-erieblack btn-block" href="{{ path('kontakt') }}">Trotzdem Kontakt aufnehmen?</a>
-                                </p>
+                </div>
+
+                <div class="col-sm-5 align-self-start p-5">
+
+                    <div class="card" data-aos="fade-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="bi bi-broadcast"></i>
+                                Beratung
+                            </h5>
+                            <p class="card-text">Nur die richtige Beratung im Vorfeld führt zum Ziel. Tobeworks entwickelt mit Ihnen zusammen Ihr individuelles Konzept.
+                            </p>
+                            <a href="{{ path('kontakt') }}" class="btn btn-silver btn-sm">Mehr erfahren</a>
+                        </div>
+                    </div>
+
+                    <div class="card" data-aos="fade-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="bi bi-broadcast"></i>
+                                Entwicklung
+                            </h5>
+                            <p class="card-text">Projekte werden #agil in ständiger Kommunikation mit dem Kunden realisiert.
+                            </p>
+                            <a href="{{ path('kontakt') }}" class="btn btn-silver btn-sm">Mehr erfahren</a>
+                        </div>
+                    </div>
+
+                    <div class="card" data-aos="fade-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="bi bi-broadcast"></i>
+                                Infrastruktur
+                            </h5>
+                            <p class="card-text">Der Erfolg Ihres Projekts ist nur mit der richtigen Infrastruktur gesichert. Tobeworks kümmert sich um alles vom Server über Sicherheit, bis zum Backup.
+                            </p>
+                            <a href="{{ path('kontakt') }}" class="btn btn-silver btn-sm">Mehr erfahren</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="bg-silver text-erieblack mainsection" id="brands">
+            <h2 data-aos="fade-up" class="text-center">Software-Technologien
+            </h2>
+            <p class="lead text-center">Für unsere Kunden nur vom Feinsten</p>
+            <div class="w-50 mx-auto mt-5">
+
+                <div class="row">
+                    <div class="d-flex align-items-center justify-content-around" data-aos="fade-up">
+                        <i class="fab fa-php" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP"></i>
+                        <i class="fab fa-js-square" data-bs-toggle="tooltip" data-bs-placement="top" title="Javascript (ES 6)"></i>
+                        <i class="fab fa-html5" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML 5"></i>
+                        <i class="fab fa-css3-alt" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS 3"></i>
+                        <i class="fab fa-wordpress" data-bs-toggle="tooltip" data-bs-placement="top" title="Wordpress Professional"></i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-flex align-items-center justify-content-around" data-aos="fade-up">
+                        <i class="fab fa-react" data-bs-toggle="tooltip" data-bs-placement="top" title="React"></i>
+                        <i class="fab fa-github" data-bs-toggle="tooltip" data-bs-placement="top" title="Github"></i>
+                        <i class="fab fa-apple" data-bs-toggle="tooltip" data-bs-placement="top" title="Apple"></i>
+                        <i class="fab fa-centos" data-bs-toggle="tooltip" data-bs-placement="top" title="CentOS"></i>
+                        <i class="fab fa-linux" data-bs-toggle="tooltip" data-bs-placement="top" title="Linux"></i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-flex align-items-center justify-content-around" data-aos="fade-up">
+                        <i class="fab fa-bitcoin" data-bs-toggle="tooltip" data-bs-placement="top" title="Bitcoin"></i>
+                        <i class="fab fa-ethereum" data-bs-toggle="tooltip" data-bs-placement="top" title="Ethereum"></i>
+                        <i class="fab fa-git-square" data-bs-toggle="tooltip" data-bs-placement="top" title="Git"></i>
+                        <i class="fab fa-cc-paypal" data-bs-toggle="tooltip" data-bs-placement="top" title="Paypal (API)"></i>
+                        <i class="fab fa-bootstrap" data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap Framwork"></i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class=" d-flex align-items-center justify-content-around" data-aos="fade-up">
+                        <i class="fab fa-google" data-bs-toggle="tooltip" data-bs-placement="top" title="Google API"></i>
+                        <i class="fab fa-sass" data-bs-toggle="tooltip" data-bs-placement="top" title="SASS"></i>
+                        <i class="fab fa-slack" data-bs-toggle="tooltip" data-bs-placement="top" title="Slack"></i>
+                        <i class="fab fa-yarn" data-bs-toggle="tooltip" data-bs-placement="top" title="yarn"></i>
+                        <i class="fab fa-symfony" data-bs-toggle="tooltip" data-bs-placement="top" title="Symfony"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div aria-hidden="true" aria-labelledby="portfolio-modal" class="modal fade" id="portfolio-modal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content bg-silver">
+                <div class="modal-header">
+                    <h5 class="modal-title">ZzzZzz</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row no-gutters">
+                        <div class="col-sm-6"><img alt="In Arbeit" class="img-fluid d-none d-sm-none d-md-inline" src="../assets/images/modal-bg.jpg"></div>
+                        <div class="col-sm-6 p-2 px-sm-5 my-auto">
+                            <h2 class="pt-sm-3">In Arbeit</h2>
+                            <div class="text-muted">
+                                Dieser Link ist vorübergehend unbelegt. Sooner or later!
+                                <div class="text-center m-2"></div>
                             </div>
+                            <p>
+                                <a class="btn btn-outline-erieblack btn-block" href="{{ path('kontakt') }}">Trotzdem Kontakt aufnehmen?</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 
