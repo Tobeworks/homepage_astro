@@ -1,0 +1,52 @@
+$white: #ffffff !default;
+$black: #000000 !default;
+$perlwhite: #fffcf2 !default;
+$erieBlack: #252422 !default;
+
+$red: #be140f !default;
+$orange: #eb5e28 !default;
+$yellow: #dfba00 !default;
+$green: rgb(1, 112, 1) !default;
+$blue: #2baaff !default;
+$teal: #eb5e28 !default;
+$pink: #ff5b77 !default;
+$purple: #613d7c !default;
+
+$body-bg: $black;
+$body-color: $black;
+$btn-link-color: $orange;
+$btn-link-hover-color: $perlwhite;
+$link-color: $orange !default;
+$component-active-bg: $orange !default;
+
+$input-btn-padding-y: 0.45rem !default;
+$input-btn-padding-x: 1.5rem !default;
+$border-width: 1px !default;
+$border-radius: 0rem !default;
+
+$btn-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out,
+  border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out !default;
+
+$theme-colors: (
+  "primary": $perlwhite,
+  "secondary": $orange,
+  "success": $green,
+  "danger": $red,
+  "light": white,
+  "dark": $black,
+  "info": $perlwhite,
+  "warning": $yellow,
+);
+
+$tw-map: (
+  "orange": $orange,
+  "perlwhite": $perlwhite,
+  "silver": #ccc5b9,
+  "olive": #403d39,
+  "erieblack": $erieBlack,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $tw-map);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";

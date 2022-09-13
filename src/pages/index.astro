@@ -1,0 +1,30 @@
+---
+// Component Imports
+import MainHead from '../components/MainHead.astro';
+import MainPage from '../components/Main-Page.vue';
+
+
+
+const projects = await Astro.glob('./project/**/*.md');
+const featuredProject = projects[0];
+
+---
+
+<script>
+import anime from "animejs";
+import * as bootstrap from "bootstrap";
+
+</script>
+
+<html lang="de">
+	<head>
+		<MainHead
+			title="Tobeworks Websolutions"
+			description="Tobeworks, Freelance Websolutions since 2018"
+		/>
+		
+	</head>
+	<body>
+		<MainPage></MainPage>
+	</body>
+</html>
