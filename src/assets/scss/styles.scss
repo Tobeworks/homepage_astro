@@ -17,6 +17,11 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
+header{
+  .nav-link{
+    color: var(--orange);
+  }
+}
 strong {
   font-weight: 700;
   letter-spacing: 0.07em;
@@ -97,6 +102,11 @@ h4 {
 }
 #topnavi .nav-item {
   margin-left: 5px;
+}
+.carousel-footer{
+  img{
+    margin: 2px;
+  }
 }
 .carousel-block {
   min-width: 500px;
@@ -221,6 +231,8 @@ h4 {
   unicode-bidi: bidi-override;
   direction: rtl;
 }
+
+
 footer {
   padding-top: 25px;
   background-color: var(--erieBlack);

@@ -503,6 +503,10 @@ export default {
 <style lang="scss">
 @import '../assets/scss/boostrap.scss';
 @import '../assets/scss/styles.scss';
+$fa-font-path : "../../node_modules/@fortawesome/fontawesome-pro/webfonts/";
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/brands.scss";
 // @import "/node_modules/cookieconsent/build/cookieconsent.min.css";
 @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 </style>
