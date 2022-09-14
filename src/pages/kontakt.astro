@@ -9,8 +9,203 @@ import Layout from "../layouts/Layout.astro";
 //const projects = await Astro.glob('./project/**/*.md');
 ---
 
+<script>
+  import ArrowScroller from "../modules/ArrowScroll";
+  ArrowScroller();
+</script>
 <Layout>
   <Header />
-Kontakt
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
+  <section class="container bg-erieblack text-orange mainsection titlesection">
+    <div class="row">
+      <div class="col-sm align-self-center title-lead">
+        <h2 class="cover my-2 text-center">Write us something sweet!</h2>
+        <p class="lead text-center w-75 mx-auto my-3"></p>
+      </div>
+    </div>
+    <a href="" class="title-arrow-down">
+      <i class="bi bi-arrow-down-short"></i>
+    </a>
+  </section>
+  <section id="contentStart" class="bg-silver text-erieblack mainsection">
+    <div class="container-fluid" id="kontaktformular">
+      <div class="row">
+        <div class="col-lg-8 p-5">
+          <form name="form" method="post">
+            Name
+            <input
+              type="text"
+              id="form_name"
+              name="form[name]"
+              required="required"
+              class="form-control"
+            />
+            E-Mail
+            <input
+              type="email"
+              id="form_email"
+              name="form[email]"
+              required="required"
+              class="form-control"
+            />
+            Betreff
+            <input
+              type="text"
+              id="form_subject"
+              name="form[subject]"
+              required="required"
+              class="form-control"
+            />
+            Nachricht
+            <textarea
+              id="form_text"
+              name="form[text]"
+              required="required"
+              class="mailform-textarea form-control"></textarea>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                id="form_public"
+                name="form[public]"
+                required="required"
+                class="form-check-input"
+                value="1"
+              />
+              <label class="form-check-label required" for="form_public"
+                >Ich habe die Datenschutzerklärung gelesen</label>
+            </div>
+            <div
+              class="g-recaptcha my-3"
+              data-sitekey="6Ld8cKEUAAAAAOb75EPCZHvgGwl-mkVhrGMiDGIi"
+            >
+              <div style="width: 304px; height: 78px;">
+                <div>
+                  <iframe
+                    title="reCAPTCHA"
+                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Ld8cKEUAAAAAOb75EPCZHvgGwl-mkVhrGMiDGIi&co=aHR0cHM6Ly90b2Jld29ya3MuZGU6NDQz&hl=de&v=g8G8cw32bNQPGUVoDvt680GA&size=normal&cb=3gp2dapzrynu"
+                    role="presentation"
+                    name="a-3vaefzvruk88"
+                    scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                    width="304"
+                    height="78"
+                    frameborder="0"></iframe>
+                </div><textarea
+                  id="g-recaptcha-response"
+                  name="g-recaptcha-response"
+                  class="g-recaptcha-response"
+                  style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"
+                ></textarea>
+              </div><iframe style="display: none;"></iframe>
+            </div>
+            <button
+              type="submit"
+              id="form_save"
+              name="form[save]"
+              class="btn btn-outline-erieblack btn"
+            >
+              Nachricht abschicken</button
+            >
+            <input
+              type="hidden"
+              id="form__token"
+              name="form[_token]"
+              value="yh7p_cDHpQv-W05gPuOJCQGV8Qo2at0Y8YQ4hyglY_U"
+            />
+          </form>
+        </div>
+        <div class="col-lg-4 kontakt-right-col">
+          <div class="py-5">
+            <div class="card card-kontakt">
+              <div class="card-body">
+                <div class="card-text">
+                  <ul class="text-lg-left list-unstyled ml-4">
+                    <li>
+                      <p class="text-center">
+                        <img
+                          src="/src/assets/images/ich_2020_bw2.jpg"
+                          class="img-fluid img-thumbnail"
+                          alt="tobe"
+                        />
+                      </p>
+                    </li>
+                    <li>
+                      <h5>Tobeworks - Websolutions</h5>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa fa-user pr-2" aria-hidden="true"></i>
+                        Tobias Lorsbach
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa fa-map-marker pr-2"></i>
+                        Neue Universitätsstraße 7, 55116 Mainz
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa fa-phone pr-2"></i>
+                        06131/<span class="">9011446</span><br />
+                        <small
+                          >(bitte vorher per Mail Telefontermin vereinbaren)</small
+                        >
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa fa-mobile pr-2"></i>
+                        0179/1259004<br />
+                        <small
+                          >(bitte vorher per Mail Telefontermin vereinbaren)</small
+                        >
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa fa-envelope pr-2"></i>
+                        <span class="reverse">ed.skrowebot@ollah</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <hr />
+                <div class="text-center">
+                  <a href="https://www.xing.to/tobeworks" class="card-link">
+                    <i class="fab fa-xing" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/tobias-lorsbach-7a9506170/"
+                    class="card-link"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="#" class="card-link">
+                    <i class="fab fa-skype" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    rel="me"
+                    href="https://dasauge.de/-tobeworks/"
+                    title="Tobias Lorsbach bei dasauge"
+                    target="_top"
+                    class="card-link"
+                    ><img
+                      src="https://cdn.dasauge.net/prolinks/dasauge_16s.png"
+                      alt="Tobias Lorsbach"
+                      width="16"
+                      height="16"
+                      style="border:0; filter: grayscale(100%);"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <Footer />
 </Layout>

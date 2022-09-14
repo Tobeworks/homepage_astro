@@ -1,23 +1,6 @@
 <template>
 
-    <div id="overlay-menu" class="bg-erieblack">
-        <div class="navbar-toggle" id="navbar-toggle-close">
-            <img src="../assets/images/hamburger/_times.svg" id="hamburger-close" alt="hamburger" />
-        </div>
 
-        <div class="overlay-middle">
-            <nav class="nav flex-column" id="fullscreen-menu">
-                <a class="nav-link stag-nav active" href="/">Home</a>
-                <a class="nav-link stag-nav" href="{{ path('about') }}">About</a>
-                <a class="nav-link stag-nav" href="{{ path('leistungen') }}">Lösungen</a>
-                <a class="nav-link stag-nav" href="{{ path('portfolio') }}">Projekte</a>
-                <a class="nav-link stag-nav" href="{{ path('kontakt') }}">Kontakt</a>
-            </nav>
-        </div>
-        <div id="overly-logo-bottom">
-            <img src="../assets/images/logos/TW-EB5E28.svg" alt="logo overlay" data-aos="fade-top" data-aos-delay="200">
-        </div>
-    </div>
     <main id="content-middle">
 
         <section class="bg-erieblack text-orange mainsection titlesection  d-none d-xl-block">

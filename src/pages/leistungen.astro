@@ -8,7 +8,10 @@ import Layout from "../layouts/Layout.astro";
 
 //const projects = await Astro.glob('./project/**/*.md');
 ---
-
+<script>
+  import ArrowScroller from '../modules/ArrowScroll';
+  ArrowScroller();
+</script>
 <Layout>
   <Header />
 <section class="container bg-erieblack text-orange titlesection">

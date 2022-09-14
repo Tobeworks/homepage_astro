@@ -9,6 +9,11 @@ import Layout from "../layouts/Layout.astro";
 //const projects = await Astro.glob('./project/**/*.md');
 ---
 
+<script>
+  import ArrowScroller from '../modules/ArrowScroll';
+  ArrowScroller();
+</script>
+
 <Layout>
   <Header />
 <section class="container bg-erieblack text-orange mainsection titlesection" id="titlesection">
@@ -38,7 +43,7 @@ import Layout from "../layouts/Layout.astro";
 			<div class="row d-md-flex-row  overflow-hidden">
 				<div class="col-md-4  p-0 col-12 bg-silver d-flex overflow-hidden ">
 					<div class="card p-0   w-100 h-100 text-light   border-0 ">
-						<img class="card-img h-100 w-100" src="images/ich_2020_bw2.jpg" alt="Card image">
+						<img class="card-img" src="/src/assets/images/ich_2020_bw2.jpg" alt="Card image">
 						<div class="card-img-overlay p-1 p-md-3    ">
 							<div class="position-relative  w-100 h-25  d-flex">
 
@@ -160,7 +165,7 @@ import Layout from "../layouts/Layout.astro";
 			<div class="row d-md-flex-row  overflow-hidden">
 				<div class="col-md-4  p-0 col-12 bg-silver d-flex overflow-hidden ">
 					<div class="card p-0   w-100 h-100 text-light   border-0 ">
-						<img class="card-img h-100 w-100" src="images/Sara_pic.jpg" alt="Card image">
+						<img class="card-img h-100 w-100" src="/src/assets/images/Sara_pic.jpg" alt="Card image">
 						<div class="card-img-overlay p-1 p-md-3    ">
 							<div class="position-relative  w-100 h-25  d-flex">
 
