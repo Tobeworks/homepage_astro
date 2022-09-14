@@ -1,6 +1,8 @@
 ---
+import packageData from '../../package.json'
+
 const currentYear = new Date().getFullYear();
-const Version = '6.0.0';
+const Version = packageData.version;
 ---
         <footer class="container" id="main-footer">
             <div class="container py-5">
@@ -9,21 +11,21 @@ const Version = '6.0.0';
                         <h4>navigation.</h4>
                         <ul class="nav flex-column footer-nav mb-3">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ path('index') }}">Home
+                                <a class="nav-link" href="/">Home
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ path('kontakt') }}">Kontakt</a>
+                                <a class="nav-link" href="/kontakt">Kontakt</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ path('leistungen')}}">Leistungen</a>
+                                <a class="nav-link" href="/leistungen">Leistungen</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ path('portfolio')}}">Referenzen und Partner</a>
+                                <a class="nav-link" href="/portfolio">Referenzen und Partner</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ path('about') }}">Über</a>
+                                <a class="nav-link" href="/about">Über</a>
                             </li>
                         </ul>
                     </div>
@@ -40,7 +42,7 @@ const Version = '6.0.0';
                                 <a class="nav-link" href="">0179/1259004</a>
                             </li>
                             <li class="nav-item pr-2">
-                                <a class="reverse nav-link" href="{{ path('kontakt') }}">ed.skrowebot@ollah</a>
+                                <a class="reverse nav-link" href="/kontakt">ed.skrowebot@ollah</a>
                             </li>
                         </ul>
                     </div>
@@ -48,19 +50,19 @@ const Version = '6.0.0';
                         <h4>leistungen.</h4>
                         <ul class="nav flex-column footer-nav mb-3">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ path('webdesign-mainz') }}">Responsive Webdesign
+                                <a class="nav-link" href="/webentwicklung/webdesign-mainz-wiesbaden">Responsive Webdesign
                                     Mainz</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ path('wordpress') }}">Wordpress</a>
+                                <a class="nav-link" href="/wordpress/entwicklung">Wordpress</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ path('wordpress-programmierung') }}">Wordpress-Programmierer</a>
+                                <a class="nav-link" href="/wordpress-programmierung">Wordpress-Programmierer</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ path('wordpress-wartung') }}">Wordpress-Wartung</a>
+                                <a class="nav-link" href="/wordpress-wartung">Wordpress-Wartung</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" data-bs-target="#portfolio-modal" data-bs-toggle="modal" href="#">Webentwicklung und Mobile Apps aus Mainz</a>
                             </li>
                             <li class="nav-item">
@@ -68,7 +70,7 @@ const Version = '6.0.0';
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-target="#portfolio-modal" data-bs-toggle="modal" href="#">Suchmaschinen-Optimierung (SEO)</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -78,8 +80,8 @@ const Version = '6.0.0';
                 <div class="p-3"><img src="src/assets/images/dreieck.svg" alt="Logo Dreieck" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000"></div>
                 <b>{currentYear }</b>
                 -
-                { Version } - letzte Änderung: 09.2022<br>
-                <a class="popover-link" data-bs-content="Dieses Theme wurde individuell in HTML 5, CSS, Symfony 4.4 unter Verwendung von Bootstrap 5.1 erstellt. Falls Sie Fragen zur Erstellung von individuellen Themes für z.B. Wordpress haben, nehmen Sie Kontakt zu uns auf. <a href='/kontakt'>Klick</a>" data-bs-placement="top" data-bs-toggle="popover" title="Themedesign">Theme by Tobeworks ©{currentYear}</a>
+                { Version } - letzte Änderung: 10.2022<br>
+                <a class="popover-link" data-bs-content="Dieses Theme wurde individuell in HTML 5, CSS, JS,und dem Framework Astro unter Verwendung von Bootstrap 5.2 erstellt." data-bs-placement="top" data-bs-toggle="popover" title="Themedesign">Theme by Tobeworks ©{currentYear}</a>
 
                 <div class="my-2">
                     Made with <i class="fas fa-heart"></i> and <i class="fab fa-js-square"></i> 

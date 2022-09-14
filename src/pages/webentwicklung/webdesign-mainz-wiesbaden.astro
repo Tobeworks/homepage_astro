@@ -1,0 +1,130 @@
+---
+// Component Imports
+import MainPage from "../../components/Main-Page.vue";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import Layout from "../../layouts/Layout.astro";
+
+---
+
+<script>
+  import ArrowScroller from '../../modules/ArrowScroll';
+  ArrowScroller();
+</script>
+
+<Layout>
+  <Header />
+ <section class="container bg-erieblack text-orange mainsection titlesection">
+
+		<div class="row">
+			<div class="col-sm align-self-center title-lead">
+				<h2 class="cover my-2 text-center">Warum Tobeworks?</h2>
+				<p class="lead text-center w-75 mx-auto my-3">
+					<strong>Weil wir es können und damit echten Mehrwert schaffen.</strong>
+					<br>
+					Wir sind mit digitalen Technologien groß geworden, von Dotcom über Web 2.0. Wir sind bestens ausgebildet und sind auch heute
+					<strong>immer</strong>
+					auf den neusten Stand der Technik. Von der Pieke auf, gibt`s hier kompromisslos individuelle Entwicklung mit Kerntechnolgien. Zwei Dekaden Erfahrung mit Agenturen, Unternehmen und Privatkunden sprechen für sich.
+					<br><strong>Uns würde das überzeugen, Sie auch!?</strong>
+				</p>
+			</div>
+		</div>
+		<a href="" class="title-arrow-down">
+			<i class="bi bi-arrow-down-short"></i>
+		</a>
+	</section>
+	<section class="bg-silver text-erieblack contentsection" id="contentStart">
+
+		<h2>Webdesign aus Mainz, Wiesbaden, Frankfurt und Rhein Main</h2>
+		<p>Willkommen bei Ihren Profis für funktionales und ansprechendes Webdesign aus Mainz und Wiesbaden. Wenn Sie einen einen kompetenten, markterfahrenen Ansprechpartner für Ihre neue Corporate Website suchen, sind sie hier richtig.
+		</p>
+		<p>
+			Das Internet ist in wenigen Jahren zum wichtigsten Werbemedium unserer Zeit geworden. Unter Webdesign versteht man heute eine Disziplin des Mediendesigns für visuelle, funktionale und strukturelle Gestaltung von Webseiten. Dabei ist Webdesign natürlich  mehr als ein Layout, es umfasst viele Aspekte der Visualisierung und Strukturierung von Inhalten. Tobeworks hat Webdesign von den Anfängen des www bis heute studiert und über die Jahre optisch, sowie technisch verfeinert und kultiviert. Webdesign  und Webentwicklung wird 100%ig maßgeschneidert auf die Bedürfnisse Ihre Unternehmens umgesetzt.
+		</p>
+	</section>
+
+
+	<section class="bg-silver text-erieblack contentsection">
+		<h2>Webdesign</h2>
+		<p>Seit vielen Jahren ist das Internet zum Knotenpunkt von sozialen und kommerziellen Interaktionen geworden. Wer heute etwas verkaufen, oder seine Dienstleistungen bewerben möchte, kommt nicht mehr an der eigenen Homepage, oder dem eigenen Webshop vorbei.
+		</p>
+	</section>
+
+	<section class="bg-silver text-erieblack contentsection">
+		<h2>
+			Die komplette Entwicklung aus einer Hand</h2>
+		<p><b>Tobeworks</b> bietet einen speziell auf Ihre Bedürfnisse zugeschnittenen Service an. Für den Produktivbetrieb, bietet Tobeworks ein Gesamtpaket aus Analyse, Beratung, Installation, Templating, Konfiguration, Design, Entwicklung, Hosting, Suchmaschinen-Optimierung und Online-Marketing an.<br>
+			Ihr Projekt wird komplett und ohne Umwege schnell und zielsicher geplant, zeitnah umgesetzt und bei Bedarf stetig weiterentwickelt und auf eigenen Servern gehostet.
+		</p>
+	</section>
+
+	<section class="bg-silver text-erieblack contentsection">
+		<h2>Moderne Technologien</h2>
+		<p>Die Uhren im Internet ticken schnell. Technologien und Standards werden in monatlichen Abständen erneuert und verändert. Wer blickt da noch durch?<br>
+			<b>Tobeworks</b> behält den Überblick und nutzt zeitgemäße Technologien, wie wie Apache, Datenbankserver wie mySQL oder MariaDB, Programmiersprachen wie PHP 7/8 oder Nextgen Javascript (ES6), Markup- und Formatierungssprachen wie HTML5 und CSS3, Frameworks wie Symfony 4 und moderne und erweiterbare Blogging-, CMS- oder Shop-Software wie
+			<a href="{{ path('wordpress') }}">Wordpress</a>. Dazu kommen Hosting der Domain(s) und E-Mailadressen unter Administrationsprogrammen wie <b>Plesk</b> auf eigenen nativen Serversystemen, sowie der Aufbau von Development-Umgebungen und gezielte Deploying-Strategien.
+		</p>
+	</section>
+
+
+	 <section class="bg-silver text-erieblack contentsection">
+			<h2 class="sr-only">Modernes Webdesign</h2>
+			<p class="text-center">
+				<img src="/src/assets/images/macbookgrey_front3.png" class="img-fluid" alt="Webdesign Beispiel"/><br>
+				<a href="/kontakt" class="btn btn-outline-erieblack mt-2" role="button">Fragen Sie einfach</a>
+			</p>
+		</section> 
+
+
+	<section class="bg-silver text-erieblack contentsection">
+		<h2>Analyse und Consulting</h2>
+		<p>
+			Damit ihr Projekt gleich unter einem guten Stern starten kann, sollte zunächst eine gründliche Analyse vorausgehen.<br>
+			Hier wird Ihre bestehende Webseite, Ihre Unternehmensstruktur, Ihre CI und Ihre derzeitige Positionierung analysiert. Daraus wird
+														    zunächst ein grober Plan erstellt und wichtige Punkte herausgearbeitet. Diese Informationen fließen in die Beratung zu Ihrem Webprojekt mit ein und bilden die Grundlange für alle weiteren Arbeitsschritte.
+		</p>
+	</section>
+
+	<section class="bg-silver text-erieblack contentsection">
+		<h2>Wireframe und Sitemap</h2>
+		<p>
+			Aus den Informationen, die aus der Analyse hervorgegangen sind, werden nun die Seitenstruktur und die Menüs herausgearbeitet.<br>
+			Dies geschieht unter Wordpress mit den internem Menü-Management, bei dem Menüs in logische Bäume aufgeilt werden und
+														    auf der Seite platziert werden. Diese Struktur kann der User jederzeit nach Belieben ändern.
+		</p>
+	</section>
+
+	<section class="bg-silver text-erieblack contentsection">
+		<h2>Design</h2>
+		<p>
+			Das Webdesign ist für die Außenwirkung verantwortlich und sollte übersichtlich und selbsterklärend sein.<br>
+			Tobeworks erstellt auf Wunsch Individuelle Themes "from Scratch", damit der Quellcode sauber und einfach zu warten bleibt und ihre Webseite
+														    und ihre Firmenidentität einzigartig bleiben. Möglich ist alles von einer einfachen Landingpage bis zur komplexen Webapplikation, Firmenhomepage oder einem Webshop.
+		</p>
+	</section>
+
+	<section class="bg-silver text-erieblack contentsection">
+		<h2>Sicherheit, Hosting, Backup, Administration</h2>
+		<p>
+			Auch nach dem erfolgreichen Release Ihrer Webseite werden Sie nicht alleine gelassen. Tobeworks bietet alles, was zum fehlerfreien und performanten Betrieb wichtig ist. Ob es sich um den richtigen Server, die Pflege und Administration der Daten, oder
+														    um regelmäßige Backups handelt, hier bleibt alles unter einem Dach.
+		</p>
+	</section>
+
+	<section class="bg-silver text-erieblack contentsection">
+		<h2>SEO</h2>
+		<p><b>Suchmaschinen-Optimierung</b>
+			ist seit vielen Jahren ein wichtiges Thema im Online-Marketing. Wir kümmern uns darum, dass Ihr wertvoller Content über Google oder andere Suchmaschinen wie Bling oder Duck Duck Go indexiert und später vom Benutzer gefunden wird.
+		</p>
+	</section>
+
+
+	<section class="bg-silver text-erieblack contentsection">
+		<h2>Mobile? Ready!</h2>
+		<p>
+			Alle Entwicklungen, die mit Tobeworks stattfinden, stehen unter dem Banner "Mobile First!". Es wird Wert auf die Erreichbarkeit mit Smartphone, Tablet und Desktop gelegt. Diese Teilbereiche werden gesondert entwickelt mit einem großen Augenmerk auf die  kleineren Devices, wie Smartphone oder Tablet, die mittlerweile zu einem Großteil des Traffics im www zählen.
+		</p>
+	</section>
+
+  <Footer />
+</Layout>
