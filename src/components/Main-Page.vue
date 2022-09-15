@@ -283,8 +283,8 @@
 
                 <div class="row">
                     <div class="d-flex align-items-center justify-content-around" data-aos="fade-up">
-                        <i class="fab fa-bitcoin" data-bs-toggle="tooltip" data-bs-placement="top" title="Bitcoin"></i>
-                        <i class="fab fa-ethereum" data-bs-toggle="tooltip" data-bs-placement="top" title="Ethereum"></i>
+                        <i class="fab fa-python" data-bs-toggle="tooltip" data-bs-placement="top" title="Python"></i>
+                        <i class="fab fa-vuejs" data-bs-toggle="tooltip" data-bs-placement="top" title="Vue"></i>
                         <i class="fab fa-git-square" data-bs-toggle="tooltip" data-bs-placement="top" title="Git"></i>
                         <i class="fab fa-cc-paypal" data-bs-toggle="tooltip" data-bs-placement="top" title="Paypal (API)"></i>
                         <i class="fab fa-bootstrap" data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap Framwork"></i>

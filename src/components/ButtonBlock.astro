@@ -1,0 +1,15 @@
+---
+const {title = 'Foo', route='/foo', icon='fa fa-question-circle', color='primary'} = Astro.props;
+
+const colorclass=`btn btn-outline-${color} btn-block`;
+---
+<div class="d-grid p-3 w-75 mx-auto">
+      <a
+        href={route}
+        class={colorclass}
+        role="button"
+      >
+        <i class={icon} aria-hidden="true"></i>
+        {title}</a
+      >
+</div>

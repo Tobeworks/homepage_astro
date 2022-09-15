@@ -1,12 +1,8 @@
 ---
 // Component Imports
-
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-
 import Layout from "../../layouts/Layout.astro";
-
-//const projects = await Astro.glob('./project/**/*.md');
 ---
 
 <script>
@@ -37,7 +33,7 @@ import Layout from "../../layouts/Layout.astro";
 
 	<section class="bg-silver text-erieblack contentsection" id="contentStart">
 		<h2>Was ist Wordpress?</h2>
-		<p><img src="/images/wordPress-logo.png" alt="wordPress-logo" class="img-fluid float-start"/>
+		<p><img src="/src/assets/images/wordPress-logo.png" alt="wordPress-logo" class="img-fluid float-start"/>
 			<strong>WordPress</strong>
 			ist ein freies Content-Management-System, welches ursprünglich zum Aufbau und zur Pflege eines Weblogs entwickelt wurde, da es jeden Beitrag frei erstellbaren Kategorien zuweisen kann und dazu automatisch die entsprechenden Navigationselemente erzeugt.
 			<br><br>
@@ -154,7 +150,7 @@ import Layout from "../../layouts/Layout.astro";
 						<p class="card-text">Eine professionelle Wordpress-Wartung ist der beste Schutz gegen Viren und Malware und ist ein guter Schutz vor dem Komplettverlust der Webseite.</p>
 					</div>
 					<div class="card-footer">
-						<a href="{{ path('wordpress-wartung') }}" class="btn btn-light btn-block">
+						<a href="/wordpress/wartung" class="btn btn-light btn-block">
 							<i class="fab fa-wordpress" aria-hidden="true"></i>
 							Mehr Infos zu Wordpress-Wartung</a>
 					</div>

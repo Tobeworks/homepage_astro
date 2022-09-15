@@ -2,7 +2,7 @@
     @Powered by Bootstrap 5 and Sass, theme written by Tobeworks
 */
 
-$fa-font-path : "../../../node_modules/@fortawesome/fontawesome-pro/webfonts/";
+$fa-font-path: "../../../node_modules/@fortawesome/fontawesome-pro/webfonts/";
 @import "../../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome.scss";
 @import "../../../node_modules/@fortawesome/fontawesome-pro/scss/solid.scss";
 @import "../../../node_modules/@fortawesome/fontawesome-pro/scss/brands.scss";
@@ -24,8 +24,8 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
-header{
-  .nav-link{
+header {
+  .nav-link {
     color: var(--orange);
   }
 }
@@ -51,15 +51,24 @@ strong {
 }
 
 .contentsection {
+
   min-height: 200px;
-  padding: 40px 20px;
-}
-.contentsection h2 {
-  text-align: center;
-  font-size: 2em;
-}
-.contentsection p {
-  padding: 20px 40px;
+  padding: 50px 20px;
+
+  h2 {
+    text-align: center;
+    font-size: 1.7em;
+  }
+  p {
+    padding: 20px 100px;
+    line-height: 30px;
+  }
+  ul{
+    margin-left: 80px !important;
+    li{
+      list-style-position: inside;
+    }
+  }
 }
 
 .cutsection {
@@ -111,8 +120,8 @@ h4 {
 #topnavi .nav-item {
   margin-left: 5px;
 }
-.carousel-footer{
-  img{
+.carousel-footer {
+  img {
     margin: 2px;
   }
 }
@@ -162,7 +171,6 @@ h4 {
   font-size: 25px;
   color: var(--olive);
 }
-
 
 /* special cutted */
 .portfolio-row {
@@ -239,7 +247,6 @@ h4 {
   unicode-bidi: bidi-override;
   direction: rtl;
 }
-
 
 footer {
   padding-top: 25px;

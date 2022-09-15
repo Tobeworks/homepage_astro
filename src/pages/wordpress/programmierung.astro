@@ -4,6 +4,7 @@
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import Layout from "../../layouts/Layout.astro";
+import ButtonBlock from "../../components/ButtonBlock.astro";
 ---
 
 <script>
@@ -19,10 +20,17 @@ import Layout from "../../layouts/Layout.astro";
   >
     <div class="row">
       <div class="col-sm align-self-center title-lead">
-						<p class="text-center">
-					<img src="/src/assets/images/carousel/wordpress_stroke.svg" class="img-fluid" alt="Wordpress logo" width="150">
-				</p>
-        <h2 class="cover my-2 text-center">Wordpress?<br>Aber bitte richtig!</h2>
+        <p class="text-center">
+          <img
+            src="/src/assets/images/carousel/wordpress_stroke.svg"
+            class="img-fluid"
+            alt="Wordpress logo"
+            width="150"
+          />
+        </p>
+        <h2 class="cover my-2 text-center">
+          Wordpress?<br />Aber bitte richtig!
+        </h2>
         <p class="lead text-center w-75 mx-auto my-3">
           <strong>Wir machen Wordpress von der Pieke auf.</strong>
           <br />
@@ -56,7 +64,8 @@ import Layout from "../../layouts/Layout.astro";
       Er entwickelt eigenständig Themes und Plugins oder individuelle Post Types
       und Grids und kann Wordpress auch über den normalen Funktionsumfang über die
       Nutzung von Plugins hinaus erweitern.
-    </p><ul class="m-2">
+    </p>
+    <p></p><ul class="">
       <li>Entwickeln von Custom-Themes</li>
       <li>
         Schnittstellen-Programmierung zu APIs oder anderen Portalen und
@@ -83,16 +92,12 @@ import Layout from "../../layouts/Layout.astro";
       <li>Erweiterung von Wordpress als Programmierframework</li>
     </ul>
 
-    <p class="my-4">
-      <a
-        href="{{ path('wordpress-wartung') }}"
-        class="btn btn-outline-erieblack btn-block"
-        role="button"
-      >
-        <i class="fa fa-question-circle" aria-hidden="true"></i>
-        Wordpress-Wartung</a
-      >
-    </p>
+    <ButtonBlock
+      title="Wordpress Wartung"
+      route="/wordpress/wartung"
+      icon="fa fa-question-circle"
+      color="erieblack"
+    />
   </section>
 
   <section class="bg-silver text-erieblack contentsection">
@@ -165,23 +170,18 @@ import Layout from "../../layouts/Layout.astro";
         </ol>
       </li>
     </ul>
-
-    <p class="my-4">
-      <a
-        href="{{ path('wordpress') }}"
-        class="btn btn-outline-erieblack btn-block"
-        role="button"
-      >
-        <i class="fa fa-question-circle" aria-hidden="true"></i>
-        Wordpress-Info</a
-      >
-    </p>
+    <ButtonBlock
+      title="Wordpress Info"
+      route="/wordpress/entwicklung"
+      icon="fa fa-question-circle"
+      color="erieblack"
+    />
   </section>
 
   <section class="bg-silver text-erieblack contentsection">
     <h2>
       <i class="fab fa-wordpress"></i>
-      Fundiertes Wissen der Basistechnologien
+      Fundierte in den Basistechnologien
     </h2>
     <p>
       Wordpress wurde entworfen, damit es jedermann mit EDV-Kenntnissen bedienen
@@ -194,27 +194,24 @@ import Layout from "../../layouts/Layout.astro";
       verwendeten Basis-Technologien kaum vorbei. Ohne diese Technologien und
       dem fundierten Wissen, wie man diese verwendet, ist keine Erweiterung von
       Wordpress möglich.
-    </p><ul class="m-3">
-      <li>Webserver-Technologien wie zB Apache</li>
+    </p>
+    <p><ul>
+      <li>Webserver-Technologien wie zB Apache oder Nginx</li>
       <li>mySQL oder MariaDB</li>
       <li>PHP 7/8</li>
-      <li>HTML 5</li>
-      <li>CSS 3</li>
+      <li>HTML</li>
+      <li>CSS</li>
       <li>Javascript</li>
       <li>SASS</li>
       <li>React</li>
     </ul>
-
-    <p>
-      <a
-        href="/kontakt"
-        class="btn btn-outline-erieblack btn-block"
-        role="button">
-        <i class="fa fa-question-circle" aria-hidden="true"></i>
-        <span class="d-none d-sm-inline"> Jetzt unverbindliche</span>
-        Beratung anfordern</a
-      >
-    </p>
+</p>
+    <ButtonBlock
+      title="Jetzt unverbindliche Beratung anfordern"
+      route="/kontakt"
+      icon="fa fa-question-circle"
+      color="erieblack"
+    />
   </section>
   <Footer />
 </Layout>
