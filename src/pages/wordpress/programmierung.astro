@@ -1,253 +1,220 @@
 ---
 // Component Imports
-import MainPage from "../../components/Main-Page.vue";
+
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-
 import Layout from "../../layouts/Layout.astro";
-
-//const projects = await Astro.glob('./project/**/*.md');
 ---
 
 <script>
-  import ArrowScroller from '../../modules/ArrowScroll';
+  import ArrowScroller from "../../modules/ArrowScroll";
   ArrowScroller();
 </script>
 
 <Layout>
   <Header />
-  <section class="container bg-erieblack text-orange mainsection titlesection">
-
-		<div class="row">
-			<div class="col-sm align-self-center title-lead">
-
-				<p class="text-center">
+  <section
+    class="container bg-erieblack text-orange mainsection titlesection"
+    id="titlesection"
+  >
+    <div class="row">
+      <div class="col-sm align-self-center title-lead">
+						<p class="text-center">
 					<img src="/src/assets/images/carousel/wordpress_stroke.svg" class="img-fluid" alt="Wordpress logo" width="150">
 				</p>
-				<h2 class="cover my-2 text-center">Wordpress-Entwicklung</h2>
-				<p class="lead text-center w-75 mx-auto my-3">
-					Wir bieten professionelle Wordpress-Entwicklung, Plugin-Entwicklung und individuelles Theme-Design mit dem beliebstesten CMS der Welt.
-				</p>
-			</div>
-		</div>
-		<a href="" class="title-arrow-down">
-			<i class="bi bi-arrow-down-short"></i>
-		</a>
-	</section>
+        <h2 class="cover my-2 text-center">Wordpress?<br>Aber bitte richtig!</h2>
+        <p class="lead text-center w-75 mx-auto my-3">
+          <strong>Wir machen Wordpress von der Pieke auf.</strong>
+          <br />
+          High Performance, Plugin-Entwicklung, Theme Entwicklung, Code- Erweiterungen,
+          Custom Post Types, User Management, AJAX, REST, Gutenberg. Also alles was
+          Ihr Herz beghrt und noch mehr.
+        </p>
+      </div>
+    </div>
+    <a href="" class="title-arrow-down">
+      <i class="bi bi-arrow-down-short"></i>
+    </a>
+  </section>
+  <section class="bg-silver text-erieblack contentsection" id="contentStart">
+    <h2>
+      <i class="fab fa-wordpress"></i>
+      Was kann ein Wordpress-Programmierer?
+    </h2>
+    <p>
+      <img
+        alt="Wordpress-Experte und Programmierer"
+        class="my-2 img-fluid rounded float-end d-none d-lg-block d-xl-block"
+        src="/src/assets/images/wp-programmierer0.jpg"
+      />
+      Viele Anwender nutzen Wordpress als CMS und nutzen Dienstleister, die sich
+      auf die Verwaltung der Software und das Entwickeln von Webseiten beschränkt
+      haben. Um Wordpress aber zu erweitern, braucht es tiefere Kenntnisse. Ein
+      <strong>Wordpress-Experte</strong>
+      kann deutlich mehr, als nur Plugins installieren:
+      <br />
+      Er entwickelt eigenständig Themes und Plugins oder individuelle Post Types
+      und Grids und kann Wordpress auch über den normalen Funktionsumfang über die
+      Nutzung von Plugins hinaus erweitern.
+    </p><ul class="m-2">
+      <li>Entwickeln von Custom-Themes</li>
+      <li>
+        Schnittstellen-Programmierung zu APIs oder anderen Portalen und
+        Systemen:
+        <ul>
+          <li>z.B. eine Importschnittstellen</li>
+          <li>Schnittstelle zu Immobilienportalen</li>
+          <li>
+            oder Programmierung von Daten-Export von WordPress zu externen
+            Systemen
+          </li>
+        </ul>
+      </li>
+      <li>
+        Anpassung von gekauften Themes mittels Child-Theme mit
+        HTML/PHP/JavaScript/SASS
+      </li>
+      <li>Entwicklung von Wordpress-Plugins</li>
+      <li>
+        Entwicklung individueller Content Types und Suchsysteme mit z.B. dem
+        <a href="https://pods.io/" target="_blank">PODS Framework</a>
+        (zB für Projekte, Mitarbeiter-Verwaltungen oder Automodelle)
+      </li>
+      <li>Erweiterung von Wordpress als Programmierframework</li>
+    </ul>
 
-	<section class="bg-silver text-erieblack contentsection" id="contentStart">
-		<h2>Was ist Wordpress?</h2>
-		<p><img src="/images/wordPress-logo.png" alt="wordPress-logo" class="img-fluid float-start"/>
-			<strong>WordPress</strong>
-			ist ein freies Content-Management-System, welches ursprünglich zum Aufbau und zur Pflege eines Weblogs entwickelt wurde, da es jeden Beitrag frei erstellbaren Kategorien zuweisen kann und dazu automatisch die entsprechenden Navigationselemente erzeugt.
-			<br><br>
-			<h5>Alles aus einer Hand</h5>
-			Neben der Entwicklung von serverseitigen Web-Applikationen, ist die Webseiten-Erstellung unter Wordpress heute zum großen Thema im WWW geworden.<br>
-			Tobeworks bietet für Wordpress einen speziell auf Ihre Bedürfnisse zugeschnittenen Komplett-Service an. Zwischen einer einfachen Grundinstallation auf Ihrem Webspace, bis zur individuellen Anwendung im Rootserverbetrieb ist alles möglich.Wordpress kann vom kleinen Weblog bis zur umfangreichen Firmenhomepage und Webshop alles, was ein modernes CMS leisten muss und lässt sich mit hunderten Plugins leicht erweitern. Für den Produktivbetrieb bietet Tobeworks ein Gesamtpaket aus
-			<strong>Analyse, Beratung, Installation, Templates, Konfiguration, Design, Themes, Entwicklung und Hosting</strong>
-			an. Ihr Projekt wird komplett und ohne Umwege schnell und zielsicher geplant, zeitnah umgesetzt und bei Bedarf stetig weiterentwickelt.
-		</p>
-		<p class="text-center  mt-3">
-			<a href="{{ path('wordpress-programmierung') }}" class="btn btn-outline-erieblack" role="button">
-				<i class="fa fa-question-circle" aria-hidden="true"></i>
-				Mehr<span class="d-none d-sm-inline">
-					zu Wordpress-Programmierung und Entwicklung</span>
-			</a>
-		</p>
+    <p class="my-4">
+      <a
+        href="{{ path('wordpress-wartung') }}"
+        class="btn btn-outline-erieblack btn-block"
+        role="button"
+      >
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+        Wordpress-Wartung</a
+      >
+    </p>
+  </section>
 
-	</section>
+  <section class="bg-silver text-erieblack contentsection">
+    <h2>
+      <i class="fab fa-wordpress"></i>
+      High Speed Wordpress
+    </h2>
+    <p>
+      Wordpress-Entwickler haben das Wissen, Wordpress deutlich schneller zu
+      machen und eigene Themes zu programmieren!<br />
+      Denn nutzt man bei Wordpress Kauf-Themes (zB Multi Purpose Themes), wie es
+      sie auf dem Markt zu Tausenden gibt, hat man zwar den Vorteil, dass diese Themes
+      unter Umständen schell verwendbar sind, aber auch auch die Seite deutlich verlangsamen.
+      Hinzu kommen sogenannte "Pagebuilder", wie zB WP-Bakery oder auch Elementor,
+      welche oft mit diesen Themes vertrieben werden.<br />
+      Diese Software-Produkte können einen echten Nutzen haben und lohnen sich vor
+      allem für kleinere Seiten mit wenig Budget, um schnelle Ergebnisse zu bekommen.
+      Möchte man als Unternehmen allerdings ein ein Custom-Theme entscheiden. Diese
+      werden "from Scratch" neu entwickelt und genau auf die Bedürfnisse des Kunden
+      abgestimmt. Auch von der Nutzung von Pagebuildern ist in dem Fall abzuraten,
+      weil mit Ihnen immer eine weiter Rendering-Schritt einhergeht und die Seite
+      zusätzlich unter Last stellt.
+    </p>
+  </section>
 
-	<div class="bg-silver text-erieblack contentsection">
-		<div class="text-center">
-			<img src="/src/assets/images/macbookgrey_front3.png" class="img-fluid" alt="macbookgrey_front2"/><br>
-			<a href="/kontakt" class="btn btn-outline-erieblack mt-2" role="button">Jetzt Beratung anfordern</a>
-		</div>
-	</div>
+  <section class="bg-silver text-erieblack contentsection">
+    <h2>
+      <i class="fab fa-wordpress"></i>
+      Wordpress-Entwickler - Die Leistungen
+    </h2>
+    <p>
+      <img
+        alt="Wordpress-Experte und Programmierer"
+        class="ml-3 img-fluid rounded float-endd-none d-lg-block d-xl-block"
+        src="/src/assets/images/wp-programmierer1.jpg"
+      />
+    </p><ul class="m-3">
+      <li>
+        Programmierung von umfangreichen
+        <strong>Unternehmens-</strong>
+        und
+        <strong>Konzernwebsites</strong>
+        mit WordPress
+      </li>
+      <li>
+        Entwicklung von professionellen
+        <strong>Onlineshops</strong>
+        mit WordPress (WooCommerce)
+      </li>
+      <li>
+        <strong>Schnittstellen</strong>&nbsp;zu externen APIs und Sytemen mit
+        WordPress programmieren
+      </li>
+      <li>
+        Importscripts für WordPress programmieren (z.B. Unix-Cronjobs, WP-Cron)
+      </li>
+      <li>
+        <strong>Themes kundenorientiert programmieren</strong>
+      </li>
+      <li>Plugins entwickeln und programmieren</li>
+      <li>Programmierung von Child Themes und Custom-Themes</li>
+      <li>
+        WP-Programmierer z.B. für
+        <ol>
+          <li>Custom Post Types</li>
+          <li>Custom Widgets</li>
+          <li>Individuelle Themes</li>
+          <li>Webshops mit WordPress</li>
+          <li>Integrationsplugins von Drittsoftware</li>
+        </ol>
+      </li>
+    </ul>
 
+    <p class="my-4">
+      <a
+        href="{{ path('wordpress') }}"
+        class="btn btn-outline-erieblack btn-block"
+        role="button"
+      >
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+        Wordpress-Info</a
+      >
+    </p>
+  </section>
 
-	<section class="bg-silver text-erieblack contentsection">
-		<h2>
-			<i class="fab fa-wordpress"></i>Analyse und Consulting</h2>
-		<p>
-			Damit ihr Projekt gleich unter einem guten Stern starten kann, sollte zunächst eine gründliche Analyse vorausgehen.<br>
-			Hier wird hier Ihre bestehende Webseite, Ihre Unternehmensstruktur, Ihre CI und Ihre derzeitige Positionierung analysiert. Daraus wird ein grober Plan erstellt und wichtige Punkte herausgearbeitet. Diese Informationen fließen in die Beratung zu Ihrem Webprojekt mit ein und bilden die Grundlange für alle weiteren Arbeitsschritte.
-		</p>
-	</section>
+  <section class="bg-silver text-erieblack contentsection">
+    <h2>
+      <i class="fab fa-wordpress"></i>
+      Fundiertes Wissen der Basistechnologien
+    </h2>
+    <p>
+      Wordpress wurde entworfen, damit es jedermann mit EDV-Kenntnissen bedienen
+      kann. Wordpress wurde auch für Administratoren entworfen, die über keine
+      Programmierkenntnisse verfügen, aber trotzdem ein CMS administieren
+      möchten. Grundsätzlich ist die Bedienung von Wordpress also sehr einfach
+      und übersichtlich und es sind keine tiefergehenden Kenntnisse vonnöten.
+      Möchte man Wordpress aber erweitern oder komplexe, skalierbare und
+      responsive Anwendungen damit entwicklen, kommt man an den von Wordpress
+      verwendeten Basis-Technologien kaum vorbei. Ohne diese Technologien und
+      dem fundierten Wissen, wie man diese verwendet, ist keine Erweiterung von
+      Wordpress möglich.
+    </p><ul class="m-3">
+      <li>Webserver-Technologien wie zB Apache</li>
+      <li>mySQL oder MariaDB</li>
+      <li>PHP 7/8</li>
+      <li>HTML 5</li>
+      <li>CSS 3</li>
+      <li>Javascript</li>
+      <li>SASS</li>
+      <li>React</li>
+    </ul>
 
-	<section class="bg-silver text-erieblack contentsection">
-		<h2>
-			<i class="fab fa-wordpress"></i>
-			Wireframe und Sitemap</h2>
-		<p>
-			Aus den Informationen, die aus der Analyse hervorgegangen sind, werden nun die Seitenstruktur und die Menüs herausgearbeitet.<br>
-			Dies geschieht unter Wordpress mit den internem Menü-Management, bei dem Menüs in logische Bäume aufgeilt werden und auf der Seite platziert werden. Diese Struktur kann der User jederzeit nach Belieben ändern. Steht Wireframing und Sitemap, kann zur Installation der Software weiter gegangen werden.
-		</p>
-	</section>
-	<section class="bg-silver text-erieblack contentsection">
-		<h2>
-			<i class="fab fa-wordpress"></i>
-			Installation, Absicherung und Konfiguration</h2>
-		<p>
-			Wordpress ist mit der serverseitigen Scriptsprache
-			<a href="http://php.net">PHP</a>
-			geschrieben und muss auf einem Webserver mit Datenbankanbindung installiert werden.	Alle Arbeitsschritte gehen hier Hand und Hand und es wird von Anfang an auf sie Sicherheit und Skalierbarkeit des Systems geachtet.
-		</p>
-	</section>
-
-	<section class="bg-silver text-erieblack contentsection">
-		<h2>
-			<i class="fab fa-wordpress"></i>
-			Design</h2>
-		<p>
-			Das Template-Design ist das Herzstück der Entwicklung unter Wordpress. Von einem einfachen Weblog bis hin zur umfangreichen Content-Management-Seite mit E-Commerce- und Community-Features sind hier der Kreativität keine Grenzen gesetzt.<br>
-			Tobeworks erstellt auf Wunsch Individuelle Wordpress-Themes "from Scratch", damit der Quellcode sauber und einfach zu warten bleibt und ihre Webseite und ihre Firmenidentität einzigartig bleiben.
-		</p>
-	</section>
-
-	<section class="bg-silver text-erieblack contentsection">
-		<h2>
-			<i class="fab fa-wordpress"></i>
-			Webshops mit Woocommerce</h2>
-		<p>
-			Auch Shopsysteme sind mit Wordpress kein Problem. Tobeworks kümmert sich um Installation, Grundaufbau, Zahlungsdienstleister, Abwicklung, Design und Zusatzfunktionen für Ihre Produkte. Hier wird nichts dem Zufall überlassen.</p>
-	</section>
-
-
-	<section class="bg-silver text-erieblack contentsection" id="cards-container">
-
-		<h2>
-			<i class="fab fa-wordpress"></i>
-			Mehr zu Wordpress-Services</h2>
-
-		<div class="row align-items-center justify-content-center my-2">
-			<div class="col">
-				<div class="card mb-3 frontcard" data-aos="flip-left" data-aos-duration="700">
-					<div class="card-body">
-						<div class="teaser-head">
-							<div class="teaser-bg-image teaser-bg-image-0"></div>
-							<div class="text-center teaser-icon-block">
-								<i class="fa fa-2x fa-code p-3 teaser-icon" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200"></i>
-							</div>
-						</div>
-						<h5 class="card-title">Wordpress-Programmierung aus Mainz</h5>
-						<h6 class="card-subtitle mb-2 text-muted">Entwicklung von individuellen Lösungen auf Wordpress-Basis</h6>
-						<p class="card-text">Wordpress-Programmierer haben die Expertise, Wordpress deutlich schneller zu machen und eigene Anwendungen, Themes und Plugins zu programmieren</p>
-					</div>
-					<div class="card-footer">
-						<a href="{{ path('wordpress-programmierung') }}" class="btn btn-light btn-block">
-							<i class="fab fa-wordpress" aria-hidden="true"></i>
-							Mehr Infos zu Wordpress-Programmierung</a>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card mb-3 frontcard" data-aos="flip-left" data-aos-duration="1500">
-					<div class="card-body">
-						<div class="teaser-head">
-							<div class="teaser-bg-image teaser-bg-image-3"></div>
-							<div class="text-center teaser-icon-block">
-								<i class="fas fa-2x fa-shield-alt p-3 teaser-icon " data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200"></i>
-							</div>
-						</div>
-						<h5 class="card-title">Wordpress-Wartung</h5>
-						<h6 class="card-subtitle mb-2 text-muted">Sichern Sie sich und Ihr Unternehmen ab</h6>
-						<p class="card-text">Eine professionelle Wordpress-Wartung ist der beste Schutz gegen Viren und Malware und ist ein guter Schutz vor dem Komplettverlust der Webseite.</p>
-					</div>
-					<div class="card-footer">
-						<a href="{{ path('wordpress-wartung') }}" class="btn btn-light btn-block">
-							<i class="fab fa-wordpress" aria-hidden="true"></i>
-							Mehr Infos zu Wordpress-Wartung</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="bg-silver text-erieblack contentsection">
-		<h2>
-			<i class="fab fa-wordpress"></i>
-			Sicherheit, Hosting, Backup, Administration</h2>
-		<p>Auch nach dem erfolgreichen Release Ihrer Webseite werden Sie nicht alleine gelassen. Tobeworks bietet alles, was zum fehlerfreien und performanten Betrieb von Wordpress wichtig ist. Ob es sich um den richtigen Server, die Pflege und Administration der Daten, oder um regelmäßige Backups handelt, hier bleibt alles unter einem Dach.</p>
-</section>
-
-<section class="bg-silver text-erieblack contentsection">
-	<h2>
-		<i class="fab fa-wordpress"></i>SEO</h2>
-	<p>
-		<strong>Suchmaschinen-Optimierung</strong>
-		ist seit vielen Jahren ein wichtiges Thema im Online-Marketing und macht auch vor Wordpress nicht halt. Wir kümmern uns darum, dass Ihre wertvollen Inhalte über Google und andere Suchmaschinen indexiert und vom Benutzer gefunden werden.
-	</p>
-</section>
-
-<section class="bg-silver text-erieblack contentsection">
-	<h2>
-		<i class="fab fa-wordpress"></i>
-		Plugins</h2>
-	<p>
-		Tobeworks installiert, konfiguriert und delegiert den kompletten Ablauf Ihres Wordpress-Projektes. Sollten sie individuelle Wünsche haben oder ein spezielles System an Ihr Wordpress-CMS angebunden haben, sprechen Sie  uns an, Tobeworks programmiert Ihr individuelles Wunsch-Plugin.
-	</p>
-</section>
-
-<section class="bg-silver text-erieblack contentsection">
-	<h2>
-		<i class="fab fa-wordpress"></i>
-		Mobile? Ready!</h2>
-	<p>
-		Laut Google kamen 2018 durchschnittlich 50% aller Webseitenaufrufe von Smartphones. Alle Wordpress-Entwicklungen, die unter Tobeworks stattfinden, stehen unter dem Banner "Mobile First!". Es wird Wert auf die Erreichbarkeit mit Smartphone, Tablet und Desktop gelegt. 	Diese Teilbereiche werden gesondert entwickelt mit einem großen Augenmerk auf die kleineren Devices. Wordpress goes Usability.
-	</p>
-</section>
-
-<section class="bg-silver text-erieblack contentsection">
-	<h2>
-		<i class="fab fa-wordpress"></i>
-		Entwicklungsumgebungen, Migrationen und Umzüge</h2>
-	<p>
-		Sie möchten Ihre Homepage auf einen anderen Server umziehen? Tobeworks migriert Ihre Wordpress-Installation von dem alten auf den neuen Server. Umzüge und Migrationen sind oft mit viel Aufwand (und Ärger) verbunden. Tobeworks stellt Ihnen alles was zum erfolgreichen Umzug nötig ist zur Verfügung und sorgt für einen reibungslosen Ablauf.
-	</p>
-</section>
-
-<section class="bg-silver text-erieblack contentsection">
-	<h2>
-		<i class="fab fa-wordpress"></i>
-		Entwicklung mit der preisgekrönten DIVI&#8482;-Theme</h2>
-	<p>
-		Neben der individuellen Theme-Entwicklung, kann es Sinn machen, einen Pagebuilder zu nutzen. 
-			Diese brauchen zwar einen gewissen Maß an Ressourcen, denn kann ihre Nutzung gerade bei kleinen Projekten Sinn machen. 	Es gibt für Wordpress nur wenige wirklich herausragende Editoren. 
-			Tobeworks zählt bei Seiten, die mit WYSIWYG aufbauen, ausschließlich auf den preisgekrönten DIVI&#8482;-Pagebuilder, der für alle erdenklichen Bedürfnisse angepasst werden kann. Installation, Konfiguration und Lizenzverwaltung übernimmt hierbei Tobeworks für Sie.
-	</p>
-</section>
-
-
-<section class="bg-silver text-erieblack contentsection">
-	<h2>
-		<i class="fab fa-wordpress"></i>
-		Entfernung von Malware</h2>
-	<p>
-		Sollte sich in einer Ihrer Wordpress-Installationen ein Schädling, ein Virus oder Malware eingenistet haben, ist es möglich diese Installation zu säubern und zu retten. Tobeworks repariert infizierte Wordpress-Seiten schnell und zuverlässig und sichert sie danach zuverlässig ab.
-	</p>
-</section>
-
-<section class="bg-silver text-erieblack contentsection">
-	<h2>
-		<i class="fab fa-wordpress"></i>
-		Wordpress-Programmierung</h2>
-	<p>Wordpress ist mittlerweile so vielseitig, dass man damit schon richtige Webapplikationen entwickeln kann. 
-			Tobeworks kann Ihr Wordpress mit individuellen Erweiterungen bestücken, seien es neuen Contenttypes (wie zB. Projekte) oder individuelle Funktionen in Themes.
-		<br>Mehr zur individuellen Programmierung von Wordpress fahren Sie
-		<a href="{{ path('wordpress-programmierung') }}">hier</a>
-	</p>
-</section>
-
-<div class="bg-silver text-erieblack contentsection">
-
-	<div class="my-3 text-center">
-		<img src="/src/assets/images/wordpress_road.jpg" class="img-fluid" alt="wordpress-road"/>
-		<div class="mt-3 text-center">
-			<a href="/kontakt" class="btn btn-outline-erieblack mt-2" role="button">Unverbindliche Beratung anfordern</a>
-		</div>
-	</div>
-</div>
-
+    <p>
+      <a
+        href="/kontakt"
+        class="btn btn-outline-erieblack btn-block"
+        role="button">
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+        <span class="d-none d-sm-inline"> Jetzt unverbindliche</span>
+        Beratung anfordern</a
+      >
+    </p>
+  </section>
   <Footer />
 </Layout>

@@ -128,7 +128,7 @@
                                                 </a>
                                             </div>
                                             <div class="p-2 bd-highlight">
-                                                <h4>Wordpress Entwicklung</h4>
+                                                <h4>Wordpress Support</h4>
                                             </div>
                                             <div class="p-2 bd-highlight">
                                                 <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="next">
@@ -136,7 +136,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="carousel-text">Tobeworks findet die passende Komplett-Lösung für Ihr Wordpress-Projekt von Landingpages über Shops, bis zu individuellen Plugins und Themes.</div>
+                                        <div class="carousel-text">Tobeworks findet die passende Lösung für Ihr Wordpress-Projekt.</div>
                                     </div>
                                     <div class="carousel-footer text-center p-2">
                                         <img src="../assets/images/tech/wordpress.svg" alt="wordpress" />
@@ -343,14 +343,3 @@ export default {
     components: {}
 }
 </script>
-
-<style lang="scss">
-@import '../assets/scss/boostrap.scss';
-@import '../assets/scss/styles.scss';
-$fa-font-path : "../../node_modules/@fortawesome/fontawesome-pro/webfonts/";
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome.scss";
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/solid.scss";
-@import "../../node_modules/@fortawesome/fontawesome-pro/scss/brands.scss";
-// @import "/node_modules/cookieconsent/build/cookieconsent.min.css";
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
-</style>

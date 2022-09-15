@@ -2,6 +2,13 @@
     @Powered by Bootstrap 5 and Sass, theme written by Tobeworks
 */
 
+$fa-font-path : "../../../node_modules/@fortawesome/fontawesome-pro/webfonts/";
+@import "../../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome.scss";
+@import "../../../node_modules/@fortawesome/fontawesome-pro/scss/solid.scss";
+@import "../../../node_modules/@fortawesome/fontawesome-pro/scss/brands.scss";
+// @import "/node_modules/cookieconsent/build/cookieconsent.min.css";
+//@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
 /* global */
 :root {
   --perlwhite: #fffcf2;
@@ -99,6 +106,7 @@ h4 {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.07em;
+  white-space: nowrap;
 }
 #topnavi .nav-item {
   margin-left: 5px;
