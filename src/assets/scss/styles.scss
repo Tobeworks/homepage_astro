@@ -7,7 +7,7 @@ $fa-font-path: "../../../node_modules/@fortawesome/fontawesome-pro/webfonts/";
 @import "../../../node_modules/@fortawesome/fontawesome-pro/scss/solid.scss";
 @import "../../../node_modules/@fortawesome/fontawesome-pro/scss/brands.scss";
 // @import "/node_modules/cookieconsent/build/cookieconsent.min.css";
-//@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
 /* global */
 :root {
@@ -51,24 +51,29 @@ strong {
 }
 
 .contentsection {
-
   min-height: 200px;
   padding: 50px 20px;
 
   h2 {
     text-align: center;
     font-size: 1.7em;
+    white-space: break-spaces;
+
   }
   p {
     padding: 20px 100px;
     line-height: 30px;
   }
-  ul{
+  ul {
     margin-left: 80px !important;
-    li{
+    li {
       list-style-position: inside;
     }
   }
+}
+
+.frontcard {
+  background-color: #eb5e28;
 }
 
 .cutsection {
@@ -307,7 +312,21 @@ footer .nav-link {
   width: 70px;
 }
 
+  .titlesection {
+    h2 {
+      white-space: break-spaces;
+    }
+  }
+
 @media (max-width: 767.98px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    white-space: break-spaces;
+    text-align: left !important;
+  }
   .cover {
     font-size: 2.5em;
   }
@@ -320,10 +339,39 @@ footer .nav-link {
   .content-leistungen p {
     width: 90%;
   }
-  .contentsection h2 {
-    font-size: 1.5em;
+  .contentsection {
+    h2 {
+      font-size: 1.1em;
+    }
+    p {
+      padding: 20px 20px;
+    }
   }
-  .contentsection p {
-    padding: 20px 20px;
+
+  .titlesection {
+    h2 {
+      font-size: 1.8em;
+      white-space: break-spaces;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    white-space: break-spaces;
+    text-align: left;
+  }
+
+  .contentsection {
+    h2 {
+      font-size: 1.4em;
+    }
+    p {
+      padding: 0px 10px;
+    }
   }
 }

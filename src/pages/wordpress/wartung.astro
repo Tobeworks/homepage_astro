@@ -3,175 +3,233 @@
 
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-
 import Layout from "../../layouts/Layout.astro";
-
-//const projects = await Astro.glob('./project/**/*.md');
+import ButtonBlock from "../../components/ButtonBlock.astro";
 ---
 
 <script>
-  import ArrowScroller from '../../modules/ArrowScroll';
+  import ArrowScroller from "../../modules/ArrowScroll";
   ArrowScroller();
 </script>
 
 <Layout>
   <Header />
- <section class="container bg-erieblack text-orange mainsection titlesection">
+  <section class="container bg-erieblack text-orange mainsection titlesection">
+    <div class="row">
+      <div class="col-sm align-self-center title-lead">
+        <h2 class="cover my-2 text-center">Wordpress Wartung</h2>
+        <p class="lead text-center w-75 mx-auto my-3">
+          <strong>Wartung, Backup, Security, alles in einem Paket.</strong><br
+          />
+          Bei uns sind Sie bestens aufgehoben. Machen Sie sich keine Gedanken mehr
+          um Backuns oder Hackerangriffe, wir regeln das.
+        </p>
+      </div>
+    </div>
+    <a href="" class="title-arrow-down">
+      <i class="bi bi-arrow-down-short"></i>
+    </a>
+  </section>
 
-		<div class="row">
-			<div class="col-sm align-self-center title-lead">
-				<h2 class="cover my-2 text-center">Wordpress Wartung</h2>
-				<p class="lead text-center w-75 mx-auto my-3">
-					<strong>Wartung, Backup, Security, alles in einem Paket.</strong><br>
-					Bei uns sind Sie bestens aufgehoben. MAchen Sie ihc keien Gedanken mehr um Backuns oder Hackerangriffe, wir regeln das für Sie.
-				</p>
-			</div>
-		</div>
-		<a href="" class="title-arrow-down">
-			<i class="bi bi-arrow-down-short"></i>
-		</a>
-	</section>
+  <section class="bg-silver text-erieblack contentsection" id="contentStart">
+    <h2>
+      <i class="fab fa-wordpress"></i>
+      Warum eine professionelle Wordpress-Wartung?
+    </h2>
+    <p>
+      WordPress ist grundsätzlich ein sehr sicheres Content Management System,
+      das weltweit auf ca. 25% aller Webseiten läuft. Doch gerade diese weite
+      Verbreitung macht es auch für automatisierte Angriffsversuche und dem
+      Injizieren von Malware so attraktiv. Wenn Ihr Projekt im Produktivbetrieb,
+      also online ist, sollten Sie über die Beauftragung der WordPress Wartung
+      nachdenken. Der WordPress-Core, die installierten Plugins und auch das
+      Theme erhalten in regelmäßigen Abständen Updates. Jene Updates werden in
+      regelmäßigen Abständen veröffentlicht, um bekannte Sicherheitslücken zu
+      schließen, die Performance zu verbessern oder um neue Features zu
+      veröffentlichen. Mit einer Professionellen Wordpress-Wartung, sorgt
+      Tobeworks für die monatliche Durchführung der erforderlichen Updates.
+      Durch eine regelmäßige WordPress-Wartung erhalten Sie ein Höchstmaß an
+      Stabilität, Geschwindigkeit und vor allem Sicherheit für Ihre Website.
+    </p>
+  </section>
 
-	<section class="bg-silver text-erieblack contentsection" id="contentStart">
-		<h2>
-			<i class="fab fa-wordpress"></i>
-			Warum eine professionelle Wordpress-Wartung?</h2>
-		<p>
-			WordPress ist grundsätzlich ein sehr sicheres Content Management System, das weltweit auf ca. 25% aller Webseiten läuft. Doch gerade diese weite Verbreitung macht es auch für automatisierte Angriffsversuche und dem Injizieren von Malware so attraktiv. 
-						Wenn Ihr Projekt im Produktivbetrieb, also online ist, sollten Sie über die Beauftragung der WordPress Wartung nachdenken. 
-						Der WordPress-Core, die installierten Plugins und auch das Theme erhalten in regelmäßigen Abständen Updates. 
-						Jene Updates werden in regelmäßigen Abständen veröffentlicht, um bekannte Sicherheitslücken zu schließen, die Performance zu verbessern oder um neue Features zu veröffentlichen. 
-						Mit einer Professionellen Wordpress-Wartung, sorgt Tobeworks für die monatliche Durchführung der erforderlichen Updates. 
-						Durch eine regelmäßige WordPress-Wartung erhalten Sie ein Höchstmaß an Stabilität, Geschwindigkeit und vor allem Sicherheit für Ihre Website.
-		</p>
-	</section>
+  <section class="bg-silver text-erieblack contentsection">
+    <h2>
+      <i class="fab fa-wordpress"></i>
+      Eine Wordpress-Wartung ist <br />der beste Schutz gegen Viren und Malware
+    </h2>
+    <p>
+      <img
+        src="/src/assets/images/hacker.jpg"
+        class="img-fluid float-start rounded mx-3 d-none d-lg-block d-xl-block"
+        alt="Wordpress Hacker"
+      />
 
+      Wordpress ist weit verbreitet und oft das Ziel von Hackern und
+      professionellen Verbreitern unseriöser Inhalte. Für ein seriöses
+      Unternehmen sicherlich am schlimmsten, ist die automatische oder verdeckte
+      Weiterleitung auf Websites mit Erwachseneninhalten. Oft wird dies vom
+      Administrator eine längere Zeit nicht bemerkt, da die Schädlinge und/oder
+      die Malware nur under speziellen Konfigurationen wie z.B. nur auf
+      speziellen Smartphones wie dem iPhone Auswirkungen zeigen. Auf dem
+      Desktop-PC funktioniert die Website oft wie gewohnt – besucht man sie
+      jedoch mit einem iPhone, wird man auf unseriöse Inhalte weitergeleitet.
+      Ebenso geschäftsschädigend, können die die Injektion unseriöser
+      Kommentare, die z.B. für Medikamente werben, oder die Injektion von
+      Adlinks auf der Webseite sein. Durch eine professionelle WordPress
+      Wartung, erhalten Sie regelmäßige Scans nach Malware und Viren und können
+      sich somit ziemlich sicher sein, dass derlei Probleme ausbleiben werden.
+      Sollten sich wider Erwarten dennoch Probleme ergeben, kann Tobeworks durch
+      die regelmäßig erstellten Backups, Ihre Seite in einen funktionalen
+      Zustand zurückversetzen.
+    </p>
+  </section>
 
-	<section class="bg-silver text-erieblack contentsection">
-		<h2>
-			<i class="fab fa-wordpress"></i>
-			Eine Wordpress-Wartung ist der beste Schutz gegen Viren und Malware</h2>
-		<p>
+  <section class="bg-silver text-erieblack contentsection">
+    <h2>
+      <i class="fab fa-wordpress"></i>
+      Projekte ohne Wartung sind anfälliger für Störungen
+    </h2>
+    <p>
+      Es ist allgemein bekannt, dass Projekte ohne Wartung deutlich anfälliger
+      für Störungen aller Art sind. Eine regelmäßige Wartung für Ihre
+      WordPress-Website ist in erster Linie für die Sicherheit und Stabilität
+      da. Durch die monatlichen Updates des WordPress-Kerns, sowie sämtlicher
+      Wordpress-Plugins und der Theme, hält Tobeworks den Programmier-Code stets
+      auf einem aktuellen Stand. Es werden bekannte Sicherheitslücken und
+      Exploits geschlossen und Ihre Website vor dem Schlimmsten, nämlich einer
+      Übernahme durch Malware bewahrt.
+      <br />Was bringt Ihnen also ein Wartungsvertrag?
+      <img
+        alt="Wordpress-Experte und Programmierer"
+        class="my-2 img-fluid rounded float-end d-none d-lg-block d-xl-block"
+        src="/src/assets/images/matrix.jpg"
+      />
+    </p><ul class="m-4">
+      <li>Entdeckung von Angriffen mit Malware</li>
+      <li>Weiterleitung auf Spam-Websites</li>
+      <li>Angriffe durch Hacker</li>
+      <li>Wordpress-Viren</li>
+      <li>SSL-Fehler</li>
+      <li>Unbemerkte Uptime-Ausfälle und dadurch Verlust von Leads</li>
+      <li>Heimliche Installation von Spamlinks</li>
+      <li>
+        Zu hohe hohe Ladezeiten und dadurch Verlust von Google- und
+        Suchmaschinen-Rankings
+      </li>
+      <li>Injektion von unseriösen Kommentaren</li>
+      <li>Datenverlust</li>
+    </ul>
 
-			<img src="/src/assets/images/hacker.jpg" class="img-fluid float-start rounded mx-3 d-none d-lg-block d-xl-block" alt="Wordpress Hacker"/>
+	    <ButtonBlock
+      title="Wordpress-Info"
+      route="/wordpress/entwicklung"
+      icon="fa fa-question-circle"
+      color="erieblack"
+    />
+  </section>
 
-			Wordpress ist weit verbreitet und oft das Ziel von Hackern und professionellen Verbreitern unseriöser Inhalte.
-						Für ein seriöses Unternehmen sicherlich am schlimmsten, ist die automatische oder verdeckte Weiterleitung auf Websites mit Erwachseneninhalten. 
-						Oft wird dies vom Administrator eine längere Zeit nicht bemerkt, da die Schädlinge und/oder die Malware nur under speziellen Konfigurationen wie z.B. nur auf speziellen Smartphones wie dem iPhone Auswirkungen zeigen. 
-						Auf dem Desktop-PC funktioniert die Website oft wie gewohnt – besucht man sie jedoch mit einem iPhone, wird man auf unseriöse Inhalte weitergeleitet.
-						
-						Ebenso geschäftsschädigend, können die die Injektion unseriöser Kommentare, die z.B. für Medikamente werben, oder die Injektion von Adlinks auf der Webseite sein. 
-						Durch eine professionelle WordPress Wartung, erhalten Sie regelmäßige Scans nach Malware und Viren und können sich somit ziemlich sicher sein, dass derlei Probleme ausbleiben werden. 
-						Sollten sich wider Erwarten dennoch Probleme ergeben, kann Tobeworks durch die regelmäßig erstellten Backups, Ihre Seite in einen funktionalen Zustand zurückversetzen.
-		</p>
-	</section>
+  <section class="bg-silver text-erieblack contentsection">
+    <h2>
+      <i class="fab fa-wordpress"></i>
+      Wordpress-Wartung und Hosting-Paket inkl. eigenem Server
+    </h2>
+    <p>
+      Besonders beim sogenannten Shared Hosting kommt es bekanntlich vermehrt zu
+      Serverausfällen. Diese sind im Vertrag auch angegeben und je nach SLA
+      (Service Level Agreement) müssen diese Ausfälle auch nicht kommuniziert
+      werden. Webseiten auf solchen Servern, die von vielen anderen Usern
+      mitbenutzt werden, kommen regelmäßig bis häufig vor. Hierdurch ist Ihre
+      Website oder Ihr Shop dann für den Zeitraum des Ausfalles nicht für Ihre
+      potenziellen Kunden erreichbar. Es gehen Ihrem Unternehmen also wertvolle
+      Besucher, Leads und Verkäufe verloren. Tobeworks rät jedem Unternehmen ab
+      einer bestimmten Größe zum
+      <b>eigenen Server</b>. Dieser wird dann durch Tobeworks komplett verwaltet
+      und administriert. Sie müssen sich um nichts mehr Gedanken machen und
+      überlassen Tobworks die komplette Administration. Auf dem Server wird dann
+      ein „Uptime Monitoring“-Script eingerichtet, welches ständig die
+      Verfügbarkeit Ihrer Website oder Shops überprüft und bei einem Ausfall
+      sofort eine Warn-E-Mail verschickt. Durch einen Wartungsvertrag inkl.
+      Server-Hosting für Ihre WordPress-Website, schaffen Sie die Basis für
+      höchstmögliche Verfügbarkeit und Redundanz sowie Skalierbarkeit Ihres
+      Projektes.
+    </p>
+  </section>
 
+  <section class="bg-silver text-erieblack contentsection">
+    <h2>
+      <i class="fab fa-wordpress"></i>
+      Schutz vor dem Komplettverlust der Webseite durch Backup
+    </h2>
+    <p>
+      Eines der gefürchtetesten Probleme für eine Website ist der
+      Komplettverlust der Website, der Datenbank und somit sämtlicher
+      Kundendaten. Dies könnte z.B. durch schadhafte Scripts oder Viren
+      geschehen. Sobald die regelmäßige WordPress-Wartung beginnt, werden in
+      gewissen Zeitabständen automatisch Backups Ihres Internetauftritts
+      erstellt. Hierzu wird die Website und die Datenbank komplett gesichert und
+      auf einem externen Servern abgespeichert. Hierdurch haben Sie die absolute
+      Sicherheit, im schlimmsten Fall einen Backup Ihres kompletten Systems in
+      der Hinterhand zu haben. Innerhalb kürzester Zeit kann das Backup nun
+      wieder eingespielt werden und die Webseite ist nach jeder Katastrophe
+      wieder zu erreichen. Sie können also im Fall der Fälle immer auf eine
+      funktionierende Webseite zurückgreifen und ihr Nachtschlaf ist somit um
+      einiges tiefer.
+    </p>
 
-	<section class="bg-silver text-erieblack contentsection">
-		<h2>
-			<i class="fab fa-wordpress"></i>
-			Projekte ohne Wartung sind anfälliger für Störungen</h2>
-		<p>
-			Es ist allgemein bekannt, dass Projekte ohne Wartung deutlich anfälliger für Störungen aller Art sind. Eine regelmäßige Wartung für Ihre WordPress-Website ist in erster Linie für die Sicherheit und Stabilität da. 
-						Durch die monatlichen Updates des WordPress-Kerns, sowie sämtlicher Wordpress-Plugins und der Theme, hält Tobeworks den Programmier-Code stets auf einem aktuellen Stand. 
-						Es werden bekannte Sicherheitslücken und Exploits geschlossen und Ihre Website vor dem Schlimmsten, nämlich einer Übernahme durch Malware bewahrt.
-			<br>Was bringt Ihnen also ein Wartungsvertrag?
-			<img alt="Wordpress-Experte und Programmierer" class="my-2 img-fluid rounded float-end d-none d-lg-block d-xl-block" src="/src/assets/images/matrix.jpg">
+	<ButtonBlock
+      title="Wordpress-Programmierung aus Mainzo"
+      route="/wordpress/programmierung"
+      icon="fa fa-question-circle"
+      color="erieblack"
+    />
+  </section>
 
-			<ul class="m-4">
-				<li>Entdeckung von Angriffen mit Malware</li>
-				<li>Weiterleitung auf Spam-Websites</li>
-				<li>Angriffe durch Hacker</li>
-				<li>Wordpress-Viren</li>
-				<li>SSL-Fehler</li>
-				<li>Unbemerkte Uptime-Ausfälle und dadurch Verlust von Leads</li>
-				<li>Heimliche Installation von Spamlinks</li>
-				<li>Zu hohe hohe Ladezeiten und dadurch Verlust von Google- und Suchmaschinen-Rankings</li>
-				<li>Injektion von unseriösen Kommentaren</li>
-				<li>Datenverlust</li>
-			</ul>
-		</p>
-		<p class="my-4 text-center">
-			<a href="{{ path('wordpress') }}" class="btn btn-outline-erieblack  btn-block" role="button">
-				<i class="fa fa-question-circle" aria-hidden="true"></i>
-				Wordpress-Info</a>
-		</p>
-	</section>
+  <section class="bg-silver text-erieblack contentsection">
+    <h2>
+      <i class="fab fa-wordpress"></i>
+      Schutz vor Hackerangriffen und<br> unbefugtes Eindringen durch Dritte
+    </h2>
+    <p>
+      Vor Hackerangriffen ist heute niemand mehr gefeit. Und sie sind je größer
+      und bekannter Ihre Webseite, umso wahrscheinlicher. Tatsächlich sind es
+      aufgrund der Verbreitung oft WordPress-Websites, die gehackt werden. Dies
+      geschieht meist automatisch durch Scripts, die bekannte Sicherheitslücken
+      von ungepatchten Systemen ausnutzen. Schützen Sie Ihre
+      WordPress-Installation mit der im Wartungsplan enthaltenen Firewall,
+      welche automatisch die Zugriffe schädlicher Scripts blockiert und aufgrund
+      von tagesaktuellen internationalen Blacklists stets auf dem aktuellen
+      Stand gehalten wird.
+    </p>
+  </section>
 
+  <section class="bg-silver text-erieblack contentsection">
+    <h2>
+      <i class="fab fa-wordpress"></i>
+      Wordpress-Wartung und der <br>Schutz vor zu hohen Ladezeiten
+    </h2>
+    <p>
+      Zu hohe Ladezeiten sind Faktor Nummer Eins für eine hohe Absprungrate.
+      Durch eine Ladezeit von mehr als 3 Sekunden verlieren Sie laut Google
+      nicht nur wertvolle und interessierte Besucher, sondern langfristig auch
+      Ihre mühsam erarbeiteten Suchmaschinen-Rankings. Im Rahmen des
+      WordPress-Wartungsvertrages richtet Tobeworks ein Load-Monitoring ein.
+      Hierdurch werden regelmäßig die Ladezeiten Ihrer Website überprüft und Sie
+      bei signifikanten Abweichungen alarmiert. Die Ursachen für erhöhte
+      Ladezeiten können verschiedener Natur sein. Oft treten diese in Verbindung
+      mit hoher Last bei Shared Hosting auf. Deshalb lautet auch die Empfehlung
+      für größere Projekte zusätzlich zur normalen Wartung immer der
+      <b>eigene, durch Tobeworks administrierte Web-Server</b>. Dort sind
+      Verfügbarkeit und Ladezeiten meist überschaubar und es kommt zu weniger
+      Ausfällen.
+    </p>
 
-	<section class="bg-silver text-erieblack contentsection">
-		<h2>
-			<i class="fab fa-wordpress"></i>
-			Wordpress-Wartung und Hosting-Paket inkl. eigenem Server</h2>
-		<p>
-			Besonders beim sogenannten Shared Hosting kommt es bekanntlich vermehrt zu Serverausfällen. 
-						Diese sind im Vertrag auch angegeben und je nach SLA (Service Level Agreement) müssen diese Ausfälle auch nicht kommuniziert werden.
-						Webseiten auf solchen Servern, die von vielen anderen Usern mitbenutzt werden, kommen regelmäßig bis häufig vor.
-						Hierdurch ist Ihre Website oder Ihr Shop dann für den Zeitraum des Ausfalles nicht für Ihre potenziellen Kunden erreichbar. 
-						Es gehen Ihrem Unternehmen also wertvolle Besucher, Leads und Verkäufe verloren.
-						Tobeworks rät jedem Unternehmen ab einer bestimmten Größe zum
-			<b>eigenen Server</b>. Dieser wird dann durch Tobeworks komplett verwaltet und administriert. Sie müssen sich um nichts mehr Gedanken machen und überlassen Tobworks die komplette Administration.
-								Auf dem Server wird dann ein „Uptime Monitoring“-Script eingerichtet, welches ständig die Verfügbarkeit Ihrer Website oder Shops überprüft und bei einem Ausfall sofort eine Warn-E-Mail verschickt. 
-								Durch einen Wartungsvertrag inkl. Server-Hosting für Ihre WordPress-Website, schaffen Sie die Basis für höchstmögliche Verfügbarkeit und Redundanz sowie Skalierbarkeit Ihres Projektes.
-		</p>
-	</section>
-
-
-	<section class="bg-silver text-erieblack contentsection">
-		<h2>
-			<i class="fab fa-wordpress"></i>
-			Schutz vor dem Komplettverlust der Webseite durch Backup</h2>
-		<p>
-			Eines der gefürchtetesten Probleme für eine Website ist der Komplettverlust der Website, der Datenbank und somit sämtlicher Kundendaten. 
-						Dies könnte z.B. durch schadhafte Scripts oder Viren geschehen. 
-						Sobald die regelmäßige WordPress-Wartung beginnt, werden in gewissen Zeitabständen automatisch Backups Ihres Internetauftritts erstellt. 
-						Hierzu wird die Website und die Datenbank komplett gesichert und auf einem externen Servern abgespeichert. 
-						Hierdurch haben Sie die absolute Sicherheit, im schlimmsten Fall einen Backup Ihres kompletten Systems in der Hinterhand zu haben. 
-						Innerhalb kürzester Zeit kann das Backup nun wieder eingespielt werden und die Webseite ist nach jeder Katastrophe wieder zu erreichen.
-						Sie können also im Fall der Fälle immer auf eine funktionierende Webseite zurückgreifen und ihr Nachtschlaf ist somit um einiges tiefer.
-		</p>
-		<p class="my-4 text-center">
-			<a href="{{ path('wordpress-programmierung') }}" class="btn btn-outline-erieblack  btn-block" role="button">
-				<i class="fa fa-question-circle" aria-hidden="true"></i>
-				Wordpress-Programmierung aus Mainz</a>
-		</p>
-	</section>
-
-	<section class="bg-silver text-erieblack contentsection">
-		<h2>
-			<i class="fab fa-wordpress"></i>
-			Schutz vor Hackerangriffen und unbefugtes Eindringen durch Dritte</h2>
-		<p>
-			Vor Hackerangriffen ist heute niemand mehr gefeit. Und sie sind je größer und bekannter Ihre Webseite, umso wahrscheinlicher. 
-						Tatsächlich sind es aufgrund der Verbreitung oft WordPress-Websites, die gehackt werden. 
-						Dies geschieht meist automatisch durch Scripts, die bekannte Sicherheitslücken von ungepatchten Systemen ausnutzen. 
-						Schützen Sie Ihre WordPress-Installation mit der im Wartungsplan enthaltenen Firewall, 
-						welche automatisch die Zugriffe schädlicher Scripts blockiert und aufgrund von tagesaktuellen internationalen Blacklists stets auf dem aktuellen Stand gehalten wird.
-		</p>
-	</section>
-
-
-	<section class="bg-silver text-erieblack contentsection">
-		<h2>
-			<i class="fab fa-wordpress"></i>
-			Wordpress-Wartung und der Schutz vor zu hohen Ladezeiten</h2>
-		<p>
-			Zu hohe Ladezeiten sind Faktor Nummer Eins für eine hohe Absprungrate.
-						Durch eine Ladezeit von mehr als 3 Sekunden verlieren Sie laut Google nicht nur wertvolle und interessierte Besucher, 
-						sondern langfristig auch Ihre mühsam erarbeiteten Suchmaschinen-Rankings. 
-						Im Rahmen des WordPress-Wartungsvertrages richtet Tobeworks ein Load-Monitoring ein. 
-						Hierdurch werden regelmäßig die Ladezeiten Ihrer Website überprüft und Sie bei signifikanten Abweichungen alarmiert. 
-						Die Ursachen für erhöhte Ladezeiten können verschiedener Natur sein. Oft treten diese in Verbindung mit hoher Last bei Shared Hosting auf. 
-						Deshalb lautet auch die Empfehlung für größere Projekte zusätzlich zur normalen Wartung immer der
-			<b>eigene, durch Tobeworks administrierte Web-Server</b>. Dort sind Verfügbarkeit und Ladezeiten meist überschaubar und es kommt zu weniger Ausfällen.
-		</p>
-		<p class="text-center">
-			<a href="{{ path('kontakt') }}" class="btn btn-outline-erieblack btn-block" role="button">
-				<i class="fa fa-question-circle" aria-hidden="true"></i>
-				<span class="d-none d-sm-inline">
-					Jetzt unverbindliche</span>
-				Beratung anfordern</a>
-		</p>
-	</section>
+		<ButtonBlock
+      title="Jetzt unverbindliche Beratung anfordern"
+      route="/kontakt"
+      icon="fa fa-question-circle"
+      color="erieblack"
+    />
+  </section>
   <Footer />
 </Layout>
