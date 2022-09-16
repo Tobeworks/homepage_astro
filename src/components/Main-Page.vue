@@ -190,8 +190,8 @@
             <div class="w-50 mx-auto">
                 <img src="../assets/images/logos/TobeworksLogo.svg" class="img-fluid" alt="logo" data-aos="fade-up" />
                 <h3 class="text-center my-3" data-aos="fade-up">Full-Service seit 2018</h3>
-                <p class="text-center" data-aos="fade-up">Wir bieten zeitgerechte, massgeschneiderte Kommunikationslösungen.
-                    Dazu kombinieren wir die kreativen Leistungen einer Werbeagentur mit dem technologischen Know-how einer Webagentur. Von der Idee bis zum fertigen Produkt erhalten Sie bei uns alles aus einer Hand. Ohne Schnickschnack, mit modernster Technik.</p>
+                <p class="text-center" data-aos="fade-up">Ich biete zeitgerechte, massgeschneiderte Kommunikationslösungen.
+                    Dazu kombiniere ich die kreativen Leistungen einer Webeagentur mit dem technologischen Know-how einer Webagentur. Von der Idee bis zum fertigen Produkt erhalten Sie alles aus einer Hand. Ohne Schnickschnack, mit angesagter Technologie.</p>
                 <p class="text-center">
                     <a href="/kontakt" class="btn btn-erieblack" data-aos="fade-up" data-aos-delay="300">Kontakt</a>
                 </p>
@@ -204,7 +204,7 @@
                 <div class="col-sm-7 align-self-center text-silver">
                     <div class="cut-left" data-aos="fade-right">
                         <h3>Warum Tobeworks?</h3>
-                        <p>Weil wir Lösungen haben. Tobeworks ist fullstack und interdiszpilinär. Von studierten Spezialisten mit jahrelanger Branchen-Erfahrung.<br>
+                        <p>Weil ich Lösungen habe. Tobeworks ist fullstack und interdiszpilinär. Von studierten Spezialisten mit jahrelanger Branchen-Erfahrung.<br>
                             Vom Designentwurf bis zur fertigen Softwarelösung, bis zum sicheren Hosting kommt hier alles aus einer Hand.</p>
                         <p>
                             <a href="/kontakt" class="btn btn-erieblack">Kontakt</a>
@@ -303,33 +303,6 @@
             </div>
         </section>
     </main>
-
-    <!-- Modal -->
-    <div aria-hidden="true" aria-labelledby="portfolio-modal" class="modal fade" id="portfolio-modal" role="dialog" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content bg-silver">
-                <div class="modal-header">
-                    <h5 class="modal-title">ZzzZzz</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row no-gutters">
-                        <div class="col-sm-6"><img alt="In Arbeit" class="img-fluid d-none d-sm-none d-md-inline" src="../assets/images/modal-bg.jpg"></div>
-                        <div class="col-sm-6 p-2 px-sm-5 my-auto">
-                            <h2 class="pt-sm-3">In Arbeit</h2>
-                            <div class="text-muted">
-                                Dieser Link ist vorübergehend unbelegt. Sooner or later!
-                                <div class="text-center m-2"></div>
-                            </div>
-                            <p>
-                                <a class="btn btn-outline-erieblack btn-block" href="/kontakt">Trotzdem Kontakt aufnehmen?</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </template>
 
 <script>

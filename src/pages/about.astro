@@ -1,269 +1,272 @@
 ---
 // Component Imports
-import MainPage from "../components/Main-Page.vue";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import MainPage from "../components/Main-Page.vue"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
 
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro"
 
 //const projects = await Astro.glob('./project/**/*.md');
 ---
 
 <script>
-  import ArrowScroller from '../modules/ArrowScroll';
-  ArrowScroller();
+  import ArrowScroller from "../modules/ArrowScroll"
+  ArrowScroller()
 </script>
 
 <Layout>
   <Header />
-<section class="container bg-erieblack text-orange mainsection titlesection" id="titlesection">
+  <section
+    class="container bg-erieblack text-orange mainsection titlesection"
+    id="titlesection">
+    <div class="row">
+      <div class="col-sm align-self-center title-lead">
+        <h2 class="cover my-2 text-center">Warum Tobeworks?</h2>
+        <p class="lead text-center w-75 mx-auto my-3">
+          <strong
+            >Ganz einfach: Weil ich es kann und damit echten Mehrwert schaffe.</strong
+          >
+          <br />
+          <span class="d-none d-sm-inline">
+            Ich bin sind mit digitalen Technologien groß geworden, von Dotcom
+            über Web 2.0.<br /> Ich bin bestens ausgebildet und <strong
+              >immer</strong
+            > auf den neusten Stand der Technik.
+            <br /><strong>Mich würde das überzeugen, Sie auch!?</strong>
+          </span>
+        </p>
+      </div>
+    </div>
+    <a href="#" class="title-arrow-down">
+      <i class="bi bi-arrow-down-short"></i>
+    </a>
+  </section>
 
-		<div class="row">
-			<div class="col-sm align-self-center title-lead">
-				<h2 class="cover my-2 text-center">Warum Tobeworks?</h2>
-				<p class="lead text-center w-75 mx-auto my-3">
-					<strong>Weil wir es können und damit echten Mehrwert schaffen.</strong>
-					<br>
-			<span class="d-none d-sm-inline">
-					Wir sind mit digitalen Technologien groß geworden, von Dotcom über Web 2.0.<br> Wir sind bestens ausgebildet und sind immer 
-						<strong>immer</strong>
-						auf den neusten Stand der Technik. Von der Pieke auf, gibt`s hier kompromisslos individuelle Entwicklung mit Kerntechnolgien. Zwei Dekaden Erfahrung mit Agenturen, Unternehmen und Privatkunden sprechen für sich.
-						<br><strong>Uns würde das überzeugen, Sie auch!?</strong>
-			</span>
-				</p>
-			</div>
-		</div>
-						<a href="#" class="title-arrow-down">
-						<i class="bi bi-arrow-down-short"></i>
-					</a>
-	</section>
+  <section class="bg-silver text-erieblack mainsection" id="contentStart">
+    <div class="container-fluid mx-auto">
+      <div class="row d-md-flex-row overflow-hidden">
+        <div class="col-md-4 p-0 col-12 bg-silver d-flex overflow-hidden">
+          <div class="card p-0 w-100 h-100 text-light border-0">
+            <img
+              class="card-img"
+              src="/src/assets/images/ich_2020_bw2.jpg"
+              alt="Card image"
+            />
+            <div class="card-img-overlay p-1 p-md-3">
+              <div class="position-relative w-100 h-25 d-flex">
+                <div class="container-fluid align-self-start mt-2 mb-2">
+                  <div class="row">
+                    <div class="col-5 col-md-3">
+                      <h4 class="mt-1 text-dark">TL</h4>
+                    </div>
+                    <div class="col-md-9 col-7 text-right">
+                      <div class="row align-items-center">
+                        <div class="col-12 align-self-center">
+                          <hr class="border border-border-dark mt-3" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative w-100 h-50 d-flex">
+                <div class="container-fluid align-self-center mt-5 mb-2">
+                  <div class="row">
+                    <div class="col-12"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative w-100 h-25 d-flex">
+                <div class="container-fluid align-self-end mt-5 mb-2">
+                  <div class="row">
+                    <div class="col-md-6 col-7">
+                      <div class="pt-0 d-inline-block">
+                        <a
+                          href="https://twitter.com/tobeworks"
+                          role="button"
+                          class="btn btn-link mr-2">
+                          <i
+                            class="fab fa-twitter fa-lg text-light"
+                            aria-hidden="true"></i>
+                        </a>
+                        <a
+                          href="https://www.facebook.com/tobeworks"
+                          role="button"
+                          class="btn btn-link mr-2">
+                          <i
+                            class="fab fa-facebook fa-lg text-light"
+                            aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 pt-5 pt-md-1 pb-5 overflow-hidden bg-silver">
+          <div class="container-fluid p-md-5 d-flex align-items-center h-100">
+            <div class="row justify-content-md-center">
+              <div class="col-md-8">
+                <h3 class="small">Tobias</h3>
 
-	<section class="bg-silver text-erieblack mainsection" id="contentStart">
-		<div class="container-fluid mx-auto ">
-			<div class="row d-md-flex-row  overflow-hidden">
-				<div class="col-md-4  p-0 col-12 bg-silver d-flex overflow-hidden ">
-					<div class="card p-0   w-100 h-100 text-light   border-0 ">
-						<img class="card-img" src="/src/assets/images/ich_2020_bw2.jpg" alt="Card image">
-						<div class="card-img-overlay p-1 p-md-3    ">
-							<div class="position-relative  w-100 h-25  d-flex">
+                <h1 class="mb-5 pt-md-2 pt-sm-4">Founder</h1>
+                <p>
+                  Fullstack Webdeveloper mit weit über einer Dekade
+                  interdisziplinärer Erfahrung in Software-Entwicklung,
+                  Webdesign und Digital-Technologien mit scharfen Blick in die
+                  Zukunft.
+                </p>
+                <h5 class="">Kernkompetenzen</h5>
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">PHP</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">Javascript</span
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">HTML</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">CSS</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">mySQL</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">Linux</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill"
+                      >Elasticsearch</span
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">Symfony</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">Wordpress</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">React</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill"
+                      >Ionic Framework</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 pt-md-5 bg-silver"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-								<div class="container-fluid align-self-start mt-2 mb-2">
-									<div class="row">
-										<div class="col-5 col-md-3">
-											<h4 class="mt-1 text-dark">TL</h4>
-										</div>
-										<div class="col-md-9 col-7 text-right">
-											<div class="row align-items-center">
-												<div class="col-12 align-self-center">
-													<hr class="border border-border-dark mt-3">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="position-relative  w-100 h-50  d-flex">
+  <section class="bg-silver text-erieblack mainsection">
+    <div class="container-fluid mx-auto">
+      <div class="row d-md-flex-row overflow-hidden">
+        <div class="col-md-4 p-0 col-12 bg-silver d-flex overflow-hidden">
+          <div class="card p-0 w-100 h-100 text-light border-0">
+            <img
+              class="card-img h-100 w-100"
+              src="/src/assets/images/Sara_pic.jpg"
+              alt="Card image"
+            />
+            <div class="card-img-overlay p-1 p-md-3">
+              <div class="position-relative w-100 h-25 d-flex">
+                <div class="container-fluid align-self-start mt-2 mb-2">
+                  <div class="row">
+                    <div class="col-5 col-md-3">
+                      <h4 class="mt-1 text-dark">SS</h4>
+                    </div>
+                    <div class="col-md-9 col-7 text-right">
+                      <div class="row align-items-center">
+                        <div class="col-12 align-self-center">
+                          <hr class="border border-border-dark mt-3" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative w-100 h-50 d-flex">
+                <div class="container-fluid align-self-center mt-5 mb-2">
+                  <div class="row">
+                    <div class="col-12"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative w-100 h-25 d-flex">
+                <div class="container-fluid align-self-end mt-5 mb-2">
+                  <div class="row">
+                    <div class="col-md-6 col-7">
+                      <div class="pt-0 d-inline-block">
+                        <a href="#" role="button" class="btn mr-2">
+                          <i class="fab fa-lg text-light" aria-hidden="true"
+                          ></i>
+                        </a>
+                        <a href="#" role="button" class="btn mr-2">
+                          <i
+                            class="fab fa-facebook fa-lg text-light"
+                            aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 pt-5 pt-md-1 pb-5 overflow-hidden bg-silver">
+          <div class="container-fluid p-md-5 d-flex align-items-center h-100">
+            <div class="row justify-content-md-center">
+              <div class="col-md-8">
+                <h3 class="small">Sara</h3>
 
-								<div class="container-fluid align-self-center   mt-5 mb-2">
-									<div class="row">
-										<div class="col-12"></div>
-
-									</div>
-								</div>
-							</div>
-							<div class="position-relative  w-100  h-25 d-flex">
-
-								<div class="container-fluid align-self-end  mt-5 mb-2">
-									<div class="row">
-										<div class="col-md-6 col-7">
-											<div class=" pt-0 d-inline-block">
-												<a href="https://twitter.com/tobeworks" role="button" class=" btn btn-link mr-2">
-													<i class="fab fa-twitter fa-lg text-light" aria-hidden="true"></i>
-												</a>
-												<a href="https://www.facebook.com/tobeworks" role="button" class=" btn btn-link mr-2">
-													<i class="fab fa-facebook fa-lg text-light" aria-hidden="true"></i>
-												</a>
-
-
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-md-8  pt-5 pt-md-1 pb-5 overflow-hidden bg-silver">
-
-					<div class="container-fluid p-md-5 d-flex align-items-center h-100">
-						<div class="row justify-content-md-center">
-
-							<div class="col-md-8">
-
-								<h3 class="small">Tobias</h3>
-
-								<h1 class="mb-5 pt-md-2 pt-sm-4">Founder</h1>
-								<p>Fullstack Webdeveloper mit weit über einer Dekade interdisziplinärer Erfahrung 
-									                        in Software-Entwicklung, Webdesign und Digital-Technologien mit scharfen Blick in die Zukunft.</p>
-								<h5 class="">Kernkompetenzen</h5>
-								<ul class="list-inline">
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack  badge-pill">PHP</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack  badge-pill">Javascript</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">HTML</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack  badge-pill">CSS</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">mySQL</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack  badge-pill">Linux</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">Elasticsearch</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">Symfony</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">Wordpress</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">React</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">Ionic Framework</span>
-									</li>
-								</ul>
-
-			
-
-							</div>
-							<div
-								class="col-12 col-md-4 pt-md-5 bg-silver">
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-
-	<section class="bg-silver text-erieblack mainsection">
-		<div class="container-fluid mx-auto ">
-			<div class="row d-md-flex-row  overflow-hidden">
-				<div class="col-md-4  p-0 col-12 bg-silver d-flex overflow-hidden ">
-					<div class="card p-0   w-100 h-100 text-light   border-0 ">
-						<img class="card-img h-100 w-100" src="/src/assets/images/Sara_pic.jpg" alt="Card image">
-						<div class="card-img-overlay p-1 p-md-3    ">
-							<div class="position-relative  w-100 h-25  d-flex">
-
-								<div class="container-fluid align-self-start   mt-2 mb-2">
-									<div class="row">
-										<div class="col-5 col-md-3">
-											<h4 class="mt-1 text-dark">SS</h4>
-										</div>
-										<div class="col-md-9 col-7 text-right">
-											<div class="row align-items-center">
-												<div class="col-12 align-self-center">
-													<hr class="border border-border-dark mt-3">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="position-relative  w-100 h-50  d-flex">
-
-								<div class="container-fluid align-self-center   mt-5 mb-2">
-									<div class="row">
-										<div class="col-12"></div>
-
-									</div>
-								</div>
-							</div>
-							<div class="position-relative  w-100  h-25 d-flex">
-
-								<div class="container-fluid align-self-end  mt-5 mb-2">
-									<div class="row">
-										<div class="col-md-6 col-7">
-											<div class=" pt-0 d-inline-block">
-												<a href="#" role="button" class=" btn mr-2">
-													<i class="fab  fa-lg text-light" aria-hidden="true"></i>
-												</a>
-												<a href="#" role="button" class=" btn  mr-2">
-													<i class="fab fa-facebook fa-lg text-light" aria-hidden="true"></i>
-												</a>
-
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-md-8  pt-5 pt-md-1 pb-5 overflow-hidden bg-silver">
-
-					<div class="container-fluid p-md-5 d-flex align-items-center h-100">
-						<div class="row justify-content-md-center">
-
-							<div class="col-md-8">
-
-								<h3 class="small">Sara</h3>
-
-								<h1 class="mb-5 pt-md-2 pt-sm-4">Designerin</h1>
-								<p></p>
-								<h5 class="">Kernkompetenzen:</h5>
-								<ul class="list-inline">
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">Webdesign</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">Appdesign</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">Typografie</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">Layout</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">Print</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">mySQL</span>
-									</li>
-									<li class="list-inline-item">
-										<span class="badge bg-erieblack badge-pill">Elasticsearch</span>
-									</li>
-								</ul>
-
-
-							</div>
-							 <div class="col-12 col-md-4 pt-md-5">
-							
-							</div> 
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
+                <h1 class="mb-5 pt-md-2 pt-sm-4">Designerin</h1>
+                <p></p>
+                <h5 class="">Kernkompetenzen:</h5>
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">Webdesign</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">Appdesign</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">Typografie</span
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">Layout</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">Print</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill">mySQL</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <span class="badge bg-erieblack badge-pill"
+                      >Elasticsearch</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 pt-md-5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <Footer />
 </Layout>
