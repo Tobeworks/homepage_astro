@@ -2,7 +2,11 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
-
+import { Picture } from '@astrojs/image/components';
+import getucated_img_mobile from '/src/assets/images/mockups/getucated_mobile.png';
+import mockup_ayur from '/src/assets/images/mockups/ayur_mockups_home.png';
+import logicmoon_full from '/src/assets/images/mockups/logicmoon_full.png';
+import logicmoon_mobile from '/src/assets/images/mockups/logicmoon_mobile.png';
 ---
 <script>
   import ArrowScroller from '../modules/ArrowScroll';
@@ -23,13 +27,45 @@ import Layout from "../layouts/Layout.astro";
 		</a>
 	</section>
 
+	<section class="bg-silver  portfolio-row">
+		<div class="card mb-3">
+			<div class="row align-items-center">
+				<div class="col-sm-7">
+					<img class="card-img-top d-block d-sm-none" src="/src/assets/images/mockups/home_mobile.png" alt="Rosenberg Ayurveda">
+					<!-- <img class="card-img-top d-none d-sm-block" src="/src/assets/images/mockups/ayur_mockups_home.png" width="350" alt="Rosenberg Ayurveda"> -->
+					 <Picture class="card-img-top d-none d-sm-block" src={mockup_ayur} alt="Rosenberg Ayurveda" widths={[650]}  ></Picture> 
+				</div>
+				<div class="col-sm-5">
+					<div class="card-body">
+						<h5 class="card-title">Rosenberg Ayurveda</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Shop System</h6>
+						<p class="card-text">HTML5 Code, CSS, Effects, Frontend-Entwicklung</p>
+						<p class="card-text">
+							<i class="fab fa-html5"></i>
+							<i class="fab fa-css3"></i>
+							<i class="fab fa-bootstrap"></i>
+						</p>
+						<p class="card-footer">
+							<span class="badge bg-erieblack">HTML</span>
+							<span class="badge bg-erieblack">Adobe XD</span>
+							<span class="badge bg-erieblack">NPM</span>
+							<span class="badge bg-erieblack">CSS</span>
+							<span class="badge bg-erieblack">Bootstrap 5</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section class="bg-silver  portfolio-row" id="contentStart">
 		<div class="card mb-3">
 			<div class="row align-items-center">
 				<div class="col-sm-7">
+					<Picture class="card-img-top d-block d-sm-none border mt-3" src={getucated_img_mobile} alt="Getucated App" widths={[300]}  ></Picture> 
+					<!-- <img class="card-img-top d-block d-sm-none border mt-3" src="/src/assets/images/mockups/getucated_mobile.png" alt="Getucated App"> -->
 
-
-					<div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+					<div id="carouselIndicators" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
 						<div class="carousel-indicators">
 							<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 							<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -99,10 +135,14 @@ import Layout from "../layouts/Layout.astro";
 	<section class="bg-silver  portfolio-row">
 		<div class="card mb-3">
 			<div class="row align-items-center">
-				<div class="col-sm-7">
-					<img class="card-img-top d-block d-sm-none" src="/src/assets/images/portfolio/mobile/logicmoon.png" alt="Logic Moon">
-					<img class="card-img-top d-none d-sm-block" src="/src/assets/images/portfolio/logicmoon.png" width="350" alt="Logic Moon">
-				</div>
+				<div class="col-sm-7" style="min-height: 450px;">
+
+					<Picture class="card-img-top d-block d-sm-none pt-5" src={logicmoon_mobile} widths={[300]} alt="Logic Moon"></Picture>
+					<Picture class="card-img-top d-none d-sm-block pt-5" src={logicmoon_full} widths={[650]}  alt="Logic Moon"></Picture> 
+					<!-- <img class="card-img-top d-block d-sm-none" src="/src/assets/images/portfolio/mobile/logicmoon.png" alt="Logic Moon">
+					<img class="card-img-top d-none d-sm-block" src="/src/assets/images/portfolio/logicmoon.png" width="350" alt="Logic Moon"> -->
+					</div>
+
 				<div class="col-sm-5">
 					<div class="card-body">
 						<h5 class="card-title">Logic Moon</h5>
