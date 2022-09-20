@@ -8,24 +8,16 @@ import mockup_ayur from "/src/assets/images/mockups/ayur_mockups_home.png"
 import logicmoon_full from "/src/assets/images/mockups/logicmoon_full.png"
 import logicmoon_mobile from "/src/assets/images/mockups/logicmoon_mobile.png"
 
-const imageUrl =
-  "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+const imageUrl = 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png';
 ---
 
-<script>
-  import ArrowScroller from "../modules/ArrowScroll"
-  ArrowScroller()
-</script>
 <Layout>
   <Header />
   <section class="container bg-erieblack text-orange mainsection titlesection">
     <div class="row">
       <div class="col-sm align-self-center title-lead">
         <h2 class="cover my-2 text-center">Was mache ich so?</h2>
-        <p class="lead text-center w-75 mx-auto my-3">
-          Ein kleine Liste an ausgewählten Projekten, die ich meist alleine,
-          aber oft auch mit Partnern zusammen umgesetzt habe.
-        </p>
+        <p class="lead text-center w-75 mx-auto my-3">Ein kleine Liste an ausgewählten Projekten, die ich meist alleine, aber oft auch mit Partnern zusammen umgesetzt habe.</p>
       </div>
     </div>
     <a href="#!" class="title-arrow-down">
@@ -44,14 +36,15 @@ const imageUrl =
           />
           <!-- <img class="card-img-top d-none d-sm-block" src="/src/assets/images/mockups/ayur_mockups_home.png" width="350" alt="Rosenberg Ayurveda"> -->
           <Picture
-            class="card-img-top d-none d-sm-block"
+            class="card-img-top_ d-none_ d-sm-block_"
             src={mockup_ayur}
             alt="Rosenberg Ayurveda"
-            widths={[300, 380, 500, 650]}
-            sizes="(min-width: 1200px) 500px, (max-width: 767px) 300px, (max-width: 1200px) 450px, 650px"
-            formats={["webp"]}
+            widths={[300,600]}
+            sizes="(max-width: 1200px) 300px" 
+            formats={['webp']}
             aspectRatio="4:3"
-          /> 
+          />
+        
         </div>
         <div class="col-sm-5">
           <div class="card-body">
@@ -94,9 +87,8 @@ const imageUrl =
             class="card-img-top d-block d-sm-none border mt-3"
             src={getucated_img_mobile}
             alt="Getucated App"
-            widths={[250, 300]}
-            sizes="300px"
-            formats={["webp"]}
+            widths={[300]}
+            sizes=""
           />
           <!-- <img class="card-img-top d-block d-sm-none border mt-3" src="/src/assets/images/mockups/getucated_mobile.png" alt="Getucated App"> -->
 
@@ -216,10 +208,9 @@ const imageUrl =
           <Picture
             class="card-img-top d-none d-sm-block pt-5"
             src={logicmoon_full}
+            widths={[650]}
             alt="Logic Moon"
-            widths={[300, 380, 500, 650]}
-            sizes="(min-width: 1200px) 500px, (max-width: 767px) 300px, (max-width: 1200px) 450px, 650px"
-            formats={["webp"]}
+            sizes=""
           />
           <!-- <img class="card-img-top d-block d-sm-none" src="/src/assets/images/portfolio/mobile/logicmoon.png" alt="Logic Moon">
 					<img class="card-img-top d-none d-sm-block" src="/src/assets/images/portfolio/logicmoon.png" width="350" alt="Logic Moon"> -->

@@ -1,0 +1,57 @@
+---
+
+import {Picture} from "@astrojs/image/components"
+import img from "/src/assets/images/test.png"
+import mockup_ayur from "/src/assets/images/mockups/ayur_mockups_home.png"
+---
+
+
+  <!-- <Header /> -->
+  <Picture
+    src={img}
+    widths={[200, 800]}
+    sizes="(max-width: 500px) 200px, (max-width: 800px) 800px"
+    aspectRatio="1:1"
+    alt="My local image"
+    formats={["webp"]}
+  />  
+
+   <picture>
+    <source
+      media="(max-width: 600px)"
+      srcset="/@astroimage/assets/images/test.png?f=avif&w=150&h=150"
+    />
+    <source
+      media="(min-width: 800px)"
+      srcset="/@astroimage/assets/images/test.png?f=avif&w=600&h=600"
+    />
+    <img
+      src="/@astroimage/assets/images/test.png?f=avif&w=600&h=600"
+      alt="Chris standing up holding his daughter Elva"
+    />
+  </picture> 
+
+  <picture class="astro-MD3BZF6M">
+    <source
+      type="image/webp"
+      srcset="/@astroimage/assets/images/test.png?f=webp&w=200&h=200 200w,/@astroimage/assets/images/test.png?f=webp&w=800&h=800 800w"
+      class="astro-MD3BZF6M"
+      sizes="(max-width: 500px), (max-width: 1000px)"
+    />
+    <img
+      src="/@astroimage/assets/images/test.png?f=png&w=800&h=800&ar=1"
+      class="astro-MD3BZF6M"
+      alt="My local image"
+    />
+  </picture>
+
+            <Picture
+            class="card-img-top_ d-none_ d-sm-block_"
+            src={mockup_ayur}
+            alt="Rosenberg Ayurveda"
+            widths={[300,600]}
+            sizes="(max-width: 1200px) 300px, (min-width: 600px) 600px" 
+            formats={['webp']}
+            aspectRatio="4:3"
+          />
+
