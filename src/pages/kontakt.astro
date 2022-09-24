@@ -1,15 +1,16 @@
 ---
 // Component Imports
-import MainPage from "../components/Main-Page.vue";
+
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
+import MailForm from '../components/MailForm.jsx'
 ---
 
 
 <Layout>
   <Header />
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
 
   <section class="container bg-erieblack text-orange mainsection titlesection">
     <div class="row">
@@ -26,7 +27,8 @@ import Layout from "../layouts/Layout.astro";
     <div class="container-fluid" id="kontaktformular">
       <div class="row">
         <div class="col-lg-8 p-5">
-          <form name="form" method="post">
+          <MailForm client:visible />
+          <!-- <form name="form" method="post">
             Name
             <input
               type="text"
@@ -107,7 +109,7 @@ import Layout from "../layouts/Layout.astro";
               name="form[_token]"
               value="yh7p_cDHpQv-W05gPuOJCQGV8Qo2at0Y8YQ4hyglY_U"
             />
-          </form>
+          </form> -->
         </div>
         <div class="col-lg-4 kontakt-right-col">
           <div class="py-5">
@@ -117,6 +119,7 @@ import Layout from "../layouts/Layout.astro";
                   <ul class="text-lg-left list-unstyled ml-4">
                     <li>
                       <p class="text-center">
+
                         <img
                           src="/src/assets/images/ich_2020_bw2.jpg"
                           class="img-fluid img-thumbnail"
