@@ -1,6 +1,12 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useForm } from "react-hook-form";
+import { ReCaptcha } from "./ReCaptcha";
+import {
+    GoogleReCaptchaProvider,
+    GoogleReCaptcha,
+    useGoogleReCaptcha
+} from 'react-google-recaptcha-v3';
 
 const InlineAlert = (props) => {
 
@@ -16,17 +22,40 @@ const InlineAlert = (props) => {
 
     return (
         <>
-            <div className={`alert ${colorClasses.alert}`} role="alert">
+            <div className={`alert ${colorClasses.alert} my-2`} role="alert">
                 {props.msg}
             </div>
         </>
     );
 };
 
+const ReCaptchaSubmitButton = props => {
+    const { executeRecaptcha } = useGoogleReCaptcha();
+
+    // Create an event handler so you can call the verification on button click event or form submit
+    const handleReCaptchaVerify = useCallback(async () => {
+        if (!executeRecaptcha) {
+            console.log('Execute recaptcha not yet available');
+            return;
+        }
+
+        const token = await executeRecaptcha('foo');
+        // Do whatever you want with the token
+    }, [executeRecaptcha]);
+
+    // You can use useEffect to trigger the verification as soon as the component being loaded
+    useEffect(() => {
+        handleReCaptchaVerify();
+    }, [handleReCaptchaVerify]);
+
+    return <a href="#!" className="btn btn-erieblack" onClick={handleReCaptchaVerify}>{props.children}</a>;
+};
+
 const MailForm = () => {
     const [httpError, setHttpError] = useState(false);
     const [formValid, setformValid] = useState(false);
-
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [token, setToken] = useState();
     const {
         register,
         formState: { errors },
@@ -44,8 +73,11 @@ const MailForm = () => {
         remoteHost = `https://api.tobeworks.de/${path}`;
     }
 
+
     const onSubmit = async (formdata) => {
- 
+
+        setIsSubmitting(true);
+
         const postData = {
             name: formdata.name,
             email: formdata.email,
@@ -65,21 +97,25 @@ const MailForm = () => {
                 .then(function (response) {
                     setformValid(true);
                     setHttpError(false);
+                    setIsSubmitting(false);
                 })
                 .catch(function (error) {
                     setformValid(false);
                     setHttpError(true);
                 });
         }
+        setIsSubmitting(false);
     };
 
 
     return (
         <>
+        <GoogleReCaptchaProvider reCaptchaKey="6LfIfyYiAAAAAGSwOuD5sWc4a-MuPRmRh-tnvkyB">
         <form
             className=""
                 onSubmit={handleSubmit(onSubmit)}
         >
+                    
             <div className="my-3">
                 <label htmlFor="first-name" className="sr-only">
                     Name
@@ -155,16 +191,11 @@ const MailForm = () => {
             <div className="my-3">
                 {formValid ? (
                     <InlineAlert
-                        msg="Super, Ihre Nachricht wurde erfolgreich gesendet"
-                        color="green"
+                        msg="Super, Ihre Nachricht wurde erfolgreich gesendet. Ich werde mich zeitnah bei Ihnen melden."
+                        color="success"
                     />
                 ) : (
-                    <button
-                        type="submit"
-                        className="btn btn-erieblack"
-                    >
-                        Nachricht abschicken
-                    </button>
+                    <ReCaptchaSubmitButton>Nachricht abschicken</ReCaptchaSubmitButton>
                 )}
 
                 {httpError && (
@@ -174,7 +205,9 @@ const MailForm = () => {
                     />
                 )}
             </div>
-            </form></>
+            </form>
+            </GoogleReCaptchaProvider>
+            </>
     );
 };
 

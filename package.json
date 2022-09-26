@@ -31,6 +31,7 @@
     "popper.js": "^1.16.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-recaptcha-v3": "^1.10.0",
     "react-hook-form": "^7.36.0",
     "scrollreveal": "^4.0.9",
     "shufflejs": "^5.4.1",
