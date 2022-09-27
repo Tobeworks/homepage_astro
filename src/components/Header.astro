@@ -1,34 +1,41 @@
 ---
-import { Image } from '@astrojs/image/components';
-import logo from '@assets/images/logos/TW-EB5E28.svg'
+//import {Image} from "@astrojs/image/components"
+import logo from "@assets/images/logos/TW-EB5E28.svg"
 import hamburger from "@assets/images/hamburger/_bars.svg"
----  
-    
-    <header class="sticky-top">
-            <nav class="navbar navbar-expand-lg navbar-orange bg-erieblack">
-                <div class="container-fluid mx-3">
-                    <a class="navbar-brand" href="/"><img src={logo} class="d-none d-lg-block" alt="logo" data-aos="fade-top" data-aos-delay="200" />
-                    </a>
-                    <div class="navbar-toggle d-block d-lg-none" id="navbar-toggle-open">
-                        <img src={hamburger} id="hamburger-bars" alt="hamburger" />
-                    </div>
+---
 
-                    <div class="collapse navbar-collapse justify-content-end" id="topnavi">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link stag-nav" href="/about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link stag-nav" href="/leistungen">Lösungen</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link stag-nav" href="/projekte">Projekte</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link stag-nav" href="/kontakt">Kontakt</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-orange bg-erieblack">
+    <div class="container-fluid mx-3">
+      <a class="navbar-brand" href="/"
+        ><img
+          src={logo}
+          class="d-none d-lg-block"
+          alt="logo"
+          data-aos="fade-top"
+          data-aos-delay="200"
+        />
+      </a>
+      <div class="navbar-toggle d-block d-lg-none" id="navbar-toggle-open">
+        <img src={hamburger} id="hamburger-bars" alt="hamburger" />
+      </div>
+
+      <div class="collapse navbar-collapse justify-content-end" id="topnavi">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link stag-nav" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link stag-nav" href="/leistungen">Lösungen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link stag-nav" href="/projekte">Projekte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link stag-nav" href="/kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

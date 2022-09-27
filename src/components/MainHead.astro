@@ -1,14 +1,12 @@
 ---
-import '../assets/scss/boostrap.scss';
-import '../assets/scss/styles.scss';
-
-
+import ProjectStyles from '../components/Project-Styles.vue'
+import '../assets/scss/font-awesome.scss'
 const {
 	title = 'Tobeworks Websolutions',
 	description = 'Tobeworks, Freelance Websolutions since 2018',
 } = Astro.props;
 ---
-
+<head>
 <meta charset="UTF-8" />
 <meta name="description" property="og:description" content={description} />
 <meta name="viewport" content="width=device-width" />
@@ -18,7 +16,10 @@ const {
 <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
 <script>
 import AddAOS from '../modules/AddAOS'
 AddAOS(".contentsection img, .contentsection p, .contentsection h2, .contentsection a");
 </script>
+</head>
+
