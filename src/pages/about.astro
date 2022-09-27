@@ -1,12 +1,9 @@
 ---
 // Component Imports
-import MainPage from "../components/Main-Page.vue"
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
-
 import Layout from "../layouts/Layout.astro"
-
-//const projects = await Astro.glob('./project/**/*.md');
+import ich from "@images/ich_2020_bw2.jpg"
 ---
 
 <script>
@@ -50,7 +47,7 @@ import Layout from "../layouts/Layout.astro"
           <div class="card p-0 w-100 h-100 text-light border-0">
             <img
               class="card-img"
-              src="/src/assets/images/ich_2020_bw2.jpg"
+              src={ich.src}
               alt="Card image"
             />
             <div class="card-img-overlay p-1 p-md-3">
@@ -176,7 +173,7 @@ import Layout from "../layouts/Layout.astro"
           <div class="card p-0 w-100 h-100 text-light border-0">
             <img
               class="card-img h-100 w-100"
-              src="/src/assets/images/Sara_pic.jpg"
+              src="@images/Sara_pic.jpg"
               alt="Card image"
             />
             <div class="card-img-overlay p-1 p-md-3">

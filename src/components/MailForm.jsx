@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState, useCallback, useRef, memo } from "react";
 import { useForm } from "react-hook-form";
-import { ReCaptcha } from "./ReCaptcha";
+
 import {
     GoogleReCaptchaProvider,
     GoogleReCaptcha,
@@ -33,11 +33,10 @@ const ReCaptchaField = props => {
     const { executeRecaptcha } = useGoogleReCaptcha();
     const [token, setToken] = useState('empty');
 
-    // Create an event handler so you can call the verification on button click event or form submit
     const handleReCaptchaVerify = useCallback(async () => {
 
         if (!executeRecaptcha) {
-            console.log('Execute recaptcha not yet available');
+            //console.log('Execute recaptcha not yet available');
             return;
         }
 
@@ -47,7 +46,6 @@ const ReCaptchaField = props => {
 
     }, [executeRecaptcha]);
 
-    // You can use useEffect to trigger the verification as soon as the component being loaded
     useEffect(() => {
         handleReCaptchaVerify();
     }, [handleReCaptchaVerify]);

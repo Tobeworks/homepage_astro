@@ -1,10 +1,16 @@
+---
+import { Image } from '@astrojs/image/components';
+import logo from '@assets/images/logos/TW-EB5E28.svg'
+import hamburger from "@assets/images/hamburger/_bars.svg"
+---  
+    
     <header class="sticky-top">
             <nav class="navbar navbar-expand-lg navbar-orange bg-erieblack">
                 <div class="container-fluid mx-3">
-                    <a class="navbar-brand" href="/"><img src="/src/assets/images/logos/TW-EB5E28.svg" class="d-none d-lg-block" alt="logo" data-aos="fade-top" data-aos-delay="200">
+                    <a class="navbar-brand" href="/"><img src={logo} class="d-none d-lg-block" alt="logo" data-aos="fade-top" data-aos-delay="200" />
                     </a>
                     <div class="navbar-toggle d-block d-lg-none" id="navbar-toggle-open">
-                        <img src="/src/assets/images/hamburger/_bars.svg" id="hamburger-bars" alt="hamburger" />
+                        <img src={hamburger} id="hamburger-bars" alt="hamburger" />
                     </div>
 
                     <div class="collapse navbar-collapse justify-content-end" id="topnavi">

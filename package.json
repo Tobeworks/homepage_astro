@@ -9,7 +9,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preserve":"astro preview",
+    "preview": "npm-run-all build preserve",
     "astro": "astro"
   },
   "dependencies": {

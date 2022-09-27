@@ -39,7 +39,7 @@
                         </div>
 
                         <div>
-                            <a href="{{ path('about') }}" class="btn btn-erieblack" data-aos="fade-up" data-aos-delay="200">Mehr erfahren</a>
+                            <a href="/about" class="btn btn-erieblack" data-aos="fade-up" data-aos-delay="200">Mehr erfahren</a>
                             <a href="/kontakt" class="btn btn-orange" data-aos="fade-up" data-aos-delay="300">Projekt anfragen</a>
                         </div>
                     </div>

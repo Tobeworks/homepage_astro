@@ -4,6 +4,10 @@ import Header from "../../components/Header.astro"
 import Footer from "../../components/Footer.astro"
 import Layout from "../../layouts/Layout.astro"
 import ButtonBlock from "../../components/ButtonBlock.astro"
+import stroke from "@images/carousel/wordpress_stroke.svg";
+import wplogo from "@images/wordPress-logo.png";
+import wproad from "@images/wordpress_road.jpg";
+import macbook from "@images/macbookgrey_front3.png";
 ---
 
 <Layout>
@@ -13,7 +17,7 @@ import ButtonBlock from "../../components/ButtonBlock.astro"
       <div class="col-sm align-self-center title-lead">
         <p class="text-center">
           <img
-            src="/src/assets/images/carousel/wordpress_stroke.svg"
+            src={stroke}
             class="img-fluid"
             alt="Wordpress logo"
             width="150"
@@ -34,7 +38,7 @@ import ButtonBlock from "../../components/ButtonBlock.astro"
   <section class="bg-silver text-erieblack contentsection" id="contentStart">
     <div class="d-flex justify-content-center m-3">
       <img
-        src="/src/assets/images/wordPress-logo.png"
+        src={wplogo.src}
         alt="wordPress-logo"
         class="img-fluid d-block aos-init aos-animate"
         data-aos="fade-up"
@@ -73,7 +77,7 @@ import ButtonBlock from "../../components/ButtonBlock.astro"
   <div class="bg-silver text-erieblack contentsection">
     <div class="text-center">
       <img
-        src="/src/assets/images/macbookgrey_front3.png"
+        src={macbook.src}
         class="img-fluid"
         alt="macbookgrey_front2"
       />
@@ -321,7 +325,7 @@ import ButtonBlock from "../../components/ButtonBlock.astro"
   <div class="bg-silver text-erieblack contentsection">
     <div class="my-3 text-center">
       <img
-        src="/src/assets/images/wordpress_road.jpg"
+        src={wproad.src}
         class="img-fluid"
         alt="wordpress-road"
       />

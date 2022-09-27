@@ -2,6 +2,7 @@
 import Header from "../../components/Header.astro"
 import Footer from "../../components/Footer.astro"
 import Layout from "../../layouts/Layout.astro"
+import macbook from "@images/macbookgrey_front3.png";
 ---
 
 <script>
@@ -92,7 +93,7 @@ import Layout from "../../layouts/Layout.astro"
     <h2 class="sr-only">Modernes Webdesign</h2>
     <p class="text-center">
       <img
-        src="/src/assets/images/macbookgrey_front3.png"
+        src={macbook.src}
         class="img-fluid"
         alt="Webdesign Beispiel"
       /><br />

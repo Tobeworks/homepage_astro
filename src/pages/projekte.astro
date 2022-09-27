@@ -3,13 +3,26 @@ import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import Layout from "../layouts/Layout.astro"
 import {Picture} from "@astrojs/image/components"
-import getucated_img_mobile from "/src/assets/images/mockups/getucated_mobile.png"
-import mockup_ayur from "/src/assets/images/mockups/ayur_mockups_home.png"
-import logicmoon_full from "/src/assets/images/mockups/logicmoon_full.png"
-import logicmoon_mobile from "/src/assets/images/mockups/logicmoon_mobile.png"
 
-const imageUrl =
-  "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+import getucated_img_mobile from "@images/mockups/getucated_mobile.png"
+import mockup_ayur from "@images/mockups/ayur_mockups_home.png"
+import logicmoon_full from "@images/mockups/logicmoon_full.png"
+import logicmoon_mobile from "@images/mockups/logicmoon_mobile.png"
+import ayurhome_mobile from "@images/mockups/home_mobile.png";
+import getucated_app from "@images/portfolio/getucated-app.png"
+import getucated_app2 from "@images/portfolio/getucated-app2.webp"
+import getucated_app3 from "@images/portfolio/getucated-app3.webp"
+import iihd from "@images/portfolio/iihd.png";
+import iihd_mobile from "@images/portfolio/mobile/iihd.png"
+import gsp from "@images/portfolio/gsp.png";
+import gsp_mobile from "@images/portfolio/mobile/gsp.png";
+import vr from "@images/portfolio/vr.png";
+import vr_mobile from "@images/portfolio/mobile/vr.png";
+import rp24 from "@images/portfolio/rp24.png"
+import rp24_mobile from "@images/portfolio/rp24.png"
+import mif from "@images/shopmockup_full.png"
+import mif_mobile from "@images/shopmockup_small.png"
+import lul from "@images/portfolio/lul.png"
 ---
 
 <script>
@@ -39,10 +52,9 @@ const imageUrl =
         <div class="col-sm-7">
           <img
             class="card-img-top d-block d-sm-none"
-            src="/src/assets/images/mockups/home_mobile.png"
+            src={ayurhome_mobile.src}
             alt="Rosenberg Ayurveda"
           />
-          <!-- <img class="card-img-top d-none d-sm-block" src="/src/assets/images/mockups/ayur_mockups_home.png" width="350" alt="Rosenberg Ayurveda"> -->
           <Picture
             class="card-img-top d-none d-sm-block"
             src={mockup_ayur}
@@ -98,7 +110,7 @@ const imageUrl =
             sizes="300px"
             formats={["webp"]}
           />
-          <!-- <img class="card-img-top d-block d-sm-none border mt-3" src="/src/assets/images/mockups/getucated_mobile.png" alt="Getucated App"> -->
+
 
           <div
             id="carouselIndicators"
@@ -126,7 +138,7 @@ const imageUrl =
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="/src/assets/images/portfolio/getucated-app.png"
+                  src={getucated_app.src}
                   class="d-block"
                   alt="..."
                 />
@@ -135,7 +147,7 @@ const imageUrl =
               <div class="carousel-item">
                 <div class="mx-auto">
                   <img
-                    src="/src/assets/images/portfolio/getucated-app2.webp"
+                    src={getucated_app2.src}
                     class="d-block"
                     alt=" ..."
                   />
@@ -144,7 +156,7 @@ const imageUrl =
               <div class="carousel-item">
                 <div class="mx-auto">
                   <img
-                    src="/src/assets/images/portfolio/getucated-app3.webp"
+                    src={getucated_app3.src}
                     class="d-block"
                     alt="..."
                   />
@@ -221,8 +233,6 @@ const imageUrl =
             sizes="(max-width: 767px) 300px,(max-width:1199px) 420px, (min-width: 1200px) 650px"
             formats={["webp"]}
           />
-          <!-- <img class="card-img-top d-block d-sm-none" src="/src/assets/images/portfolio/mobile/logicmoon.png" alt="Logic Moon">
-					<img class="card-img-top d-none d-sm-block" src="/src/assets/images/portfolio/logicmoon.png" width="350" alt="Logic Moon"> -->
         </div>
 
         <div class="col-sm-5">
@@ -259,12 +269,12 @@ const imageUrl =
         <div class="col-sm-7">
           <img
             class="img-fluid d-none d-sm-block"
-            src="/src/assets/images/portfolio/gsp.png"
+            src={gsp.src}
             alt="GSP Steuern Webdesign"
           />
           <img
             class="img-fluid d-block d-sm-none"
-            src="/src/assets/images/portfolio/mobile/gsp.png"
+            src={gsp_mobile.src}
             alt="GSP Steuern Webdesign"
           />
         </div>
@@ -300,12 +310,12 @@ const imageUrl =
         <div class="col-sm-7">
           <img
             class="img-fluid d-none d-sm-block"
-            src="/src/assets/images/portfolio/iihd.png"
+            src={iihd.src}
             alt="IIHD Webseite"
           />
           <img
             class="img-fluid d-block d-sm-none"
-            src="/src/assets/images/portfolio/mobile/iihd.png"
+            src={iihd_mobile.src}
             alt="IIHD Webseite"
           />
         </div>
@@ -343,12 +353,12 @@ const imageUrl =
         <div class="col-sm-7">
           <img
             class="img-fluid d-none d-sm-block"
-            src="/src/assets/images/portfolio/vr.png"
+            src={vr.src}
             alt="Vintage Revivals Webdesign"
           />
           <img
             class="img-fluid d-block d-sm-none"
-            src="/src/assets/images/portfolio/mobile/vr.png"
+            src={vr_mobile.src}
             alt="Vintage Revivals Webdesign"
           />
         </div>
@@ -380,12 +390,12 @@ const imageUrl =
         <div class="col-sm-7">
           <img
             class="img-fluid d-none d-sm-block"
-            src="/src/assets/images/portfolio/rp24.png"
+            src={rp24.src}
             alt="Restposten24 Webdesign"
           />
           <img
             class="img-fluid d-block d-sm-none"
-            src="/src/assets/images/portfolio/mobile/rp24.png"
+            src={rp24_mobile.src}
             alt="Restposten24 Webdesign"
           />
         </div>
@@ -422,12 +432,12 @@ const imageUrl =
       <div class="row align-items-center">
         <div class="col-sm-7">
           <img
-            src="/src/assets/images/shopmockup_full.png"
+            src={mif.src}
             class="img-fluid d-none d-sm-block"
             alt="image"
           />
           <img
-            src="/src/assets/images/shopmockup_small.png"
+            src={mif_mobile.src}
             class="img-fluid d-block d-sm-none"
             alt="image"
           />
@@ -465,8 +475,8 @@ const imageUrl =
         <div class="col-sm-7">
           <img
             class="img-fluid"
-            src="/src/assets/images/portfolio/lul.png"
-            alt=""
+            src={lul.src}
+            alt="Lifter und Lauch"
           />
         </div>
         <div class="col-sm-5">

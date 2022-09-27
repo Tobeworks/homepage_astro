@@ -5,6 +5,10 @@ import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import Layout from "../../layouts/Layout.astro";
 import ButtonBlock from "../../components/ButtonBlock.astro";
+import wpcoder from "@images/wp-programmierer1.jpg";
+import stroke from "@images/carousel/wordpress_stroke.svg";
+import wpcoder2 from "@imageswp-programmierer0.jpg"
+
 ---
 
 <script>
@@ -22,7 +26,7 @@ import ButtonBlock from "../../components/ButtonBlock.astro";
       <div class="col-sm align-self-center title-lead">
         <p class="text-center">
           <img
-            src="/src/assets/images/carousel/wordpress_stroke.svg"
+            src={stroke}
             class="img-fluid"
             alt="Wordpress logo"
             width="150"
@@ -53,7 +57,7 @@ import ButtonBlock from "../../components/ButtonBlock.astro";
       <img
         alt="Wordpress-Experte und Programmierer"
         class="my-2 img-fluid rounded float-end d-none d-lg-block d-xl-block"
-        src="/src/assets/images/wp-programmierer0.jpg"
+        src={wpcoder2.src}
       />
       Viele Anwender nutzen Wordpress als CMS und nutzen Dienstleister, die sich
       auf die Verwaltung der Software und das Entwickeln von Webseiten beschränkt
@@ -132,7 +136,7 @@ import ButtonBlock from "../../components/ButtonBlock.astro";
       <img
         alt="Wordpress-Experte und Programmierer"
         class="ml-3 img-fluid rounded float-endd-none d-lg-block d-xl-block"
-        src="/src/assets/images/wp-programmierer1.jpg"
+        src={wpcoder.src}
       />
     </p><ul class="m-3">
       <li>

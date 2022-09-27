@@ -1,9 +1,7 @@
 ---
 import MainHead from "../components/MainHead.astro";
-// import MainPage from '../components/Main-Page.vue';
-// import Header from '../components/Header.astro';
-// import Footer from '../components/Footer.astro';
-
+import hamburgerClose from '@images/hamburger/_times.svg';
+import logo from '@images/logos/TW-EB5E28.svg';
 const { content } = Astro.props;
 ---
 
@@ -176,7 +174,7 @@ const { content } = Astro.props;
     <div id="overlay-menu" class="bg-erieblack">
       <div class="navbar-toggle" id="navbar-toggle-close">
         <img
-          src="/src/assets/images/hamburger/_times.svg"
+          src={hamburgerClose}
           id="hamburger-close"
           alt="hamburger"
         />
@@ -185,17 +183,17 @@ const { content } = Astro.props;
       <div class="overlay-middle">
         <nav class="nav flex-column" id="fullscreen-menu">
           <a class="nav-link stag-nav active" href="/">Home</a>
-          <a class="nav-link stag-nav" href="{{ path('about') }}">About</a>
-          <a class="nav-link stag-nav" href="{{ path('leistungen') }}"
+          <a class="nav-link stag-nav" href="/about">About</a>
+          <a class="nav-link stag-nav" href="/leistungen"
             >Lösungen</a>
-          <a class="nav-link stag-nav" href="{{ path('portfolio') }}"
+          <a class="nav-link stag-nav" href="/projekte"
             >Projekte</a>
           <a class="nav-link stag-nav" href="/kontakt">Kontakt</a>
         </nav>
       </div>
       <div id="overly-logo-bottom">
         <img
-          src="/src/assets/images/logos/TW-EB5E28.svg"
+          src={logo}
           alt="logo overlay"
           data-aos="fade-top"
           data-aos-delay="200"

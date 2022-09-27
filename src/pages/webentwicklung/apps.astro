@@ -4,7 +4,7 @@
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import Layout from "../../layouts/Layout.astro";
-
+import macbook from "@images/macbookgrey_front3.png";
 ---
 
 <script>
@@ -70,7 +70,7 @@ import Layout from "../../layouts/Layout.astro";
 	 <section class="bg-silver text-erieblack contentsection">
 			<h2 class="sr-only">Modernes Webdesign</h2>
 			<p class="text-center">
-				<img src="/src/assets/images/macbookgrey_front3.png" class="img-fluid" alt="Webdesign Beispiel"/><br>
+				<img src={macbook.src} class="img-fluid" alt="Webdesign Beispiel"/><br>
 				<a href="/kontakt" class="btn btn-outline-erieblack mt-2" role="button">Fragen Sie einfach</a>
 			</p>
 		</section> 

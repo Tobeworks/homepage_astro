@@ -1,10 +1,11 @@
 ---
 // Component Imports
-
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
-import MailForm from '../components/MailForm.jsx'
+import MailForm from '../components/MailForm.jsx';
+import ich from "@images/ich_2020_bw2.jpg"
+
 ---
 
 
@@ -121,7 +122,7 @@ import MailForm from '../components/MailForm.jsx'
                       <p class="text-center">
 
                         <img
-                          src="/src/assets/images/ich_2020_bw2.jpg"
+                          src={ich.src}
                           class="img-fluid img-thumbnail"
                           alt="tobe"
                         />
