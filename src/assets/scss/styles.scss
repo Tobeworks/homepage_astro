@@ -22,6 +22,10 @@ body {
 header {
   .nav-link {
     color: var(--orange);
+
+    &:hover{
+       color: var(--silver);
+    }
   }
 }
 strong {

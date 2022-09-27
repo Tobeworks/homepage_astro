@@ -5,13 +5,14 @@ import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
 import MailForm from '../components/MailForm.jsx';
 import ich from "@images/ich_2020_bw2.jpg"
-
 ---
-
+<script>
+  import ArrowScroller from "../modules/ArrowScroll"
+  ArrowScroller()
+</script>
 
 <Layout>
   <Header />
-  <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
 
   <section class="container bg-erieblack text-orange mainsection titlesection">
     <div class="row">
@@ -29,88 +30,6 @@ import ich from "@images/ich_2020_bw2.jpg"
       <div class="row">
         <div class="col-lg-8 p-5">
           <MailForm client:visible />
-          <!-- <form name="form" method="post">
-            Name
-            <input
-              type="text"
-              id="form_name"
-              name="form[name]"
-              required="required"
-              class="form-control"
-            />
-            E-Mail
-            <input
-              type="email"
-              id="form_email"
-              name="form[email]"
-              required="required"
-              class="form-control"
-            />
-            Betreff
-            <input
-              type="text"
-              id="form_subject"
-              name="form[subject]"
-              required="required"
-              class="form-control"
-            />
-            Nachricht
-            <textarea
-              id="form_text"
-              name="form[text]"
-              required="required"
-              class="mailform-textarea form-control"></textarea>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                id="form_public"
-                name="form[public]"
-                required="required"
-                class="form-check-input"
-                value="1"
-              />
-              <label class="form-check-label required" for="form_public"
-                >Ich habe die Datenschutzerklärung gelesen</label>
-            </div>
-            <div
-              class="g-recaptcha my-3"
-              data-sitekey="6Ld8cKEUAAAAAOb75EPCZHvgGwl-mkVhrGMiDGIi"
-            >
-              <div style="width: 304px; height: 78px;">
-                <div>
-                  <iframe
-                    title="reCAPTCHA"
-                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Ld8cKEUAAAAAOb75EPCZHvgGwl-mkVhrGMiDGIi&co=aHR0cHM6Ly90b2Jld29ya3MuZGU6NDQz&hl=de&v=g8G8cw32bNQPGUVoDvt680GA&size=normal&cb=3gp2dapzrynu"
-                    role="presentation"
-                    name="a-3vaefzvruk88"
-                    scrolling="no"
-                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
-                    width="304"
-                    height="78"
-                    frameborder="0"></iframe>
-                </div><textarea
-                  id="g-recaptcha-response"
-                  name="g-recaptcha-response"
-                  class="g-recaptcha-response"
-                  style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"
-                ></textarea>
-              </div><iframe style="display: none;"></iframe>
-            </div>
-            <button
-              type="submit"
-              id="form_save"
-              name="form[save]"
-              class="btn btn-outline-erieblack btn"
-            >
-              Nachricht abschicken</button
-            >
-            <input
-              type="hidden"
-              id="form__token"
-              name="form[_token]"
-              value="yh7p_cDHpQv-W05gPuOJCQGV8Qo2at0Y8YQ4hyglY_U"
-            />
-          </form> -->
         </div>
         <div class="col-lg-4 kontakt-right-col">
           <div class="py-5">

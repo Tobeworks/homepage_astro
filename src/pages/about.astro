@@ -1,9 +1,10 @@
 ---
 // Component Imports
+import {Image, Picture} from "@astrojs/image/components"
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import Layout from "../layouts/Layout.astro"
-import ich from "@images/ich_2020_bw2.jpg"
+import ich from "@images/ich_2020_bw2.png"
 ---
 
 <script>
@@ -20,17 +21,14 @@ import ich from "@images/ich_2020_bw2.jpg"
       <div class="col-sm align-self-center title-lead">
         <h2 class="cover my-2 text-center">Warum Tobeworks?</h2>
         <p class="lead text-center w-75 mx-auto my-3">
-          <strong
-            >Ganz einfach: Weil ich echten Mehrwert schaffe.</strong
-          >
+          <strong>Ganz einfach: Weil ich echten Mehrwert schaffe.</strong>
           <br />
           <span class="d-none d-sm-inline">
-            Ich bin sind mit digitalen Technologien groß geworden, von Dotcom
-            über Web 2.0.<br /> Ich bin bestens ausgebildet und <strong
-              >immer</strong
+            Ich bin mit digitalen Technologien groß geworden, von Dotcom über
+            Web 2.0.<br /> Ich bin bestens ausgebildet und <strong>immer</strong
             > auf den neusten Stand der Technik.
-            <br /><strong>Mich würde das überzeugen, Sie auch!?</strong><br>
-           #software #engineering
+            <br /><strong>Mich würde das überzeugen, Sie auch!?</strong><br />
+            #software #engineering
           </span>
         </p>
       </div>
@@ -39,17 +37,104 @@ import ich from "@images/ich_2020_bw2.jpg"
       <i class="fa-solid fa-arrow-down"></i>
     </a>
   </section>
-
   <section class="bg-silver text-erieblack mainsection" id="contentStart">
+    <div class="row">
+      <div class="col-md-4 col-lg-6">
+        <!-- <Image
+          src={ich}
+          width={400}
+          alt="Tobias Lorsbach 2022"
+          aspectRatio="4:6"
+          class={`border-2`}
+        /> -->
+        <Picture 
+          src={ich}
+          width={400}
+          alt="Tobias Lorsbach 2022"
+          widths={[250,300, 400, 500]}
+          sizes="(max-width: 450px) 250px,(max-width: 769px) 400px,(max-width: 1000px) 200px, (min-width: 1200px) 500px, 300px"
+          formats={["webp"]}
+          aspectRatio="4:6"
+          class={`border-2`}></Picture>
+      </div>
+      <div class="col-md-8 col-lg-6">
+        <h3 class="small mt-2">Tobias Lorsbach</h3>
+
+        <h1 class="mb-3 pt-md-2 pt-sm-4">Founder</h1>
+        <p>
+          Fullstack Webdeveloper mit weit über einer Dekade interdisziplinärer
+          Erfahrung in Software-Entwicklung, Webdesign und Digital-Technologien
+          mit geschärftem Blick in die Zukunft.
+        </p>
+        <h5 class="mt-5">Kernkompetenzen</h5>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">PHP</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">Python</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">Javascript</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">HTML</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">CSS</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">mySQL</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">Postgres</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">Linux</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">Elasticsearch</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">Symfony</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">Wordpress</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">Vue</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">React</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-erieblack badge-pill">Ionic Framework</span>
+          </li>
+        </ul>
+        <div class="pt-0 d-inline-block">
+          <h4 class="d-inline-block"><a
+            href="https://twitter.com/tobeworks"
+            target="_blank"
+            class="">
+            <i class="fab fa-twitter fa-lg text-erieblack" aria-hidden="true"></i>
+          </a></h4>
+          <h4 class="d-inline-block"><a
+            href="https://www.facebook.com/tobeworks"
+            target="_blank"
+            class="">
+            <i class="fab fa-facebook fa-lg text-erieblack" aria-hidden="true"></i>
+          </a></h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="bg-silver text-erieblack mainsection" id="contentStart">
     <div class="container-fluid mx-auto">
       <div class="row d-md-flex-row overflow-hidden">
         <div class="col-md-4 p-0 col-12 bg-silver d-flex overflow-hidden">
           <div class="card p-0 w-100 h-100 text-light border-0">
-            <img
-              class="card-img"
-              src={ich.src}
-              alt="Card image"
-            />
+            <Image src={ich} width={400} alt="Tobias Lorsbach" />
+   
             <div class="card-img-overlay p-1 p-md-3">
               <div class="position-relative w-100 h-25 d-flex">
                 <div class="container-fluid align-self-start mt-2 mb-2">
@@ -173,7 +258,7 @@ import ich from "@images/ich_2020_bw2.jpg"
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- <section class="bg-silver text-erieblack mainsection">
     <div class="container-fluid mx-auto">
