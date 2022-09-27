@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef, memo } from "react";
 import { useForm } from "react-hook-form";
 import { ReCaptcha } from "./ReCaptcha";
 import {
@@ -29,9 +29,10 @@ const InlineAlert = (props) => {
     );
 };
 
-const ReCaptchaSubmitButton = props => {
+const ReCaptchaField = props => {
     const { executeRecaptcha } = useGoogleReCaptcha();
-
+    const [token, setToken] = useState('empty');
+    const gettoken = useRef();
     // Create an event handler so you can call the verification on button click event or form submit
     const handleReCaptchaVerify = useCallback(async () => {
         if (!executeRecaptcha) {
@@ -39,8 +40,10 @@ const ReCaptchaSubmitButton = props => {
             return;
         }
 
-        const token = await executeRecaptcha('foo');
-        // Do whatever you want with the token
+      await executeRecaptcha('homepage').then((res)=>{
+           setToken(res);
+       });
+       
     }, [executeRecaptcha]);
 
     // You can use useEffect to trigger the verification as soon as the component being loaded
@@ -48,19 +51,32 @@ const ReCaptchaSubmitButton = props => {
         handleReCaptchaVerify();
     }, [handleReCaptchaVerify]);
 
-    return <a href="#!" className="btn btn-erieblack" onClick={handleReCaptchaVerify}>{props.children}</a>;
+    console.log('Token:',token);
+
+    return <input
+        type="hidden"
+        name="recaptcha"
+        id="recaptcha"
+        ref={gettoken}
+        value={token}
+        {...props.register}
+    />;
 };
 
 const MailForm = () => {
     const [httpError, setHttpError] = useState(false);
     const [formValid, setformValid] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [token, setToken] = useState();
+
+    const gettoken = useRef();
+    
     const {
         register,
         formState: { errors },
         handleSubmit,
-    } = useForm();
+    } = useForm({
+        mode: 'onChange'
+    });
 
     const path = `sendmail`;
     const IN_PRODUCTION = import.meta.env.MODE === "production";
@@ -76,13 +92,16 @@ const MailForm = () => {
 
     const onSubmit = async (formdata) => {
 
-        setIsSubmitting(true);
+
+        // console.log(gettoken);
+        // console.log(formdata);
 
         const postData = {
             name: formdata.name,
             email: formdata.email,
             phone: formdata.phone,
             message: formdata.message,
+            token: formdata.recapcha,
             uid:"ksNraqdXHCX5eCc9RfK7FwSGM",
             dc: new Date().toJSON(),
         };
@@ -115,7 +134,7 @@ const MailForm = () => {
             className=""
                 onSubmit={handleSubmit(onSubmit)}
         >
-                    
+            <ReCaptchaField register={register("recaptcha", {})} />       
             <div className="my-3">
                 <label htmlFor="first-name" className="sr-only">
                     Name
@@ -191,13 +210,13 @@ const MailForm = () => {
             <div className="my-3">
                 {formValid ? (
                     <InlineAlert
-                        msg="Super, Ihre Nachricht wurde erfolgreich gesendet. Ich werde mich zeitnah bei Ihnen melden."
+                        msg="Ihre Nachricht wurde erfolgreich gesendet. Ich werde mich zeitnah bei Ihnen melden."
                         color="success"
                     />
                 ) : (
-                    <ReCaptchaSubmitButton>Nachricht abschicken</ReCaptchaSubmitButton>
+                    <button type="submit" className="btn btn-erieblack">Nachricht abschicken</button>
                 )}
-
+    
                 {httpError && (
                     <InlineAlert
                         msg="Ein schwerer Fehler ist aufgetreten, bitte versuchen Sie es erneut"
