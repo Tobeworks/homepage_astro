@@ -216,8 +216,8 @@ const MailForm = () => {
 
                         {httpError && (
                             <InlineAlert
-                                msg="Ein schwerer Fehler ist aufgetreten, bitte versuchen Sie es erneut"
-                                color="red"
+                                msg="Ein schwerer Fehler ist aufgetreten, bitte versuchen Sie es erneut oder landen Sie die Seite neu."
+                                color="danger"
                             />
                         )}
                     </div>
