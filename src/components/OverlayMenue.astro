@@ -1,0 +1,33 @@
+---
+import hamburgerClose from '@images/hamburger/_times.svg';
+import logo from '@images/logos/TW-EB5E28.svg';
+--- 
+    <div id="overlay-menu" class="bg-erieblack">
+      <div class="navbar-toggle" id="navbar-toggle-close">
+        <img
+          src={hamburgerClose}
+          id="hamburger-close"
+          alt="hamburger"
+        />
+      </div>
+
+      <div class="overlay-middle">
+        <nav class="nav flex-column" id="fullscreen-menu">
+          <a class="nav-link stag-nav active" href="/">Home</a>
+          <a class="nav-link stag-nav" href="/about">About</a>
+          <a class="nav-link stag-nav" href="/leistungen"
+            >Lösungen</a>
+          <a class="nav-link stag-nav" href="/projekte"
+            >Projekte</a>
+          <a class="nav-link stag-nav" href="/kontakt">Kontakt</a>
+        </nav>
+      </div>
+      <div id="overly-logo-bottom">
+        <img
+          src={logo}
+          alt="logo overlay"
+          data-aos="fade-top"
+          data-aos-delay="200"
+        />
+      </div>
+    </div>

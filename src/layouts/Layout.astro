@@ -1,7 +1,6 @@
 ---
 import MainHead from "../components/MainHead.astro";
-import hamburgerClose from '@images/hamburger/_times.svg';
-import logo from '@images/logos/TW-EB5E28.svg';
+import OverlayMenue from "@components/OverlayMenue.astro";
 const { content } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -11,7 +10,7 @@ const { content } = Astro.props;
   import anime from "animejs";
   import * as bootstrap from "bootstrap";
   import AOS from "aos";
-  import '../assets/scss/font-awesome.scss';
+
   import Typewriter from "typewriter-effect/dist/core";
 
   document.onreadystatechange = function () {
@@ -166,12 +165,7 @@ const { content } = Astro.props;
   // };
 </script>
 
-<style>
-  body {
-    background-color: black;
-    color: black;
-  }
-</style>
+
 <MainHead
   title="Tobeworks Websolutions"
   description="Tobeworks, Freelance Websolutions since 2018"
@@ -179,35 +173,7 @@ const { content } = Astro.props;
 
 <body>
   <div class="container p-0">
-    <div id="overlay-menu" class="bg-erieblack">
-      <div class="navbar-toggle" id="navbar-toggle-close">
-        <img
-          src={hamburgerClose}
-          id="hamburger-close"
-          alt="hamburger"
-        />
-      </div>
-
-      <div class="overlay-middle">
-        <nav class="nav flex-column" id="fullscreen-menu">
-          <a class="nav-link stag-nav active" href="/">Home</a>
-          <a class="nav-link stag-nav" href="/about">About</a>
-          <a class="nav-link stag-nav" href="/leistungen"
-            >Lösungen</a>
-          <a class="nav-link stag-nav" href="/projekte"
-            >Projekte</a>
-          <a class="nav-link stag-nav" href="/kontakt">Kontakt</a>
-        </nav>
-      </div>
-      <div id="overly-logo-bottom">
-        <img
-          src={logo}
-          alt="logo overlay"
-          data-aos="fade-top"
-          data-aos-delay="200"
-        />
-      </div>
-    </div>
+    <OverlayMenue></OverlayMenue>
     <slot />
   </div>
 </body>

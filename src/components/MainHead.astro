@@ -1,4 +1,5 @@
 ---
+import '../assets/scss/styles.scss';
 import ProjectStyles from '../components/Project-Styles.vue'
 
 const {
@@ -19,8 +20,19 @@ const {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
 <script>
+
+import '../assets/scss/font-awesome.scss';
 import AddAOS from '../modules/AddAOS'
 AddAOS(".contentsection img, .contentsection p, .contentsection h2, .contentsection a");
 </script>
+<style is:inline>
+  body {
+    background-color: black;
+    color: black;
+  }
+  .foo{
+    color: aliceblue;
+  }
+</style>
 </head>
 
