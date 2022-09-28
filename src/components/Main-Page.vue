@@ -268,7 +268,7 @@
                 <div class="row">
                     <div class="d-flex align-items-center justify-content-center" data-aos="fade-up">
                         <i class="fab fa-php" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP"></i>
-                        <i class="fab fa-js-square" data-bs-toggle="tooltip" data-bs-placement="top" title="Javascript (ES 6)"></i>
+                        <i class="fab fa-js-square" data-bs-toggle="tooltip" data-bs-placement="top" title="Javascript"></i>
                         <i class="fab fa-html5" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML 5"></i>
                         <i class="fab fa-css3-alt" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS 3"></i>
                         <i class="fab fa-wordpress" data-bs-toggle="tooltip" data-bs-placement="top" title="Wordpress Professional"></i>
