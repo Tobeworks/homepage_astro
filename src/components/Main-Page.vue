@@ -187,16 +187,18 @@
         </section>
 
         <section class="bg-silver text-erieblack mainsection">
-            <div class="w-50 mx-auto">
-                <img src="../assets/images/logos/TobeworksLogo.svg" class="img-fluid" alt="logo" data-aos="fade-up" />
+            <div class="p-2 p-md-5 text-center">
+                <img src="../assets/images/logos/TobeworksLogo.svg" class="img-fluid" alt="Tobeworks Logo" title="tobeworks Logo" data-aos="fade-up" />
+<div class="text-center">
+
                 <h3 class="text-center my-3" data-aos="fade-up">Full-Service seit 2018</h3>
-                <p class="text-center" data-aos="fade-up">Ich biete zeitgerechte, massgeschneiderte Kommunikationslösungen.
+                <p  data-aos="fade-up">Ich biete zeitgerechte, massgeschneiderte Kommunikationslösungen.
                     Dazu kombiniere ich die kreativen Leistungen einer Webeagentur mit dem technologischen Know-how einer Webagentur. Von der Idee bis zum fertigen Produkt erhalten Sie alles aus einer Hand. Ohne Schnickschnack, mit angesagter Technologie.</p>
-                <p class="text-center">
+                <p >
                     <a href="/kontakt" class="btn btn-erieblack" data-aos="fade-up" data-aos-delay="300">Kontakt</a>
                 </p>
             </div>
-
+</div>
         </section>
 
         <section class="bg-orange text-erieblack cutsection" id="special">
@@ -256,13 +258,15 @@
         </section>
 
         <section class="bg-silver text-erieblack mainsection" id="brands">
+            
+            <div class="">
             <h2 data-aos="fade-up" class="text-center">Software-Technologien
             </h2>
-            <p class="lead text-center">Für unsere Kunden nur vom Feinsten</p>
-            <div class="w-50 mx-auto mt-5">
+            <p class="lead text-center">Für meine Kunden nur vom Feinsten</p>
+            <div class="w-50 mx-auto mt-5 mb-n5">
 
                 <div class="row">
-                    <div class="d-flex align-items-center justify-content-around" data-aos="fade-up">
+                    <div class="d-flex align-items-center justify-content-center" data-aos="fade-up">
                         <i class="fab fa-php" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP"></i>
                         <i class="fab fa-js-square" data-bs-toggle="tooltip" data-bs-placement="top" title="Javascript (ES 6)"></i>
                         <i class="fab fa-html5" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML 5"></i>
@@ -272,7 +276,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="d-flex align-items-center justify-content-around" data-aos="fade-up">
+                    <div class="d-flex align-items-center justify-content-center" data-aos="fade-up">
                         <i class="fab fa-react" data-bs-toggle="tooltip" data-bs-placement="top" title="React"></i>
                         <i class="fab fa-github" data-bs-toggle="tooltip" data-bs-placement="top" title="Github"></i>
                         <i class="fab fa-apple" data-bs-toggle="tooltip" data-bs-placement="top" title="Apple"></i>
@@ -282,7 +286,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="d-flex align-items-center justify-content-around" data-aos="fade-up">
+                    <div class="d-flex align-items-center justify-content-center" data-aos="fade-up">
                         <i class="fab fa-python" data-bs-toggle="tooltip" data-bs-placement="top" title="Python"></i>
                         <i class="fab fa-vuejs" data-bs-toggle="tooltip" data-bs-placement="top" title="Vue"></i>
                         <i class="fab fa-git-square" data-bs-toggle="tooltip" data-bs-placement="top" title="Git"></i>
@@ -292,7 +296,7 @@
                 </div>
 
                 <div class="row">
-                    <div class=" d-flex align-items-center justify-content-around" data-aos="fade-up">
+                    <div class=" d-flex align-items-center justify-content-center" data-aos="fade-up">
                         <i class="fab fa-google" data-bs-toggle="tooltip" data-bs-placement="top" title="Google API"></i>
                         <i class="fab fa-sass" data-bs-toggle="tooltip" data-bs-placement="top" title="SASS"></i>
                         <i class="fab fa-slack" data-bs-toggle="tooltip" data-bs-placement="top" title="Slack"></i>
@@ -300,6 +304,7 @@
                         <i class="fab fa-symfony" data-bs-toggle="tooltip" data-bs-placement="top" title="Symfony"></i>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>

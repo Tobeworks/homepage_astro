@@ -2,8 +2,6 @@
     @Powered by Bootstrap 5 and Sass, theme written by Tobeworks
 */
 
-
-
 /* global */
 :root {
   --perlwhite: #fffcf2;
@@ -23,8 +21,8 @@ header {
   .nav-link {
     color: var(--orange);
 
-    &:hover{
-       color: var(--silver);
+    &:hover {
+      color: var(--silver);
     }
   }
 }
@@ -75,6 +73,14 @@ strong {
   background-color: #eb5e28;
 }
 
+.picborder {
+  &:not(picture) {
+    border: 5px solid var(--perlwhite);
+  }
+  img {
+    border: 5px solid var(--perlwhite);
+  }
+}
 .cutsection {
   min-height: 500px;
   padding: 0;
@@ -176,7 +182,6 @@ h4 {
   font-weight: 500;
 }
 
-
 .portfolio-row .card-text .fab {
   font-size: 25px;
   color: var(--olive);
@@ -207,6 +212,7 @@ h4 {
   display: block;
   width: 100px;
   height: 60px;
+  padding: 0 30px;
 }
 
 .title-arrow-down {
@@ -261,12 +267,12 @@ h4 {
 footer {
   padding-top: 25px;
   background-color: var(--erieBlack);
-}
-footer h4 {
-  color: var(--silver);
-}
-footer .nav-link {
-  padding: 0.5rem 0rem;
+  h4 {
+    color: var(--silver);
+  }
+  .nav-link {
+    padding: 0.5rem 0rem;
+  }
 }
 
 .section-mobile {
@@ -346,17 +352,22 @@ footer .nav-link {
       padding: 20px 20px;
     }
     ul {
-    margin-left: 0px !important;
-    li {
-      list-style-position: inside;
+      margin-left: 0px !important;
+      li {
+        list-style-position: inside;
+      }
     }
-  }
   }
 
   .titlesection {
     h2 {
       font-size: 1.8em;
       white-space: pre-line;
+    }
+  }
+  footer {
+    h4 {
+      font-size: 1.2rem;
     }
   }
 }
@@ -378,5 +389,8 @@ footer .nav-link {
     p {
       padding: 0px 10px;
     }
+  }
+  #brands .fab {
+    padding: 0 10px;
   }
 }

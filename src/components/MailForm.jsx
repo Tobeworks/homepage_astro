@@ -33,6 +33,7 @@ const ReCaptchaField = props => {
     const { executeRecaptcha } = useGoogleReCaptcha();
     const [token, setToken] = useState('empty');
 
+
     const handleReCaptchaVerify = useCallback(async () => {
 
         if (!executeRecaptcha) {
@@ -62,7 +63,7 @@ const ReCaptchaField = props => {
 const MailForm = () => {
     const [httpError, setHttpError] = useState(false);
     const [formValid, setformValid] = useState(false);
-
+    const [forminSubmit, setForminSubmit] = useState(false);
 
 
     const {
@@ -87,6 +88,7 @@ const MailForm = () => {
 
     const onSubmit = async (formdata) => {
 
+        setForminSubmit(true);
         //fuck you react!
         formdata.recapcha = document.getElementById('recaptcha').value;
 
@@ -110,11 +112,12 @@ const MailForm = () => {
                 .then(function (response) {
                     setformValid(true);
                     setHttpError(false);
- 
+                    setForminSubmit(false);
                 })
                 .catch(function (error) {
                     setformValid(false);
                     setHttpError(true);
+                    setForminSubmit(false);
                 });
         }
 
@@ -127,8 +130,8 @@ const MailForm = () => {
                 
                 <form
                     className=""
-                    onSubmit={handleSubmit(onSubmit)}
-                >
+                    onSubmit={handleSubmit(onSubmit)}>
+                    
                     <ReCaptchaField register={register("recaptcha", {readOnly:true})} />
                     <div className="my-3">
                         <label htmlFor="first-name" className="sr-only">
