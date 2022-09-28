@@ -11,7 +11,7 @@ const { content } = Astro.props;
   import anime from "animejs";
   import * as bootstrap from "bootstrap";
   import AOS from "aos";
-  
+  import '../assets/scss/font-awesome.scss';
   import Typewriter from "typewriter-effect/dist/core";
 
   document.onreadystatechange = function () {
@@ -166,7 +166,12 @@ const { content } = Astro.props;
   // };
 </script>
 
-
+<style>
+  body {
+    background-color: black;
+    color: black;
+  }
+</style>
 <MainHead
   title="Tobeworks Websolutions"
   description="Tobeworks, Freelance Websolutions since 2018"

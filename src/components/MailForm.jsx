@@ -205,13 +205,19 @@ const MailForm = () => {
                         )}
                     </div>
                     <div className="my-3">
+
                         {formValid ? (
                             <InlineAlert
                                 msg="Ihre Nachricht wurde erfolgreich gesendet. Ich werde mich zeitnah bei Ihnen melden."
                                 color="success"
                             />
                         ) : (
-                            <button type="submit" className="btn btn-erieblack">Nachricht abschicken</button>
+                            <button type="submit" className="btn btn-erieblack">
+                                    {forminSubmit ?
+                                        (<div className="spinner-border spinner-border-sm text-primary mr-3" role="status">
+                                            <span className="visually-hidden">Loading...</span> 
+                                        </div>) : ''
+                                    } Nachricht abschicken</button>
                         )}
 
                         {httpError && (
