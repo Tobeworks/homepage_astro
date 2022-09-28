@@ -4,12 +4,14 @@ import hamburgerClose from '@images/hamburger/_times.svg';
 import logo from '@images/logos/TW-EB5E28.svg';
 const { content } = Astro.props;
 ---
+<!DOCTYPE html>
+<html lang="de">
 
 <script>
   import anime from "animejs";
   import * as bootstrap from "bootstrap";
   import AOS from "aos";
-  import "../../node_modules/aos/dist/aos.css";
+  
   import Typewriter from "typewriter-effect/dist/core";
 
   document.onreadystatechange = function () {
@@ -164,6 +166,7 @@ const { content } = Astro.props;
   // };
 </script>
 
+
 <MainHead
   title="Tobeworks Websolutions"
   description="Tobeworks, Freelance Websolutions since 2018"
@@ -203,3 +206,4 @@ const { content } = Astro.props;
     <slot />
   </div>
 </body>
+</html>

@@ -11,6 +11,8 @@
     "build": "astro build",
     "preserve": "astro preview",
     "preview": "npm-run-all build preserve",
+    "rundeploy": "node deploy.js",
+    "deploy": "npm-run-all build rundeploy",
     "astro": "astro"
   },
   "dependencies": {

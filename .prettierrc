@@ -7,5 +7,6 @@
     "bracketSameLine": true,
     "bracketSpacing": false,
     "singleAttributePerLine": false,
-    "insertPragma": false
+    "insertPragma": false,
+    "prefer-void-tags": false
 }

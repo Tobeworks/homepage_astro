@@ -134,7 +134,7 @@ const MailForm = () => {
                     
                     <ReCaptchaField register={register("recaptcha", {readOnly:true})} />
                     <div className="my-3">
-                        <label htmlFor="first-name" className="sr-only">
+                        <label htmlFor="name" className="sr-only">
                             Name
                         </label>
                         <input
@@ -147,7 +147,7 @@ const MailForm = () => {
                             {...register("name", {
                                 required: "Bitte dieses Feld ausfüllen",
                             })}
-                        />
+                        ></input>
                         {errors.name?.message && (
                             <InlineAlert msg={errors.name?.message} color="danger" />
                         )}
@@ -172,7 +172,7 @@ const MailForm = () => {
                                     message: "Bitte eine Email-Adresse eingeben",
                                 },
                             })}
-                        />
+                        ></input>
                         {errors.email?.message && <InlineAlert msg={errors.email?.message} />}
                     </div>
                     <div className="my-3">
@@ -183,11 +183,10 @@ const MailForm = () => {
                             type="text"
                             name="phone"
                             id="phone"
-                            autoComplete="phone"
                             className="form-control"
                             placeholder="Telefonnummer"
                             {...register("phone")}
-                        />
+                        ></input>
                     </div>
                     <div className="my-3">
                         <label htmlFor="message" className="sr-only">
