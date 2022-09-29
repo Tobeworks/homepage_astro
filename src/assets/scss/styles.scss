@@ -64,7 +64,9 @@ strong {
     }
   }
 }
-
+.grecaptcha-badge {
+  visibility: hidden;
+}
 .frontcard {
   background-color: #eb5e28;
 }
@@ -80,12 +82,12 @@ strong {
 .cutsection {
   min-height: 500px;
   padding: 0;
-}
-.cutsection .cut-left {
-  min-height: 500px;
-  background-color: var(--erieBlack);
-  width: 100%;
-  padding: 22% 10%;
+  .cut-left {
+    min-height: 500px;
+    background-color: var(--erieBlack);
+    width: 100%;
+    padding: 22% 10%;
+  }
 }
 
 .titlesection {
@@ -159,23 +161,27 @@ h4 {
 
 /* special cutted */
 #special {
-  /* background-image: url(/images/special_bg.svg); */
   background-repeat: no-repeat;
-}
-#special .card {
-  background-color: var(--orange);
-  border: 0;
-  transition: box-shadow 0.3s ease-in-out;
-}
-#special .card:hover {
-  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.2);
-}
+  
+  /* hack */
+  .row{
+    width:100%;
+  }
+  .card {
+    background-color: var(--orange);
+    border: 0;
+    transition: box-shadow 0.3s ease-in-out;
 
-#special .card-title {
-  margin-bottom: 0.03rem;
-}
-#special .card-text {
-  font-weight: 500;
+    &:hover {
+      box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .card-title {
+    margin-bottom: 0.03rem;
+  }
+  .card-text {
+    font-weight: 500;
+  }
 }
 
 .portfolio-row .card-text .fab {
