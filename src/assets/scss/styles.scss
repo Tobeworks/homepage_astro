@@ -37,10 +37,10 @@ strong {
   min-height: 250px;
   padding: 60px 0;
   text-align: center;
-}
-.content-leistungen p {
-  width: 50%;
-  margin: 0 auto;
+  p {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 .contentsection {
@@ -212,20 +212,20 @@ h4 {
 }
 
 .title-arrow-down {
-  font-size: 5em;
+  font-size: 3em;
   width: 100px;
   margin: 0 auto;
   display: block;
   opacity: 0;
   width: 80px;
 }
-.title-arrow-down-mobile {
-  font-size: 5em;
-  width: 100px;
-  margin: 0 auto;
-  display: block;
-  width: 80px;
-}
+// .title-arrow-down-mobile {
+//   font-size: 5em;
+//   width: 100px;
+//   margin: 0 auto;
+//   display: block;
+//   width: 80px;
+// }
 
 #typewriter-hidden {
   display: none;
@@ -258,8 +258,13 @@ h4 {
 .reverse {
   unicode-bidi: bidi-override;
   direction: rtl;
+  text-align: left;
 }
-
+.datenschutz {
+  h3 {
+    padding: 20px 100px;
+  }
+}
 footer {
   padding-top: 25px;
   background-color: var(--erieBlack);
@@ -337,8 +342,14 @@ footer {
   .titlesection .row {
     min-height: 300px;
   }
-  .content-leistungen p {
-    width: 90%;
+
+  .content-leistungen {
+    h3 {
+      text-align: center !important;
+    }
+    p {
+      width: 90%;
+    }
   }
   .contentsection {
     h2 {
@@ -369,6 +380,12 @@ footer {
 }
 
 @media (max-width: 575.98px) {
+  .datenschutz {
+    h3 {
+      font-size: 1.2rem;
+      padding: 0;
+    }
+  }
   h1,
   h2,
   h3,
@@ -377,7 +394,17 @@ footer {
     white-space: pre-line;
     text-align: left;
   }
-
+  .title-arrow-down {
+    font-size: 2em;
+    width: 1rem;
+  }
+  .content-leistungen {
+    min-height: 250px;
+    padding: 60px 10px;
+    h3 {
+      text-align: center !important;
+    }
+  }
   .contentsection {
     h2 {
       font-size: 1.4em;

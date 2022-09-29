@@ -204,8 +204,21 @@ const MailForm = () => {
                             <InlineAlert msg={errors.message?.message} />
                         )}
                     </div>
+                    <div class="form-check">
+                        <input className="form-check-input" type="checkbox" value="" id="datenschutz"
+                            {...register("datenschutz", { required: "Bitte akzpetieren Sie den Datenschutz" })}
+                        ></input>
+                            <label className="form-check-label" for="datenschutz">
+                            Ich habe die <a href="/datenschutz">Datenschutzerklärung</a> gelesen
+                            </label>
+                        {errors.datenschutz?.message && (
+                            <InlineAlert msg={errors.datenschutz?.message} />
+                        )}
+                    </div>
+
                     <div className="my-3">
 
+         
                         {formValid ? (
                             <InlineAlert
                                 msg="Ihre Nachricht wurde erfolgreich gesendet. Ich werde mich zeitnah bei Ihnen melden."
@@ -215,7 +228,7 @@ const MailForm = () => {
                             <button type="submit" className="btn btn-erieblack">
                                     {forminSubmit ?
                                         (<div className="spinner-border spinner-border-sm text-primary mr-3" role="status">
-                                            <span className="visually-hidden">Loading...</span> 
+                                            <span className="visually-hidden"></span> 
                                         </div>) : ''
                                     } Nachricht abschicken</button>
                         )}
