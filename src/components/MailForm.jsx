@@ -208,7 +208,7 @@ const MailForm = () => {
                         <input className="form-check-input" type="checkbox" value="" id="datenschutz"
                             {...register("datenschutz", { required: "Bitte akzpetieren Sie den Datenschutz" })}
                         ></input>
-                            <label className="form-check-label" for="datenschutz">
+                            <label className="form-check-label" htmlFor="datenschutz">
                             Ich habe die <a href="/datenschutz">Datenschutzerklärung</a> gelesen
                             </label>
                         {errors.datenschutz?.message && (
