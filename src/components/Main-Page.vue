@@ -215,7 +215,7 @@
 
         <section class="bg-orange text-erieblack cutsection" id="special">
             <div class="row">
-                <div class="col-sm-7 align-self-center text-silver">
+                <div class="col-sm-7 align-self-center text-silver" data-aos="fade-right">
                     <div class="cut-left">
                         <h3>Warum Tobeworks?</h3>
                         <p>Weil ich Lösungen habe. Tobeworks ist fullstack und interdiszpilinär. Von studierten Spezialisten mit jahrelanger Branchen-Erfahrung.<br>
