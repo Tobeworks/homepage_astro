@@ -186,9 +186,21 @@
             </div>
         </section>
 
-        <section class="bg-silver text-erieblack mainsection">
+        <section class="bg-erieblack text-orange section-mobile d-flex align-items-center d-xl-none">
+
+        <div class="px-4 mx-auto" id="start-logo-block">
+            <img src="../assets/images/logos/TobeworksLogo.svg" class="img-fluid" alt="logo" data-aos="fade-down" />
+            <h2 data-aos="fade-up" data-aos-delay="500" class="mt-4">Websolutions</h2>
+            <a href="" class="title-arrow-down">
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+        </section>
+
+
+        <section class="bg-silver text-erieblack mainsection"  id="contentStart">
             <div class="p-2 p-md-5 text-center">
-                <img src="../assets/images/logos/TobeworksLogo.svg" class="img-fluid" alt="Tobeworks Logo" title="tobeworks Logo" data-aos="fade-up" />
+                <img src="../assets/images/logos/TobeworksLogo.svg" class="img-fluid d-none d-xl-inline" alt="Tobeworks Logo" title="tobeworks Logo" data-aos="fade-up" />
 <div class="text-center">
 
                 <h3 class="text-center my-3" data-aos="fade-up">Full-Service seit 2018</h3>

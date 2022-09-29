@@ -278,18 +278,19 @@ footer {
 
 .section-mobile {
   height: 100vh;
+  h2 {
+    color: var(--silver);
+    margin: 12px auto;
+    text-align: center !important;
+  }
+  .row {
+    margin-top: -30%;
+  }
+  p {
+    font-size: 1.4em;
+  }
 }
-.section-mobile h2 {
-  color: var(--silver);
-  margin: 7px auto;
-  text-align: center;
-}
-.section-mobile .row {
-  margin-top: -30%;
-}
-.section-mobile p {
-  font-size: 1.4em;
-}
+
 .navbar-toggle {
   margin: 15px 0;
   cursor: pointer;
@@ -396,7 +397,7 @@ footer {
   }
   .title-arrow-down {
     font-size: 2em;
-    width: 1rem;
+    width: 29px;
   }
   .content-leistungen {
     min-height: 250px;
