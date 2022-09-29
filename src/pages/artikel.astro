@@ -1,30 +1,27 @@
 ---
 // Component Imports
-import MainPage from "../components/Main-Page.vue";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-
 import Layout from "../layouts/Layout.astro";
-import { title } from "process";
-import { map } from "zod";
+import ArtikelLister from "@components/ArtikelLister.astro";
 
 //const projects = await Astro.glob('./project/**/*.md');
 
 const artikel = (await Astro.glob('./artikel/**/*.md'))
 	.filter(({ frontmatter }) => !!frontmatter.publishDate)
+  .filter((post) => !post.frontmatter.draft)
 	.sort(
 		(a, b) =>
 			new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf()
 	);
 ---
-<script define:vars={{artikel}}>
-{console.log(artikel)}
-</script>
+
 <Layout>
   <Header />
+  <section class="bg-dark">
     {artikel.map(artikel => {
-        return artikel.url+'<br>';
+        return <ArtikelLister img={artikel.frontmatter.img} url={artikel.url} date={artikel.frontmatter.publishDate} title={artikel.frontmatter.title} teaser={artikel.frontmatter.description}></ArtikelLister>;
     })}
-    {artikel[0].url}
+    </section>
   <Footer />
 </Layout>

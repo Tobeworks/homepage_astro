@@ -1,0 +1,30 @@
+---
+import {Image} from "@astrojs/image/components"
+const {title, teaser, date, url, img, art = "Blog"} = Astro.props
+---
+
+
+
+<div
+  class="bg-silver row g-0 border overflow-hidden flex-md-row my-4 h-md-250 position-relative">
+  <div class="col-auto d-none d-lg-block">
+    <Image src={img} width={150} alt="fdf" aspectRatio="2:3" />
+  </div>
+  <div class="col p-4 d-flex flex-column position-static">
+    <strong class="d-inline-block mb-2 text-orange">{art}</strong>
+    <h3 class="mb-0">{title}</h3>
+    <div class="mb-1 text-muted">
+      <time datetime={date}>
+        {
+          new Date(date).toLocaleDateString("de-de", {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          })
+        }
+      </time>
+    </div>
+    <p class="card-text mb-auto">{teaser}</p>
+    <a href={url} class="stretched-link">Zum Inhalt</a>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+---
+// Component Imports
+import {Image, Picture} from "@astrojs/image/components"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import Layout from "../layouts/Layout.astro"
+
+const {
+  content: {title, teaser, publishDate, url, img, art = "Blog"},
+} = Astro.props
+---
+
+<script>
+  import ArrowScroller from "../modules/ArrowScroll"
+  ArrowScroller()
+</script>
+<style>
+
+</style>
+
+<Layout>
+  <Header />
+  <main>
+    <article class="bg-silver p-4">
+      <div class="d-flex w-100 flex-row mb-3 justify-content-center">
+        <div>
+          <Picture
+            src={img}
+            widths={[250, 350, 480, 650, 900, 1000]}
+            alt="fdf"
+            aspectRatio="16:9"
+            sizes="(max-width: 349px) 250px, (max-width: 499px) 350px,(max-width: 767px) 488px,(max-width: 999px) 650px,(max-width:1199px) 900px, (min-width: 1200px) 1000px"
+            formats={["webp"]}
+            class="artikel-image"
+          />
+        </div>
+      </div>
+      <div class="d-flex flex-row mb-3 justify-content-center"></div>
+      <div class="p-5">
+        <h1>{title}</h1>
+        <!-- <Image src={img} width={900} alt="fdf" aspectRatio="16:9" /> -->
+        <slot />
+
+        <div class="mb-1 text-muted">
+         Author: Tobias Lorsbach -  <time datetime={publishDate}>
+            {
+              new Date(publishDate).toLocaleDateString("de-de", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              })
+            }
+          </time>
+        </div>
+      </div>
+    </article>
+  </main>
+  <Footer />
+</Layout>
