@@ -200,7 +200,7 @@
 
         <section class="bg-silver text-erieblack mainsection"  id="contentStart">
             <div class="p-2 p-md-5 text-center">
-                <img src="../assets/images/logos/TobeworksLogo.svg" class="img-fluid d-none d-xl-inline" alt="Tobeworks Logo" title="tobeworks Logo" data-aos="fade-up" />
+                <img src="../assets/images/logos/TobeworksLogo.svg" class="img-fluid d-none d-lg-inline" alt="Tobeworks Logo" title="tobeworks Logo" data-aos="fade-up" />
 <div class="text-center">
 
                 <h3 class="text-center my-3" data-aos="fade-up">Full-Service seit 2018</h3>
