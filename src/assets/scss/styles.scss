@@ -162,7 +162,7 @@ h4 {
 /* special cutted */
 #special {
   background-repeat: no-repeat;
-  
+
   /* hack */
   .row{
     width:100%;
@@ -223,15 +223,9 @@ h4 {
   margin: 0 auto;
   display: block;
   opacity: 0;
-  width: 25px;
+  text-align: center;
 }
-// .title-arrow-down-mobile {
-//   font-size: 5em;
-//   width: 100px;
-//   margin: 0 auto;
-//   display: block;
-//   width: 80px;
-// }
+
 
 #typewriter-hidden {
   display: none;
@@ -403,7 +397,7 @@ footer {
   }
   .title-arrow-down {
     font-size: 2em;
-    width: 29px;
+      text-align: center;
   }
   .content-leistungen {
     min-height: 250px;
