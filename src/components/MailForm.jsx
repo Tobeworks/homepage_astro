@@ -55,6 +55,7 @@ const ReCaptchaField = props => {
         type="hidden"
         name="recaptcha"
         id="recaptcha"
+        className=""
         value={token}
         {...props.register}
     />;
