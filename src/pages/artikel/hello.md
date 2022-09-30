@@ -1,10 +1,10 @@
 ---
 layout: ../../layouts/Artikel.astro
-title: Blogger
+title: Hallo Welt
 publishDate: 2022-09-01 00:00:00
-img: /favicon.png
+img: /artikel/coder.avif
 description: |
- Das ist ein erster Test
+ Dies ist mein erster Blogartikel.
 art: "Blog" 
 tags:
   - webddesign
