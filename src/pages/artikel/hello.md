@@ -2,7 +2,7 @@
 layout: ../../layouts/Artikel.astro
 title: Blogger
 publishDate: 2022-09-01 00:00:00
-img: https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1340&q=80
+img: /favicon.png
 description: |
  Das ist ein erster Test
 art: "Blog" 
