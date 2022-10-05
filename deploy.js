@@ -1,11 +1,13 @@
 const FtpDeploy = require("ftp-deploy");
 const ftpDeploy = new FtpDeploy();
+require('dotenv').config()
+
 
 const config = {
-    user: "deploy",
+    user: process.env.DEPLOY_USER,
     // Password optional, prompted if none given
-    password: "avLt47@47",
-    host: "tobeworks.de",
+    password: process.env.DEPLOY_PW,
+    host: process.env.DEPLOY_HOST,
     port: 21,
     localRoot: __dirname + "/dist/",
     remoteRoot: "/",
