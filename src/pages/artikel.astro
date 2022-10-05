@@ -5,8 +5,6 @@ import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
 import ArtikelLister from "@components/ArtikelLister.astro";
 
-//const projects = await Astro.glob('./project/**/*.md');
-
 const artikel = (await Astro.glob('./artikel/**/*.md'))
 	.filter(({ frontmatter }) => !!frontmatter.publishDate)
   .filter((post) => !post.frontmatter.draft)

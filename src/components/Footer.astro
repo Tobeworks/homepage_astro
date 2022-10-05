@@ -1,95 +1,120 @@
 ---
-import packageData from '../../package.json'
-import dreieck from '@assets/images/dreieck.svg';
+import packageData from "../../package.json"
+import dreieck from "@assets/images/dreieck.svg"
 
-const currentYear = new Date().getFullYear();
-const Version = packageData.version;
+const currentYear = new Date().getFullYear()
+const Version = packageData.version
 ---
-        <footer class="container" id="main-footer">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h4>navigation.</h4>
-                        <ul class="nav flex-column footer-nav mb-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/">Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/kontakt">Kontakt</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/leistungen">Leistungen</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="/portfolio">Referenzen und Partner</a>
-                            </li> -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="/about">Über</a>
-                            </li>
-                        </ul>
-                    </div>
 
-                    <div class="col-sm-4">
-                        <h4>leistungen.</h4>
-                        <ul class="nav flex-column footer-nav mb-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/webentwicklung/webdesign-mainz-wiesbaden">Responsive Webdesign
-                                    Mainz</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/wordpress/entwicklung">Wordpress</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/wordpress/programmierung">Wordpress-Programmierer</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/wordpress/wartung">Wordpress-Wartung</a>
-                            </li>
-                        </ul>
-                    </div>
-                         <div class="col-sm-4">
-                        <h4>tobeworks.</h4>
-                        <ul class="nav flex-column footer-nav mb-3">
-                            <li class="nav-item pr-2">
-                                <a class="nav-link">Tobias Lorsbach</a>
-                            </li>
-                            <li class="nav-item pr-2">
-                                <a class="nav-link">Neue Universitätsstraße 7, 55116 Mainz</a>
-                            </li>
-                            <li class="nav-item pr-2">
-                                <a class="nav-link">0179/1259004</a>
-                            </li>
-                            <li class="nav-item pr-2">
-                                <a class="reverse nav-link" href="/kontakt">ed.skrowebot@ollah</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="text-center pb-3 text-orange">
-                <div class="p-3"><img src={dreieck} alt="Logo Dreieck" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000"></div>
-                <b>{currentYear }</b>
-                -
-                { Version } - letzte Änderung: 10.2022<br>
-                <a class="popover-link" data-bs-content="Dieses Theme wurde individuell in HTML 5, CSS, JS, und dem Framework Astro unter Verwendung von Bootstrap 5.2 erstellt." data-bs-placement="top" data-bs-toggle="popover" title="Themedesign">Theme by Tobeworks ©{currentYear}</a>
+<footer class="container" id="main-footer">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-4">
+        <h4>navigation.</h4>
+        <ul class="nav flex-column footer-nav mb-3">
+          <li class="nav-item">
+            <a class="nav-link" href="/"
+              >Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/kontakt">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/leistungen">Leistungen</a>
+          </li>
 
-                <div class="my-2">
-                    Made with <i class="fas fa-heart"></i> and <i class="fab fa-js-square"></i>
-                    <br>
-                    <small> Diese Webseite setzt keine <i class="fas fa-cookie"></i> Cookies und speichert keinerlei Daten.</small>
-                </div>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">Über</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/artikel">Artikel</a>
+          </li>
+        </ul>
+      </div>
 
-                <div class="fs-1 my-2">
-                    <a href="https://github.com/Tobeworks" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <p>
-                    <a href="/impressum">Impressum</a>
-                    <a href="/datenschutz">Datenschutz</a>
-                </p>
-            </div>
-        </footer>
+      <div class="col-sm-4">
+        <h4>leistungen.</h4>
+        <ul class="nav flex-column footer-nav mb-3">
+          <li class="nav-item">
+            <a class="nav-link" href="/webentwicklung/webdesign-mainz-wiesbaden"
+              >Responsive Webdesign Mainz</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/wordpress/entwicklung">Wordpress</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/wordpress/programmierung"
+              >Wordpress-Programmierer</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/wordpress/wartung">Wordpress-Wartung</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <h4>tobeworks.</h4>
+        <ul class="nav flex-column footer-nav mb-3">
+          <li class="nav-item pr-2">
+            <a class="nav-link">Tobias Lorsbach</a>
+          </li>
+          <li class="nav-item pr-2">
+            <a class="nav-link">Neue Universitätsstraße 7, 55116 Mainz</a>
+          </li>
+          <li class="nav-item pr-2">
+            <a class="nav-link">0179/1259004</a>
+          </li>
+          <li class="nav-item pr-2">
+            <a class="reverse nav-link" href="/kontakt">ed.skrowebot@ollah</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="text-center pb-3 text-orange">
+    <div class="p-3">
+      <img
+        src={dreieck}
+        alt="Logo Dreieck"
+        data-aos="fade-in"
+        data-aos-delay="500"
+        data-aos-duration="1000"
+      />
+    </div>
+    <b>{currentYear}</b>
+    -
+    {Version} - letzte Änderung: 10.2022<br />
+    <a
+      class="popover-link"
+      data-bs-content="Dieses Theme wurde individuell in HTML 5, CSS, JS, und dem Framework Astro unter Verwendung von Bootstrap 5.2 erstellt."
+      data-bs-placement="top"
+      data-bs-toggle="popover"
+      title="Themedesign"
+      >Theme by Tobeworks ©{currentYear}
+    </a>
+
+    <div class="my-2">
+      Made with <i class="fas fa-heart"></i> and <i class="fab fa-js-square"
+      ></i>
+      <br />
+      <small>
+        Diese Webseite setzt keine <i class="fas fa-cookie"></i> Cookies und speichert
+        keinerlei Daten.</small
+      >
+    </div>
+
+    <div class="fs-1 my-2">
+      <a href="https://github.com/Tobeworks" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <p>
+      <a href="/impressum">Impressum</a>
+      <a href="/datenschutz">Datenschutz</a>
+    </p>
+  </div>
+</footer>
