@@ -26,6 +26,33 @@ strong {
   font-weight: 700;
   letter-spacing: 0.07em;
 }
+
+.artikel-image{
+  img{
+    width: 100%;
+  }
+}
+
+article.blog {
+  p {
+    margin: 5px 0 55px 0;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0px 0 50px 0;
+    text-align: center;
+  }
+  h4 {
+    font-size: 1rem;
+    margin: 0px 0 10px 0;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin: 0px 0 10px 0;
+  }
+}
+
 /* /global */
 
 /* main CSS */
@@ -164,8 +191,8 @@ h4 {
   background-repeat: no-repeat;
 
   /* hack */
-  .row{
-    width:100%;
+  .row {
+    width: 100%;
   }
   .card {
     background-color: var(--orange);
@@ -225,7 +252,6 @@ h4 {
   opacity: 0;
   text-align: center;
 }
-
 
 #typewriter-hidden {
   display: none;
@@ -397,7 +423,7 @@ footer {
   }
   .title-arrow-down {
     font-size: 2em;
-      text-align: center;
+    text-align: center;
   }
   .content-leistungen {
     min-height: 250px;

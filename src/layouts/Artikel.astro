@@ -9,35 +9,13 @@ const {
   content: {title, teaser, publishDate, url, img, art = "Blog"},
 } = Astro.props
 ---
-<style is:inline>
-
-
-article p{
-  margin: 5px 0 55px 0;
-}
-
-article h1{
-  font-size: 2rem;
-  margin: 0px 0 50px 0;
-  text-align: center;
-}
-
-
-article h4{
-  font-size: 1rem;
-  margin: 0px 0 10px 0;
-}
-article h2{
-  font-size: 1.25rem;
-  margin: 0px 0 10px 0;
-}
-</style>
 
 <Layout>
   <Header />
   <main>
-    <article class="bg-silver p-sm-2 p-md-4">
-      <div class="d-flex w-100 flex-row mb-3 justify-content-center">
+    <article class="blog bg-silver">
+
+      <div class="d-flex w-100 flex-row mb-3  justify-content-sm-start justify-content-md-center p-3 p-md-5">
         <div>
           <Picture
             src={img}
@@ -55,7 +33,7 @@ article h2{
         <h1>{title}</h1>
         <slot />
         <div class="mb-1 text-muted">
-         Author: Tobias Lorsbach -  <time datetime={publishDate}>
+          Author: Tobias Lorsbach - <time datetime={publishDate}>
             {
               new Date(publishDate).toLocaleDateString("de-de", {
                 year: "numeric",

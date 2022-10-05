@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/Artikel.astro
-title: Hallo Welt und Foobar
+title: Hallo Welt
 publishDate: 2022-09-01 00:00:00
 img: /artikel/coder.avif
 description: |
@@ -12,6 +12,6 @@ tags:
   - support
 draft: false  
 ---
-## Hallo Welt
+## Hallo Welt, foobar und foo baz
 Dieser Blog wurde im Zuge der Seiten-Migration mit Astro.js umgesetzt und soll nun als kleienr Spielplatz für Ideen und Gedanken dienen, die in meinem Arbeitsalltag auftauchen und die ich mit dem Rest der Welt teilen möchte.
-Hier wird es um Themen rund um **Webentwicklung**, **Webdesign**, **Systemm-Integration**, **Security** und  **Softwareentwicklung** und mehr gehen.
+Hier wird es um Themen rund um **Webentwicklung**, **Webdesign**, **System-Integration**, **Security** und  **Software-Entwicklung** und mehr gehen.
