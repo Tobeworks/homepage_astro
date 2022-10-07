@@ -7,8 +7,7 @@
             <div class="row">
                 <div class="col-sm-6 align-self-end">
                     <div id="mover">
-                        <h2 class="cover my-2" data-aos="fade-up" data-aos-duration="300">Das Große Ganze
-                            <br>im Blick.
+                        <h2 class="cover my-2" data-aos="fade-up" data-aos-duration="300">Mit Blick auf`s Große Ganze
                         </h2>
 
                         <p id="typewriter" class="lead" data-aos="fade-up" data-aos-duration="500">
