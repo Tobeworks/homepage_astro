@@ -351,6 +351,15 @@ footer {
   width: 70px;
 }
 
+.showcase-img{
+  img{
+    border: 3px solid var(--erieBlack);
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
 @media (max-width: 767.98px) {
   h1,
   h2,

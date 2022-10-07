@@ -1,92 +1,77 @@
 ---
-// Component Imports
 import Header from "../../components/Header.astro"
 import Footer from "../../components/Footer.astro"
 import Layout from "../../layouts/Layout.astro"
+import ShowcasePicture from "@components/showcasePicture.astro"
+import ayurscreen_home from "src/assets/images/screens/ayur_screen_home.png"
+import ayurscreen_variant from "src/assets/images/screens/ayur_screen_variant.png"
+import ayurscreen_register from "src/assets/images/screens/ayur_screen_register.png"
+import ayurscreen_index from "src/assets/images/screens/ayur_screen_index.png"
+import ayurscreen_mobile_cart from "src/assets/images/screens/ayur_screen_mobile_cart.png"
+import ayurscreen_mobile_index from "src/assets/images/screens/ayur_screen_mobile_index.png"
+
 ---
 
 <Layout>
   <Header />
- <main>
-  <div class="position-relative overflow-hidden p-3 text-center bg-orange">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">Showcase</h1>
-      <p class="lead fw-normal">
-        Umsetzung eines Shops von einem Adobe XD Design als HTML 5 Template in Bootstrap 5
-      </p>
-      <a class="btn btn-outline-primary" href="#">Coming soon</a>
-    </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-  </div>
+  <style>
+    .hero-header {
+      background-image: url(/src/assets/images/mockups/ayur_cart.png);
+      background-size: cover;
+      background-position: 0px 40%;
+    }
+    @media (max-width: 767.98px) {
+      .hero-header {
+        background-image: none;
+      }
+    }
+  </style>
+  <main>
+    <section
+      class="position-relative overflow-hidden p-3 text-center bg-silver hero-header d-none d-md-block ">
+      <div class="col-md-5 p-3 p-sm-3 p-lg-5 mx-auto my-5 bg-black text-silver shadow">
+        <h1 class="fw-normal">Showcase</h1>
+        <p class="fw-normal text-start text-md-center">
+          Umsetzung einer Shop-Theme
+        </p>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block">
+      </div>
+    </section>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
+<section class="container bg-silver text-erieblack mt-3 contentsection">
+  <h2>Shop Template für Gambio Shop System</h2>
+  <p class="text-sm-start text-md-center">Das Layout wurde von einer Adobe XD Vorlage "from Scratch" als valides HTML 5 umgesetzt. Als CSS-Framework ist Bootstrap 5.2 zum Einsatz gekommen. Zusätzlich wurde mit Sass und JS gearbeitet. Hauptaugenmerk wurde auf das Design und dessen Usability (UX) gelegt.</p>
+</section>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+    <div class="d-md-flex flex-md-equal w-100">
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture img={ayurscreen_home} title="Ayur home" id="ayurscreen_home" />
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture img={ayurscreen_variant} title="Ayur variant" id="ayurscreen_variant"  />
       </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
-  </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+    <div class="d-md-flex flex-md-equal w-100">
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture img={ayurscreen_register} title="Ayur register" id="ayurscreen_register"  />
       </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture img={ayurscreen_index} title="Ayur index" id="ayurscreen_index"  />
       </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
-  </div>
+    <div class="d-md-flex flex-md-equal w-100">
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture img={ayurscreen_mobile_index} title="Ayur mobile register" id="ayurscreen_mobile_index" mobile={true}  />
+      </div>
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture img={ayurscreen_mobile_cart} title="Ayur mobile cart" id="ayurscreen_mobile_cart" mobile={true}  />
+      </div>
+    </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-</main>
+   
+  </main>
   <Footer />
 </Layout>
