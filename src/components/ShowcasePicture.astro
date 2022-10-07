@@ -1,0 +1,42 @@
+---
+import {Picture, Image} from "@astrojs/image/components"
+const {img, title, id, mobile = false} = Astro.props
+
+const selector = `#${id}`;
+let image_width = 1000;
+if(mobile == true){
+    image_width = 350;
+}
+---
+
+
+
+<Picture
+  class="showcase-img"
+  data-bs-toggle="modal" 
+  data-bs-target={selector}
+  src={img}
+  alt={title}
+  widths={[320, 650]}
+  sizes="(max-width:1199px) 320px, (min-width: 1200px) 500px"
+  formats={["webp"]}
+  aspectRatio="1:1"
+/>
+
+<!-- Modal -->
+<div class="modal fade bg-silver" id={id} tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-fullscreen" data-bs-dismiss="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" >{title}</h1>
+        
+      </div>
+      <div class="modal-body">
+<Image src={img} alt={title} width={image_width} format="webp"></Image>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-erieblack" data-bs-dismiss="modal">Voransicht schließen</button>
+      </div>
+    </div>
+  </div>
+</div>
