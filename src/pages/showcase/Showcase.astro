@@ -1,0 +1,117 @@
+---
+import Header from "../../components/Header.astro"
+import Footer from "../../components/Footer.astro"
+import Layout from "../../layouts/Layout.astro"
+import ShowcasePicture from "@components/ShowcasePicture.astro"
+
+import {Image} from "@astrojs/image/components"
+import { getImage } from "@astrojs/image"
+const {
+  content: {
+    title,
+    subtitle,
+    text,
+    header_img,
+    img1,
+    img1_title,
+    img1_id,
+    img1_mobile,
+    img2,
+    img2_title,
+    img2_id,
+    img2_mobile,
+    img3,
+    img3_title,
+    img3_id,
+    img3_mobile,
+    img4,
+    img4_title,
+    img4_id,
+    img4_mobile,
+    img5,
+    img5_title,
+    img5_id,
+    img5_mobile,
+    img6,
+    img6_title,
+    img6_id,
+    img6_mobile,
+    publishDate,
+  },
+} = Astro.props
+---
+
+<Layout>
+  <Header />
+  
+
+  <main>
+    <!-- <Image src={header_img} width={500} alt="fg" aspectRatio="16:9"></Image> -->
+
+    <section class="container bg-silver text-erieblack mt-3 contentsection text-sm-start text-md-center">
+      <h1 class="fw-normal">Showcase</h1>
+      <h2>{subtitle}</h2>
+      <p class="text-sm-start text-md-center">
+        {title}
+        {text}
+      </p>
+    </section>
+
+    <div class="d-md-flex flex-md-equal w-100">
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture
+          img={img1}
+          title={img1_title}
+          id={img1_id}
+          mobile={img1_mobile}
+        />
+      </div>
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture
+          img={img2}
+          title={img2_title}
+          id={img2_id}
+          mobile={img2_mobile}
+        />
+      </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100">
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture
+          img={img3}
+          title={img3_title}
+          id={img3_id}
+          mobile={img3_mobile}
+        />
+      </div>
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture
+          img={img4}
+          title={img4_title}
+          id={img4_id}
+          mobile={img4_mobile}
+        />
+      </div>
+    </div>
+    <div class="d-md-flex flex-md-equal w-100">
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture
+          img={img5}
+          title={img5_title}
+          id={img5_id}
+          mobile={img5_mobile}
+        />
+      </div>
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture
+          img={img6}
+          title={{img6_title}}
+          id={img5_id}
+          mobile={img6_mobile}
+        />
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>

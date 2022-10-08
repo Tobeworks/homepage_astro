@@ -1,6 +1,6 @@
 {
   "name": "@tobeworks6/homepage",
-  "version": "6.1.4",
+  "version": "6.1.5",
   "private": true,
   "description": "",
   "repository": "https://github.com/Tobeworks/homepage_astro",
@@ -16,7 +16,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/image": "^0.7.0",
+    "@astrojs/image": "^0.9.2",
     "@astrojs/react": "^1.1.4",
     "@astrojs/vue": "^1.0.2",
     "@fortawesome/fontawesome-free": "^6.2.0",
@@ -28,7 +28,7 @@
     "@popperjs/core": "^2.11.6",
     "animejs": "^3.2.1",
     "aos": "^2.3.4",
-    "astro": "^1.3.0",
+    "astro": "^1.4.5",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.1",
     "popper.js": "^1.16.1",
@@ -37,6 +37,7 @@
     "react-google-recaptcha-v3": "^1.10.0",
     "react-hook-form": "^7.36.0",
     "scrollreveal": "^4.0.9",
+    "sharp": "^0.31.1",
     "shufflejs": "^5.4.1",
     "vue": "^3.2.39"
   },

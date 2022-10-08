@@ -9,7 +9,8 @@ export default defineConfig({
   integrations: [vue(), image({
     // supported levels: 'debug' | 'info' | 'warn' | 'error' | 'silent'
     // default: 'info'
-    logLevel: 'debug'
+    logLevel: 'debug',
+    serviceEntryPoint: '@astrojs/image/sharp'
   }), react()],
   vite: {}
 });
