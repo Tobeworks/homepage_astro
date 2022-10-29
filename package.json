@@ -1,6 +1,6 @@
 {
   "name": "@tobeworks6/homepage",
-  "version": "6.1.7",
+  "version": "6.1.8",
   "private": true,
   "description": "",
   "repository": "https://github.com/Tobeworks/homepage_astro",
@@ -29,7 +29,7 @@
     "@popperjs/core": "^2.11.6",
     "animejs": "^3.2.1",
     "aos": "^2.3.4",
-    "astro": "^1.4.5",
+    "astro": "^1.5.1",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.1",
     "popper.js": "^1.16.1",

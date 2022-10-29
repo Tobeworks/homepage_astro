@@ -91,8 +91,8 @@ strong {
 }
 
 .titlesection {
-  min-height: 94vh;
-  padding: 60px 25px 25px 25px;
+  min-height: min-content;
+  padding: 60px 25px 100px 25px;
   .btn {
     margin-right: 0.8em;
   }
@@ -349,9 +349,13 @@ footer {
   .lead {
     font-size: 1em;
   }
-  .titlesection .row {
+  .titlesection {
+    min-height: 99vh;
+  .row {
     min-height: 300px;
   }
+  }
+
 
   .content-leistungen {
     h3 {
