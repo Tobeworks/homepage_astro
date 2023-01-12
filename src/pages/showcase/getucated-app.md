@@ -1,7 +1,8 @@
 ---
-layout: ./Showcase.astro
-title: Getucated - Hybrid App für iOS und Android 
-teaser:  Frontend- und Backend-Entwicklung, technische Leitung.
+layout: ../../layouts/Showcase.astro
+title: Getucated Hybrid App
+subtitle: für iOS und Android
+teaser: Frontend und Backend-Entwicklung, technische Leitung.
 header_img: /src/assets/images/screens/getucated_phones.png
 img1: /src/assets/images/screens/getucated/getucated_screen1.png
 img1_title: Store Screen
@@ -36,10 +37,8 @@ img6: /src/assets/images/screens/getucated/iphone_mockup_wissenssnack.png
 img6_title: Wissenssnack Screen
 img6_id: image6
 img6_mobile: true
-
-
 art: "showcase"
-draft: true
+
 publishDate: 2022-10-01 00:00:00
 ---
 ### Evaluierung und Consulting

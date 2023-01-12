@@ -3,7 +3,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
-import ArtikelLister from "/src/components/ArtikelLister.astro";
+import ArtikelLister from "../components/ArtikelLister.astro";
 
 const artikel = (await Astro.glob('./artikel/**/*.md'))
 	.filter(({ frontmatter }) => !!frontmatter.publishDate)

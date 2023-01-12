@@ -4,7 +4,187 @@
     <main id="content-middle">
 
         <section class="bg-erieblack text-orange mainsection titlesection  d-none d-xl-block">
-            <div class="row">
+            <div style="" class="titlerow row align-items-end">
+            <div class="col-sm-6 align-self-end">
+                <div id="mover">
+                    <h2 class="cover my-2" data-aos="fade-up" data-aos-duration="300">Das Große Ganze
+                        <br>im Blick.
+                    </h2>
+            
+                    <p id="typewriter" class="lead" data-aos="fade-up" data-aos-duration="500">
+                        TOBEWORKS bietet zeitgerechte, maßgeschneiderte,<br>
+                        digitale
+                        <strong>Kommunikationslösungen.</strong>
+                    </p>
+            
+                    <div id="typewriter-hidden">
+                        <div id="typewriter-hidden-1">
+                            TOBEWORKS bietet zeitgerechte, maßgeschneiderte,<br>
+                            digitale
+                            <strong>Kommunikationslösungen.</strong>
+                        </div>
+                        <div id="typewriter-hidden-2">
+                            TOBEWORKS designt, automatisiert und programmiert. Damit Sie sich noch besser um Ihr
+                            <b>Kerngeschäft</b>
+                            kümmern können.
+                        </div>
+            
+                        <div id="typewriter-hidden-3">
+                            TOBEWORKS bringt Ihr Geschäft durch
+                            <b>Automation</b>
+                            und
+                            <b>Digitalisierung</b>
+                            auf ein neues Level
+                        </div>
+                    </div>
+            
+                    <div>
+                        <a href="/about" class="btn btn-erieblack" data-aos="fade-up" data-aos-delay="200">Mehr erfahren</a>
+                        <a href="/kontakt" class="btn btn-orange" data-aos="fade-up" data-aos-delay="300">Projekt anfragen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 align-self-end ">
+                <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="carousel-block" id="carousel-page1">
+            
+                                <div class="carousel-img">
+                                    <img src="../assets/images/carousel/react.svg" class="img-fluid" alt="app development react logo" />
+                                </div>
+                                <div class="carousel-body">
+                                    <div class="carousel-flex d-flex justify-content-between">
+                                        <div class="p-2 bd-highlight">
+                                            <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="prev">
+                                                <i class="bi bi-caret-left-fill"></i>
+                                            </a>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <h4>App Development</h4>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="next">
+                                                <i class="bi bi-caret-right-fill"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-text">Wir entwicklen mobile Apps für nahezu alle Usecases. Hybrid für iOS und Android.</div>
+                                </div>
+                                <div class="carousel-footer text-center p-2">
+                                    <img src="../assets/images/tech/npm.svg" alt="npm" />
+                                    <img src="../assets/images/tech/react.svg" alt="npm" />
+                                    <img src="../assets/images/tech/js.svg" alt="npm" />
+                                </div>
+            
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="carousel-block" id="carousel-page2">
+            
+                                <div class="carousel-img">
+                                    <img src="../assets/images/carousel/gears.svg" class="img-fluid" alt="app development react logo" />
+                                </div>
+                                <div class="carousel-body">
+                                    <div class="carousel-flex d-flex justify-content-between">
+                                        <div class="p-2 bd-highlight">
+                                            <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="prev">
+                                                <i class="bi bi-caret-left-fill"></i>
+                                            </a>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <h4>Web Development</h4>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="next">
+                                                <i class="bi bi-caret-right-fill"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-text">Gute Programmierung ist leicht zu erweitern, funktional, gut lesbar und vor allem schnell. Ihre individuelle Anwendung wird intuitiv und einfach zu bedienen sein.</div>
+                                </div>
+                                <div class="carousel-footer text-center p-2">
+                                    <img src="../assets/images/tech/php.svg" alt="npm" />
+                                    <img src="../assets/images/tech/react.svg" alt="npm" />
+                                    <img src="../assets/images/tech/js.svg" alt="npm" />
+                                    <img src="../assets/images/tech/github.svg" alt="npm" />
+                                    <img src="../assets/images/tech/npm.svg" alt="npm" />
+            
+                                </div>
+            
+                            </div>
+                        </div>
+            
+                        <div class="carousel-item">
+                            <div class="carousel-block" id="carousel-page4">
+                                <div class="carousel-img">
+                                    <img src="../assets/images/carousel/wordpress_stroke.svg" class="img-fluid" alt="Wordpress logo" />
+                                </div>
+                                <div class="carousel-body">
+                                    <div class="carousel-flex d-flex justify-content-between">
+                                        <div class="p-2 bd-highlight">
+                                            <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="prev">
+                                                <i class="bi bi-caret-left-fill"></i>
+                                            </a>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <h4>Wordpress Support</h4>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="next">
+                                                <i class="bi bi-caret-right-fill"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-text">Tobeworks findet die passende Lösung für Ihr Wordpress-Projekt.</div>
+                                </div>
+                                <div class="carousel-footer text-center p-2">
+                                    <img src="../assets/images/tech/wordpress.svg" alt="wordpress" />
+                                    <img src="../assets/images/tech/HTML.svg" alt="npm" />
+                                    <img src="../assets/images/tech/CSS.svg" alt="npm" />
+                                    <img src="../assets/images/tech/js.svg" alt="npm" />
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                        <div class="carousel-item">
+                            <div class="carousel-block" id="carousel-page3">
+                                <div class="carousel-img">
+                                    <img src="../assets/images/carousel/figma.svg" class="img-fluid" alt="webdesign logo" />
+                                </div>
+                                <div class="carousel-body">
+                                    <div class="carousel-flex d-flex justify-content-between">
+                                        <div class="p-2 bd-highlight">
+                                            <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="prev">
+                                                <i class="bi bi-caret-left-fill"></i>
+                                            </a>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <h4>Webdesign</h4>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <a class="btn btn-link" data-bs-target="#carousel" data-bs-slide="next">
+                                                <i class="bi bi-caret-right-fill"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-text">Gutes Design erkennt man an einfacher Bedienbarkeit und übersichtlichem Aufbau. Vom Entwurf bis zum fertigen, individuellen Produkt.</div>
+                                </div>
+                                <div class="carousel-footer text-center p-2">
+                                    <img src="../assets/images/tech/HTML.svg" alt="npm" />
+                                    <img src="../assets/images/tech/CSS.svg" alt="npm" />
+                                    <img src="../assets/images/tech/js.svg" alt="npm" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                </div>
+            </div>
+            </div>
+            <!-- <div class="row">
                 <div class="col-sm-6 align-self-end">
                     <div id="mover">
                         <h2 class="cover my-2" data-aos="fade-up" data-aos-duration="300">Das Große Ganze
@@ -183,7 +363,7 @@
 
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section class="bg-erieblack text-orange section-mobile d-flex align-items-center d-xl-none">
