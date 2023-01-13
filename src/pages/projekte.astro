@@ -23,6 +23,7 @@ import rp24_mobile from "/src/assets/images/portfolio/rp24.png"
 import mif from "/src/assets/images/shopmockup_full.png"
 import mif_mobile from "/src/assets/images/shopmockup_small.png"
 import lul from "/src/assets/images/portfolio/lul.png"
+import migrosbank from '../assets/images/portfolio/webcomponents.png';
 ---
 
 <script>
@@ -45,6 +46,55 @@ import lul from "/src/assets/images/portfolio/lul.png"
       <i class="fa-solid fa-arrow-down"></i>
     </a>
   </section>
+
+<!-- Migrosbank Start -->
+  <section class="bg-silver portfolio-row" id="contentStart">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <Picture
+            class="card-img-top"
+            src={migrosbank}
+            alt="Rosenberg Ayurveda"
+            widths={[300, 420, 650]}
+            sizes="(max-width: 767px) 300px,(max-width:1199px) 420px, (min-width: 1200px) 650px"
+            formats={["webp"]}
+            aspectRatio="4:3"
+          /> 
+        </div>
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Webwidget - Migrosbank</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Webcomponent</h6>
+            <p class="card-text">
+              Webcomponent mit VueJS, Docker und Google Cloud Platform, Python-API <br>
+              <small>Die Komponente kann vom Kunden per Remote in HTML-Datei eingebunden werden, mit zero Dependencies.</small>
+            </p>
+            <p class="card-text">
+              <i class="fab fa-vuejs"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-python"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+            </p>
+
+            <p class="card-footer">
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">Vue.js</span>
+              <span class="badge bg-erieblack">Python</span>
+              <span class="badge bg-erieblack">NPM</span>
+              <span class="badge bg-erieblack">CSS</span>
+              <span class="badge bg-erieblack">SASS</span>
+              <span class="badge bg-erieblack">Primevue</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Migrosbank Ende -->
+
+
 <!-- Ayur -->
   <section class="bg-silver portfolio-row" id="contentStart">
     <div class="card mb-3">
@@ -209,13 +259,13 @@ import lul from "/src/assets/images/portfolio/lul.png"
               <span class="badge bg-erieblack">iOS</span>
               <span class="badge bg-erieblack">Android</span>
             </p>
-             <!-- <div>
+              <div>
               <a
                 href="/showcase/getucated-app" 
                 class="btn btn-erieblack btn-sm my-3"
                 >Zum Showcase <i class="fa-solid fa-caret-right"></i>
               </a>
-            </div>   -->
+            </div>   
           </div>
         </div>
       </div>

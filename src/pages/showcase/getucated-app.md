@@ -2,7 +2,7 @@
 layout: ../../layouts/Showcase.astro
 title: Getucated Hybrid App
 subtitle: für iOS und Android
-teaser: Frontend und Backend-Entwicklung, technische Leitung.
+teaser: Frontend und Backend-Entwicklung und technische Projektleitung.
 header_img: /src/assets/images/screens/getucated_phones.png
 img1: /src/assets/images/screens/getucated/getucated_screen1.png
 img1_title: Store Screen
@@ -59,7 +59,7 @@ Als besonderes Feature sollte das Scrolling vier Richtungen implementiert werden
 Zusätzlich sollte die App eine kommerzielle Kauf-Funktion bekommen. Teile des Contents sind in der kostenlosen Grundversion gesperrt und können per In-App-Purchase erworben werden.
 
 ### Wissens-Snack - Remote Content Creation mit Push Service
-Später wurde noch die Komponente “Wissens-Snack” entwickelt. 
+In Version 2 wurde die Komponente “Wissens-Snack” entwickelt. 
 Mit dieser innovativen Funktion kan der Kunde via Wordpress einen Post absetzen und dieser wird dann automatisch per Push-Service an die App geschickt. Der User bekommt bei jedem Wissens-Snack eine Push-Benachrichtigung
 
 ### Komplette Store-Betreuung und Deploying

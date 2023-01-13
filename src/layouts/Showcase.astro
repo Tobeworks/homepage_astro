@@ -15,8 +15,8 @@ const { frontmatter} = Astro.props;
       class="container bg-silver text-erieblack mt-3 contentsection text-sm-start text-md-center">
       <h1 class="fw-normal">Showcase</h1>
       <h2>{frontmatter.title}<br> <small>{frontmatter.subtitle}</small></h2>
-      <p class="text-sm-start text-md-center">
-        {frontmatter.teaser}
+      <p class="text-sm-start text-md-center fs-4">
+        {frontmatter.teaser} 
         <slot />
       </p><div>
         <a href="/kontakt" class="btn btn-erieblack">Ihr individuelles Angebot anfragen</a>
