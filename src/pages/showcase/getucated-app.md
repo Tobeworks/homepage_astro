@@ -3,43 +3,43 @@ layout: ../../layouts/Showcase.astro
 title: Getucated Hybrid App
 subtitle: für iOS und Android
 teaser: Frontend und Backend-Entwicklung und technische Projektleitung.
-header_img: /src/assets/images/screens/getucated_phones.png
-img1: /src/assets/images/screens/getucated/getucated_screen1.png
+header_img: src/assets/images/screens/getucated_phones.png
+img1: src/assets/images/screens/getucated/getucated_screen1.png
 img1_title: Store Screen
 img1_id: image1
 img1_mobile: true
 
-img2: src/assets/images/screens/getucated/iphone_mockup_01.png
+img2: ./src/assets/images/screens/getucated/iphone_mockup_01.png
 img2_title: Splash Screen
 img2_id: image2
 img2_mobile: true
 
 
-img3: /src/assets/images/screens/getucated/iphone_mockup_epochen.png
+img3: ./src/assets/images/screens/getucated/iphone_mockup_epochen.png
 img3_title: Epochen
 img3_id: image3
 img3_mobile: true
 
 
-img4: /src/assets/images/screens/getucated/iphone_mockup_geschichte.png
+img4: src/assets/images/screens/getucated/iphone_mockup_geschichte.png
 img4_title: Geschichte
 img4_id: image4
 img4_mobile: true
 
 
-img5: /src/assets/images/screens/getucated/iphone_mockup_start.png
+img5: src/assets/images/screens/getucated/iphone_mockup_start.png
 img5_title: Start Screen
 img5_id: image5
 img5_mobile: true
 
 
-img6: /src/assets/images/screens/getucated/iphone_mockup_wissenssnack.png
+img6: src/assets/images/screens/getucated/iphone_mockup_wissenssnack.png
 img6_title: Wissenssnack Screen
 img6_id: image6
 img6_mobile: true
 art: "showcase"
 
-publishDate: 2022-10-01 00:00:00
+publishDate: 2022-12-01 00:00:00
 ---
 ### Evaluierung und Consulting
 **Getucated** wurde ursprünglich als Migrationsprojekt aus einer veralteten Cordova-App aus dem Jahr 2009 gestartet. 
