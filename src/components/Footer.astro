@@ -3,7 +3,8 @@ import packageData from "../../package.json"
 import dreieck from "/src/assets/images/dreieck.svg"
 
 const currentYear = new Date().getFullYear()
-const Version = packageData.version
+const Version = packageData.version;
+const lastchange = packageData.lastchange;
 ---
 
 <footer class="container" id="main-footer">
@@ -87,7 +88,7 @@ const Version = packageData.version
     </div>
     <b>{currentYear}</b>
     -
-    {Version} - letzte Änderung: {packageData.lastchange}<br />
+    {Version} - letzte Änderung: {lastchange}<br />
     <a
       class="popover-link"
       data-bs-content="Dieses Theme wurde individuell in HTML 5, CSS, JS, und dem Framework Astro unter Verwendung von Bootstrap 5.2 erstellt."
