@@ -2,7 +2,7 @@
 layout: ../../layouts/Artikel.astro
 title:  Wird 2023 das Jahr der Webcomponents?
 publishDate: "2023-02-23"
-img: src/assets/images/portfolio/webcomponents.png
+img: /artikel/webcomponents.png
 draft: false
 description: |
   Thoughts on Web Components mit Vue.js und Tailwind
