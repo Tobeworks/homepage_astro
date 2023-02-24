@@ -1,6 +1,7 @@
 {
   "name": "@tobeworks6/homepage",
-  "version": "6.2.1",
+  "version": "6.2.2",
+  "lastchange":"02.2023",
   "private": true,
   "description": "",
   "repository": "https://github.com/Tobeworks/homepage_astro",
