@@ -10,7 +10,7 @@ tags:
   - webdevelopment
 ---
 ## Kurz: Was sind eigentlich Webcomponents?
-Web Components sind eine noch recht junge und moderne Webtechnologie, die es Entwicklern ermöglicht, benutzerdefinierte HTML-Elemente zu erstellen, die in jeder Webseite verwendet werden können. Mit Web Components können Entwickler komplexere und wiederverwendbare Komponenten erstellen, die den Entwicklungsprozess beschleunigen und die Wartung erleichtern.
+<a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components" target="_blank">Web Components</a> sind eine noch recht junge und moderne Webtechnologie, die es Entwicklern ermöglicht, benutzerdefinierte HTML-Elemente zu erstellen, die in jeder Webseite verwendet werden können. Mit Web Components können Entwickler komplexere und wiederverwendbare Komponenten erstellen, die den Entwicklungsprozess beschleunigen und die Wartung erleichtern.
 
 Web Components bestehen aus drei Haupttechnologien: dem Custom Element, dem <a href="https://developer.mozilla.org/de/docs/Web/Web_Components/Using_shadow_DOM" target="_blank">Shadow DOM</a> und dem HTML Template. Das Custom Element ermöglicht es Entwicklern, ihre eigenen benutzerdefinierten HTML-Elemente zu erstellen. Der Shadow DOM ermöglicht es Entwicklern, die Struktur und das Styling ihrer Komponenten vor der Außenwelt zu verbergen. Das HTML Template ermöglicht es Entwicklern, wiederverwendbare HTML-Strukturen zu erstellen, die später dynamisch geladen und in den Shadow DOM der Komponente eingefügt werden können.
 Web Components sind plattformunabhängig und können in jeder modernen Browserumgebung verwendet werden. Sie sind auch sehr flexibel und können in jedem Framework oder jeder Bibliothek integriert werden.
