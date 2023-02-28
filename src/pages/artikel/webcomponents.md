@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/Artikel.astro
 title:  Wird 2023 das Jahr der Webcomponents?
-publishDate: "2023-02-23"
+publishDate: "2023-02-16"
 img: /artikel/webcomponents.png
 draft: false
 description: |
