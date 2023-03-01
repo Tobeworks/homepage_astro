@@ -4,10 +4,10 @@ import Header from "../../components/Header.astro"
 import Footer from "../../components/Footer.astro"
 import Layout from "../../layouts/Layout.astro"
 import ButtonBlock from "../../components/ButtonBlock.astro"
-import stroke from "/src/assets/images/carousel/wordpress_stroke.svg";
-import wplogo from "/src/assets/images/wordPress-logo.png";
-import wproad from "/src/assets/images/wordpress_road.jpg";
-import macbook from "/src/assets/images/macbookgrey_front3.png";
+import stroke from "../../assets/images/carousel/wordpress_stroke.svg";
+import wplogo from "../../assets/images/wordPress-logo.png";
+import wproad from "../../assets/images/wordpress_road.jpg";
+import macbook from "../../assets/images/macbookgrey_front3.png";
 ---
 
 <Layout>
@@ -17,7 +17,7 @@ import macbook from "/src/assets/images/macbookgrey_front3.png";
       <div class="col-sm align-self-center title-lead">
         <p class="text-center">
           <img
-            src={stroke}
+            src={stroke.src}
             class="img-fluid"
             alt="Wordpress logo"
             width="150"
@@ -68,7 +68,7 @@ import macbook from "/src/assets/images/macbookgrey_front3.png";
     </p>
     <ButtonBlock
       title="Mehr zu Wordpress-Programmierung und Entwicklung"
-      route="/wordpress/programmierung"
+      route="/wordpress/wordpress-programmierung"
       icon="fa fa-question-circle"
       color="erieblack"
     />
@@ -181,7 +181,7 @@ import macbook from "/src/assets/images/macbookgrey_front3.png";
             </p>
           </div>
           <div class="card-footer">
-            <a href="/wordpress/programmierung" class="btn btn-light btn-block">
+            <a href="/wordpress/wordpress-programmierung" class="btn btn-light btn-block">
               <i class="fab fa-wordpress" aria-hidden="true"></i>
               Mehr Infos zu Wordpress-Programmierung</a
             >
@@ -216,7 +216,7 @@ import macbook from "/src/assets/images/macbookgrey_front3.png";
             </p>
           </div>
           <div class="card-footer">
-            <a href="/wordpress/wartung" class="btn btn-light btn-block">
+            <a href="/wordpress/wordpress-wartung" class="btn btn-light btn-block">
               <i class="fab fa-wordpress" aria-hidden="true"></i>
               Mehr Infos zu Wordpress-Wartung</a
             >
@@ -318,7 +318,7 @@ import macbook from "/src/assets/images/macbookgrey_front3.png";
       individuellen Erweiterungen bestücken, seien es neuen Contenttypes (wie
       zB. Projekte) oder individuelle Funktionen in Themes.
       <br />Mehr zur individuellen Programmierung von Wordpress fahren Sie
-      <a href="/wordpress/programmierung">hier</a>
+      <a href="/wordpress/wordpress-programmierung">hier</a>
     </p>
   </section>
 

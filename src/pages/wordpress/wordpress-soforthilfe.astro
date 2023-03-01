@@ -4,10 +4,10 @@
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import Layout from "../../layouts/Layout.astro";
-import stroke from "/src/assets/images/carousel/wordpress_stroke.svg";
-import wplogo from "/src/assets/images/wordPress-logo.png";
-import wproad from "/src/assets/images/wordpress_road.jpg";
-import macbook from "/src/assets/images/macbookgrey_front3.png";
+import wproad from "../../assets/images/wordpress_road.jpg";
+import stroke from "../../assets/images/carousel/wordpress_stroke.svg";
+import wplogo from "../../assets/images/wordPress-logo.png";
+import macbook from "../../assets/images/macbookgrey_front3.png";
 ---
 
 <script>
@@ -23,7 +23,7 @@ import macbook from "/src/assets/images/macbookgrey_front3.png";
 			<div class="col-sm align-self-center title-lead">
 
 				<p class="text-center">
-					<img src="/src/assets/images/carousel/wordpress_stroke.svg" class="img-fluid" alt="Wordpress logo" width="150">
+					<img src={stroke.src} class="img-fluid" alt="Wordpress logo" width="150">
 				</p>
 				<h2 class="cover my-2 text-center">Wordpress-Entwicklung</h2>
 				<p class="lead text-center w-75 mx-auto my-3">
@@ -38,7 +38,7 @@ import macbook from "/src/assets/images/macbookgrey_front3.png";
 
 	<section class="bg-silver text-erieblack contentsection" id="contentStart">
 		<h2>Was ist Wordpress?</h2>
-		<p><img src="/src/assets/images/wordPress-logo.png" alt="wordPress-logo" class="img-fluid float-start"/>
+		<p><img src={wplogo.src} alt="wordPress-logo" class="img-fluid float-start"/>
 			<strong>WordPress</strong>
 			ist ein freies Content-Management-System, welches ursprünglich zum Aufbau und zur Pflege eines Weblogs entwickelt wurde, da es jeden Beitrag frei erstellbaren Kategorien zuweisen kann und dazu automatisch die entsprechenden Navigationselemente erzeugt.
 			<br><br>
@@ -49,7 +49,7 @@ import macbook from "/src/assets/images/macbookgrey_front3.png";
 			an. Ihr Projekt wird komplett und ohne Umwege schnell und zielsicher geplant, zeitnah umgesetzt und bei Bedarf stetig weiterentwickelt.
 		</p>
 		<p class="text-center  mt-3">
-			<a href="/wordpress/programmierung" class="btn btn-outline-erieblack" role="button">
+			<a href="/wordpress/wordpress-programmierung" class="btn btn-outline-erieblack" role="button">
 				<i class="fa fa-question-circle" aria-hidden="true"></i>
 				Mehr<span class="d-none d-sm-inline">
 					zu Wordpress-Programmierung und Entwicklung</span>
@@ -60,7 +60,7 @@ import macbook from "/src/assets/images/macbookgrey_front3.png";
 
 	<div class="bg-silver text-erieblack contentsection">
 		<div class="text-center">
-			<img src="/src/assets/images/macbookgrey_front3.png" class="img-fluid" alt="macbookgrey_front2"/><br>
+			<img src={macbook.src} class="img-fluid" alt="macbookgrey_front2"/><br>
 			<a href="/kontakt" class="btn btn-outline-erieblack mt-2" role="button">Jetzt Beratung anfordern</a>
 		</div>
 	</div>
@@ -135,7 +135,7 @@ import macbook from "/src/assets/images/macbookgrey_front3.png";
 						<p class="card-text">Wordpress-Programmierer haben die Expertise, Wordpress deutlich schneller zu machen und eigene Anwendungen, Themes und Plugins zu programmieren</p>
 					</div>
 					<div class="card-footer">
-						<a href="/wordpress/programmierung" class="btn btn-light btn-block">
+						<a href="/wordpress/wordpress-programmierung" class="btn btn-light btn-block">
 							<i class="fab fa-wordpress" aria-hidden="true"></i>
 							Mehr Infos zu Wordpress-Programmierung</a>
 					</div>
@@ -155,7 +155,7 @@ import macbook from "/src/assets/images/macbookgrey_front3.png";
 						<p class="card-text">Eine professionelle Wordpress-Wartung ist der beste Schutz gegen Viren und Malware und ist ein guter Schutz vor dem Komplettverlust der Webseite.</p>
 					</div>
 					<div class="card-footer">
-						<a href="/wordpress/wartung" class="btn btn-light btn-block">
+						<a href="/wordpress/wordpress-wartung" class="btn btn-light btn-block">
 							<i class="fab fa-wordpress" aria-hidden="true"></i>
 							Mehr Infos zu Wordpress-Wartung</a>
 					</div>
@@ -236,14 +236,14 @@ import macbook from "/src/assets/images/macbookgrey_front3.png";
 	<p>Wordpress ist mittlerweile so vielseitig, dass man damit schon richtige Webapplikationen entwickeln kann. 
 			Tobeworks kann Ihr Wordpress mit individuellen Erweiterungen bestücken, seien es neuen Contenttypes (wie zB. Projekte) oder individuelle Funktionen in Themes.
 		<br>Mehr zur individuellen Programmierung von Wordpress fahren Sie
-		<a href="/wordpress/programmierung">hier</a>
+		<a href="/wordpress/wordpress-programmierung">hier</a>
 	</p>
 </section>
 
 <div class="bg-silver text-erieblack contentsection">
 
 	<div class="my-3 text-center">
-		<img src="/src/assets/images/wordpress_road.jpg" class="img-fluid" alt="wordpress-road"/>
+		<img src={wproad.src} class="img-fluid" alt="wordpress-road"/>
 		<div class="mt-3 text-center">
 			<a href="/kontakt" class="btn btn-outline-erieblack mt-2" role="button">Unverbindliche Beratung anfordern</a>
 		</div>
