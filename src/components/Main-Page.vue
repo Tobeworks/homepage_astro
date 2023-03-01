@@ -37,7 +37,7 @@
 
                         <div>
                             <a href="/about" class="btn btn-erieblack" data-aos="fade-up" data-aos-delay="200">Mehr erfahren</a>
-                            <a href="/kontakt" class="btn btn-orange" data-aos="fade-up" data-aos-delay="300">Projekt anfragen</a>
+                            <a href="/kontakt#contentStart" class="btn btn-orange" data-aos="fade-up" data-aos-delay="300">Projekt anfragen</a>
                         </div>
                     </div>
                 </div>
@@ -204,7 +204,7 @@
                     <p data-aos="fade-up">Ich biete zeitgerechte, massgeschneiderte Kommunikationslösungen.
                         Dazu kombiniere ich die kreativen Leistungen einer Webeagentur mit dem technologischen Know-how einer Webagentur. Von der Idee bis zum fertigen Produkt erhalten Sie alles aus einer Hand. Ohne Schnickschnack, mit angesagter Technologie.</p>
                     <p>
-                        <a href="/kontakt" class="btn btn-erieblack" data-aos="fade-up" data-aos-delay="300">Kontakt</a>
+                        <a href="/kontakt#contentStart" class="btn btn-erieblack" data-aos="fade-up" data-aos-delay="300">Kontakt</a>
                     </p>
                 </div>
             </div>
@@ -218,7 +218,7 @@
                         <p>Weil ich Lösungen habe. Tobeworks ist fullstack und interdiszpilinär. Von studierten Spezialisten mit jahrelanger Branchen-Erfahrung.<br>
                             Vom Designentwurf bis zur fertigen Softwarelösung, bis zum sicheren Hosting kommt hier alles aus einer Hand.</p>
                         <p>
-                            <a href="/kontakt" class="btn btn-erieblack">Kontakt</a>
+                            <a href="/kontakt#contentStart" class="btn btn-erieblack">Kontakt</a>
                         </p>
                     </div>
                 </div>
@@ -233,7 +233,7 @@
                             </h5>
                             <p class="card-text">Nur die richtige Beratung im Vorfeld führt zum Ziel. Tobeworks entwickelt mit Ihnen zusammen Ihr individuelles Konzept.
                             </p>
-                            <a href="/kontakt" class="btn btn-silver btn-sm">Mehr erfahren</a>
+                            <a href="/kontakt#contentStart" class="btn btn-silver btn-sm">Mehr erfahren</a>
                         </div>
                     </div>
 
@@ -245,7 +245,7 @@
                             </h5>
                             <p class="card-text">Projekte werden #agil in ständiger Kommunikation mit dem Kunden realisiert.
                             </p>
-                            <a href="/kontakt" class="btn btn-silver btn-sm">Mehr erfahren</a>
+                            <a href="/kontakt#contentStart" class="btn btn-silver btn-sm">Mehr erfahren</a>
                         </div>
                     </div>
 
@@ -257,7 +257,7 @@
                             </h5>
                             <p class="card-text">Der Erfolg Ihres Projekts ist nur mit der richtigen Infrastruktur gesichert. Tobeworks kümmert sich um alles vom Server über Sicherheit, bis zum Backup.
                             </p>
-                            <a href="/kontakt" class="btn btn-silver btn-sm">Mehr erfahren</a>
+                            <a href="/kontakt#contentStart" class="btn btn-silver btn-sm">Mehr erfahren</a>
                         </div>
                     </div>
 
