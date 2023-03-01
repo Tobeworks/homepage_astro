@@ -24,6 +24,9 @@ import mif from "/src/assets/images/shopmockup_full.png"
 import mif_mobile from "/src/assets/images/shopmockup_small.png"
 import lul from "/src/assets/images/portfolio/lul.png"
 import migrosbank from '../assets/images/portfolio/webcomponents.png';
+
+import bo1 from '../assets/images/portfolio/mockup_bo1.webp';
+import bo1_mobile from '../assets/images/portfolio/mockup_mobile_bo1.webp';
 ---
 
 <script>
@@ -93,6 +96,56 @@ import migrosbank from '../assets/images/portfolio/webcomponents.png';
   </section>
 <!-- Migrosbank Ende -->
 
+<!--  Bo 1 Start -->
+  <section class="bg-silver portfolio-row" id="contentStart">
+    
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <Picture
+            class="card-img-top d-block d-sm-none pt-5"
+            src={bo1_mobile}
+            widths={[500]}
+            alt="Logic Moon"
+            sizes=""
+          />
+          <Picture
+            class="card-img-top d-none d-sm-block pt-5"
+            src={bo1}
+            alt="Logic Moon"
+            widths={[300, 420, 650]}
+            sizes="(max-width: 767px) 300px,(max-width:1199px) 420px, (min-width: 1200px) 650px"
+            formats={["webp"]}
+          />
+        </div>
+
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Bo1 (Albatros)</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Webdevelopment</h6>
+            <p class="card-text">
+              Entwicklung an einem großen Projekt für Wordpress aus einer Sketch-Vorlage<br>
+              <small>JavaScript für Lottie Animationen, Webdevelopment, Beratung für <br><a href="https://albatros.agency" target="_blank">Albatros Frankfurt</a></small>
+            </p>
+            <p class="card-text">
+              <i class="fab fa-js"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-wordpress"></i>
+            </p>
+
+            <p class="card-footer">
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">CSS</span>
+              <span class="badge bg-erieblack">Wordpress</span>
+              <span class="badge bg-erieblack">Elementor</span
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--  Bo 1 Ende -->
 
 <!-- Ayur -->
   <section class="bg-silver portfolio-row" id="contentStart">
