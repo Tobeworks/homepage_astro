@@ -4,8 +4,10 @@ const {img, title, id, mobile = false} = Astro.props
 
 const selector = `#${id}`;
 let image_width = 1000;
+let fit = 'cover';
 if(mobile == true){
     image_width = 350;
+    fit="contain" 
 }
 ---
 
@@ -17,10 +19,11 @@ if(mobile == true){
   data-bs-target={selector}
   src={img}
   alt={title}
-  widths={[320, 650]}
+  fit="cover"
+  widths={[320, 500]}
   sizes="(max-width:1199px) 320px, (min-width: 1200px) 500px"
   formats={["webp"]}
-  aspectRatio="1:1"
+  aspectRatio={1/1}
 />
 
 <!-- Modal -->
@@ -32,7 +35,7 @@ if(mobile == true){
         
       </div>
       <div class="modal-body">
-<Image src={img} alt={title} width={image_width} format="webp"></Image>
+ <Image src={img} alt={title} width={1000} format="webp" height={800} fit={fit} background="white"></Image>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-erieblack" data-bs-dismiss="modal">Voransicht schließen</button>

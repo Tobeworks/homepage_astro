@@ -1,9 +1,10 @@
 ---
-import packageData from "../../package.json"
-import dreieck from "@assets/images/dreieck.svg"
+import packageData from "../../package.json";
+import dreieck from "/src/assets/images/dreieck.svg"
 
 const currentYear = new Date().getFullYear()
-const Version = packageData.version
+const Version = packageData.version;
+const lastchange = packageData.lastchange;
 ---
 
 <footer class="container" id="main-footer">
@@ -43,15 +44,15 @@ const Version = packageData.version
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/wordpress/entwicklung">Wordpress</a>
+            <a class="nav-link" href="/wordpress/wordpress-entwicklung">Wordpress</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/wordpress/programmierung"
+            <a class="nav-link" href="/wordpress/wordpress-programmierung"
               >Wordpress-Programmierer</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/wordpress/wartung">Wordpress-Wartung</a>
+            <a class="nav-link" href="/wordpress/wordpress-wartung">Wordpress-Wartung</a>
           </li>
         </ul>
       </div>
@@ -59,13 +60,13 @@ const Version = packageData.version
         <h4>tobeworks.</h4>
         <ul class="nav flex-column footer-nav mb-3">
           <li class="nav-item pr-2">
-            <a class="nav-link">Tobias Lorsbach</a>
+            <span class="nav-link">Tobias Lorsbach</span>
           </li>
           <li class="nav-item pr-2">
-            <a class="nav-link">Neue Universitätsstraße 7, 55116 Mainz</a>
+            <span class="nav-link">Neue Universitätsstraße 7, 55116 Mainz</span>
           </li>
           <li class="nav-item pr-2">
-            <a class="nav-link">0179/1259004</a>
+            <span class="nav-link">0179/1259004</span>
           </li>
           <li class="nav-item pr-2">
             <a class="reverse nav-link" href="/kontakt">ed.skrowebot@ollah</a>
@@ -78,7 +79,7 @@ const Version = packageData.version
   <div class="text-center pb-3 text-orange">
     <div class="p-3">
       <img
-        src={dreieck}
+        src={dreieck.src}
         alt="Logo Dreieck"
         data-aos="fade-in"
         data-aos-delay="500"
@@ -87,13 +88,14 @@ const Version = packageData.version
     </div>
     <b>{currentYear}</b>
     -
-    {Version} - letzte Änderung: 10.2022<br />
+    {Version} - letzte Änderung: {lastchange}<br />
     <a
       class="popover-link"
       data-bs-content="Dieses Theme wurde individuell in HTML 5, CSS, JS, und dem Framework Astro unter Verwendung von Bootstrap 5.2 erstellt."
       data-bs-placement="top"
       data-bs-toggle="popover"
       title="Themedesign"
+      href="#!"
       >Theme by Tobeworks ©{currentYear}
     </a>
 

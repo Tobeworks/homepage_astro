@@ -5,9 +5,9 @@ import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import Layout from "../../layouts/Layout.astro";
 import ButtonBlock from "../../components/ButtonBlock.astro";
-import wpcoder from "@images/wp-programmierer1.jpg";
-import stroke from "@images/carousel/wordpress_stroke.svg";
-import wpcoder2 from "@images/wp-programmierer0.jpg"
+import wpcoder from "../../assets/images/wp-programmierer1.jpg";
+import stroke from "../../assets/images/carousel/wordpress_stroke.svg";
+import wpcoder2 from "../../assets/images/wp-programmierer0.jpg"
 
 ---
 
@@ -26,7 +26,7 @@ import wpcoder2 from "@images/wp-programmierer0.jpg"
       <div class="col-sm align-self-center title-lead">
         <p class="text-center">
           <img
-            src={stroke}
+            src={stroke.src}
             class="img-fluid"
             alt="Wordpress logo"
             width="150"
@@ -98,7 +98,7 @@ import wpcoder2 from "@images/wp-programmierer0.jpg"
 </p>
     <ButtonBlock
       title="Wordpress Wartung"
-      route="/wordpress/wartung"
+      route="/wordpress/wordpress-wartung"
       icon="fa fa-question-circle"
       color="erieblack"
     />
@@ -176,7 +176,7 @@ import wpcoder2 from "@images/wp-programmierer0.jpg"
     </ul>
     <ButtonBlock
       title="Wordpress Info"
-      route="/wordpress/entwicklung"
+      route="/wordpress/wordpress-entwicklung"
       icon="fa fa-question-circle"
       color="erieblack"
     />

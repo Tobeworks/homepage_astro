@@ -4,25 +4,26 @@ import Footer from "../components/Footer.astro"
 import Layout from "../layouts/Layout.astro"
 import {Picture} from "@astrojs/image/components"
 
-import getucated_img_mobile from "@assets/images/mockups/getucated_mobile.png"
-import mockup_ayur from "@assets/images/mockups/ayur_mockups_home.png"
-import logicmoon_full from "@assets/images/mockups/logicmoon_full.png"
-import logicmoon_mobile from "@assets/images/mockups/logicmoon_mobile.png"
-import ayurhome_mobile from "@assets/images/mockups/home_mobile.png";
-import getucated_app from "@assets/images/portfolio/getucated-app.png"
-import getucated_app2 from "@assets/images/portfolio/getucated-app2.webp"
-import getucated_app3 from "@assets/images/portfolio/getucated-app3.webp"
-import iihd from "@assets/images/portfolio/iihd.png";
-import iihd_mobile from "@assets/images/portfolio/mobile/iihd.png"
-import gsp from "@assets/images/portfolio/gsp.png";
-import gsp_mobile from "@assets/images/portfolio/mobile/gsp.png";
-import vr from "@assets/images/portfolio/vr.png";
-import vr_mobile from "@assets/images/portfolio/mobile/vr.png";
-import rp24 from "@assets/images/portfolio/rp24.png"
-import rp24_mobile from "@assets/images/portfolio/rp24.png"
-import mif from "@assets/images/shopmockup_full.png"
-import mif_mobile from "@assets/images/shopmockup_small.png"
-import lul from "@assets/images/portfolio/lul.png"
+import getucated_img_mobile from "/src/assets/images/mockups/getucated_mobile.png"
+import mockup_ayur from "/src/assets/images/mockups/ayur_mockups_home.png"
+import logicmoon_full from "/src/assets/images/mockups/logicmoon_full.png"
+import logicmoon_mobile from "/src/assets/images/mockups/logicmoon_mobile.png"
+import ayurhome_mobile from "/src/assets/images/mockups/home_mobile.png";
+import getucated_app from "/src/assets/images/portfolio/getucated-app.png"
+import getucated_app2 from "/src/assets/images/portfolio/getucated-app2.webp"
+import getucated_app3 from "/src/assets/images/portfolio/getucated-app3.webp"
+import iihd from "/src/assets/images/portfolio/iihd.png";
+import iihd_mobile from "/src/assets/images/portfolio/mobile/iihd.png"
+import gsp from "/src/assets/images/portfolio/gsp.png";
+import gsp_mobile from "/src/assets/images/portfolio/mobile/gsp.png";
+import vr from "/src/assets/images/portfolio/vr.png";
+import vr_mobile from "/src/assets/images/portfolio/mobile/vr.png";
+import rp24 from "/src/assets/images/portfolio/rp24.png"
+import rp24_mobile from "/src/assets/images/portfolio/rp24.png"
+import mif from "/src/assets/images/shopmockup_full.png"
+import mif_mobile from "/src/assets/images/shopmockup_small.png"
+import lul from "/src/assets/images/portfolio/lul.png"
+import migrosbank from '../assets/images/portfolio/webcomponents.png';
 ---
 
 <script>
@@ -46,6 +47,55 @@ import lul from "@assets/images/portfolio/lul.png"
     </a>
   </section>
 
+<!-- Migrosbank Start -->
+  <section class="bg-silver portfolio-row" id="contentStart">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <Picture
+            class="card-img-top"
+            src={migrosbank}
+            alt="Webcomponent"
+            widths={[300, 420, 650]}
+            sizes="(max-width: 767px) 300px,(max-width:1199px) 420px, (min-width: 1200px) 650px"
+            formats={["webp"]}
+            aspectRatio="4:3"
+          /> 
+        </div>
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Webwidget - Migrosbank</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Webcomponent</h6>
+            <p class="card-text">
+              Webcomponent mit VueJS, Docker und Google Cloud Platform, Python-API <br>
+              <small>Die Komponente kann vom Kunden per Remote in HTML-Datei eingebunden werden, mit zero Dependencies.</small>
+            </p>
+            <p class="card-text">
+              <i class="fab fa-vuejs"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-python"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+            </p>
+
+            <p class="card-footer">
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">Vue.js</span>
+              <span class="badge bg-erieblack">Python</span>
+              <span class="badge bg-erieblack">NPM</span>
+              <span class="badge bg-erieblack">CSS</span>
+              <span class="badge bg-erieblack">SASS</span>
+              <span class="badge bg-erieblack">Primevue</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Migrosbank Ende -->
+
+
+<!-- Ayur -->
   <section class="bg-silver portfolio-row" id="contentStart">
     <div class="card mb-3">
       <div class="row align-items-center">
@@ -83,6 +133,7 @@ import lul from "@assets/images/portfolio/lul.png"
               <span class="badge bg-erieblack">Adobe XD</span>
               <span class="badge bg-erieblack">NPM</span>
               <span class="badge bg-erieblack">CSS</span>
+              <span class="badge bg-erieblack">SASS</span>
               <span class="badge bg-erieblack">Bootstrap 5</span>
             </p>
             <div>
@@ -97,7 +148,9 @@ import lul from "@assets/images/portfolio/lul.png"
       </div>
     </div>
   </section>
+<!-- Ayur Ende -->
 
+<!-- Getucated -->
   <section class="bg-silver portfolio-row" >
     <div class="card mb-3">
       <div class="row align-items-center">
@@ -110,8 +163,6 @@ import lul from "@assets/images/portfolio/lul.png"
             sizes="300px"
             formats={["webp"]}
           />
-
-
           <div
             id="carouselIndicators"
             class="carousel slide d-none d-sm-block"
@@ -208,11 +259,19 @@ import lul from "@assets/images/portfolio/lul.png"
               <span class="badge bg-erieblack">iOS</span>
               <span class="badge bg-erieblack">Android</span>
             </p>
+              <div>
+              <a
+                href="/showcase/getucated-app" 
+                class="btn btn-erieblack btn-sm my-3"
+                >Zum Showcase <i class="fa-solid fa-caret-right"></i>
+              </a>
+            </div>   
           </div>
         </div>
       </div>
     </div>
   </section>
+<!-- Getucated Ende-->
 
   <section class="bg-silver portfolio-row">
     <div class="card mb-3">

@@ -1,0 +1,84 @@
+---
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import Layout from "../layouts/Layout.astro"
+import ShowcasePicture from "../components/ShowcasePicture.astro"
+import type { MarkdownLayoutProps } from 'astro';
+const { frontmatter} = Astro.props;
+---
+
+<Layout>
+  <Header />
+
+  <main class="showcase-main">
+    <section
+      class="container bg-silver text-erieblack mt-3 contentsection text-sm-start text-md-center">
+      <h1 class="fw-normal">Showcase</h1>
+      <h2>{frontmatter.title}<br> <small>{frontmatter.subtitle}</small></h2>
+      <p class="text-sm-start text-md-center fs-4">
+        {frontmatter.teaser} 
+        <slot />
+      </p><div>
+        <a href="/kontakt" class="btn btn-erieblack">Ihr individuelles Angebot anfragen</a>
+      </div>
+
+    </section>
+
+    <div class="d-md-flex flex-md-equal w-100">
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture
+          img={frontmatter.img1}
+          title={frontmatter.img1_title}
+          id={frontmatter.img1_id}
+          mobile={frontmatter.img1_mobile}
+        />
+      </div>
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture
+          img={frontmatter.img2}
+          title={frontmatter.img2_title}
+          id={frontmatter.img2_id}
+          mobile={frontmatter.img2_mobile}
+        />
+      </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100">
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture
+          img={frontmatter.img3}
+          title={frontmatter.img3_title}
+          id={frontmatter.img3_id}
+          mobile={frontmatter.img3_mobile}
+        />
+      </div>
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture
+          img={frontmatter.img4}
+          title={frontmatter.img4_title}
+          id={frontmatter.img4_id}
+          mobile={frontmatter.img4_mobile}
+        />
+      </div>
+    </div>
+    <div class="d-md-flex flex-md-equal w-100">
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture
+          img={frontmatter.img5}
+          title={frontmatter.img5_title}
+          id={frontmatter.img5_id}
+          mobile={frontmatter.img5_mobile}
+        />
+      </div>
+      <div class="text-bg-silver my-3 text-center overflow-hidden p-4 w-100">
+        <ShowcasePicture
+          img={frontmatter.img6}
+          title={frontmatter.img6_title}
+          id={frontmatter.img6_id}
+          mobile={frontmatter.img6_mobile}
+        />
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>

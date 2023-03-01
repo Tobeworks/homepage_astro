@@ -4,10 +4,10 @@
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import Layout from "../../layouts/Layout.astro";
-import wproad from "@images/wordpress_road.jpg";
-import stroke from "@images/carousel/wordpress_stroke.svg";
-import wplogo from "@images/wordPress-logo.png";
-import macbook from "@images/macbookgrey_front3.png";
+import wproad from "../../assets/images/wordpress_road.jpg";
+import stroke from "../../assets/images/carousel/wordpress_stroke.svg";
+import wplogo from "../../assets/images/wordPress-logo.png";
+import macbook from "../../assets/images/macbookgrey_front3.png";
 ---
 
 <script>
@@ -23,7 +23,7 @@ import macbook from "@images/macbookgrey_front3.png";
 			<div class="col-sm align-self-center title-lead">
 
 				<p class="text-center">
-					<img src={stroke} class="img-fluid" alt="Wordpress logo" width="150">
+					<img src={stroke.src} class="img-fluid" alt="Wordpress logo" width="150">
 				</p>
 				<h2 class="cover my-2 text-center">Wordpress-Entwicklung</h2>
 				<p class="lead text-center w-75 mx-auto my-3">
@@ -49,7 +49,7 @@ import macbook from "@images/macbookgrey_front3.png";
 			an. Ihr Projekt wird komplett und ohne Umwege schnell und zielsicher geplant, zeitnah umgesetzt und bei Bedarf stetig weiterentwickelt.
 		</p>
 		<p class="text-center  mt-3">
-			<a href="/wordpress/programmierung" class="btn btn-outline-erieblack" role="button">
+			<a href="/wordpress/wordpress-programmierung" class="btn btn-outline-erieblack" role="button">
 				<i class="fa fa-question-circle" aria-hidden="true"></i>
 				Mehr<span class="d-none d-sm-inline">
 					zu Wordpress-Programmierung und Entwicklung</span>
@@ -135,7 +135,7 @@ import macbook from "@images/macbookgrey_front3.png";
 						<p class="card-text">Wordpress-Programmierer haben die Expertise, Wordpress deutlich schneller zu machen und eigene Anwendungen, Themes und Plugins zu programmieren</p>
 					</div>
 					<div class="card-footer">
-						<a href="/wordpress/programmierung" class="btn btn-light btn-block">
+						<a href="/wordpress/wordpress-programmierung" class="btn btn-light btn-block">
 							<i class="fab fa-wordpress" aria-hidden="true"></i>
 							Mehr Infos zu Wordpress-Programmierung</a>
 					</div>
@@ -155,7 +155,7 @@ import macbook from "@images/macbookgrey_front3.png";
 						<p class="card-text">Eine professionelle Wordpress-Wartung ist der beste Schutz gegen Viren und Malware und ist ein guter Schutz vor dem Komplettverlust der Webseite.</p>
 					</div>
 					<div class="card-footer">
-						<a href="/wordpress/wartung" class="btn btn-light btn-block">
+						<a href="/wordpress/wordpress-wartung" class="btn btn-light btn-block">
 							<i class="fab fa-wordpress" aria-hidden="true"></i>
 							Mehr Infos zu Wordpress-Wartung</a>
 					</div>
@@ -236,7 +236,7 @@ import macbook from "@images/macbookgrey_front3.png";
 	<p>Wordpress ist mittlerweile so vielseitig, dass man damit schon richtige Webapplikationen entwickeln kann. 
 			Tobeworks kann Ihr Wordpress mit individuellen Erweiterungen bestücken, seien es neuen Contenttypes (wie zB. Projekte) oder individuelle Funktionen in Themes.
 		<br>Mehr zur individuellen Programmierung von Wordpress fahren Sie
-		<a href="/wordpress/programmierung">hier</a>
+		<a href="/wordpress/wordpress-programmierung">hier</a>
 	</p>
 </section>
 

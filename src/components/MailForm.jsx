@@ -128,12 +128,12 @@ const MailForm = () => {
     return (
         <>
             <GoogleReCaptchaProvider reCaptchaKey="6LfIfyYiAAAAAGSwOuD5sWc4a-MuPRmRh-tnvkyB">
-                
+
                 <form
                     className=""
                     onSubmit={handleSubmit(onSubmit)}>
-                    
-                    <ReCaptchaField register={register("recaptcha", {readOnly:true})} />
+
+                    <ReCaptchaField register={register("recaptcha", { readOnly: true })} />
                     <div className="my-3">
                         <label htmlFor="name" className="sr-only">
                             Name
@@ -209,9 +209,9 @@ const MailForm = () => {
                         <input className="form-check-input" type="checkbox" value="" id="datenschutz"
                             {...register("datenschutz", { required: "Bitte akzpetieren Sie den Datenschutz" })}
                         ></input>
-                            <label className="form-check-label" htmlFor="datenschutz">
+                        <label className="form-check-label" htmlFor="datenschutz">
                             Ich habe die <a href="/datenschutz">Datenschutzerklärung</a> gelesen
-                            </label>
+                        </label>
                         {errors.datenschutz?.message && (
                             <InlineAlert msg={errors.datenschutz?.message} />
                         )}
@@ -219,7 +219,7 @@ const MailForm = () => {
 
                     <div className="my-3">
 
-         
+
                         {formValid ? (
                             <InlineAlert
                                 msg="Ihre Nachricht wurde erfolgreich gesendet. Ich werde mich zeitnah bei Ihnen melden."
@@ -227,11 +227,11 @@ const MailForm = () => {
                             />
                         ) : (
                             <button type="submit" className="btn btn-erieblack">
-                                    {forminSubmit ?
-                                        (<div className="spinner-border spinner-border-sm text-primary mr-3" role="status">
-                                            <span className="visually-hidden"></span> 
-                                        </div>) : ''
-                                    } Nachricht abschicken</button>
+                                {forminSubmit ?
+                                    (<div className="spinner-border spinner-border-sm text-primary mr-3" role="status">
+                                        <span className="visually-hidden"></span>
+                                    </div>) : ''
+                                } Nachricht abschicken</button>
                         )}
 
                         {httpError && (

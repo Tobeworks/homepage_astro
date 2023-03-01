@@ -1,7 +1,7 @@
 ---
 //import {Image} from "@astrojs/image/components"
-import logo from "@assets/images/logos/TW-EB5E28.svg"
-import hamburger from "@assets/images/hamburger/_bars.svg"
+import logo from "../assets/images/logos/TW-EB5E28.svg"
+import hamburger from "../assets/images/hamburger/_bars.svg"
 ---
 
 <header class="sticky-top">
@@ -9,7 +9,7 @@ import hamburger from "@assets/images/hamburger/_bars.svg"
     <div class="container-fluid mx-3">
       <a class="navbar-brand" href="/"
         ><img
-          src={logo}
+          src={logo.src}
           class="d-none d-lg-block"
           alt="logo"
           data-aos="fade-top"
@@ -17,7 +17,7 @@ import hamburger from "@assets/images/hamburger/_bars.svg"
         />
       </a>
       <div class="navbar-toggle d-block d-lg-none" id="navbar-toggle-open">
-        <img src={hamburger} id="hamburger-bars" alt="hamburger" />
+        <img src={hamburger.src} id="hamburger-bars" alt="hamburger" />
       </div>
 
       <div class="collapse navbar-collapse justify-content-end" id="topnavi">

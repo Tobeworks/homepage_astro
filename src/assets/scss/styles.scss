@@ -13,6 +13,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
+
 header {
   .nav-link {
     color: var(--orange);
@@ -118,8 +119,9 @@ article.blog {
 }
 
 .titlesection {
-  min-height: 94vh;
-  padding: 60px 25px 25px 25px;
+  min-height: min-content;
+  height: 99vh;
+  padding: 60px 25px 100px 25px;
   .btn {
     margin-right: 0.8em;
   }
@@ -130,10 +132,17 @@ article.blog {
   h2 {
     white-space: pre-line;
   }
+
+  .titlerow{
+    width:100%; 
+    height:99%; 
+    padding-bottom: 100px;
+  }
 }
 
 .btn {
   text-transform: uppercase;
+  padding-top: .5rem;
 }
 
 .btn-erieblack,
@@ -353,11 +362,31 @@ footer {
 
 .showcase-img{
   img{
-    border: 3px solid var(--erieBlack);
+    border: 1px solid var(--erieBlack);
     &:hover{
       cursor: pointer;
     }
   }
+}
+.showcase-main{
+  
+  h2{
+    font-size: 1.5rem;
+    small{
+      font-size: 1rem;
+    }
+  }
+  h3{
+    margin-bottom: 0.5rem;
+  }
+  p{
+    margin-top: 0;
+    padding-top: 0px;
+    margin-bottom: 3rem;
+  }
+   li{
+     text-align: start;
+   }
 }
 
 @media (max-width: 767.98px) {
@@ -375,9 +404,13 @@ footer {
   .lead {
     font-size: 1em;
   }
-  .titlesection .row {
+  .titlesection {
+    min-height: 99vh;
+  .row {
     min-height: 300px;
   }
+  }
+
 
   .content-leistungen {
     h3 {

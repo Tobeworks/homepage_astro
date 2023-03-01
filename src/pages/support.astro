@@ -1,0 +1,154 @@
+---
+// Component Imports
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import Layout from "../layouts/Layout.astro"
+---
+
+<script>
+  import ArrowScroller from "../modules/ArrowScroll"
+  ArrowScroller()
+</script>
+<Layout>
+  <Header />
+  <section class="container bg-erieblack text-orange titlesection">
+    <div class="row">
+      <div class="col-sm align-self-center title-lead">
+        <h2 class="cover my-2 text-center">Support</h2>
+        <p class="lead text-center w-75 mx-auto my-3">
+          Für den reibungslosen Ablauf Ihrer Webapplikation, App oder
+          Wordpress-Seite, biete ich preiswerte Supportpakete an.
+        </p>
+      </div>
+    </div>
+    <a href="" class="title-arrow-down">
+      <i class="fa-solid fa-arrow-down"></i>
+    </a>
+  </section>
+
+  <section class="bg-silver text-erieblack">
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h2 class="">Support-Pakete</h2>
+      <p class="fs-5 text-muted">
+        Bitte beachten Sie, dass die Preise in brutto als B2B-Preise
+        ausgezeichnet werden.
+      </p>
+    </div>
+  </section>
+  <section class="bg-silver text-erieblack mainsection">
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4  shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Free</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              $0<small class="text-muted fw-light">/mo</small>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary"
+              >Sign up for free</button
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4  shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              $15<small class="text-muted fw-light">/mo</small>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary"
+              >Get started</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-silver text-erieblack mainsection">
+    <h3>Leistungsvergleich</h3>
+    <div class="table-responsive">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th style="width: 34%;"></th>
+            <th style="width: 22%;">Ohne Support-Paket</th>
+            <th style="width: 22%;">Mit Supportpaket</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Public</th>
+            <td
+              ><svg class="bi" width="24" height="24"
+                ><use xlink:href="#check"></use>
+              </svg>
+            </td>
+            <td
+              ><svg class="bi" width="24" height="24"
+                ><use xlink:href="#check"></use>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Private</th>
+            <td></td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Permissions</th>
+            <td
+              ><svg class="bi" width="24" height="24"
+                ><use xlink:href="#check"></use>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Sharing</th>
+            <td></td>
+            <td
+              ><svg class="bi" width="24" height="24"
+                ><use xlink:href="#check"></use>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Unlimited members</th>
+            <td></td>
+            <td
+              ><svg class="bi" width="24" height="24"
+                ><use xlink:href="#check"></use>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Extra security</th>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
