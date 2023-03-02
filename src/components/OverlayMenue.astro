@@ -1,11 +1,11 @@
 ---
-import hamburgerClose from '/src/assets/images/hamburger/_times.svg';
-import logo from '/src/assets/images/logos/TW-EB5E28.svg';
+import hamburgerClose from '../assets/images/hamburger/_times.svg';
+import logo from '../assets/images/logos/TW-EB5E28.svg';
 --- 
     <div id="overlay-menu" class="bg-erieblack">
       <div class="navbar-toggle" id="navbar-toggle-close">
         <img
-          src={hamburgerClose}
+          src={hamburgerClose.src}
           id="hamburger-close"
           alt="hamburger"
         />
@@ -24,7 +24,7 @@ import logo from '/src/assets/images/logos/TW-EB5E28.svg';
       </div>
       <div id="overly-logo-bottom">
         <img
-          src={logo}
+          src={logo.src}
           alt="logo overlay"
           data-aos="fade-top"
           data-aos-delay="200"
