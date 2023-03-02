@@ -28,29 +28,37 @@ strong {
   letter-spacing: 0.07em;
 }
 
-.artikel-image{
-  img{
+.artikel-image {
+  img {
     width: 100%;
   }
 }
 
 article.blog {
   p {
-    margin: 5px 0 55px 0;
+    margin: 5px 0 2.5rem 0 !important;
+  }
+  li {
+    margin: 0 0 1.7rem 0 !important;
   }
   h1 {
     font-size: 2rem;
-    margin: 0px 0 50px 0;
+    margin: 1rem 0 1rem 0;
     text-align: center;
   }
   h4 {
     font-size: 1rem;
-    margin: 0px 0 10px 0;
+    margin: 4rem 0 1rem 0;
   }
 
   h2 {
     font-size: 1.25rem;
-    margin: 0px 0 10px 0;
+    margin: 5rem 0 1rem 0;
+  }
+  ol,
+  ul {
+    margin: 1rem 1.5rem;
+    padding: 0;
   }
 }
 
@@ -133,16 +141,16 @@ article.blog {
     white-space: pre-line;
   }
 
-  .titlerow{
-    width:100%; 
-    height:99%; 
+  .titlerow {
+    width: 100%;
+    height: 99%;
     padding-bottom: 100px;
   }
 }
 
 .btn {
   text-transform: uppercase;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .btn-erieblack,
@@ -360,33 +368,32 @@ footer {
   width: 70px;
 }
 
-.showcase-img{
-  img{
+.showcase-img {
+  img {
     border: 1px solid var(--erieBlack);
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
 }
-.showcase-main{
-  
-  h2{
+.showcase-main {
+  h2 {
     font-size: 1.5rem;
-    small{
+    small {
       font-size: 1rem;
     }
   }
-  h3{
+  h3 {
     margin-bottom: 0.5rem;
   }
-  p{
+  p {
     margin-top: 0;
     padding-top: 0px;
     margin-bottom: 3rem;
   }
-   li{
-     text-align: start;
-   }
+  li {
+    text-align: start;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -406,11 +413,10 @@ footer {
   }
   .titlesection {
     min-height: 99vh;
-  .row {
-    min-height: 300px;
+    .row {
+      min-height: 300px;
+    }
   }
-  }
-
 
   .content-leistungen {
     h3 {
