@@ -34,6 +34,9 @@ strong {
   }
 }
 
+
+
+
 article.blog {
   p {
     margin: 5px 0 2.5rem 0 !important;
@@ -228,14 +231,27 @@ h4 {
   }
 }
 
-.portfolio-row .card-text .fab {
-  font-size: 25px;
-  color: var(--olive);
+
+
+#special{
+  .card-text{
+    font-size: .9rem;
+  }
 }
+
 
 /* special cutted */
 .portfolio-row {
   padding: 0 25px;
+
+  .card-text .fab {
+  font-size: 25px;
+  color: var(--olive);
+}
+
+.card-text{
+  font-size: 1rem;
+}
 }
 
 .portfolio-row .card {
