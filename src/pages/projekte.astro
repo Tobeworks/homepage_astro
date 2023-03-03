@@ -27,6 +27,9 @@ import migrosbank from '../assets/images/portfolio/webcomponents.png';
 
 import bo1 from '../assets/images/portfolio/mockup_bo1.webp';
 import bo1_mobile from '../assets/images/portfolio/mockup_mobile_bo1.webp';
+import zz from 'src/assets/images/portfolio/zuerizahnie.png';
+import zz_mobile from 'src/assets/images/portfolio/zuerizahnie_mobile.png';
+
 import linktree from 'src/assets/images/portfolio/mobile/linktree.png';
 ---
 
@@ -71,7 +74,7 @@ import linktree from 'src/assets/images/portfolio/mobile/linktree.png';
             <h5 class="card-title">Webapp - Linktree</h5>
             <h6 class="card-subtitle mb-2 text-muted">Webapp</h6>
             <p class="card-text">
-              Linktree Web-Widget zur Benutzung in zB Instagram, entwickelt in Vue.js und Tailwind CSS mit Anbindung an eine API<br>
+              Das Linktree Web-Widget ist für die Verwendung auf sozialen Plattformen wie Instagram konzipiert und wurde mit Hilfe von Vue.js und Tailwind CSS entwickelt. Es ermöglicht die Anbindung an eine API (Headless CMS).<br>
             </p>
             <p class="card-text">
               <i class="fab fa-vuejs"></i>
@@ -218,7 +221,7 @@ import linktree from 'src/assets/images/portfolio/mobile/linktree.png';
             <h5 class="card-title">Rosenberg Ayurveda</h5>
             <h6 class="card-subtitle mb-2 text-muted">Shop System</h6>
             <p class="card-text">
-              HTML Code, CSS, Effects, Frontend-Entwicklung
+              In diesem Projekt wurde eine umfangreiche Frontend-Entwicklung realisiert, die auf HTML Code, CSS auf einer Adobe XD -Vorlage basiert. Durch die sorgfältige Umsetzung dieser Technologien wurde eine ansprechende Benutzeroberfläche geschaffen, die sowohl funktional als auch ästhetisch ansprechend ist. 
             </p>
             <p class="card-text">
               <i class="fab fa-html5"></i>
@@ -247,6 +250,60 @@ import linktree from 'src/assets/images/portfolio/mobile/linktree.png';
     </div>
   </section>
 <!-- Ayur Ende -->
+
+<!--  Bo 1 Start -->
+  <section class="bg-silver portfolio-row" id="contentStart">
+    
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <Picture
+            class="card-img-top d-block d-sm-none pt-5"
+            src={zz_mobile}
+            widths={[500]}
+            alt="Logic Moon"
+            sizes=""
+          />
+          <Picture
+            class="card-img-top d-none d-sm-block pt-5"
+            src={zz}
+            alt="Logic Moon"
+            widths={[300, 420, 650]}
+            sizes="(max-width: 767px) 300px,(max-width:1199px) 420px, (min-width: 1200px) 650px"
+            formats={["webp"]}
+          />
+        </div>
+
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Zuerizahnie</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Webdevelopment, Wordpress Theming in HTML/PHP</h6>
+            <p class="card-text">
+              <small>Die gestellte Aufgabe war anspruchsvoll: Aus einem bestehenden Build musste ein individuelles WordPress Theme erstellt werden, das auf Bootstrap basiert und die Unterstützung von Elementor beinhaltet. Die bereits vorhandenen Funktionen mussten auf der Frontend-Seite übernommen werden, während auf anderen Seiten Elementor laufen sollte.</small>
+            </p>
+            <p class="card-text">
+              <i class="fab fa-js"></i>
+              <i class="fab fa-bootstrap"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-wordpress"></i>
+            </p>
+
+            <p class="card-footer">
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">CSS</span>
+              <span class="badge bg-erieblack">Wordpress</span>
+              <span class="badge bg-erieblack">Elementor</span>
+              <span class="badge bg-erieblack">Bootstrap</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--  Bo 1 Ende -->
+
+
 
 <!-- Getucated -->
   <section class="bg-silver portfolio-row" >
