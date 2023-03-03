@@ -29,6 +29,8 @@ import bo1 from "../assets/images/portfolio/mockup_bo1.webp"
 import bo1_mobile from "../assets/images/portfolio/mockup_mobile_bo1.webp"
 import zz from "src/assets/images/portfolio/zuerizahnie.png"
 import zz_mobile from "src/assets/images/portfolio/zuerizahnie_mobile.png"
+import snappy from "src/assets/images/portfolio/snappy-dashboard.png"
+import snappy_mobile from "src/assets/images/portfolio/snappy-dashboard_mobile.png"
 
 import linktree from "src/assets/images/portfolio/mobile/linktree.png"
 ---
@@ -42,9 +44,10 @@ import linktree from "src/assets/images/portfolio/mobile/linktree.png"
   <section class="container bg-erieblack text-orange mainsection titlesection">
     <div class="row">
       <div class="col-sm align-self-center title-lead">
-        <h2 class="cover my-2 text-center">Was mache ich so?</h2>
+        <h2 class="cover my-2 text-center">Projekte</h2>
         <p class="lead text-center w-75 mx-auto my-3">
-          Ein kleine Liste an ausgewählten Projekten
+          Eine kleine Auswahl der von Tobeworks umgesetzten Projekte, Apps,
+          Web-Anwendungen und vielem mehr.
         </p>
       </div>
     </div>
@@ -52,10 +55,10 @@ import linktree from "src/assets/images/portfolio/mobile/linktree.png"
       <i class="fa-solid fa-arrow-down"></i>
     </a>
   </section>
-<span id="contentStart"></span>
+  <span id="contentStart"></span>
 
   <!-- Linktree Start -->
-  <section class="bg-silver portfolio-row" >
+  <section class="bg-silver portfolio-row">
     <div class="card mb-3">
       <div class="row align-items-center">
         <div class="col-sm-7">
@@ -74,7 +77,88 @@ import linktree from "src/assets/images/portfolio/mobile/linktree.png"
             <h5 class="card-title">Webapp - Linktree</h5>
             <h6 class="card-subtitle mb-2 text-muted">Webapp</h6>
             <p class="card-text">
-   Das Linktree Web-Widget von Tobeworks ist eine innovative Lösung, die speziell für die Nutzung auf sozialen Plattformen wie Instagram entwickelt wurde. Durch die Verwendung von Vue.js und Tailwind CSS wurde ein benutzerfreundliches und ansprechendes Design umgesetzt. Die Integration einer API (Headless CMS) ermöglicht es dem Kunden, den Inhalt des Widgets schnell und einfach zu aktualisieren, ohne sich direkt im Code der Anwendung zu bewegen. Durch die Verwendung dieser Technologien wird eine schnelle und zuverlässige Ausführung des Widgets gewährleistet. So können Nutzer schnell auf alle wichtigen Links zugreifen, ohne aufwendige Navigationen durchlaufen zu müssen. Das Linktree Web-Widget ist somit eine effektive Möglichkeit, um das Engagement und die Interaktion auf sozialen Medien zu steigern.
+              Das Linktree Web-Widget von Tobeworks ist eine innovative Lösung,
+              die speziell für die Nutzung auf sozialen Plattformen wie
+              Instagram entwickelt wurde. Durch die Verwendung von Vue.js und
+              Tailwind CSS wurde ein benutzerfreundliches und ansprechendes
+              Design umgesetzt. Die Integration einer API (Headless CMS)
+              ermöglicht es dem Kunden, den Inhalt des Widgets schnell und
+              einfach zu aktualisieren, ohne sich direkt im Code der Anwendung
+              zu bewegen. Durch die Verwendung dieser Technologien wird eine
+              schnelle und zuverlässige Ausführung des Widgets gewährleistet. So
+              können Nutzer schnell auf alle wichtigen Links zugreifen, ohne
+              aufwendige Navigationen durchlaufen zu müssen. Das Linktree
+              Web-Widget ist somit eine effektive Möglichkeit, um das Engagement
+              und die Interaktion auf sozialen Medien zu steigern.
+            </p>
+            <p class="card-text">
+              <i class="fab fa-vuejs"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-npm"></i>
+            </p>
+
+            <p class="card-footer">
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">Vue.js</span>
+              <span class="badge bg-erieblack">NPM</span>
+              <span class="badge bg-erieblack">CSS</span>
+              <span class="badge bg-erieblack">Tailwind CSS</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Linktree  Ende -->
+
+  <!-- Linktree Start -->
+  <section class="bg-silver portfolio-row">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <Picture
+            class="card-img-top d-block d-sm-none pt-5"
+            src={snappy_mobile}
+            widths={[500]}
+            alt="Neuraxis 2.0"
+            sizes=""
+          />
+          <Picture
+            class="card-img-top d-none d-sm-block pt-5"
+            src={snappy}
+            alt="Neuraxis 2.0"
+            widths={[300, 420, 650]}
+            sizes="(max-width: 767px) 300px,(max-width:1199px) 420px, (min-width: 1200px) 650px"
+            formats={["webp"]}
+          />
+        </div>
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Neuraxis Application Framework</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              mit Vue.js, Tailwind und Python
+            </h6>
+            <p class="card-text">
+              Die Aufgabe bei diesem Projekt war äußerst anspruchsvoll und
+              erforderte ein tiefes Verständnis für Webentwicklung und
+              Programmierung. Tobeworks hatte die Herausforderung, eine komplexe
+              Webanwendung zu entwickeln, die mehr als eine gewöhnliche
+              Webapplikation darstellt. Vielmehr sollte es ein umfassendes
+              Webframework sein, das aus einem Mono-Repo eine erweiterbare
+              Applikationsschnittstelle schafft. Dabei wurden verschiedene
+              Boot-Parameter genutzt, um eine individuelle Programmierumgebung
+              zu erschaffen.
+              <br />
+              Die Grundlage dieses Frameworks bildet Vue.js in Kombination mit Tailwind
+              CSS, die auf einem Webpack Bundler aufgesetzt wurden. Tobeworks hat
+              dabei den Kern des Frameworks und das gesamte Frontend-Interface entworfen
+              und umgesetzt. Das Backend der Anwendung wird durch eine Python API
+              gebildet, die von einer redis-Datenbank unterstützt wird.
+              <br />
+              Insgesamt war es ein umfangreiches Projekt, das viel Know-how und Fingerspitzengefühl
+              erforderte. Das Ergebnis ist eine leistungsstarke und erweiterbare
+              Webanwendung, die für viele Anwendungsbereiche einsetzbar ist.
             </p>
             <p class="card-text">
               <i class="fab fa-vuejs"></i>
@@ -98,7 +182,7 @@ import linktree from "src/assets/images/portfolio/mobile/linktree.png"
   <!-- Linktree  Ende -->
 
   <!-- Migrosbank Start -->
-  <section class="bg-silver portfolio-row" >
+  <section class="bg-silver portfolio-row">
     <div class="card mb-3">
       <div class="row align-items-center">
         <div class="col-sm-7">
@@ -115,13 +199,25 @@ import linktree from "src/assets/images/portfolio/mobile/linktree.png"
         <div class="col-sm-5">
           <div class="card-body">
             <h5 class="card-title">Webwidget - Migrosbank</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Webcomponent, Python, Docker, GCP</h6>
+            <h6 class="card-subtitle mb-2 text-muted">
+              Webcomponent, Python, Docker, GCP
+            </h6>
             <p class="card-text">
- Die Webkomponente zeichnet sich durch eine hohe Flexibilität aus und kann einfach in die Webseite des Kunden eingebunden werden. Hierfür genügt es, die Webkomponente per Remote in die HTML-Datei einzubinden – und das ganz ohne zusätzliche Abhängigkeiten (zero Dependencies).
-<br>
-Durch die Verwendung von Docker und der Google Cloud Platform ist eine schnelle und effiziente Bereitstellung der Webkomponente auf verschiedenen Servern möglich. Mit der Python-API lässt sich die Komponente zudem einfach und schnell anpassen, um den Anforderungen des Kunden gerecht zu werden.
-<br>
-Die Webkomponente von Tobeworks ermöglicht es Kunden, eine moderne und flexible Lösung für ihre Webseiten zu nutzen und von den Vorteilen der neuesten Technologien zu profitieren.
+              Die Webkomponente zeichnet sich durch eine hohe Flexibilität aus
+              und kann einfach in die Webseite des Kunden eingebunden werden.
+              Hierfür genügt es, die Webkomponente per Remote in die HTML-Datei
+              einzubinden – und das ganz ohne zusätzliche Abhängigkeiten (zero
+              Dependencies).
+              <br />
+              Durch die Verwendung von Docker und der Google Cloud Platform ist eine
+              schnelle und effiziente Bereitstellung der Webkomponente auf verschiedenen
+              Servern möglich. Mit der Python-API lässt sich die Komponente zudem
+              einfach und schnell anpassen, um den Anforderungen des Kunden gerecht
+              zu werden.
+              <br />
+              Die Webkomponente von Tobeworks ermöglicht es Kunden, eine moderne
+              und flexible Lösung für ihre Webseiten zu nutzen und von den Vorteilen
+              der neuesten Technologien zu profitieren.
             </p>
             <p class="card-text">
               <i class="fab fa-vuejs"></i>
@@ -174,11 +270,20 @@ Die Webkomponente von Tobeworks ermöglicht es Kunden, eine moderne und flexible
             <h5 class="card-title">Bo1 (Albatros)</h5>
             <h6 class="card-subtitle mb-2 text-muted">Webdevelopment</h6>
             <p class="card-text">
-              Entwicklung an einem großen Projekt für Wordpress aus einer
-              Sketch-Vorlage<br />
-              JavaScript für Lottie Animationen, Webdevelopment, Beratung für <br
-                /><a href="https://albatros.agency" target="_blank"
-                  >Albatros Frankfurt</a>
+              Tobeworks hat im Sommer 2022 an einem spannenden Projekt für <a
+                href="https://albatros.agency"
+                target="_blank">
+                Albatros Frankfurt</a
+              > gearbeitet, bei dem eine Sketch-Vorlage für WordPress umgesetzt wurde.<br
+              />
+              Dabei wurden modernste Webentwicklungstechnologien wie JavaScript für
+              Lottie-Animationen eingesetzt. Tobi von Tobeworks hat Albatros Frankfurt
+              nicht nur bei der Entwicklung unterstützt, sondern den Kunden auch
+              beratend zur Seite gestanden. <br />So wurde das Projekt agil
+              umgesetzt und in ständiger Kommunikation mit dem Kunden
+              weiterentwickelt. Das Ergebnis ist eine ansprechende und
+              benutzerfreundliche Webseite, die sich perfekt an die Bedürfnisse
+              des Kunden anpasst und einwandfrei funktioniert.
             </p>
             <p class="card-text">
               <i class="fab fa-js"></i>
@@ -198,530 +303,554 @@ Die Webkomponente von Tobeworks ermöglicht es Kunden, eine moderne und flexible
       </div>
     </div>
   </section>
-    <!--  Bo 1 Ende -->
+  <!--  Bo 1 Ende -->
 
-    <!-- Ayur -->
-    <section class="bg-silver portfolio-row" >
-      <div class="card mb-3">
-        <div class="row align-items-center">
-          <div class="col-sm-7">
-            <img
-              class="card-img-top d-block d-sm-none"
-              src={ayurhome_mobile.src}
-              alt="Rosenberg Ayurveda"
-            />
-            <Picture
-              class="card-img-top d-none d-sm-block"
-              src={mockup_ayur}
-              alt="Rosenberg Ayurveda"
-              widths={[300, 420, 650]}
-              sizes="(max-width: 767px) 300px,(max-width:1199px) 420px, (min-width: 1200px) 650px"
-              formats={["webp"]}
-              aspectRatio="4:3"
-            />
-          </div>
-          <div class="col-sm-5">
-            <div class="card-body">
-              <h5 class="card-title">Rosenberg Ayurveda</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Shop System</h6>
-              <p class="card-text">
-                In diesem Projekt wurde eine umfangreiche Frontend-Entwicklung
-                realisiert, die auf HTML Code, CSS auf einer Adobe XD -Vorlage
-                basiert. Durch die sorgfältige Umsetzung dieser Technologien
-                wurde eine ansprechende Benutzeroberfläche geschaffen, die
-                sowohl funktional als auch ästhetisch ansprechend ist.
-              </p>
-              <p class="card-text">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3"></i>
-                <i class="fab fa-bootstrap"></i>
-              </p>
+  <!-- Ayur -->
+  <section class="bg-silver portfolio-row">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <img
+            class="card-img-top d-block d-sm-none"
+            src={ayurhome_mobile.src}
+            alt="Rosenberg Ayurveda"
+          />
+          <Picture
+            class="card-img-top d-none d-sm-block"
+            src={mockup_ayur}
+            alt="Rosenberg Ayurveda"
+            widths={[300, 420, 650]}
+            sizes="(max-width: 767px) 300px,(max-width:1199px) 420px, (min-width: 1200px) 650px"
+            formats={["webp"]}
+            aspectRatio="4:3"
+          />
+        </div>
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Rosenberg Ayurveda</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Shop System</h6>
+            <p class="card-text">
+              Für dieses Projekt wurde eine aufwendige Frontend-Entwicklung
+              durchgeführt, welche auf einer Adobe XD-Vorlage basierte. Das Ziel
+              war es, eine ansprechende und zugleich funktionale
+              Benutzeroberfläche zu schaffen, die den Nutzern ein optimales
+              Erlebnis bietet. Die Umsetzung erfolgte durch die Verwendung von
+              HTML 5 Code und (S)CSS, wodurch ein dynamisches Design entstand.
+              Die Gestaltung des dynamischen Designs war besonders
+              herausfordernd und erforderte eine sorgfältige Umsetzung.
+              Insgesamt konnte durch die erfolgreiche Umsetzung der Technologien
+              eine ästhetisch ansprechende und zugleich benutzerfreundliche
+              Webseite geschaffen werden.
+            </p>
+            <p class="card-text">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-bootstrap"></i>
+            </p>
 
-              <p class="card-footer">
-                <span class="badge bg-erieblack">HTML</span>
-                <span class="badge bg-erieblack">Adobe XD</span>
-                <span class="badge bg-erieblack">NPM</span>
-                <span class="badge bg-erieblack">CSS</span>
-                <span class="badge bg-erieblack">SASS</span>
-                <span class="badge bg-erieblack">Bootstrap 5</span>
-              </p>
-              <div>
-                <a
-                  href="/showcase/ayur-shop"
-                  class="btn btn-erieblack btn-sm my-3"
-                  >Zum Showcase <i class="fa-solid fa-caret-right"></i>
-                </a>
-              </div>
+            <p class="card-footer">
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">Adobe XD</span>
+              <span class="badge bg-erieblack">NPM</span>
+              <span class="badge bg-erieblack">CSS</span>
+              <span class="badge bg-erieblack">SASS</span>
+              <span class="badge bg-erieblack">Bootstrap 5</span>
+            </p>
+            <div>
+              <a
+                href="/showcase/ayur-shop"
+                class="btn btn-erieblack btn-sm my-3"
+                >Zum Showcase <i class="fa-solid fa-caret-right"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Ayur Ende -->
-
-    <!--  Bo 1 Start -->
-    <section class="bg-silver portfolio-row">
-      <div class="card mb-3">
-        <div class="row align-items-center">
-          <div class="col-sm-7">
-            <Picture
-              class="card-img-top d-block d-sm-none pt-5"
-              src={zz_mobile}
-              widths={[500]}
-              alt="Logic Moon"
-              sizes=""
-            />
-            <Picture
-              class="card-img-top d-none d-sm-block pt-5"
-              src={zz}
-              alt="Logic Moon"
-              widths={[300, 420, 650]}
-              sizes="(max-width: 767px) 300px,(max-width:1199px) 420px, (min-width: 1200px) 650px"
-              formats={["webp"]}
-            />
-          </div>
-
-          <div class="col-sm-5">
-            <div class="card-body">
-              <h5 class="card-title">Zuerizahnie</h5>
-              <h6 class="card-subtitle mb-2 text-muted">
-                Webdevelopment, Wordpress Theming in HTML/PHP
-              </h6>
-              <p class="card-text">
-                Die gestellte Aufgabe war anspruchsvoll: Aus einem
-                  bestehenden Build musste ein individuelles WordPress Theme
-                  erstellt werden, das auf Bootstrap basiert und die
-                  Unterstützung von Elementor beinhaltet. Die bereits
-                  vorhandenen Funktionen mussten auf der Frontend-Seite
-                  übernommen werden, während auf anderen Seiten Elementor laufen
-                  sollte.
-              </p>
-              <p class="card-text">
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3"></i>
-                <i class="fab fa-wordpress"></i>
-              </p>
-
-              <p class="card-footer">
-                <span class="badge bg-erieblack">HTML</span>
-                <span class="badge bg-erieblack">CSS</span>
-                <span class="badge bg-erieblack">Wordpress</span>
-                <span class="badge bg-erieblack">Elementor</span>
-                <span class="badge bg-erieblack">Bootstrap</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--  Bo 1 Ende -->
-
-    <!-- Getucated -->
-    <section class="bg-silver portfolio-row">
-      <div class="card mb-3">
-        <div class="row align-items-center">
-          <div class="col-sm-7">
-            <Picture
-              class="card-img-top d-block d-sm-none border mt-3"
-              src={getucated_img_mobile}
-              alt="Getucated App"
-              widths={[250, 300]}
-              sizes="300px"
-              formats={["webp"]}
-            />
-            <div
-              id="carouselIndicators"
-              class="carousel slide d-none d-sm-block"
-              data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src={getucated_app.src} class="d-block" alt="..." />
-                </div>
-
-                <div class="carousel-item">
-                  <div class="mx-auto">
-                    <img src={getucated_app2.src} class="d-block" alt=" ..." />
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="mx-auto">
-                    <img src={getucated_app3.src} class="d-block" alt="..." />
-                  </div>
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Zurück</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Vor</span>
-              </button>
-            </div>
-          </div>
-          <div class="col-sm-5">
-            <div class="card-body">
-              <h5 class="card-title">Getucated</h5>
-              <h6 class="card-subtitle mb-2 text-muted">
-                Hybrid App für iOS und Android
-              </h6>
-              <p class="card-text fs-6">
-
-                  Eine besondere Aufgabe: Getucated ist eine Bildungs-App, bei
-                  deren Entstehung Tobeworks das Design, Konzept und die
-                  technische Leitung übernommen hat. Eine besondere
-                  Herausforderung bestand darin, den vorhandenen Inhalt zu
-                  verarbeiten, weshalb eine neue, maßgeschneiderte
-                  Konvertierungsschnittstelle in PHP entwickelt wurde. Die
-                  App wurde mithilfe des ionic Frameworks, React und Typescript
-                  für iOS und Android entwickelt udn in den Appstores bereit gestellt.
-
-              </p>
-              <p class="card-text">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3"></i>
-                <i class="fab fa-npm"></i>
-                <i class="fab fa-js"></i>
-              </p>
-              <p class="card-footer">
-                <span class="badge bg-erieblack">HTML</span>
-                <span class="badge bg-erieblack">CSS</span>
-                <span class="badge bg-erieblack">NPM</span>
-                <span class="badge bg-erieblack">Typescript</span>
-                <span class="badge bg-erieblack">Ionic Framework</span>
-                <span class="badge bg-erieblack">Capacitor</span>
-                <span class="badge bg-erieblack">iOS</span>
-                <span class="badge bg-erieblack">Android</span>
-              </p>
-              <div>
-                <a
-                  href="/showcase/getucated-app"
-                  class="btn btn-erieblack btn-sm my-3"
-                  >Zum Showcase <i class="fa-solid fa-caret-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Getucated Ende-->
-
-    <section class="bg-silver portfolio-row">
-      <div class="card mb-3">
-        <div class="row align-items-center">
-          <div class="col-sm-7" style="">
-            <Picture
-              class="card-img-top d-block d-sm-none pt-5"
-              src={logicmoon_mobile}
-              widths={[500]}
-              alt="Logic Moon"
-              sizes=""
-            />
-            <Picture
-              class="card-img-top d-none d-sm-block pt-5"
-              src={logicmoon_full}
-              alt="Logic Moon"
-              widths={[300, 420, 650]}
-              sizes="(max-width: 767px) 300px,(max-width:1199px) 420px, (min-width: 1200px) 650px"
-              formats={["webp"]}
-            />
-          </div>
-
-          <div class="col-sm-5">
-            <div class="card-body">
-              <h5 class="card-title">Logic Moon</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Portfolio-Webseite</h6>
-              <p class="card-text">
-                Screendesign mit Figma, HTML, CSS, Effects, Frontend-Entwicklung
-              </p>
-              <p class="card-text">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3"></i>
-                <i class="fab fa-bootstrap"></i>
-                <i class="fab fa-npm"></i>
-                <i class="fab fa-figma"></i>
-              </p>
-              <p class="card-footer">
-                <span class="badge bg-erieblack">HTML</span>
-                <span class="badge bg-erieblack">Adobe XD</span>
-                <span class="badge bg-erieblack">NPM</span>
-
-                <span class="badge bg-erieblack">CSS</span>
-                <span class="badge bg-erieblack">Bootstrap 5</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-silver portfolio-row">
-      <div class="card mb-3">
-        <div class="row align-items-center">
-          <div class="col-sm-7">
-            <img
-              class="img-fluid d-none d-sm-block"
-              src={gsp.src}
-              alt="GSP Steuern Webdesign"
-            />
-            <img
-              class="img-fluid d-block d-sm-none"
-              src={gsp_mobile.src}
-              alt="GSP Steuern Webdesign"
-            />
-          </div>
-          <div class="col-sm-5">
-            <div class="card-body">
-              <h5 class="card-title">GSP-Steuern</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Steuerberatung</h6>
-              <p class="card-text">
-                Backend- und Frontend-Entwicklung in Wordpress 5, technische
-                Leitung
-              </p>
-
-              <p class="card-text">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3"></i>
-                <i class="fab fa-wordpress"></i>
-              </p>
-
-              <p class="card-footer">
-                <span class="badge bg-erieblack">Wordpress 5</span>
-                <span class="badge bg-erieblack">HTML</span>
-                <span class="badge bg-erieblack">DIVI</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-silver portfolio-row">
-      <div class="card mb-3">
-        <div class="row align-items-center">
-          <div class="col-sm-7">
-            <img
-              class="img-fluid d-none d-sm-block"
-              src={iihd.src}
-              alt="IIHD Webseite"
-            />
-            <img
-              class="img-fluid d-block d-sm-none"
-              src={iihd_mobile.src}
-              alt="IIHD Webseite"
-            />
-          </div>
-          <div class="col-sm-5">
-            <div class="card-body">
-              <h5 class="card-title">IIHD</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Content-Portal</h6>
-              <p class="card-text">
-                Backend- und Frontend-Entwicklung in Wordpress 5,
-                Projekt-Management, technische Leitung
-              </p>
-
-              <p class="card-text">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3"></i>
-                <i class="fab fa-wordpress"></i>
-                <i class="fab fa-js-square"></i>
-                <i class="fab fa-php"></i>
-              </p>
-              <p class="card-footer">
-                <span class="badge bg-erieblack">PHP</span>
-                <span class="badge bg-erieblack">Wordpress 5</span>
-                <span class="badge bg-erieblack">HTML</span>
-                <span class="badge bg-erieblack">DIVI</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-silver portfolio-row">
-      <div class="card mb-3">
-        <div class="row align-items-center">
-          <div class="col-sm-7">
-            <img
-              class="img-fluid d-none d-sm-block"
-              src={vr.src}
-              alt="Vintage Revivals Webdesign"
-            />
-            <img
-              class="img-fluid d-block d-sm-none"
-              src={vr_mobile.src}
-              alt="Vintage Revivals Webdesign"
-            />
-          </div>
-          <div class="col-sm-5">
-            <div class="card-body">
-              <h5 class="card-title">Vintage Revivals</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Portfolio Website</h6>
-              <p class="card-text">Vintage Revivals ist eine Marke, die sich auf einzigartiges Design und Handwerkskunst spezialisiert hat. Als Teil des Engagements von Tobeworks für die Förderung von Kreativität und Handwerkskunst wurde die Online-Präsenz von Vintage Revivals in Form eines modernen Wordpress CMS erstellt und von Tobeworks gepflegt.</p>
-              <p class="card-text">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3"></i>
-                <i class="fab fa-wordpress"></i>
-              </p>
-
-              <p class="card-footer">
-                <span class="badge bg-erieblack">Wordpress</span>
-                <span class="badge bg-erieblack">HTML</span>
-                <span class="badge bg-erieblack">Bootstrap 3</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-silver portfolio-row">
-      <div class="card mb-3">
-        <div class="row align-items-center">
-          <div class="col-sm-7">
-            <img
-              class="img-fluid d-none d-sm-block"
-              src={rp24.src}
-              alt="Restposten24 Webdesign"
-            />
-            <img
-              class="img-fluid d-block d-sm-none"
-              src={rp24_mobile.src}
-              alt="Restposten24 Webdesign"
-            />
-          </div>
-          <div class="col-sm-5">
-            <div class="card-body">
-              <h5 class="card-title">Restposten24</h5>
-              <h6 class="card-subtitle mb-2 text-muted">
-                B2B-Handelsplattform
-              </h6>
-              <p class="card-text">
-                Restposten24 ist das größte deutsche Handelsportal für Restposten und hat sich in der Branche etabliert. Neben dem nationalen Ableger gibt es auch den internationalen Ableger Stocklots24, welcher sich auf den Verkauf von Restposten auf dem europäischen Markt spezialisiert hat. Die komplette Backend- und Frontend-Entwicklung beider Portale wurde von Tobeworks in PHP5/7, HTML, CSS und Bootstrap umgesetzt. Darüber hinaus wurde die technische Leitung übernommen und zahlreiche Module entworfen und optimiert, um ein optimales Kundenerlebnis zu gewährleisten. Auch die SEO-Optimierung spielte eine große Rolle, um eine maximale Sichtbarkeit der Portale in den Suchmaschinen zu erreichen.
-              </p>
-
-              <p class="card-text">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3"></i>
-                <i class="fab fa-bootstrap"></i>
-                <i class="fab fa-js-square"></i>
-                <i class="fab fa-php"></i>
-              </p>
-              <p class="card-footer">
-                <span class="badge bg-erieblack">PHP</span>
-                <span class="badge bg-erieblack">mySQL</span>
-                <span class="badge bg-erieblack">Linux</span>
-                <span class="badge bg-erieblack">Elasticsearch</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-silver portfolio-row">
-      <div class="card mb-3">
-        <div class="row align-items-center">
-          <div class="col-sm-7">
-            <img
-              src={mif.src}
-              class="img-fluid d-none d-sm-block"
-              alt="image"
-            />
-            <img
-              src={mif_mobile.src}
-              class="img-fluid d-block d-sm-none"
-              alt="image"
-            />
-          </div>
-          <div class="col-sm-5">
-            <div class="card-body">
-              <h5 class="card-title">Medinform</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Shopsystem</h6>
-              <p class="card-text">
-                Aufbau Shopsystem, Kundenberatung, Koordiantion, Entwicklung,
-                Design
-              </p>
-              <p class="card-text">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3"></i>
-                <i class="fab fa-wordpress"></i>
-                <i class="fab fa-js-square"></i>
-                <i class="fab fa-php"></i>
-              </p>
-              <p class="card-footer">
-                <span class="badge bg-erieblack">HTML</span>
-                <span class="badge bg-erieblack">CSS</span>
-                <span class="badge bg-erieblack">Wordpress</span>
-                <span class="badge bg-erieblack">Woocommerce</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-silver portfolio-row">
-      <div class="card mb-3">
-        <div class="row align-items-center">
-          <div class="col-sm-7">
-            <img class="img-fluid" src={lul.src} alt="Lifter und Lauch" />
-          </div>
-          <div class="col-sm-5">
-            <div class="card-body">
-              <h5 class="card-title">Lifter und Lauch</h5>
-              <h6 class="card-subtitle mb-2 text-muted">
-                Portfolio Kooperationswebseite
-              </h6>
-              <p class="card-text">HTML, CSS</p>
-              <p class="card-text">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3"></i>
-                <i class="fab fa-bootstrap"></i>
-              </p>
-              <p class="card-footer">
-                <span class="badge bg-erieblack">HTML</span>
-                <span class="badge bg-erieblack">CSS</span>
-                <span class="badge bg-erieblack">Bootstrap</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <Footer />
+    </div>
   </section>
+  <!-- Ayur Ende -->
+
+  <!--  Bo 1 Start -->
+  <section class="bg-silver portfolio-row">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <Picture
+            class="card-img-top d-block d-sm-none pt-5"
+            src={zz_mobile}
+            widths={[500]}
+            alt="Logic Moon"
+            sizes=""
+          />
+          <Picture
+            class="card-img-top d-none d-sm-block pt-5"
+            src={zz}
+            alt="Logic Moon"
+            widths={[300, 420, 650]}
+            sizes="(max-width: 767px) 300px,(max-width:1199px) 420px, (min-width: 1200px) 650px"
+            formats={["webp"]}
+          />
+        </div>
+
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Zuerizahnie</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              Webdevelopment, Wordpress Theming in HTML/PHP
+            </h6>
+            <p class="card-text">
+              Die gestellte Aufgabe war anspruchsvoll: Aus einem bestehenden
+              Build musste ein individuelles WordPress Theme erstellt werden,
+              das auf Bootstrap basiert und die Unterstützung von Elementor
+              beinhaltet. Die bereits vorhandenen Funktionen mussten auf der
+              Frontend-Seite übernommen werden, während auf anderen Seiten
+              Elementor laufen sollte.
+            </p>
+            <p class="card-text">
+              <i class="fab fa-js"></i>
+              <i class="fab fa-bootstrap"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-wordpress"></i>
+            </p>
+
+            <p class="card-footer">
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">CSS</span>
+              <span class="badge bg-erieblack">Wordpress</span>
+              <span class="badge bg-erieblack">Elementor</span>
+              <span class="badge bg-erieblack">Bootstrap</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  Bo 1 Ende -->
+
+  <!-- Getucated -->
+  <section class="bg-silver portfolio-row">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <Picture
+            class="card-img-top d-block d-sm-none border mt-3"
+            src={getucated_img_mobile}
+            alt="Getucated App"
+            widths={[250, 300]}
+            sizes="300px"
+            formats={["webp"]}
+          />
+          <div
+            id="carouselIndicators"
+            class="carousel slide d-none d-sm-block"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src={getucated_app.src} class="d-block" alt="..." />
+              </div>
+
+              <div class="carousel-item">
+                <div class="mx-auto">
+                  <img src={getucated_app2.src} class="d-block" alt=" ..." />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="mx-auto">
+                  <img src={getucated_app3.src} class="d-block" alt="..." />
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Zurück</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Vor</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Getucated</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              Hybrid App für iOS und Android
+            </h6>
+            <p class="card-text">
+              Getucated war und ist ein einzigartiges und spannendes Projekt für
+              Tobeworks, da es sich um eine Bildungs-App handelte, die von Grund
+              auf neu entwickelt wurde. Das Team hat nicht nur das Design und
+              Konzept entworfen, sondern auch die technische Leitung übernommen,
+              um sicherzustellen, dass das Endprodukt höchsten Standards
+              entspricht. Eine der größten Herausforderungen bei der Entwicklung
+              von Getucated bestand darin, den vorhandenen Inhalt zu
+              verarbeiten, der aus verschiedenen Quellen stammte. Hierbei wurde
+              eine maßgeschneiderte Konvertierungsschnittstelle in PHP
+              implementiert, um den Prozess zu erleichtern. Die App wurde mit
+              dem ionic Framework, React und Typescript für iOS und Android
+              entwickelt, um eine reibungslose und nahtlose Benutzererfahrung zu
+              gewährleisten. Getucated ist nun in den App-Stores verfügbar und
+              wird von einer wachsenden Nutzerbasis genutzt.
+            </p>
+            <p class="card-text">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-npm"></i>
+              <i class="fab fa-js"></i>
+            </p>
+            <p class="card-footer">
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">CSS</span>
+              <span class="badge bg-erieblack">NPM</span>
+              <span class="badge bg-erieblack">Typescript</span>
+              <span class="badge bg-erieblack">Ionic Framework</span>
+              <span class="badge bg-erieblack">Capacitor</span>
+              <span class="badge bg-erieblack">iOS</span>
+              <span class="badge bg-erieblack">Android</span>
+            </p>
+            <div>
+              <a
+                href="/showcase/getucated-app"
+                class="btn btn-erieblack btn-sm my-3"
+                >Zum Showcase <i class="fa-solid fa-caret-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Getucated Ende-->
+
+  <section class="bg-silver portfolio-row">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7" style="">
+          <Picture
+            class="card-img-top d-block d-sm-none pt-5"
+            src={logicmoon_mobile}
+            widths={[500]}
+            alt="Logic Moon"
+            sizes=""
+          />
+          <Picture
+            class="card-img-top d-none d-sm-block pt-5"
+            src={logicmoon_full}
+            alt="Logic Moon"
+            widths={[300, 420, 650]}
+            sizes="(max-width: 767px) 300px,(max-width:1199px) 420px, (min-width: 1200px) 650px"
+            formats={["webp"]}
+          />
+        </div>
+
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Logic Moon</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Portfolio-Webseite</h6>
+            <p class="card-text">
+              Bei diesem Projekt wurde ein Screendesign mit der Design-Software
+              Figma erstellt und anschließend in HTML und CSS umgesetzt. Dabei
+              wurden spezielle Effekte eingesetzt, um das Design noch
+              ansprechender zu gestalten. Tobeworks hat dabei nicht nur das
+              Design, sondern auch die Frontend-Entwicklung übernommen, um
+              sicherzustellen, dass das fertige Produkt den höchsten
+              Qualitätsstandards entspricht.
+            </p>
+            <p class="card-text">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-bootstrap"></i>
+              <i class="fab fa-npm"></i>
+              <i class="fab fa-figma"></i>
+            </p>
+            <p class="card-footer">
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">Adobe XD</span>
+              <span class="badge bg-erieblack">NPM</span>
+
+              <span class="badge bg-erieblack">CSS</span>
+              <span class="badge bg-erieblack">Bootstrap 5</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-silver portfolio-row">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <img
+            class="img-fluid d-none d-sm-block"
+            src={gsp.src}
+            alt="GSP Steuern Webdesign"
+          />
+          <img
+            class="img-fluid d-block d-sm-none"
+            src={gsp_mobile.src}
+            alt="GSP Steuern Webdesign"
+          />
+        </div>
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">GSP-Steuern</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Steuerberatung</h6>
+            <p class="card-text">
+              Backend- und Frontend-Entwicklung in Wordpress 5, technische
+              Leitung
+            </p>
+
+            <p class="card-text">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-wordpress"></i>
+            </p>
+
+            <p class="card-footer">
+              <span class="badge bg-erieblack">Wordpress 5</span>
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">DIVI</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-silver portfolio-row">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <img
+            class="img-fluid d-none d-sm-block"
+            src={iihd.src}
+            alt="IIHD Webseite"
+          />
+          <img
+            class="img-fluid d-block d-sm-none"
+            src={iihd_mobile.src}
+            alt="IIHD Webseite"
+          />
+        </div>
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">IIHD</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Content-Portal</h6>
+            <p class="card-text">
+              Backend- und Frontend-Entwicklung in Wordpress 5,
+              Projekt-Management, technische Leitung
+            </p>
+
+            <p class="card-text">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-wordpress"></i>
+              <i class="fab fa-js-square"></i>
+              <i class="fab fa-php"></i>
+            </p>
+            <p class="card-footer">
+              <span class="badge bg-erieblack">PHP</span>
+              <span class="badge bg-erieblack">Wordpress 5</span>
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">DIVI</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-silver portfolio-row">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <img
+            class="img-fluid d-none d-sm-block"
+            src={vr.src}
+            alt="Vintage Revivals Webdesign"
+          />
+          <img
+            class="img-fluid d-block d-sm-none"
+            src={vr_mobile.src}
+            alt="Vintage Revivals Webdesign"
+          />
+        </div>
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Vintage Revivals</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Portfolio Website</h6>
+            <p class="card-text">
+              Vintage Revivals ist eine Marke, die sich auf einzigartiges Design
+              und Handwerkskunst spezialisiert hat. Als Teil des Engagements von
+              Tobeworks für die Förderung von Kreativität und Handwerkskunst
+              wurde die Online-Präsenz von Vintage Revivals in Form eines
+              modernen Wordpress CMS erstellt und von Tobeworks gepflegt.
+            </p>
+            <p class="card-text">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-wordpress"></i>
+            </p>
+
+            <p class="card-footer">
+              <span class="badge bg-erieblack">Wordpress</span>
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">Bootstrap 3</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-silver portfolio-row">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <img
+            class="img-fluid d-none d-sm-block"
+            src={rp24.src}
+            alt="Restposten24 Webdesign"
+          />
+          <img
+            class="img-fluid d-block d-sm-none"
+            src={rp24_mobile.src}
+            alt="Restposten24 Webdesign"
+          />
+        </div>
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Restposten24</h5>
+            <h6 class="card-subtitle mb-2 text-muted">B2B-Handelsplattform</h6>
+            <p class="card-text">
+              Restposten24 ist das größte deutsche Handelsportal für Restposten
+              und hat sich in der Branche etabliert. Neben dem nationalen
+              Ableger gibt es auch den internationalen Ableger Stocklots24,
+              welcher sich auf den Verkauf von Restposten auf dem europäischen
+              Markt spezialisiert hat. Die komplette Backend- und
+              Frontend-Entwicklung beider Portale wurde von Tobeworks in PHP5/7,
+              HTML, CSS und Bootstrap umgesetzt. Darüber hinaus wurde die
+              technische Leitung übernommen und zahlreiche Module entworfen und
+              optimiert, um ein optimales Kundenerlebnis zu gewährleisten. Auch
+              die SEO-Optimierung spielte eine große Rolle, um eine maximale
+              Sichtbarkeit der Portale in den Suchmaschinen zu erreichen.
+            </p>
+
+            <p class="card-text">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-bootstrap"></i>
+              <i class="fab fa-js-square"></i>
+              <i class="fab fa-php"></i>
+            </p>
+            <p class="card-footer">
+              <span class="badge bg-erieblack">PHP</span>
+              <span class="badge bg-erieblack">mySQL</span>
+              <span class="badge bg-erieblack">Linux</span>
+              <span class="badge bg-erieblack">Elasticsearch</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-silver portfolio-row">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <img src={mif.src} class="img-fluid d-none d-sm-block" alt="image" />
+          <img
+            src={mif_mobile.src}
+            class="img-fluid d-block d-sm-none"
+            alt="image"
+          />
+        </div>
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Medinform</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Shopsystem</h6>
+            <p class="card-text">
+              Aufbau Shopsystem, Kundenberatung, Koordiantion, Entwicklung,
+              Design
+            </p>
+            <p class="card-text">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-wordpress"></i>
+              <i class="fab fa-js-square"></i>
+              <i class="fab fa-php"></i>
+            </p>
+            <p class="card-footer">
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">CSS</span>
+              <span class="badge bg-erieblack">Wordpress</span>
+              <span class="badge bg-erieblack">Woocommerce</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-silver portfolio-row">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <img class="img-fluid" src={lul.src} alt="Lifter und Lauch" />
+        </div>
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Lifter und Lauch</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              Portfolio Kooperationswebseite
+            </h6>
+            <p class="card-text">HTML, CSS</p>
+            <p class="card-text">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-bootstrap"></i>
+            </p>
+            <p class="card-footer">
+              <span class="badge bg-erieblack">HTML</span>
+              <span class="badge bg-erieblack">CSS</span>
+              <span class="badge bg-erieblack">Bootstrap</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <Footer />
 </Layout>
