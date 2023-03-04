@@ -23,7 +23,7 @@ header {
     }
   }
 }
-strong {
+strong,b {
   font-weight: 700;
   letter-spacing: 0.07em;
 }
@@ -35,6 +35,11 @@ strong {
 }
 
 
+#mover{
+  h2{
+    font-size: 2.5rem;
+  }
+}
 
 
 article.blog {
