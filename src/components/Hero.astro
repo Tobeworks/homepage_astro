@@ -1,0 +1,134 @@
+---
+import tobeworkslogo from "src/assets/images/logos/TobeworksLogo.svg"
+import tobeworkslogo_small from "src/assets/images/logos/TW-EB5E28.svg"
+import CTA from "../components/CTA.astro"
+import mountains from "../assets/images/mountains.jpg"
+---
+
+<section
+  class="bg-silver text-erieblack mainsection container main-hero"
+  style="padding: 0px 12px "
+  id="contentStart">
+  <div class="row flex-lg-row-reverse align-items-center g-5 p-5">
+    <div class="col-10 col-sm-10 col-lg-4">
+      <img
+        src={tobeworkslogo.src}
+        class="d-block mx-lg-auto img-fluid herologo"
+        alt="Tobeworks Logo"
+        title="tobeworks Logo"
+        data-aos="fade-up"
+        loading="lazy"
+        width="700"
+        height="500"
+      />
+    </div>
+
+    <div class="col-lg-8 content">
+      <h3 class="display-6 fw-bold lh-1 mb-3">Willkommen bei Tobeworks</h3>
+      <p class="lead">
+        <strong
+          >wo Kreativität auf Technologie trifft und wir Ihnen helfen, Ihre
+          digitale Präsenz zu optimieren.</strong>
+       </p>
+       <p>
+        Tobeworks ist nicht nur Web- oder Software-Entwickler, sondern eine Mischung
+        aus beidem! Ich und mein Team entwickeln maßgeschneiderte Lösungen für Ihre
+        individuellen Bedürfnisse, von der Idee bis zum fertigen Produkt.
+     </p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <CTA classes="text-start" />
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div
+      class="bg-eariblack col-sm-8 d-flex align-items-center justify-content-center"
+      style="">
+      <div class="px-4" style="padding-top:100px">
+        <h3 class="" data-aos="fade-up">Willkommen bei Tobeworks</h3>
+
+        <p>
+          <b
+            >wo Kreativität auf Technologie trifft und wir Ihnen helfen, Ihre
+            digitale Präsenz zu optimieren.</b
+          >
+          <br />
+          Tobeworks ist nicht nur Web- oder Software-Entwickler, sondern eine Mischung
+          aus beidem! Ich und mein Team entwickeln maßgeschneiderte Lösungen für
+          Ihre individuellen Bedürfnisse, von der Idee bis zum fertigen Produkt.
+        </p>
+     <p>
+          Hier gibt es keine unnötigen Extras, nur innovative Technologien und
+          jede Menge Leidenschaft für das, was wir tun. <br />
+          Neue Kommunikationslösungen haben noch nie so gut ausgesehen!
+        </p> 
+        <CTA classes="text-start" />
+      </div>
+    </div>
+
+    <div class="col-sm-4 d-flex align-items-center justify-content-center">
+      <img
+        src={tobeworkslogo.src}
+        class="img-fluid d-none d-lg-inline"
+        alt="Tobeworks Logo"
+        title="tobeworks Logo"
+        data-aos="fade-up"
+      />
+      <img
+        src={tobeworkslogo_small.src}
+        class="img-fluid d-lg-none"
+        alt="Tobeworks Logo"
+        title="tobeworks Logo"
+        data-aos="fade-up"
+      />
+    </div>
+  </div> -->
+</section>
+
+<!-- <div class="p-2 p-md-5 text-center">
+      <img
+        src={tobeworkslogo.src}
+        class="img-fluid d-none d-lg-inline"
+        alt="Tobeworks Logo"
+        title="tobeworks Logo"
+        data-aos="fade-up"
+      />
+      <img
+        src={tobeworkslogo_small.src}
+        class="img-fluid d-lg-none"
+        alt="Tobeworks Logo"
+        title="tobeworks Logo"
+        data-aos="fade-up"
+      />
+      <div class="text-center">
+        <h3 class="text-center my-3" data-aos="fade-up">
+          Full-Service seit 2018
+        </h3>
+        <p data-aos="fade-up">
+          <p>
+            <b
+              >Willkommen bei Tobeworks - wo Kreativität auf Technologie trifft
+              und wir Ihnen helfen, Ihre digitale Präsenz zu optimieren.</b
+            >
+            <br />
+            Tobeworks ist nicht nur Web- oder Software-Entwickler, sondern eine Mischung
+            aus beidem! Ich und mein Team entwickeln maßgeschneiderte Lösungen für
+            Ihre individuellen Bedürfnisse, von der Idee bis zum fertigen Produkt.
+          </p>
+          <p>
+            Hier gibt es keine unnötigen Extras, nur innovative Technologien und
+            jede Menge Leidenschaft für das, was wir tun. <br />
+            Neue Kommunikationslösungen haben noch nie so gut ausgesehen!
+          </p>
+        </p>
+        <CTA />
+      </div>
+    </div> -->
+
+<style lang="scss">
+  .main-hero {
+      .herologo{
+        margin-top: -5rem;
+      }
+  }
+</style>

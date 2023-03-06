@@ -13,8 +13,9 @@ import techhtml from "src/assets/images/tech/HTML.svg"
 import techcss from "src/assets/images/tech/CSS.svg"
 import tobeworkslogo from "src/assets/images/logos/TobeworksLogo.svg"
 import tobeworkslogo_small from "src/assets/images/logos/TW-EB5E28.svg"
-import Accordion from '../components/Accordion.astro'
-import CTA from '../components/CTA.astro';
+import Accordion from "../components/Accordion.astro"
+import CTA from "../components/CTA.astro"
+import Hero from "../components/Hero.astro"
 ---
 
 <main id="content-middle">
@@ -24,30 +25,32 @@ import CTA from '../components/CTA.astro';
       <div class="col-sm-6 align-self-end">
         <div id="mover">
           <h2 class="cover my-2" data-aos="fade-up" data-aos-duration="300">
-           Größer denken, <br> damit Du erfolgreich bist!
+            Größer denken, <br /> damit Du erfolgreich bist!
           </h2>
 
-          <p
-            id="typewriter"
-            class="lead"
-            data-aos="fade-up"
-            data-aos-duration="500">
-            Einzigartige digitale Lösungen für einzigartige Kunden - bei TOBEWORKS bekommst Du maßgeschneiderte Kommunikationsstrategien, die Dich ganz nach oben katapultieren
-          </p> 
+          <div class="">
+            <p
+              id="typewriter"
+              class="lead"
+              data-aos="fade-up"
+              data-aos-duration="500">
+              Einzigartige digitale Lösungen für einzigartige Kunden
+            </p>
 
-          <div id="typewriter-hidden">
-            <div id="typewriter-hidden-1">
-              Einzigartige digitale Lösungen für einzigartige Kunden - bei TOBEWORKS bekommst Du maßgeschneiderte Kommunikationsstrategien, die Dich ganz nach oben katapultieren
-            </div>
-            <div id="typewriter-hidden-2">
-                und nie den Blick auf das Große Ganze verlieren.
-            </div>
+            <div id="typewriter-hidden">
+              <div id="typewriter-hidden-1">
+                Einzigartige digitale Lösungen für einzigartige Kunden
+              </div>
+              <div id="typewriter-hidden-2">
+                bei TOBEWORKS bekommst Du maßgeschneiderte
+                Kommunikationsstrategien,
+              </div>
 
-            <div id="typewriter-hidden-3">
-              Bringen Deine Online-Präsenz auf die Überholspur!
+              <div id="typewriter-hidden-3">
+                die Dich ganz nach oben katapultieren
+              </div>
             </div>
           </div>
-
           <div>
             <!-- <a
               href="/about"
@@ -59,7 +62,7 @@ import CTA from '../components/CTA.astro';
               href="/kontakt#contentStart"
               class="btn btn-erieblack my-2"
               data-aos="fade-up"
-              data-aos-delay="300">Jetzt loslegrn und kostenloses Erstgespräch vereinbaren</a
+              data-aos-delay="300">Jetzt kostenloses Erstgespräch vereinbaren</a
             >
           </div>
         </div>
@@ -262,6 +265,7 @@ import CTA from '../components/CTA.astro';
     </div>
   </section>
 
+  <!-- Cover mobile -->
   <section
     class="bg-erieblack text-orange section-mobile d-flex align-items-center d-xl-none">
     <div class="px-4 mx-auto" id="start-logo-block">
@@ -277,10 +281,10 @@ import CTA from '../components/CTA.astro';
       </a>
     </div>
   </section>
+  <!-- Cover mobile end -->
 
-
-
-  <section class="bg-silver text-erieblack mainsection" id="contentStart">
+  <Hero />
+  <!-- <section class="bg-silver text-erieblack mainsection" id="contentStart">
     <div class="p-2 p-md-5 text-center">
       <img
         src={tobeworkslogo.src}
@@ -295,25 +299,32 @@ import CTA from '../components/CTA.astro';
         alt="Tobeworks Logo"
         title="tobeworks Logo"
         data-aos="fade-up"
-      /> 
+      />
       <div class="text-center">
         <h3 class="text-center my-3" data-aos="fade-up">
           Full-Service seit 2018
         </h3>
         <p data-aos="fade-up">
-<p>
-  <b>Willkommen bei Tobeworks - wo Kreativität auf Technologie trifft und wir Ihnen helfen, Ihre digitale Präsenz zu optimieren.</b> <br> 
-  Tobeworks ist nicht nur Web- oder Software-Entwickler, sondern eine Mischung aus beidem! Ich und mein Team entwickeln maßgeschneiderte Lösungen für Ihre individuellen Bedürfnisse, von der Idee bis zum fertigen Produkt. 
-</p>
-<p>
-  Hier gibt es keine unnötigen Extras, nur innovative Technologien und jede Menge Leidenschaft für das, was wir tun. <br> 
-  Neue Kommunikationslösungen haben noch nie so gut ausgesehen!
-</p>
+          <p>
+            <b
+              >Willkommen bei Tobeworks - wo Kreativität auf Technologie trifft
+              und wir Ihnen helfen, Ihre digitale Präsenz zu optimieren.</b
+            >
+            <br />
+            Tobeworks ist nicht nur Web- oder Software-Entwickler, sondern eine Mischung
+            aus beidem! Ich und mein Team entwickeln maßgeschneiderte Lösungen für
+            Ihre individuellen Bedürfnisse, von der Idee bis zum fertigen Produkt.
+          </p>
+          <p>
+            Hier gibt es keine unnötigen Extras, nur innovative Technologien und
+            jede Menge Leidenschaft für das, was wir tun. <br />
+            Neue Kommunikationslösungen haben noch nie so gut ausgesehen!
+          </p>
         </p>
-<CTA />
+        <CTA />
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="bg-orange text-erieblack cutsection" id="special">
     <div class="row">
@@ -321,7 +332,11 @@ import CTA from '../components/CTA.astro';
         <div class="cut-left">
           <h3>Warum Tobeworks?</h3>
           <p>
-       Als Tech-Nerds und Branchen-Spezialisten kümmern wir uns von der ersten Idee bis hin zur fertigen Softwarelösung sowie dem sicheren Hosting um alles aus einer Hand. Wir sind bereit, Ihre digitale Herausforderung anzunehmen und Ihre Online-Präsenz zum Superhelden zu machen! <br> Mit Geld zurück Garantie!
+            Als Tech-Nerds und Branchen-Spezialisten kümmern wir uns von der
+            ersten Idee bis hin zur fertigen Softwarelösung sowie dem sicheren
+            Hosting um alles aus einer Hand. Wir sind bereit, Ihre digitale
+            Herausforderung anzunehmen und Ihre Online-Präsenz zum Superhelden
+            zu machen! <br /> Mit Geld zurück Garantie!
           </p>
           <p>
             <a href="/kontakt#contentStart" class="btn btn-erieblack"
@@ -357,7 +372,12 @@ import CTA from '../components/CTA.astro';
               Entwicklung
             </h5>
             <p class="card-text">
-             Um eine kundenorientierte Umsetzung von Projekten sicherzustellen, setzen wir bei Tobeworks auf agile Methoden und eine kontinuierliche Kommunikation mit unseren Kunden. Auf diese Weise können wir flexibel auf Anforderungen und Änderungswünsche reagieren und sicherstellen, dass das Ergebnis den Erwartungen des Kunden entspricht.
+              Um eine kundenorientierte Umsetzung von Projekten sicherzustellen,
+              setzen wir bei Tobeworks auf agile Methoden und eine
+              kontinuierliche Kommunikation mit unseren Kunden. Auf diese Weise
+              können wir flexibel auf Anforderungen und Änderungswünsche
+              reagieren und sicherstellen, dass das Ergebnis den Erwartungen des
+              Kunden entspricht.
             </p>
             <a href="/kontakt#contentStart" class="btn btn-silver btn-sm"
               >Mehr erfahren</a
@@ -372,7 +392,12 @@ import CTA from '../components/CTA.astro';
               Infrastruktur
             </h5>
             <p class="card-text">
-              Infrastruktur ist ein entscheidender Faktor für den Erfolg jedes Projekts. Ohne die richtige technische Basis kann keine hochwertige Software entwickelt werden. Tobeworks bietet eine umfassende Betreuung von der Wahl des richtigen Servers über die Absicherung der Daten bis hin zur Implementierung von Backup-Systemen.
+              Infrastruktur ist ein entscheidender Faktor für den Erfolg jedes
+              Projekts. Ohne die richtige technische Basis kann keine
+              hochwertige Software entwickelt werden. Tobeworks bietet eine
+              umfassende Betreuung von der Wahl des richtigen Servers über die
+              Absicherung der Daten bis hin zur Implementierung von
+              Backup-Systemen.
             </p>
             <a href="/kontakt#contentStart" class="btn btn-silver btn-sm"
               >Mehr erfahren</a
@@ -383,12 +408,14 @@ import CTA from '../components/CTA.astro';
     </div>
   </section>
 
-   <Accordion /> 
+  <Accordion />
 
   <section class="bg-silver text-erieblack mainsection" id="brands">
     <div class="">
-      <h2 data-aos="fade-up" class="text-center">Technologie</h2>
-      <p class="lead text-center">Bereit für Tech-Chic und Innovation pur? Willkommen bei Tobeworks!</p>
+      <h2 data-aos="fade-up" class="text-center">Technologien</h2>
+      <p class="lead text-center">
+        Bereit für Tech-Chic und Innovation pur? Willkommen bei Tobeworks!
+      </p>
       <div class="w-50 mx-auto mt-5 mb-n5">
         <div class="row">
           <div

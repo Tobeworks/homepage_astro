@@ -1,4 +1,4 @@
 {
-    "prettier.bracketSameLine": true,
+    "prettier.bracketSameLine": false,
     "prettier.configPath": ".prettierrc"
 }

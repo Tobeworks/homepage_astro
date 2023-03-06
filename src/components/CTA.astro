@@ -1,5 +1,5 @@
 ---
-let {text} = Astro.props
+let {text, classes} = Astro.props
 
 const var_text = [
   "Los geht's",
@@ -16,13 +16,22 @@ if (text == undefined) {
   text = getRandomText(var_text)
 }
 
+let dynclasses = ['bg-silver', 'p-3 text-center'];
+
+if(classes != undefined){
+  dynclasses.pop();
+  dynclasses.push(classes);
+}
+
+
+
 function getRandomText(var_text = []) {
   const randomIndex = Math.floor(Math.random() * var_text.length)
   return var_text[randomIndex]
 }
 ---
 
-<div class="bg-silver border-orange-subtle p-3 text-center">
+<div class:list={dynclasses}>
   <p>Du brauchst Hilfe oder Beratung?</p>
   <a href="/kontakt#contentStart" class="btn btn-erieblack"
     >{text} <i class="fa-light fa-caret-right"></i></a
