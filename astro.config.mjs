@@ -11,6 +11,9 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
+import robotsTxt from "astro-robots-txt";
+
+// https://astro.build/config
 export default defineConfig({
   markdown: {
     drafts: false
@@ -21,6 +24,6 @@ export default defineConfig({
     // default: 'info'
     logLevel: 'debug',
     serviceEntryPoint: '@astrojs/image/sharp'
-  }), react(), compress(), mdx(), sitemap()],
+  }), react(), compress(), mdx(), sitemap(), robotsTxt()],
   vite: {}
 });
