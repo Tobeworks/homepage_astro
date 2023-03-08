@@ -1,5 +1,5 @@
 ---
-let {text, classes} = Astro.props
+let {text, classes, description} = Astro.props
 
 const var_text = [
   "Los geht's",
@@ -10,7 +10,14 @@ const var_text = [
   "Jetzt durchstarten",
   "Kontakt aufnehmen",
   "Kontaktaufnahme",
-]
+];
+
+const var_description = ["Kostenloses Erstgespräch", "Du brauchst Hilfe oder Beratung?", "kostenlos Beratung bekommen?"];
+
+if (description == undefined) {
+  description = getRandomText(var_description);
+}
+
 
 if (text == undefined) {
   text = getRandomText(var_text)
@@ -32,7 +39,7 @@ function getRandomText(var_text = []) {
 ---
 
 <div class:list={dynclasses}>
-  <p>Du brauchst Hilfe oder Beratung?</p>
+  <div class="my-1">{description}</div>
   <a href="/kontakt#contentStart" class="btn btn-erieblack"
     >{text} <i class="fa-light fa-caret-right"></i></a
   >

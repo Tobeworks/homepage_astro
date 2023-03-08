@@ -5,6 +5,9 @@ import compress from "astro-compress";
 import react from "@astrojs/react";
 
 // https://astro.build/config
+import mdx from "@astrojs/mdx";
+
+// https://astro.build/config
 export default defineConfig({
   markdown: {
     drafts: false
@@ -14,6 +17,6 @@ export default defineConfig({
     // default: 'info'
     logLevel: 'debug',
     serviceEntryPoint: '@astrojs/image/sharp'
-  }), react(), compress()],
+  }), react(), compress(), mdx()],
   vite: {}
 });

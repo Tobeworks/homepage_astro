@@ -1,4 +1,7 @@
 {
     "prettier.bracketSameLine": false,
-    "prettier.configPath": ".prettierrc"
+    "prettier.configPath": ".prettierrc",
+    "files.associations": {
+    "*.mdx": "markdown"
+}
 }

@@ -1,0 +1,46 @@
+---
+// Component Imports
+import {Image, Picture} from "@astrojs/image/components"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import Layout from "../layouts/Layout.astro"
+
+const {
+  content: {title, teaser, publishDate, url, img, art = "Blog"},
+} = Astro.props
+
+const cta = 'Button';
+---
+<style is:inline>
+
+
+
+</style>
+
+<Layout>
+  <Header />
+  <main>
+
+      <section class="container bg-erieblack text-orange mainsection titlesection">
+    <div class="row">
+      <div class="col-sm align-self-center title-lead">
+        <h2 class="cover my-2 text-center">{title}</h2>
+        <p class="lead text-center w-75 mx-auto my-3">
+          <strong>{teaser}</strong
+          >
+
+        </p>
+      </div>
+    </div>
+    <a href="" class="title-arrow-down">
+      <i class="fa-solid fa-arrow-down"></i>
+    </a>
+  </section>
+  <span id="contentStart"></span>
+
+     <section class="bg-silver text-erieblack contentsection">
+        <slot />
+     </section>
+  </main>
+  <Footer />
+</Layout>

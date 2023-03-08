@@ -1,0 +1,30 @@
+---
+import {Image, Picture} from "@astrojs/image/components"
+import wd1 from '../assets/images/wd/wd_01.png'
+import wd2 from '../assets/images/wd/wd_02.png'
+import wd3 from '../assets/images/wd/wd_03.png'
+import wd4 from '../assets/images/wd/wd_04.png'
+import wd5 from '../assets/images/wd/wd_05.png'
+import wd6 from '../assets/images/wd/wd_06.png'
+import wd7 from '../assets/images/wd/wd_07.png'
+import wd8 from '../assets/images/wd/wd_08.png'
+import wd9 from '../assets/images/wd/wd_09.png'
+
+const getImg = () =>{
+    const image = [wd1,wd2, wd3, wd4, wd5,wd6,wd7,wd8,wd9];
+    const randomIndex = Math.floor(Math.random() * image.length);
+    return image[randomIndex];
+}
+
+---
+
+<div class="d-flex justify-content-center p-3">
+<Picture
+  src={getImg()}
+  alt="Webdesign"
+  widths={[250, 300, 400, 800]}
+  sizes="(max-width: 450px) 250px, (max-width: 1200px) 400px, (min-width: 1200px) 800px"
+  formats={["webp"]}
+  class={`my-3`}
+/>
+</div>

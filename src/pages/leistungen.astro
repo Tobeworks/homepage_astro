@@ -3,6 +3,7 @@
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import Layout from "../layouts/Layout.astro"
+import ImageWD from '../components/Image-WD.astro'
 ---
 
 <script>
@@ -11,6 +12,7 @@ import Layout from "../layouts/Layout.astro"
 </script>
 <Layout>
   <Header />
+  
   <section class="container bg-erieblack text-orange titlesection">
     <div class="row">
       <div class="col-sm align-self-center title-lead">
@@ -35,6 +37,7 @@ import Layout from "../layouts/Layout.astro"
       technisches Paradigma zur Erstellung von Websites, so dass diese auf
       Eigenschaften des jeweils benutzten Endgeräts, vor allem Smartphones und
       Tabletcomputer, reagieren können.<br />
+      <ImageWD />
       <a href="/webentwicklung/webdesign-mainz-wiesbaden">Mehr erfahren</a>
     </p>
   </section>
@@ -143,18 +146,6 @@ import Layout from "../layouts/Layout.astro"
       dafür notwendige Infrastruktur für Angebote seiner Kunden im Internet.
     </p>
   </section>
-
-  <!-- <section class="bg-silver text-erieblack content-leistungen">
-    <h3 class="h1-typo2" data-aos="fade-up">Cryptocurrencies und Blockchain</h3>
-    <p data-aos="fade-up">
-      Kryptowährungen und Blockchain-Anwendungen sind in aller Munde und stellen
-      den nächsten Schritt in Richtung Dezentralisierung dar. Wir beraten Sie
-      bei allen technischen Details, helfen bei der Auswahl von Token und Coins,
-      zeige Ihnen Kniffe bei diversen Exchanges und kümmern uns um die
-      reibungslose Installation von Wallets.
-    </p>
-  </section> -->
-
 
   <Footer />
 </Layout>
