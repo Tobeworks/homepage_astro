@@ -96,10 +96,20 @@ article.blog {
     font-size: 1.7em;
     white-space: pre-line;
     line-height: 35px;
+    margin-top: 3rem;
+  }
+  h3 {
+    text-align: center;
+    font-size: 1.1em;
+    white-space: pre-line;
+    line-height: 35px;
+    width: 80%;
+    margin: 15px auto;
   }
   p {
-    padding: 20px 100px;
+    padding: 20px 60px;
     line-height: 30px;
+    margin-bottom: 1rem;
   }
   ul {
     margin-left: 80px !important;
@@ -451,8 +461,12 @@ footer {
   }
   .contentsection {
     h2 {
-      font-size: 1.1em;
+      font-size: 1.3em;
     }
+    h3 {
+    font-size: 1em;
+    line-height: normal;
+  }
     p {
       padding: 20px 20px;
     }

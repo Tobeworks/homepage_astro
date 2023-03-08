@@ -188,7 +188,7 @@
             <div class="px-4 mx-auto" id="start-logo-block">
                 <img src="src/assets/images/logos/TobeworksLogo.svg" class="img-fluid" alt="logo" data-aos="fade-down" />
                 <h2 data-aos="fade-up" data-aos-delay="500" class="mt-4">Websolutions</h2>
-                <a href="#!" class="title-arrow-down" rel="nofollow">
+                <a href="#!" class="title-arrow-down" rel="nofollow" title="arrow link">
                     <i class="fa-solid fa-arrow-down"></i>
                 </a>
             </div>

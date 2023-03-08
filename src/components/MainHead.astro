@@ -1,39 +1,39 @@
 ---
-//import '../assets/scss/styles.scss';
-import ProjectStyles from '../components/Project-Styles.vue'
-      import '../assets/scss/boostrap.scss';
-        import '../assets/scss/styles.scss';
-        import '../../node_modules/aos/dist/aos.css';
+import "../assets/scss/boostrap.scss"
+import "../assets/scss/styles.scss"
+import "../../node_modules/aos/dist/aos.css"
 const {
-	title = 'Tobeworks Websolutions',
-	description = 'Tobeworks, Freelance Websolutions since 2018',
-} = Astro.props;
+  title = "Tobeworks Websolutions",
+  description = "Tobeworks, Freelance Websolutions since 2018",
+} = Astro.props
 ---
 
 <head>
-<meta charset="UTF-8" />
-<meta name="description" property="og:description" content={description} />
-<meta name="viewport" content="width=device-width" />
-<meta name="generator" content="Astro, Vue, React, Bootstrap, Sass, node.js, php" />
-<title>{title}</title>
+  <meta charset="UTF-8" />
+  <meta name="description" property="og:description" content={description} />
+  <meta name="viewport" content="width=device-width" />
+  <meta
+    name="generator"
+    content="Astro, Vue, React, Bootstrap, Sass, node.js, php"
+  />
+  <title>{title}</title>
 
-<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
 
-
-<script>
-
-import '../assets/scss/font-awesome.scss';
-import AddAOS from '../modules/AddAOS'
-AddAOS(".contentsection img, .contentsection p, .contentsection h2, .contentsection a");
-</script>
-<style is:inline>
-  body{
-    background-color: black;
-    color: black;
-  }
-  a{
-    color: black;
-  }
-</style>
+  <script>
+    import "../assets/scss/font-awesome.scss"
+    import AddAOS from "../modules/AddAOS"
+    AddAOS(
+      ".contentsection img, .contentsection p, .contentsection h2, .contentsection a, .contentsection h3"
+    )
+  </script>
+  <style is:inline>
+    body {
+      background-color: black;
+      color: black;
+    }
+    a {
+      color: black;
+    }
+  </style>
 </head>
-
