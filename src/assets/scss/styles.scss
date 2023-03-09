@@ -221,6 +221,11 @@ h4 {
   padding: 0 100px;
 }
 
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
 /* special cutted */
 #special {
   background-repeat: no-repeat;
@@ -269,22 +274,26 @@ h4 {
   font-size: .9rem;
   padding: 1rem 0;
 }
-}
-
-.portfolio-row .card {
+  .card-title {
+    font-size: 1.8rem !important;
+    font-weight: 600;
+  }
+  .card {
   background-color: var(--silver);
   border: 0;
   color: var(--erieBlack);
 }
-.portfolio-row .card h5 {
+.card h5, .card h4 {
   color: var(--erieBlack);
-  font-size: 2em;
+  font-size: 1em;
 }
-.portfolio-row .card-footer {
+.card-footer {
   padding: 0;
   background-color: transparent;
   border-top: 0;
 }
+}
+
 
 #brands .fab {
   font-size: 3em;
