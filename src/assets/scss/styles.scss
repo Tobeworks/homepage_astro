@@ -353,7 +353,7 @@ h4 {
 footer {
   padding-top: 25px;
   background-color: var(--erieBlack);
-  h4 {
+  h4, h3 {
     color: var(--silver);
   }
   .nav-link {
@@ -494,7 +494,7 @@ footer {
     }
   }
   footer {
-    h4 {
+    h4, h3 {
       font-size: 1.2rem;
     }
   }
