@@ -13,6 +13,8 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 import robotsTxt from "astro-robots-txt";
 
+import astroOGImage from "astro-og-image";
+
 // https://astro.build/config
 export default defineConfig({
   markdown: {
@@ -24,6 +26,11 @@ export default defineConfig({
     // default: 'info'
     logLevel: 'debug',
     serviceEntryPoint: '@astrojs/image/sharp'
-  }), react(), compress(), mdx(), sitemap(), robotsTxt()],
+  }), react(), compress(), mdx(), sitemap(), robotsTxt(), astroOGImage({
+    config: {
+      path: "/pages/artikel", // change this value to the folder where your posts are
+      // NOTE: index.md file will not get proccesed, so please avoid it
+    },
+  }),],
   vite: {}
 });
