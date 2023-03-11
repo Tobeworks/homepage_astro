@@ -4,6 +4,8 @@ import {Image, Picture} from "@astrojs/image/components"
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import Layout from "../layouts/Layout.astro"
+import Links from '../components/SEO-Linktree.vue'
+
 import wplogo from "../assets/images/wordPress-logo.png";
 import wpstroke from "../assets/images/carousel/wordpress_stroke.svg";
 const {
@@ -43,6 +45,8 @@ const cta = 'Button';
 
      <section class="bg-silver text-erieblack contentsection">
         <slot />
+        <h3>Links zum Thema</h3>
+        <Links />
      </section>
   </main>
   <Footer />
