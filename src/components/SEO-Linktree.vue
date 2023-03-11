@@ -16,7 +16,8 @@ const seo_linkfarm = [
     { text: 'Technischer Support für Webagenturen', link: '/technischer-support-webagenturen/', active: true },
     { text: 'Webdesign Mainz Wiesbaden Frankfurt', link: '/webdesign-mainz-wiesbaden/', active: true },
     { text: 'Web Entwicklung Mainz Wiesbaden Frankfurt', link: '/webentwicklung-mainz-wiesbaden-frankfurt/', active: true },
-    { text: 'Individuelle Wordpress-Plugins entwickeln lassen', link: '/wordpress-plugin-entwicklung/', active: true }
+    { text: 'Individuelle Wordpress-Plugins entwickeln lassen', link: '/wordpress-plugin-entwicklung/', active: true },
+    { text: 'Wordpress Wartung', link: '/wordpress-wartung/', active: true },
 ]
 const activeLinks = seo_linkfarm.filter(link => link.active)
 </script>

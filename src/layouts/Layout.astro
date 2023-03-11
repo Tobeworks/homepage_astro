@@ -7,6 +7,10 @@ const { content } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="de">
+
+<MainHead
+  title="Tobeworks Websolutions"
+  description="Tobeworks, Freelance Websolutions since 2018">
 <link rel="sitemap" href="/sitemap-index.xml">
 <script>
   import anime from "animejs";
@@ -155,25 +159,8 @@ const { content } = Astro.props;
       HamburgerEfx("hamburger-bars", "in");
     };
   };
-
-  /**
-   *  Scroll Function
-   */
-  // const scrollToFunc = (id, offset = 60) => {
-  //   const element = document.getElementById(id);
-  //   const headerOffset = offset;
-  //   const elementPosition = element.offsetTop;
-  //   const offsetPosition = elementPosition - headerOffset;
-  //   document.documentElement.scrollTop = offsetPosition;
-  //   document.body.scrollTop = offsetPosition; // For Safari
-  // };
 </script>
-
-
-<MainHead
-  title="Tobeworks Websolutions"
-  description="Tobeworks, Freelance Websolutions since 2018"
-/>
+</MainHead>
 
 <body>
   <div class="container p-0">
