@@ -26,6 +26,8 @@ const seo_linkfarm = [
     { text: 'CMS mit Wordpress und App', link: '/cms-wordpress-app/', active: false },
     { text: 'Deine Inhalte auf anderne Seiten präsentieren', link: '/inhalte-auf-anderen-praesentieren/', active: false },
     { text: 'Headless CMS mit Wordpress', link: '/headless-cms-wordpress/', active: false },
+    { text: 'Webauftritte für Steuer- und Rechtsberatung', link: '/webauftritte-steuerberatung/', active: false },
+    { text: 'Webauftritte für Großhandel', link: '/webauftritte-grosshandel/', active: false },
 
 ]
 const activeLinks = seo_linkfarm.filter(link => link.active)
