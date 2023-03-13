@@ -10,7 +10,7 @@ tags:
   - wordpress
   - support
   - webentwicklung
-draft: false 
+draft: true
 ---
 ## In wenigen Schritten zur Homepage
 

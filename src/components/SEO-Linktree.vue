@@ -11,6 +11,7 @@
       </div>
 </template>
 <script setup>
+
 const seo_linkfarm = [
     { text: 'Wordpress Programmierer Mainz', link: '/wordpress-programmierer-mainz/', active: true },
     { text: 'Technischer Support für Webagenturen', link: '/technischer-support-webagenturen/', active: true },
@@ -18,6 +19,14 @@ const seo_linkfarm = [
     { text: 'Web Entwicklung Mainz Wiesbaden Frankfurt', link: '/webentwicklung-mainz-wiesbaden-frankfurt/', active: true },
     { text: 'Individuelle Wordpress-Plugins entwickeln lassen', link: '/wordpress-plugin-entwicklung/', active: true },
     { text: 'Wordpress Wartung', link: '/wordpress-wartung/', active: true },
+    { text: 'Webentwicklung Freelancer', link: '/webentwicklung-freelancer-mainz/', active: true },
+
+    { text: 'SEO - Convesion Optimierung', link: '/conversion-optimiering-seo/', active: false },
+    { text: 'SEO in Webentwicklung und Webdesign', link: '/seo-webentwicklung-webdesign/', active: false },
+    { text: 'CMS mit Wordpress und App', link: '/cms-wordpress-app/', active: false },
+    { text: 'Deine Inhalte auf anderne Seiten präsentieren', link: '/inhalte-auf-anderen-praesentieren/', active: false },
+    { text: 'Headless CMS mit Wordpress', link: '/headless-cms-wordpress/', active: false },
+
 ]
 const activeLinks = seo_linkfarm.filter(link => link.active)
 </script>

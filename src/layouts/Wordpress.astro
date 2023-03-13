@@ -1,18 +1,12 @@
 ---
-// Component Imports
-import {Image, Picture} from "@astrojs/image/components"
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import Layout from "../layouts/Layout.astro"
 import Links from '../components/SEO-Linktree.vue'
-
-import wplogo from "../assets/images/wordPress-logo.png";
 import wpstroke from "../assets/images/carousel/wordpress_stroke.svg";
 const {
-  content: {title, teaser, publishDate, url, img, art = "Blog"},
+  content: {title, teaser},
 } = Astro.props
-
-const cta = 'Button';
 ---
 
 <Layout>
