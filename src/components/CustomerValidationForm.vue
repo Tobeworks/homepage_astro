@@ -1,23 +1,23 @@
 <template>
-    <div class="kontaktformular p-5 umfrage">
-        <form @submit.prevent="submitForm">
+    <div class="kontaktformular p-2 p-md-5 umfrage mb-5">
+        <form @submit.prevent="submitForm" v-if="!gotanwsers">
 
-     <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" v-model="formdata.name">
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" v-model="formdata.email">
-        </div>
-        <div class="form-group">
-          <label for="company">Company</label>
-          <input type="text" class="form-control" id="company" v-model="formdata.company">
-        </div>
-        <div class="form-group">
-          <label for="position">Position</label>
-          <input type="text" class="form-control" id="position" v-model="formdata.position">
-        </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" v-model="formdata.name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" v-model="formdata.email" required>
+            </div>
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" class="form-control" id="company" v-model="formdata.company">
+            </div>
+            <div class="form-group">
+                <label for="position">Position</label>
+                <input type="text" class="form-control" id="position" v-model="formdata.position">
+            </div>
 
             <div v-for="(key, index) in Object.keys(answers).filter(k => k.startsWith('question'))" :key="index">
                 <div class="form-group">
@@ -26,63 +26,34 @@
                 </div>
             </div>
 
-
-            <!-- 
-            <div class="form-group">
-                <label for="question2">Was hat bei Dir derzeit höchste Prio? Was schreit Dich förmlich an?</label>
-                <textarea class="form-control" id="question2" v-model="answers.question2"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="question3">Was ist dein zweit- und drittgrößtes Problem?</label>
-                <textarea class="form-control" id="question3" v-model="answers.question3"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="question4">Was machst Du derzeit, um diese Probleme in Angriff zu nehmen? Wie viel Zeit investierst Du? Welche Schritte machst Du genau?</label>
-                <textarea class="form-control" id="question4" v-model="answers.question4"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="question5">Was hast Du vorher probiert? Was hat nicht so gut funktioniert?</label>
-                <textarea class="form-control" id="question5" v-model="answers.question5"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="question6">Was frustriert Dich derzeit? Warum frustriert es Dich?</label>
-                <textarea class="form-control" id="question6" v-model="answers.question6"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="question7">Wie hoch ist der Frustrationsgrad bei Deinen aktuellen Problemen?</label>
-                <textarea class="form-control" id="question7" v-model="answers.question7"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="question8">Welche Folgen hat es, dass Du Deine Probleme bisher nicht gelöst hast? Welche negativen Folgen könnte es in der Zukunft haben?</label>
-                <textarea class="form-control" id="question8" v-model="answers.question8.answer"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="question9">Was sind die langfristigen Folgen, dieses Problem nicht zu lösen?</label>
-                <textarea class="form-control" id="question9" v-model="answers.question9"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="question10">Welche kurzfristigen Folgen hat es, wenn das Problem ungelöst bleibt?</label>
-                <textarea class="form-control" id="question10" v-model="answers.question10"></textarea>
-            </div> -->
-            <button type="submit" class="btn btn-primary">Absenden</button>
+            <button type="submit" class="btn btn-primary ">Absenden</button>
         </form>
     </div>
 
-    <div id="answers" v-if="gotansers">
-        <h2>Anworten</h2>
+    <div id="answers" v-if="gotanwsers" class="w-75 p-2 p-md-5 mx-auto">
+        <div class="alert alert-success" role="alert">
+    Vielen Dank für deine Antworten! Ich bin überzeugt, dass sie dabei helfen werden, unsere Zusammenarbeit noch effektiver und erfolgreicher zu gestalten. Bitte sei versichert, dass alle Informationen vollständig vertraulich behandelt werden.
+        </div>
+        <!-- <h2>Anworten</h2>
         <ul>
-       <li v-for="(question, key) in answers" :key="key">
-        <strong>{{ question.question }}</strong>  <span v-html="formatAnswer(question.answer)"></span>
-      </li> 
-    </ul>
+            <li v-for="(question, key) in answers" :key="key">
+                <strong>{{ question.question }}</strong> <span v-html="formatAnswer(question.answer)"></span>
+            </li>
+        </ul> -->
     </div>
 
+        <div v-if="error" class="w-75 p-5 mx-auto">
+            <div class="alert alert-red" role="alert">
+               Sorry, beim Versenden ist ein Fehler aufgetreten.
+        </div>
+
+        </div>
 </template>
 <script setup>
-import { ref, reactive, computed } from 'vue';
+import { ref, reactive } from 'vue';
 import axios from 'axios';
-const gotansers = ref(false);
-const textblock = ref(false);
+const gotanwsers = ref(false);
+const error = ref(false);
 
 
 const answers = reactive({
@@ -97,7 +68,12 @@ const answers = reactive({
     question9: { question: 'Was sind die langfristigen Folgen, dieses Problem nicht zu lösen?', answer: '' },
     question10: { question: 'Welche kurzfristigen Folgen hat es, wenn das Problem ungelöst bleibt?', answer: '' },
 });
-const formdata = reactive({name:'', email:'',company:'', position:''});
+const formdata = reactive({
+    name: '',
+    email: '',
+    company: '',
+    position: ''
+});
 
 const formatAnswer = (answer = '') => {
     return answer.replace(/\n/g, '<br>');
@@ -105,7 +81,7 @@ const formatAnswer = (answer = '') => {
 
 
 async function submitForm() {
-    gotansers.value = true;
+    
 
     Object.values(answers).forEach(answer => {
         if (typeof answer === 'string') {
@@ -118,12 +94,10 @@ async function submitForm() {
     })
     const mergedData = { ...answers, ...formdata };
 
-    //console.log(mergedData);
 
-    
     const postData = {
         email: mergedData.email,
-        payload: {answers: answers, formdata: formdata},
+        payload: { answers: answers, formdata: formdata },
         uid: "JIKDD88dfg",
         dc: new Date().toJSON(),
     };
@@ -132,22 +106,26 @@ async function submitForm() {
         .post(`https://api.tobeworks.de/kundenumfrage`, postData)
         .then(function (response) {
             response.data;
+            if(response.data.status == 1){
+                gotanwsers.value = true;
+            }else{
+                error.value = true;
+            }
+          
         })
         .catch(function (error) {
             console.log(error);
         });
-
     return false;
-    // try {
-    //     const response = await axios.post('https://example.com/api/form', answers);
-    //     console.log(response.data);
-    // } catch (error) {
-    //     console.log(error.response.data);
-    // }
 }
 
 </script>
 <style lang="scss">
+
+.umfrage{
+
+    margin: 0px auto;
+}
 #answers {
 
     strong {
@@ -166,7 +144,7 @@ label {
 }
 
 .form-group {
-    margin: 20px 0;
+    margin: 2rem 0;
 }
 
 /* Style the textareas */

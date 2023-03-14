@@ -11,7 +11,9 @@ const {
 } = Astro.props
 
 const tagList = tags.map(tag => {
-  return `#${tag} `
+  if(tag != undefined){
+    return `#${tag} `
+  }
 })
 ---
 <Layout>
