@@ -16,6 +16,7 @@ import tobeworkslogo_small from "src/assets/images/logos/TW-EB5E28.svg"
 import Accordion from "../components/Accordion.astro"
 import CTA from "../components/CTA.astro"
 import Hero from "../components/Hero.astro"
+import Social from "../components/Social.astro"
 ---
 
 <main id="content-middle">
@@ -25,7 +26,7 @@ import Hero from "../components/Hero.astro"
       <div class="col-sm-6 align-self-end">
         <div id="mover">
           <h2 class="cover my-2" data-aos="fade-up" data-aos-duration="300">
-            Einzigartige Lösungen<br> für einzigartige Kunden
+            Einzigartige Lösungen<br /> für einzigartige Kunden
           </h2>
 
           <div class="">
@@ -34,7 +35,6 @@ import Hero from "../components/Hero.astro"
               class="lead"
               data-aos="fade-up"
               data-aos-duration="500">
-              
             </p>
 
             <div id="typewriter-hidden">
@@ -87,21 +87,23 @@ import Hero from "../components/Hero.astro"
                 <div class="carousel-body">
                   <div class="carousel-flex d-flex justify-content-between">
                     <div class="p-2 bd-highlight">
-                      <button 
+                      <button
                         class="btn btn-link"
                         data-bs-target="#carousel"
-                        data-bs-slide="prev" aria-label="Zurück zum vorherigen Slide">
-                        <i class="bi bi-caret-left-fill" ></i>
+                        data-bs-slide="prev"
+                        aria-label="Zurück zum vorherigen Slide">
+                        <i class="bi bi-caret-left-fill"></i>
                       </button>
                     </div>
                     <div class="p-2 bd-highlight">
                       <h3>App Development</h3>
                     </div>
                     <div class="p-2 bd-highlight">
-                      <button 
+                      <button
                         class="btn btn-link"
                         data-bs-target="#carousel"
-                        data-bs-slide="next" aria-label="Zurück zum nächsten Slide">
+                        data-bs-slide="next"
+                        aria-label="Zurück zum nächsten Slide">
                         <i class="bi bi-caret-right-fill"></i>
                       </button>
                     </div>
@@ -133,7 +135,8 @@ import Hero from "../components/Hero.astro"
                       <button
                         class="btn btn-link"
                         data-bs-target="#carousel"
-                        data-bs-slide="prev" aria-label="Zurück zum vorherigen Slide">
+                        data-bs-slide="prev"
+                        aria-label="Zurück zum vorherigen Slide">
                         <i class="bi bi-caret-left-fill"></i>
                       </button>
                     </div>
@@ -141,10 +144,11 @@ import Hero from "../components/Hero.astro"
                       <h3>Web Development</h3>
                     </div>
                     <div class="p-2 bd-highlight">
-                      <button 
+                      <button
                         class="btn btn-link"
                         data-bs-target="#carousel"
-                        data-bs-slide="next">
+                        data-bs-slide="next"
+                        aria-label="Zurück zum nächsten Slide">
                         <i class="bi bi-caret-right-fill"></i>
                       </button>
                     </div>
@@ -176,7 +180,7 @@ import Hero from "../components/Hero.astro"
                 <div class="carousel-body">
                   <div class="carousel-flex d-flex justify-content-between">
                     <div class="p-2 bd-highlight">
-                      <button 
+                      <button
                         class="btn btn-link"
                         data-bs-target="#carousel"
                         data-bs-slide="prev"
@@ -188,7 +192,7 @@ import Hero from "../components/Hero.astro"
                       <h3>Wordpress Support</h3>
                     </div>
                     <div class="p-2 bd-highlight">
-                      <button 
+                      <button
                         class="btn btn-link"
                         data-bs-target="#carousel"
                         data-bs-slide="next"
@@ -219,7 +223,7 @@ import Hero from "../components/Hero.astro"
                 <div class="carousel-body">
                   <div class="carousel-flex d-flex justify-content-between">
                     <div class="p-2 bd-highlight">
-                      <button 
+                      <button
                         class="btn btn-link"
                         data-bs-target="#carousel"
                         data-bs-slide="prev"
@@ -279,48 +283,7 @@ import Hero from "../components/Hero.astro"
   <!-- Cover mobile end -->
 
   <Hero />
-  <!-- <section class="bg-silver text-erieblack mainsection" id="contentStart">
-    <div class="p-2 p-md-5 text-center">
-      <img
-        src={tobeworkslogo.src}
-        class="img-fluid d-none d-lg-inline"
-        alt="Tobeworks Logo"
-        title="tobeworks Logo"
-        data-aos="fade-up"
-      />
-      <img
-        src={tobeworkslogo_small.src}
-        class="img-fluid d-lg-none"
-        alt="Tobeworks Logo"
-        title="tobeworks Logo"
-        data-aos="fade-up"
-      />
-      <div class="text-center">
-        <h3 class="text-center my-3" data-aos="fade-up">
-          Full-Service seit 2018
-        </h3>
-        <p data-aos="fade-up">
-          <p>
-            <b
-              >Willkommen bei Tobeworks - wo Kreativität auf Technologie trifft
-              und wir Ihnen helfen, Ihre digitale Präsenz zu optimieren.</b
-            >
-            <br />
-            Tobeworks ist nicht nur Web- oder Software-Entwickler, sondern eine Mischung
-            aus beidem! Ich und mein Team entwickeln maßgeschneiderte Lösungen für
-            Ihre individuellen Bedürfnisse, von der Idee bis zum fertigen Produkt.
-          </p>
-          <p>
-            Hier gibt es keine unnötigen Extras, nur innovative Technologien und
-            jede Menge Leidenschaft für das, was wir tun. <br />
-            Neue Kommunikationslösungen haben noch nie so gut ausgesehen!
-          </p>
-        </p>
-        <CTA />
-      </div>
-    </div>
-  </section> -->
-
+ 
   <section class="bg-orange text-erieblack cutsection" id="special">
     <div class="row">
       <div class="col-sm-7 align-self-center text-silver" data-aos="fade-right">
@@ -354,8 +317,9 @@ import Hero from "../components/Hero.astro"
               maßgeschneidertes Konzept zu entwickeln, das Ihre Ziele und
               Anforderungen optimal erfüllt.
             </p>
-            <a href="/cms/warum-tobeworks-besser-ist" class="btn btn-silver btn-sm"
-              >Ich will alles wissen!</a
+            <a
+              href="/cms/warum-tobeworks-besser-ist"
+              class="btn btn-silver btn-sm">Ich will alles wissen!</a
             >
           </div>
         </div>
@@ -374,8 +338,9 @@ import Hero from "../components/Hero.astro"
               reagieren und sicherstellen, dass das Ergebnis den Erwartungen des
               Kunden entspricht.
             </p>
-            <a href="/cms/warum-tobeworks-besser-ist" class="btn btn-silver btn-sm"
-              >Ab hier gibt es kein Zurück mehr</a
+            <a
+              href="/cms/warum-tobeworks-besser-ist"
+              class="btn btn-silver btn-sm">Ab hier gibt es kein Zurück mehr</a
             >
           </div>
         </div>
@@ -394,8 +359,9 @@ import Hero from "../components/Hero.astro"
               Absicherung der Daten bis hin zur Implementierung von
               Backup-Systemen.
             </p>
-            <a href="/cms/warum-tobeworks-besser-ist" class="btn btn-silver btn-sm"
-              >ready to no way back?</a
+            <a
+              href="/cms/warum-tobeworks-besser-ist"
+              class="btn btn-silver btn-sm">ready to no way back?</a
             >
           </div>
         </div>
@@ -403,7 +369,13 @@ import Hero from "../components/Hero.astro"
     </div>
   </section>
 
-  <Accordion />
+  <section class="bg-silver text-erieblack mainsection d-none d-md-block" style="min-height:300px">
+    <Social />
+  </section>
+
+  <section class="bg-erieblack text-silver mainsection">
+    <Accordion />
+  </section>
 
   <section class="bg-silver text-erieblack mainsection" id="brands">
     <div class="">
@@ -461,13 +433,13 @@ import Hero from "../components/Hero.astro"
               aria-label="React"></i>
             <i
               class="fab fa-github"
-             aria-hidden="true"
+              aria-hidden="true"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
               aria-label="Github"></i>
             <i
               class="fab fa-apple"
-             aria-hidden="true"
+              aria-hidden="true"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
               aria-label="Apple"></i>
@@ -479,7 +451,7 @@ import Hero from "../components/Hero.astro"
               aria-label="CentOS"></i>
             <i
               class="fab fa-linux"
-               aria-hidden="true"
+              aria-hidden="true"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
               aria-label="Linux"></i>
@@ -492,7 +464,7 @@ import Hero from "../components/Hero.astro"
             data-aos="fade-up">
             <i
               class="fab fa-python"
-             aria-hidden="true"
+              aria-hidden="true"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
               aria-label="Python"></i>
@@ -513,7 +485,7 @@ import Hero from "../components/Hero.astro"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
               aria-label="Paypal (API)"
-              aria-hidden="true" ></i>
+              aria-hidden="true"></i>
             <i
               class="fab fa-bootstrap"
               data-bs-toggle="tooltip"
@@ -537,13 +509,13 @@ import Hero from "../components/Hero.astro"
               class="fab fa-sass"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
-             aria-hidden="true"
+              aria-hidden="true"
               aria-label="SASS"></i>
             <i
               class="fab fa-slack"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
-             aria-hidden="true"
+              aria-hidden="true"
               aria-label="Slack"></i>
             <i
               class="fab fa-yarn"

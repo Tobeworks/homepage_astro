@@ -7,29 +7,31 @@ const arrowScroller = () => {
     const arrows = document.getElementsByClassName('title-arrow-down');
     const scrollToElement = document.getElementById('contentStart');
 
-    anime({
-        targets: '.title-arrow-down',
-        translateY: [-100, 0],
-        delay: 500,
-        opacity: [0, 1],
-        duration: 500,
-        easing: 'easeOutBounce'
-    });
 
+    if (arrows.length > 0 && scrollToElement != null) {
 
-    if (arrows.length > 0 || scrollToElement != null) {
+        anime({
+            targets: '.title-arrow-down',
+            translateY: [-100, 0],
+            delay: 500,
+            opacity: [0, 1],
+            duration: 500,
+            easing: 'easeOutBounce'
+        });
+
         arrows[0].onclick = e => {
             e.preventDefault();
             scrollToFunc(scrollToElement.id, 60);
-        }
+        };
     } else {
-        if (arrows[0] != null) {
+        if (arrows.length > 0) {
             arrows[0].style.display = 'none';
-            //debug
+        }
+        if (scrollToElement == null) {
             console.error('scrollToElement not found');
         }
     }
-
+    
 
     /**
      *  Scroll Function
