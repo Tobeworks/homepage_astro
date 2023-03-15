@@ -2,7 +2,7 @@
 layout: ../../layouts/Content.astro
 title: Webdesign & Webentwicklung
 publishDate: 2023-03-09 00:00:00
-img: /cms/coder.avif
+img: /cms/coder.jpg
 description:
 art: "CMS" 
 tags:

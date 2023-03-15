@@ -2,7 +2,7 @@
 layout: ../../layouts/Artikel.astro
 title: Blogger
 publishDate: 2022-09-01 00:00:00
-img: /artikel/coder.avif
+img: /artikel/coder.jpg
 description: |
  Das ist ein erster Test
 art: "Blog" 

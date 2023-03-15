@@ -1,0 +1,24 @@
+---
+import {Picture} from "@astrojs/image/components"
+import wd1 from "../assets/images/header/coder.jpg"
+
+const getImg = () => {
+  const image = [wd1]
+  const randomIndex = Math.floor(Math.random() * image.length)
+  return image[randomIndex]
+}
+---
+
+<Picture
+  src={getImg()}
+  alt="Header"
+  widths={[250, 300, 400, 1000]}
+  sizes="(max-width: 450px) 250px, (max-width: 1200px) 400px, (min-width: 1200px) 1100px"
+  formats={["webp"]}
+  class={`d-block mx-lg-auto img-fluid heropicture`}
+/>
+<style>
+  .heropicture{
+    clip-path: polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%);
+  }
+</style>

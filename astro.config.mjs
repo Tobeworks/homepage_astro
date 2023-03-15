@@ -26,6 +26,6 @@ export default defineConfig({
     // default: 'info'
     logLevel: 'debug',
     serviceEntryPoint: '@astrojs/image/sharp'
-  }), react(), compress(), mdx(), sitemap(), robotsTxt()],
+  }), react(), mdx(), sitemap(), robotsTxt(), compress()],
   vite: {}
 });

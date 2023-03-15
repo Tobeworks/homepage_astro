@@ -11,7 +11,7 @@
                 <input type="email" class="form-control" id="email" v-model="formdata.email" required>
             </div>
             <div class="form-group">
-                <label for="company">Company</label>
+                <label for="company">Firma</label>
                 <input type="text" class="form-control" id="company" v-model="formdata.company">
             </div>
             <div class="form-group">
@@ -123,9 +123,15 @@ async function submitForm() {
 <style lang="scss">
 
 .umfrage{
-
+    width: 80%;
     margin: 0px auto;
 }
+@media (max-width: 575.98px) {
+.umfrage{
+    width: 100%;
+}
+}
+
 #answers {
 
     strong {
