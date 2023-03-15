@@ -3,14 +3,17 @@ import MainHead from "../components/MainHead.astro";
 import OverlayMenue from "../components/OverlayMenue.astro";
 import '@fontsource/raleway';
 
-const { content, title = "Tobeworks Websolutions" } = Astro.props;
+const { content, title = "Tobeworks Websolutions", description="Tobeworks Insights",
+  keywords=['Webentwicklung', 'Webdesign','SEO', 'Mainz','Wiesbaden'] } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="de">
 
 <MainHead
   title={title}
-  description="Tobeworks, Freelance Websolutions since 2018">
+  description={description}
+  keywords={keywords}
+  >
 <link rel="sitemap" href="/sitemap-index.xml">
 <script>
   import anime from "animejs";

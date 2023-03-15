@@ -5,11 +5,11 @@ import Layout from "../layouts/Layout.astro"
 import Links from '../components/SEO-Linktree.vue'
 import wpstroke from "../assets/images/carousel/wordpress_stroke.svg";
 const {
-  content: {title, teaser},
+  content: {title, teaser, tags=['Wordpress']},
 } = Astro.props
 ---
 
-<Layout  title={title}>
+<Layout  title={title} description={`${title}, ${teaser}`} keywords={tags}>
   <Header />
   <main>
 

@@ -7,13 +7,14 @@ import Layout from "../layouts/Layout.astro"
 import Links from '../components/SEO-Linktree.vue'
 
 const {
-  content: {title, teaser, publishDate, url, img, art = "Blog"},
+  content: {title, teaser, publishDate, url, img, art = "Blog", 
+  tags=['Webentwicklung','Tipps und Tricks', 'Wordpress']},
 } = Astro.props
 
 const cta = 'Button';
 ---
 
-<Layout title={title}>
+<Layout title={title} description={`${title}, ${teaser}`}, keywords={tags}>
   <Header />
   <main>
 

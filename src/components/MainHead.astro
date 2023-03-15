@@ -1,22 +1,20 @@
 ---
+import {Seo} from "astro-seo-meta"
 import "../assets/scss/boostrap.scss"
 import "../assets/scss/styles.scss"
 import "../../node_modules/aos/dist/aos.css"
 const {
   title = "Tobeworks Websolutions",
-  description = "Tobeworks, Freelance Websolutions since 2018",
+  description = "Tobeworks Websolutions - Webentwicklung seit 2018",
+  keywords = ['Webentwicklung','SEO']
 } = Astro.props
+
+
+
 ---
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="description" property="og:description" content={description} />
-  <meta name="viewport" content="width=device-width" />
-  <meta
-    name="generator"
-    content="Astro, Vue, React, Bootstrap, Sass, node.js, php"
-  />
-  <title>{title}</title>
+  <Seo title={title} description={description} keywords={keywords} />
 
   <link rel="icon" type="image/svg+xml" href="/favicon.png" />
 

@@ -1,9 +1,11 @@
 ---
 import {Picture} from "@astrojs/image/components"
 import wd1 from "../assets/images/header/coder.jpg"
+import wd29 from '../assets/images/wd/wd_29.png';
+import wd28 from '../assets/images/wd/wd_28.png';
 
 const getImg = () => {
-  const image = [wd1]
+  const image = [wd29, wd28]
   const randomIndex = Math.floor(Math.random() * image.length)
   return image[randomIndex]
 }
