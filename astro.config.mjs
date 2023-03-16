@@ -14,6 +14,11 @@ import sitemap from "@astrojs/sitemap";
 import robotsTxt from "astro-robots-txt";
 
 //import astroOGImage from "astro-og-image";
+const compressConfig = {
+  jpg: false,
+  exclude: ["coder.jpg"]
+};
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -26,6 +31,6 @@ export default defineConfig({
     // default: 'info'
     logLevel: 'debug',
     serviceEntryPoint: '@astrojs/image/sharp'
-  }), react(), mdx(), sitemap(), robotsTxt(), compress()],
+  }), react(), mdx(), sitemap(), robotsTxt(), compress(compressConfig)],
   vite: {}
 });

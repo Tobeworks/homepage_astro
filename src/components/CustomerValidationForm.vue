@@ -29,7 +29,7 @@
             <button type="submit" class="btn btn-primary ">Absenden</button>
         </form>
     </div>
-
+<div id="scroll"></div>
     <div id="answers" v-if="gotanwsers" class="w-75 p-2 p-md-5 mx-auto">
         <div class="alert alert-success" role="alert">
     Vielen Dank für deine Antworten! Ich bin überzeugt, dass sie dabei helfen werden, unsere Zusammenarbeit noch effektiver und erfolgreicher zu gestalten. Bitte sei versichert, dass alle Informationen vollständig vertraulich behandelt werden.
@@ -111,14 +111,12 @@ async function submitForm() {
             }else{
                 error.value = true;
             }
-          
         })
         .catch(function (error) {
             console.log(error);
         });
     return false;
 }
-
 </script>
 <style lang="scss">
 

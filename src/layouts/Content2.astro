@@ -5,10 +5,18 @@ import Footer from "../components/Footer.astro"
 import Layout from "../layouts/Layout.astro"
 import Links from "../components/SEO-Linktree.vue"
 import HeaderImage from "../components/HeaderImage.astro"
-import ImageWD from '../components/Image-WD.astro'
+import ImageWD from "../components/Image-WD.astro"
 
 const {
-  content: {title = 'Tobeworks Webservices', teaser, publishDate, url, tags, img, art = "Blog"},
+  content: {
+    title = "Tobeworks Webservices",
+    teaser,
+    publishDate,
+    url,
+    tags,
+    img,
+    art = "Blog",
+  },
 } = Astro.props
 
 const tagList = tags.map((tag) => {
@@ -18,59 +26,62 @@ const tagList = tags.map((tag) => {
 })
 
 const tagListMeta = tags.map((tag) => {
-  let res = '';
+  let res = ""
   if (tag != undefined) {
     res += `${tag} `
   }
-  return res;
+  return res
 })
 ---
 
-<Layout title={title} description={`${title}, ${teaser}`}, keywords={tags}>
+<Layout title={title} description={`${title}, ${teaser}`} , keywords={tags}>
   <Header />
   <main>
     <section class="container bg-erieblack text-orange mainsection p-0">
+      
       <div class="overflow-hidden">
-        <div class="container col-12">
-          <div class="row flex-lg-nowrap align-items-center g-5">
-            <div class="order-lg-1 w-100">
-              <HeaderImage />
-              <ImageWD />
+        <div class="col-12">
+          <div class="row flex-wrap flex-lg-nowrap align-items-center g-5">
+            <div class="order-1 w-100">
+              <div class="d-none d-lg-block">
+                <HeaderImage />
+              </div>
+
               <!-- <img style="clip-path: polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%);" src="/src/assets/images/web_dev.png" class="d-block mx-lg-auto img-fluid" alt="Photo by Milad Fakurian" loading="lazy" width="2160" height="768"> -->
             </div>
-            <div
-              class="col-lg-6 col-xl-5 text-center text-lg-start m-4 pt-lg-5 mt-xl-4">
-              <div class="lc-block mb-4">
+            <!-- <HeaderImage /> sichtbar -->
+            <div class="col-lg-6 col-xl-5 text-start my-5 pt-lg-5 mt-xl-4">
+              <div class="p-4">
                 <div>
                   <h1 class="fw-bold display-6">{title}</h1>
                 </div>
               </div>
-
-              <div class="lc-block mb-5">
+              <!-- <HeaderImage /> sichtbar -->
+              <div class="p-4">
                 <div>
                   <p class="my-2">{teaser}</p>
                 </div>
               </div>
-
-              <!-- <div class="lc-block mb-6">
+              <!-- <HeaderImage /> sichtbar -->
+              <!-- <div class=" mb-6">
                 <a class="btn btn-erieblack px-4" href="/kontakt" role="button"
                   >Kostenloses Erstgespräch</a
                 >
               </div> -->
-
-              <div class="lc-block">
+              <!-- <HeaderImage /> sichtbar -->
+              <div class="">
                 <div>
                   <p class="fw-bold py-2">{tagList}</p>
                 </div>
               </div>
               <div class="row"></div>
             </div>
-          </div><!-- /lc-block -->
+          </div>
         </div>
       </div>
+
     </section>
-            <HeaderImage />
-              <ImageWD />
+
     <span id="contentStart"></span>
 
     <section class="bg-silver text-erieblack contentsection">

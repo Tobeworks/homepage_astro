@@ -6,7 +6,7 @@ import Footer from "../components/Footer.astro"
 import Layout from "../layouts/Layout.astro"
 
 const {
-  content: {title, teaser, publishDate, url, img, art = "Blog"},
+  content: {title, teaser, publishDate, url, img, art = "Blog", tags=['Webdevelopment']},
 } = Astro.props
 ---
 <style is:inline>
@@ -15,8 +15,7 @@ const {
 
 </style>
 
-<Layout title="Tobeworks Artikel" description="Tobeworks Insights",
-  keywords={['Webentwicklung','Tipps und Tricks', 'Wordpress']}>
+<Layout title={title} description={`${title}, ${teaser}`}, keywords={tags}>
   <Header />
   <main>
     <article class="blog bg-silver">
