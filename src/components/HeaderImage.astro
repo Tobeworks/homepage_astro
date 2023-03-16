@@ -1,11 +1,35 @@
 ---
 import {Picture} from "@astrojs/image/components"
 import wd1 from "../assets/images/header/web_dev.png"
-import wd29 from '../assets/images/wd/wd_29.png';
-import wd28 from '../assets/images/wd/wd_28.png';
+import wd2 from "../assets/images/header/header.png"
+import wp1 from "../assets/images/header/wp_01.png"
+import wp2 from "../assets/images/header/wp_02.png"
+import wp3 from "../assets/images/header/wp_03.png"
+import wp4 from "../assets/images/header/wp_04.png"
+import wp5 from "../assets/images/header/wp_05.png"
+import wp6 from "../assets/images/header/wp_06.png"
+
+
+
+const {
+  content: {
+    set = "standard",
+  },
+} = Astro.props
+
+
+const wp_images = [wp1, wp2, wp3, wp4, wp5, wp6];
+const st_images = [wd1, wd2];
 
 const getImg = () => {
-  const image = [wd1]
+  let image;
+  
+  if(set === 'standard'){
+   image = st_images
+  }else{
+    image = wp_images;
+  }
+  
   const randomIndex = Math.floor(Math.random() * image.length)
   return image[randomIndex]
 }
@@ -15,12 +39,20 @@ const getImg = () => {
   src={getImg()}
   alt="Header"
   widths={[250, 300, 400, 1000]}
-  sizes="(max-width: 450px) 250px, (max-width: 1200px) 400px, (min-width: 1200px) 1100px"
+  sizes="(max-width: 450px) 250px, (max-width: 1200px) 400px, (min-width: 1200px) 700px"
   formats={["webp"]}
-  class={`d-block mx-lg-auto img-fluid heropicture`}
+  class={`d-block mx-lg-auto heropicture float-right`}
 />
 <style>
   .heropicture{
-    clip-path: polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%);
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
+
+  @media only screen and (max-width: 1399.98px) {
+  .heropicture{
+    height: 85%;
+  }
+}
 </style>

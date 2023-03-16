@@ -20,6 +20,7 @@ const seo_linkfarm = [
     { text: 'Individuelle Wordpress-Plugins entwickeln lassen', link: '/wordpress-plugin-entwicklung/', active: true },
     { text: 'Wordpress Wartung', link: '/wordpress-wartung/', active: true },
     { text: 'Webentwicklung Freelancer', link: '/webentwicklung-freelancer-mainz/', active: true },
+    { text: 'Wordpress Experte Mainz', link: '/wordpress-experte-mainz/', active: true },
 
     { text: 'Wordpress Notfall', link: '/wordpress-notfallservice/', active: false },
     { text: 'SEO - Convesion Optimierung', link: '/conversion-optimiering-seo/', active: false },

@@ -7,17 +7,38 @@ import Links from "../components/SEO-Linktree.vue"
 import HeaderImage from "../components/HeaderImage.astro"
 import ImageWD from "../components/Image-WD.astro"
 
+import wd1 from "../assets/images/header/header_01.png"
+import wd2 from "../assets/images/header/header_02.png"
+
+import wp1 from "../assets/images/header/wp_01.png"
+import wp2 from "../assets/images/header/wp_02.png"
+import wp3 from "../assets/images/header/wp_03.png"
+import wp4 from "../assets/images/header/wp_04.png"
+import wp5 from "../assets/images/header/wp_05.png"
+import wp6 from "../assets/images/header/wp_06.png"
+
+
 const {
-  content: {
-    title = "Tobeworks Webservices",
-    teaser,
-    publishDate,
-    url,
-    tags,
-    img,
-    art = "Blog",
-  },
+  content: {title = "Tobeworks Webservices", teaser, tags, icon = false, set = "standard"},
 } = Astro.props
+
+
+const wp_images = [wp1, wp2, wp3, wp4, wp5, wp6]
+const st_images = [wd1, wd2]
+
+const getImg = () => {
+  let image
+
+  if (set === "standard") {
+    image = st_images
+  } else {
+    image = wp_images
+  }
+
+  const randomIndex = Math.floor(Math.random() * image.length)
+  return image[randomIndex]
+}
+
 
 const tagList = tags.map((tag) => {
   if (tag != undefined) {
@@ -32,54 +53,41 @@ const tagListMeta = tags.map((tag) => {
   }
   return res
 })
+
+let display_icon
+if (icon != false) {
+  display_icon = `<i class="${icon}"></i>`
+} else {
+  display_icon = `<i class="fas fa-user-circle"></i>`
+}
 ---
 
 <Layout title={title} description={`${title}, ${teaser}`} , keywords={tags}>
   <Header />
   <main>
-    <section class="container bg-erieblack text-orange mainsection p-0">
-      
-      <div class="overflow-hidden">
-        <div class="col-12">
-          <div class="row flex-wrap flex-lg-nowrap align-items-center g-5">
-            <div class="order-1 w-100">
-              <div class="d-none d-lg-block">
-                <HeaderImage />
-              </div>
-
-              <!-- <img style="clip-path: polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%);" src="/src/assets/images/web_dev.png" class="d-block mx-lg-auto img-fluid" alt="Photo by Milad Fakurian" loading="lazy" width="2160" height="768"> -->
+    <section class="container bg-erieblack text-orange headersection">
+      <div class="row">
+        <div class="col-12 col-md-7 align-self-center">
+          <div class="p-3 mt-5 mt-md-0 pt-0 pt-md-1">
+            <div class="fs-1 d-block d-sm-none">
+              <span set:html={display_icon} />
             </div>
-            <!-- <HeaderImage /> sichtbar -->
-            <div class="col-lg-6 col-xl-5 text-start my-5 pt-lg-5 mt-xl-4">
-              <div class="p-4">
-                <div>
-                  <h1 class="fw-bold display-6">{title}</h1>
-                </div>
-              </div>
-              <!-- <HeaderImage /> sichtbar -->
-              <div class="p-4">
-                <div>
-                  <p class="my-2">{teaser}</p>
-                </div>
-              </div>
-              <!-- <HeaderImage /> sichtbar -->
-              <!-- <div class=" mb-6">
-                <a class="btn btn-erieblack px-4" href="/kontakt" role="button"
-                  >Kostenloses Erstgespräch</a
-                >
-              </div> -->
-              <!-- <HeaderImage /> sichtbar -->
-              <div class="">
-                <div>
-                  <p class="fw-bold py-2">{tagList}</p>
-                </div>
-              </div>
-              <div class="row"></div>
-            </div>
+            <h1>{title}</h1>
+            <p>{teaser}</p>
           </div>
         </div>
+        <div
+          class="col col-md-5 d-flex align-items-center justify-content-end d-none d-lg-block text-end">
+          <Picture
+            src={getImg()}
+            alt="Header"
+            widths={[250, 300, 400, 1000]}
+            sizes="(max-width: 450px) 250px, (max-width: 1200px) 400px, (min-width: 1200px) 700px"
+            formats={["webp"]}
+            class={`d-block mx-lg-auto heropicture float-right`}
+          />
+        </div>
       </div>
-
     </section>
 
     <span id="contentStart"></span>
@@ -91,3 +99,41 @@ const tagListMeta = tags.map((tag) => {
   </main>
   <Footer />
 </Layout>
+
+<style lang="scss">
+  .headersection {
+    padding: 0 0 34px 0;
+    .row {
+      height: 500px;
+    }
+  }
+  @media only screen and (max-width: 1399.98px) {
+    .headersection {
+      padding: 0;
+      .row {
+        height: 390px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1199.98px) {
+    .headersection {
+      padding: 0;
+      .row {
+        height: 328px;
+      }
+    }
+  }
+
+  .heropicture {
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  @media only screen and (max-width: 1399.98px) {
+    .heropicture {
+      height: 85%;
+    }
+  }
+</style>

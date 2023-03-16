@@ -26,7 +26,8 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary ">Absenden</button>
+            <button type="submit" class="btn btn-primary "> Formular absenden <i class="fas fa-paper-plane"></i></button>
+           <div class="my-1"> <small>Die Daten werden verschlüsselt übertragen</small></div>
         </form>
     </div>
 <div id="scroll"></div>
