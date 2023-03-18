@@ -9,13 +9,7 @@ const {
   content: {title, teaser, publishDate, url, img, art = "Blog", tags=['Webdevelopment']},
 } = Astro.props
 ---
-<style is:inline>
-
-
-
-</style>
-
-<Layout title={title} description={`${title}, ${teaser}`}, keywords={tags}>
+<Layout title={title} description={`${title}, ${teaser}`} keywords={tags}>
   <Header />
   <main>
     <article class="blog bg-silver">
