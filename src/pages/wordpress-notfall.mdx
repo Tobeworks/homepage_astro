@@ -1,0 +1,79 @@
+---
+layout: ../layouts/Content2.astro
+icon: "fab fa-wordpress"
+set: "wp"
+title: Wordpress Notfallservice
+publishDate: 2023-03-09 00:00:00
+teaser: "WordPress Notfallservice: Schnelle (Selbst-)Hilfe bei Website-Problemen"
+description:
+tags:
+  - webdesign
+  - wordpress
+  - support
+  - webentwicklung
+draft: true
+---
+import CTA from '../components/CTA.astro'
+import ImageWD from '../components/Image-WD.astro'
+import NotfallApp from '../components/Wp-notfallapp.vue';
+
+
+
+## Notfall, meine Webseite funktioniert nicht mehr!
+Oh nein, das Schicksal hat zugeschlagen: Deine WordPress-Website ist plötzlich ein Schneeparadies 🌨️ oder - noch schlimmer - wurde von digitalen Piraten gekapert! 🏴‍☠️ Was nun? Keine Panik! Du hast den ultimativen Rettungsanker gefunden. ⚓ Hier bieten wir dir erste Hilfe-Tipps und Tricks, um deinen Online-Schatz wieder flott zu machen, oder verraten dir, welche Experten du ins Boot holen kannst. 🌊⛵👩‍💻 Lass uns gemeinsam die Segel hissen und deine Website zurückerobern!
+
+## Anleitung zur Selbsthilfe bei häufigen WordPress-Problemen
+Erfolgreiche Website-Betreiber wissen, wie wichtig es für dich ist, auf dem Laufenden zu bleiben und mögliche Probleme frühzeitig zu erkennen. In diesem Abschnitt werfen wir einen Blick auf die häufigsten WordPress-Probleme und ihre Ursachen, damit du diese schnell identifizieren und beheben kannst.
+
+Zuallerst solltest du folge Schritte durchführen, um überhaupt inden Genuss von Fehlermeldungen zu kommen:
+Das Aktivieren des Debuggings in WordPress kann dir dabei helfen, Fehler und Probleme auf deiner Website schneller zu identifizieren und zu beheben. In dieser Anleitung erfährst du Schritt für Schritt, wie du das Debugging in WordPress aktivierst:
+
+#### Konfiguration
+1. Sicherung erstellen (ganz wichtig!): Bevor du Änderungen an deiner WordPress-Installation vornimmst, ist es immer ratsam, eine vollständige Sicherung deiner Website zu erstellen. So kannst du im Falle von Problemen oder Datenverlust schnell auf die ursprüngliche Version zurückgreifen.
+2. Zugriff auf die Datei wp-config.php: Um das Debugging in WordPress zu aktivieren, musst du die Datei wp-config.php bearbeiten. Diese Datei findest du im Hauptverzeichnis deiner WordPress-Installation. Du kannst auf die Datei zugreifen und sie bearbeiten, indem du einen FTP-Client wie FileZilla oder den Dateimanager deines Webhosting-Panels verwendest.
+3. Aktivieren von WP_DEBUG: Öffne die Datei wp-config.php in einem Texteditor. Suche nach der Zeile, die /* That's all, stop editing! Happy publishing. */ enthält. Füge direkt darüber folgenden Code ein:
+
+```php
+define( 'WP_DEBUG', true );
+```
+
+
+## Fehlerdiganose
+Folgend eine Liste der gängigsten Wordpress-Fehlern und deren Ursachen
+
+1. Fehler beim Aufbau einer Datenbankverbindung: Dieser Fehler tritt auf, wenn deine Website keine Verbindung zur Datenbank herstellen kann. Die Ursachen können ein falscher Datenbankbenutzername, ein falsches Passwort, ein Problem mit dem Datenbankserver oder eine beschädigte Datenbank sein. Hier hilft nur ausprobieren.
+2. White Screen of Death (WSOD): Der berüchtigte "weiße Bildschirm des Todes" kann aufgrund von Plugin- oder Theme-Konflikten, fehlerhaften Skripten, Speicherproblemen oder sogar Serverkonfigurationen auftreten. Da wir das Debugging aktiviert haben, sollte man zumindest eine PHP-Fehlermedung zu sehen bekommen.
+3. 404-Fehler: Ein 404-Fehler tritt auf, wenn eine Seite oder ein Beitrag auf deiner Website nicht gefunden wird. Häufige Ursachen sind falsche Permalink-Einstellungen, gelöschte oder verschobene Inhalte und fehlerhafte Weiterleitungen. Hier handelt es sich um keinen Wordpress-Fehler, sondern einfach um eine falsche Verlinkung.
+4. Interner Serverfehler (500-Fehler): Diese Art von Fehler ist oft auf fehlerhafte .htaccess-Dateien, PHP-Speicherlimits, fehlerhafte Plugins oder Themes oder sogar Serverprobleme zurückzuführen. 
+5. Fehler beim Hochladen von Bildern: Manchmal kann es vorkommen, dass du beim Hochladen von Bildern auf deine WordPress-Website auf Probleme stößt. Dies kann auf falsche Dateiberechtigungen, Speicherplatzmangel oder fehlerhafte Plugin-Konfigurationen zurückzuführen sein.
+6. Probleme mit der Seitengeschwindigkeit: Langsame Ladezeiten können aufgrund von nicht optimierten Bildern, überladenen Datenbanken, schlecht konfigurierten Caching-Plugins oder sogar langsam reagierenden Web-Hosts auftreten. Ein häufiges Problem, oft hift ein einfacher Neustart des Plugins vollkommen aus.
+
+Das kann schon alles etwas überfordern, aber keien Angst, hier wird dir geholfen:
+
+## Unser WordPress Notfallservice-Angebot
+Wir sind ein Team von erfahrenen WordPress-Profis, die sich darauf spezialisiert haben, Websites in Not zu retten und wieder auf Kurs zu bringen. Unser umfassendes Notfallservice-Angebot deckt alle gängigen WordPress-Probleme ab und bietet schnelle, effiziente und zuverlässige Lösungen für dein digitales Dilemma.
+
+
+
+## Unser Prozess
+### 1. Erste Kontaktaufnahme und Problem-Schilderung. 
+Unser Prozess beginnt mit der ersten Kontaktaufnahme und einer sorgfältigen Problemdiagnose, um sicherzustellen, dass wir deinen WordPress-Notfall schnell und effizient angehen können.
+**Erste Kontaktaufnahme:** Du kannst uns über unser Kontaktformular, per E-Mail oder Telefon erreichen, am besten ist aber immer unsere **kostenlose Wordpress-Notfall App**. Mit dieser kannst du dein Problem genau schildern. Dank der App können wir uns schnell auf das Problem einstellen und schneller in Aktion treten. 
+
+### 2. Kostenlose Problemanalyse
+Nach der ersten Kontaktaufnahme und Schilderung deines Problems über die Wordpress-Notfall-App, bieten wir dir eine kostenlose Problemanalyse an. Unser Expertenteam nimmt sich die Zeit, deine Website zu untersuchen und die Ursache des Problems zu identifizieren, ohne dass dir dafür Kosten entstehen. 
+Dieser Schritt ermöglicht es uns, einen umfassenden Überblick über das Problem zu erhalten und eine passende Lösungsstrategie zu entwickeln. Gleichzeitig gibt es dir die Gelegenheit, unser Fachwissen und unseren Service kennenzulernen, ohne direkt in die Tasche greifen zu müssen.
+Sobald die kostenlose Problemanalyse abgeschlossen ist, teilen wir dir unsere Ergebnisse mit und besprechen gemeinsam die nächsten Schritte zur Behebung des Problems.
+
+### 3. Problemlösung in der von Ihnen festgelegten Dringlichkeitsstufe
+Problemlösung in der von Ihnen festgelegten Dringlichkeitsstufe: Wir verstehen, dass jeder WordPress-Notfall einzigartig ist und unterschiedliche Prioritäten erfordert. Aus diesem Grund bieten wir flexible Lösungsansätze, die sich an deinen individuellen Bedürfnissen und dem Grad der Dringlichkeit orientieren. 
+Ab diesem Punkt erst kommt zwischen uns ein Vertrag zustande. Alles vorherige ist und bleibt kostenlos und unverbindlich
+
+### 4. Zufriedenheitsgarantie
+Deine Zufriedenheit ist unser oberstes Ziel. Deshalb setzen wir alles daran, nicht nur eine schnelle, sondern auch eine nachhaltige und effektive Lösung für deinen WordPress-Notfall zu finden.
+
+
+
+
+Wordpress Notfall App
+<NotfallApp client:load />
