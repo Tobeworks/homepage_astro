@@ -15,7 +15,7 @@
 
                 <div v-if="actualPage == 0">
                     <h2>Problembeschreibung</h2>
-                   <div class="py-3">Schildere Dein Problem ausführlich, was hast du bereits unternommen und in welchen Kontext tritt es auf</div>
+                   <div class="py-3">Schildere Dein Problem ausführlich. Was hast du bereits unternommen und in welchen Kontext tritt das Problem auf?</div>
                     <form>
                         <div class="mb-3">
                             <textarea v-model="user_data.problem" class="form-control"></textarea>
@@ -121,7 +121,7 @@
                         <button type="button" class="btn btn-secondary" @click="setpage('backward')">Zurück</button>
                         <button type="button" class="btn btn-primary" v-if="validateEmail(user_data.user_email)" @click="sendData">Abschicken</button>
                     </div>
-                    <div class="m-3 alert alert-danger" v-if="!validateEmail(user_data.user_email)">Bitte gib noch eine E-Mailaddresse an, nur so kann man in Kotakt mit dir treten</div>
+                    <div class="m-3 alert alert-danger" v-if="!validateEmail(user_data.user_email)">Bitte gib noch eine gültige E-Mailaddresse an, nur so kann man in Kontakt mit dir treten. </div>
                 </div>
             </div>
         </div>
