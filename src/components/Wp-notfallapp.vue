@@ -1,5 +1,5 @@
 <template>
-    <section class="container formular border border-orange p-2 p-sm-5 bg-orange">
+    <section class="container formular border border-orange p-2 p-sm-5 bg-orange" id="formular">
         <div class="row" v-if="!data_sent">
 
             <div class="col-md-8 offset-md-2">
@@ -133,6 +133,8 @@
 <script setup>
 import { ref, reactive, computed } from 'vue';
 import axios from 'axios';
+import {scrollToElement} from '../modules/tools';
+
 const actualPage = ref(-1);
 const user_data = reactive({
     problem: null,
@@ -190,6 +192,7 @@ async function submitForm() {
             response.data;
             if (response.data.status == 1) {
                 data_sent.value = true;
+                scrollToElement('formular');
             } else {
                 error.value = true;
             }
@@ -211,4 +214,6 @@ function validateEmail(email) {
     const regex = /\S+@\S+\.\S+/;
     return regex.test(email);
 }
+
+
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div class="kontaktformular p-2 p-md-5 umfrage mb-5">
+    <div class="kontaktformular p-2 p-md-5 umfrage mb-5" id="formular">
         <form @submit.prevent="submitForm" v-if="!gotanwsers">
 
             <div class="form-group">
@@ -27,13 +27,13 @@
             </div>
 
             <button type="submit" class="btn btn-primary "> Formular absenden <i class="fas fa-paper-plane"></i></button>
-           <div class="my-1"> <small>Die Daten werden verschlüsselt übertragen</small></div>
+            <div class="my-1"> <small>Die Daten werden verschlüsselt übertragen</small></div>
         </form>
     </div>
-<div id="scroll"></div>
+    <div id="scroll"></div>
     <div id="answers" v-if="gotanwsers" class="w-75 p-2 p-md-5 mx-auto">
         <div class="alert alert-success" role="alert">
-    Vielen Dank für deine Antworten! Ich bin überzeugt, dass sie dabei helfen werden, unsere Zusammenarbeit noch effektiver und erfolgreicher zu gestalten. Bitte sei versichert, dass alle Informationen vollständig vertraulich behandelt werden.
+            Vielen Dank für deine Antworten! Ich bin überzeugt, dass sie dabei helfen werden, unsere Zusammenarbeit noch effektiver und erfolgreicher zu gestalten. Bitte sei versichert, dass alle Informationen vollständig vertraulich behandelt werden.
         </div>
         <!-- <h2>Anworten</h2>
         <ul>
@@ -43,16 +43,17 @@
         </ul> -->
     </div>
 
-        <div v-if="error" class="w-75 p-5 mx-auto">
-            <div class="alert alert-red" role="alert">
-               Sorry, beim Versenden ist ein Fehler aufgetreten.
+    <div v-if="error" class="w-75 p-5 mx-auto">
+        <div class="alert alert-red" role="alert">
+            Sorry, beim Versenden ist ein Fehler aufgetreten.
         </div>
 
-        </div>
+    </div>
 </template>
 <script setup>
 import { ref, reactive } from 'vue';
 import axios from 'axios';
+import { scrollToElement } from '../modules/tools';
 const gotanwsers = ref(false);
 const error = ref(false);
 
@@ -82,7 +83,7 @@ const formatAnswer = (answer = '') => {
 
 
 async function submitForm() {
-    
+
 
     Object.values(answers).forEach(answer => {
         if (typeof answer === 'string') {
@@ -107,9 +108,10 @@ async function submitForm() {
         .post(`https://api.tobeworks.de/kundenumfrage`, postData)
         .then(function (response) {
             response.data;
-            if(response.data.status == 1){
+            if (response.data.status == 1) {
                 gotanwsers.value = true;
-            }else{
+                scrollToElement('formular');
+            } else {
                 error.value = true;
             }
         })
@@ -120,15 +122,15 @@ async function submitForm() {
 }
 </script>
 <style lang="scss">
-
-.umfrage{
+.umfrage {
     width: 80%;
     margin: 0px auto;
 }
+
 @media (max-width: 575.98px) {
-.umfrage{
-    width: 100%;
-}
+    .umfrage {
+        width: 100%;
+    }
 }
 
 #answers {
