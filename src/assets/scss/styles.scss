@@ -44,6 +44,7 @@ strong,b {
 }
 
 
+
 article.blog {
   p {
     margin: 5px 0 2.5rem 0 !important;
@@ -106,19 +107,42 @@ article.blog {
     white-space: pre-line;
     line-height: 35px;
     width: 80%;
-    margin: 15px auto;
+    margin: 15px auto 15px auto;
+  }
+    h4 {
+    text-align: center;
+    font-size: .9em;
+    white-space: pre-line;
+    line-height: 30px;
+    width: 80%;
+    margin: 10px auto;
+    margin-top: 1.5rem;
   }
   p {
     padding: 20px 60px;
     line-height: 30px;
     margin-bottom: 1rem;
   }
+
   ul {
     margin-left: 80px !important;
     li {
       list-style-position: inside;
     }
   }
+ ol, ul{
+	width: 85%;
+	margin: 0px auto;
+    li {
+      list-style-position: inside;
+      margin: 10px 0;
+    }
+ }
+
+ pre{
+  width: 60%;
+  margin: 25px auto;
+ }
 }
 .grecaptcha-badge {
   visibility: hidden;
@@ -318,13 +342,23 @@ h4 {
   display: none;
 }
 
-.kontaktformular .form-control {
+.kontaktformular .form-control, .formular .form-control {
   color: var(--erieBlack);
   background-color: var(--silver);
   background-clip: padding-box;
   border: 1px solid var(--erieBlack);
   transition: border-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
+.formular{
+  textarea{
+    padding: .5rem;
+    min-height: 150px;
+  }
+  .buttons-group button{
+    margin-right: .5rem;
+  }
+}
+
 .card-kontakt .card,
 .card-kontakt .card-body {
   background-color: var(--silver);

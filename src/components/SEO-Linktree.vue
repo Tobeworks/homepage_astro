@@ -21,8 +21,9 @@ const seo_linkfarm = [
     { text: 'Wordpress Wartung', link: '/wordpress-wartung/', active: true },
     { text: 'Webentwicklung Freelancer', link: '/webentwicklung-freelancer-mainz/', active: true },
     { text: 'Wordpress Experte Mainz', link: '/wordpress-experte-mainz/', active: true },
+    { text: 'Individuelle Webseitenprogrammierung', link: '/webprogrammierung-mainz-wiesbaden-frankfurt/', active: true },
+    { text: 'Wordpress Notfall?', link: '/wordpress-notfall/', active: true },
 
-    { text: 'Wordpress Notfall', link: '/wordpress-notfallservice/', active: false },
     { text: 'SEO - Convesion Optimierung', link: '/conversion-optimiering-seo/', active: false },
     { text: 'SEO in Webentwicklung und Webdesign', link: '/seo-webentwicklung-webdesign/', active: false },
     { text: 'CMS mit Wordpress und App', link: '/cms-wordpress-app/', active: false },
