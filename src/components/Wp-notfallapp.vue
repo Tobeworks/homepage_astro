@@ -15,7 +15,7 @@
 
                 <div v-if="actualPage == 0">
                     <h2>Problembeschreibung</h2>
-                   <div class="py-3">Schildere Dein Problem ausführlich. Was hast du bereits unternommen und in welchen Kontext tritt das Problem auf?</div>
+                    <div class="py-3">Schildere Dein Problem ausführlich. Was hast du bereits unternommen und in welchen Kontext tritt das Problem auf?</div>
                     <form>
                         <div class="mb-3">
                             <textarea v-model="user_data.problem" class="form-control"></textarea>
