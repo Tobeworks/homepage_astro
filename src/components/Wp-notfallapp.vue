@@ -1,11 +1,11 @@
 <template>
-    <section class="container formular border border-orange p-5 bg-orange">
-        <div class="row">
+    <section class="container formular border border-orange p-2 p-sm-5 bg-orange">
+        <div class="row" v-if="!data_sent">
 
             <div class="col-md-8 offset-md-2">
                 <div v-if="actualPage == -1">
-                    <h2>Willkommen</h2>
-                    <div class="p-5">Herzlich willkommen zu unserer <strong>Wordpress Notfall App</strong>! Wir möchten dir schnell und effektiv helfen, daher bitten wir dich, alle Daten in den Formularen so genau wie möglich anzugeben. Natürlich ist die Nutzung der App komplett unverbindlich und kostenlos für dich. Beachte jedoch bitte, dass ein gültiger Vertrag erst nach Absprache zustande kommt und
+                    <h2>Willkommen zur Wordpress Notfall App</h2>
+                    <div class="p-2 p-sm-5">Herzlich willkommen zu unserer <strong>Wordpress Notfall App</strong>! Wir möchten dir schnell und effektiv helfen, daher bitten wir dich, alle Daten in den Formularen so genau wie möglich anzugeben. Natürlich ist die Nutzung der App komplett unverbindlich und kostenlos für dich. Beachte jedoch bitte, dass ein gültiger Vertrag erst nach Absprache zustande kommt und
                         das Audit ebenfalls kostenfrei bleibt. Erst wenn wir das Problem tatsächlich angehen, kommt ein Vertrag zwischen uns zustande. Vielen Dank!
                     </div>
                     <div class="my-2 buttons-group d-flex justify-content-center">
@@ -124,6 +124,9 @@
                     <div class="m-3 alert alert-danger" v-if="!validateEmail(user_data.user_email)">Bitte gib noch eine gültige E-Mailaddresse an, nur so kann man in Kontakt mit dir treten. </div>
                 </div>
             </div>
+        </div>
+        <div class="alert alert-success" v-if="data_sent">
+               Deine Nachricht ist bei uns angekommen und wir freuen uns darauf, dir bei deinem Wordpress-Problem zu helfen! Wir werden uns schnellstmöglich bei dir melden, um gemeinsam eine Lösung zu finden.<br> Vielen Dank für dein Vertrauen!
         </div>
     </section>
 </template>
