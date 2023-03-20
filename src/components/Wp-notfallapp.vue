@@ -1,23 +1,21 @@
 <template>
-    <section class="container formular">
+    <section class="container formular border border-orange p-5 bg-orange">
         <div class="row">
 
             <div class="col-md-8 offset-md-2">
-
                 <div v-if="actualPage == -1">
                     <h2>Willkommen</h2>
                     <div class="p-5">Herzlich willkommen zu unserer <strong>Wordpress Notfall App</strong>! Wir möchten dir schnell und effektiv helfen, daher bitten wir dich, alle Daten in den Formularen so genau wie möglich anzugeben. Natürlich ist die Nutzung der App komplett unverbindlich und kostenlos für dich. Beachte jedoch bitte, dass ein gültiger Vertrag erst nach Absprache zustande kommt und
                         das Audit ebenfalls kostenfrei bleibt. Erst wenn wir das Problem tatsächlich angehen, kommt ein Vertrag zwischen uns zustande. Vielen Dank!
                     </div>
                     <div class="my-2 buttons-group d-flex justify-content-center">
-                        <button @click="setpage('backward')" class="btn btn-secondary">Zurück</button>
                         <button @click="setpage('forward')" class="btn btn-primary">Weiter</button>
                     </div>
                 </div>
 
                 <div v-if="actualPage == 0">
                     <h2>Problembeschreibung</h2>
-                    <div>Schildere Dein Problem ausführlich, was hast du bereits unternommen und in welchen Kontext tritt es auf</div>
+                   <div class="py-3">Schildere Dein Problem ausführlich, was hast du bereits unternommen und in welchen Kontext tritt es auf</div>
                     <form>
                         <div class="mb-3">
                             <textarea v-model="user_data.problem" class="form-control"></textarea>
@@ -32,7 +30,7 @@
 
                 <div v-if="actualPage == 1">
                     <h2>Dein Wordpress</h2>
-                    <p>Erzähle etwas zu deinem Wordpress, natürlich nur falls du es auch weißt und die Daten zur Hand hast</p>
+                    <div class="py-3">Erzähle etwas zu deinem Wordpress, natürlich nur falls du es auch weißt und die Daten zur Hand hast</div>
                     <form>
                         <div class="mb-3">
                             <input placeholder="Wordpress Version" v-model="user_data.wordpress.version" class="form-control" />
@@ -57,14 +55,14 @@
                 </div>
 
                 <div v-if="actualPage == 2">
-                    <h2>Freiwillige Angaben zur Person <small>(bis auf E-Mail)</small></h2>
-                    <div>Angaben zur Person</div>
+                    <h2>Freiwillige Angaben zur Person</h2>
+                    <div class="py-3">Die Angaben zur Person sind bis auf die Mailadresse freiwillig.</div>
                     <form>
                         <div class="mb-3">
                             <input placeholder="Name" v-model="user_data.user_name" type="text" class="form-control" />
                         </div>
                         <div class="mb-3">
-                            <input placeholder="E-Mail Adresse" v-model="user_data.user_email" type="email" class="form-control" />
+                            <input placeholder="E-Mail Adresse (ohne die geht aber leider nichts)" v-model="user_data.user_email" type="email" class="form-control" />
                         </div>
                         <div class="mb-3">
                             <input placeholder="Telefon" v-model="user_data.user_phone" type="tel" class="form-control" />
@@ -78,7 +76,7 @@
 
                 <div v-if="actualPage == 3">
                     <h2>Dringlichkeit</h2>
-                    <div>Wie dringend ist dein Problem?</div>
+                    <div class="py-3">Wie dringend ist dein Problem?</div>
                     <div class="form-group">
                         <label for="alert-mode">Alert Mode</label>
                         <select class="form-control form-select" id="alert-mode" v-model="user_data.alertmode">
@@ -94,8 +92,8 @@
 
                 <div v-if="actualPage === 4">
                     <h2>Zusammenfassung</h2>
-                    <div>Nachfolgend findest du eine Zusammenfassung deiner Daten. Bitte habe keine Sorge, wir behandeln deine Daten mit höchster Vertraulichkeit und übermitteln sie über eine sichere Verbindung.</div>
-                    <div>
+                    <div class="py-3">Nachfolgend findest du eine Zusammenfassung deiner Daten. Bitte habe keine Sorge, wir behandeln deine Daten mit höchster Vertraulichkeit und übermitteln sie über eine sichere Verbindung.</div>
+                    <div class="my-2">
                         <ul>
                             <li v-if="user_data.user_email && validateEmail(user_data.user_email)">Kontakt: {{ user_data.user_name }}, {{ user_data.user_email }}, {{ user_data.user_phone }}</li>
                             <li v-else class="text-danger">E-Mailadresse fehlt noch. Ohne E-Mailadresse können wir dir leider nicht helfen</li>
