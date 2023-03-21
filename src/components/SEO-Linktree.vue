@@ -1,5 +1,6 @@
 <template>
       <div class="container w-75">
+        <div class="text-center p-3">Links</div>
         <div class="row">
           <div class="col-md-4" v-for="(link, index) in activeLinks" :key="link.text">
             <a :href="link.link" class="text-erieblack">{{ link.text }}</a>
@@ -23,6 +24,7 @@ const seo_linkfarm = [
     { text: 'Wordpress Experte Mainz', link: '/wordpress-experte-mainz/', active: true },
     { text: 'Individuelle Webseitenprogrammierung', link: '/webprogrammierung-mainz-wiesbaden-frankfurt/', active: true },
     { text: 'Wordpress Notfall?', link: '/wordpress-notfall/', active: true },
+    { text: 'Wordpress Notfall Mainz Wiesbaden, Rhein Main', link: '/wordpress-wartung-mainz-wiesbaden/', active: true },
 
     { text: 'SEO - Convesion Optimierung', link: '/conversion-optimiering-seo/', active: false },
     { text: 'SEO in Webentwicklung und Webdesign', link: '/seo-webentwicklung-webdesign/', active: false },

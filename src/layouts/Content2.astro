@@ -65,7 +65,7 @@ if (icon != false) {
 <Layout title={title} description={`${title}, ${teaser}`} keywords={tags}>
   <Header />
   <main>
-    <section class="container bg-erieblack text-orange headersection">
+    <section class="container bg-erieblack text-orange headersection overflow-hidden">
       <div class="row">
         <div class="col-12 col-md-7 align-self-center">
           <div class="p-3 mt-5 mt-md-0 pt-0 pt-md-1">
@@ -115,6 +115,7 @@ if (icon != false) {
         height: 390px;
       }
     }
+
   }
 
   @media only screen and (max-width: 1199.98px) {
@@ -133,8 +134,12 @@ if (icon != false) {
   }
 
   @media only screen and (max-width: 1399.98px) {
+
     .heropicture {
-      height: 85%;
-    }
+    height: 390px;
+    width: unset;
+    padding: 0px 20px 0 0 !important;
+    margin: 0 0px 0 75px !important;
+  }
   }
 </style>
