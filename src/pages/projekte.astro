@@ -32,6 +32,9 @@ import zz_mobile from "src/assets/images/portfolio/zuerizahnie_mobile.png"
 import snappy from "src/assets/images/portfolio/snappy-dashboard.png"
 import snappy_mobile from "src/assets/images/portfolio/snappy-dashboard_mobile.png"
 
+import sprachelernen from "src/assets/images/portfolio/sprachelernen_desktop.png"
+import sprachelernen_mobile from "src/assets/images/portfolio/sprachelernen_mobile.png"
+
 import linktree from "src/assets/images/portfolio/mobile/linktree.png"
 ---
 
@@ -39,7 +42,7 @@ import linktree from "src/assets/images/portfolio/mobile/linktree.png"
   import ArrowScroller from "../modules/ArrowScroll"
   ArrowScroller()
 </script>
-<Layout  title="Tobeworks - Projekte">
+<Layout title="Tobeworks - Projekte">
   <Header />
   <section class="container bg-erieblack text-orange mainsection titlesection">
     <div class="row">
@@ -112,7 +115,7 @@ import linktree from "src/assets/images/portfolio/mobile/linktree.png"
   </section>
   <!-- Linktree  Ende -->
 
-  <!-- Linktree Start -->
+  <!-- Neuraxis Start -->
   <section class="bg-silver portfolio-row">
     <div class="card mb-3">
       <div class="row align-items-center">
@@ -180,7 +183,71 @@ import linktree from "src/assets/images/portfolio/mobile/linktree.png"
       </div>
     </div>
   </section>
-  <!-- Linktree  Ende -->
+  <!-- Neuraxis Ende -->
+
+  <!-- Sprachelernen Start -->
+  <section class="bg-silver portfolio-row">
+    <div class="card mb-3">
+      <div class="row align-items-center">
+        <div class="col-sm-7">
+          <Picture
+            class="card-img-top d-block d-sm-none pt-5"
+            src={sprachelernen_mobile}
+            widths={[500]}
+            alt="Neuraxis 2.0"
+            sizes=""
+          />
+          <Picture
+            class="card-img-top d-none d-sm-block pt-5"
+            src={sprachelernen}
+            alt="Neuraxis 2.0"
+            widths={[300, 420, 650]}
+            sizes="(max-width: 767px) 300px,(max-width:1199px) 420px, (min-width: 1200px) 650px"
+            formats={["webp"]}
+          />
+        </div>
+        <div class="col-sm-5">
+          <div class="card-body">
+            <h5 class="card-title">Sprachelernen - Sprachkurs App</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              Kompletter Sprachkurs als in Deutsch und Französisch
+            </h6>
+            <p class="card-text">
+              Sprachelernen ist eine Anwendung, die als Webapp genutzt werden
+              kann. Die Plattform bietet Schülern aus der ganzen Welt die
+              Möglichkeit, Sprachen zu lernen und sich weiterzuentwickeln. Die
+              Verwendung von WordPress und Learndash hat es uns ermöglicht, eine
+              benutzerfreundliche Plattform zu entwickeln, die eine einfache
+              Verwaltung und Aktualisierung ermöglicht. WordPress als
+              Content-Management-System bietet uns die Möglichkeit, Inhalte
+              schnell und einfach zu aktualisieren und zu verwalten. Learndash
+              als Lernmanagement-Software ermöglicht es uns, unsere Kurse online
+              anzubieten und Schülern interaktive Lernmaterialien, Übungen und
+              Tests zur Verfügung zu stellen. Unser Ziel bei der Entwicklung
+              dieser Plattform war es, eine qualitativ hochwertige und
+              zugängliche Sprachlernumgebung zu schaffen. Wir sind stolz darauf,
+              dass unsere Plattform es Schülern aus der ganzen Welt ermöglicht,
+              ihre Sprachkenntnisse zu verbessern und sich weiterzuentwickeln.
+              Durch das Feedback-System auf unserer Plattform können Schüler
+              ihre Fortschritte verfolgen und gezielt an ihren Schwächen
+              arbeiten.
+            </p>
+            <p class="card-text">
+              <i class="fab fa-wordpress"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-html5"></i>
+            </p>
+
+            <p class="card-footer">
+              <span class="badge bg-erieblack">Wordpress</span>
+              <span class="badge bg-erieblack">Learndash</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Spachelernen Ende -->
 
   <!-- Migrosbank Start -->
   <section class="bg-silver portfolio-row">
@@ -337,8 +404,8 @@ import linktree from "src/assets/images/portfolio/mobile/linktree.png"
               Benutzeroberfläche zu schaffen, die den Nutzern ein optimales
               Erlebnis bietet. Die Umsetzung erfolgte durch die Verwendung von
               HTML 5 Code und (S)CSS, wodurch ein dynamisches Design entstand.
-              Die Umsetzung in valides HTML war besonders
-              herausfordernd und erforderte eine sorgfältige Planung und ein großes Know-how.
+              Die Umsetzung in valides HTML war besonders herausfordernd und
+              erforderte eine sorgfältige Planung und ein großes Know-how.
               Insgesamt konnte durch die erfolgreiche Umsetzung der Technologien
               ein ästhetisch ansprechender und zugleich benutzerfreundlicher
               Webshop geschaffen werden.
@@ -674,10 +741,21 @@ import linktree from "src/assets/images/portfolio/mobile/linktree.png"
         <div class="col-sm-5">
           <div class="card-body">
             <h5 class="card-title">IIHD</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Homepage und Content-Portal</h6>
+            <h6 class="card-subtitle mb-2 text-muted">
+              Homepage und Content-Portal
+            </h6>
             <p class="card-text">
-             Das Institut für Internationales Handels- und Distributionsmanagement mit Sitz in Mainz, hat seine neue Website mit Hilfe von Wordpress und dem DIVI Framework umgesetzt. Tobeworks übernahm die technische Leitung und entwickelte die notwendigen Komponenten in HTML, PHP und CSS, um die ansprechende Benutzeroberfläche zu realisieren.<br>
-             Dabei legte Tobeworks großen Wert auf eine intuitive und übersichtliche Navigation, um den Besuchern der Webseite ein angenehmes Nutzererlebnis zu bieten. Eine besondere Herausforderung bestand darin, die umfangreichen Informationen des Instituts in einer strukturierten und zugleich ansprechenden Form darzustellen.
+              Das Institut für Internationales Handels- und
+              Distributionsmanagement mit Sitz in Mainz, hat seine neue Website
+              mit Hilfe von Wordpress und dem DIVI Framework umgesetzt.
+              Tobeworks übernahm die technische Leitung und entwickelte die
+              notwendigen Komponenten in HTML, PHP und CSS, um die ansprechende
+              Benutzeroberfläche zu realisieren.<br />
+              Dabei legte Tobeworks großen Wert auf eine intuitive und übersichtliche
+              Navigation, um den Besuchern der Webseite ein angenehmes Nutzererlebnis
+              zu bieten. Eine besondere Herausforderung bestand darin, die umfangreichen
+              Informationen des Instituts in einer strukturierten und zugleich ansprechenden
+              Form darzustellen.
             </p>
 
             <p class="card-text">

@@ -1,5 +1,5 @@
 <template>
-    <section class="container formular border border-orange p-3 p-sm-5 bg-orange" id="formular">
+    <section class="container formular border border-orange p-3 p-sm-5 bg-orange " id="formular">
 
         <div class="row" v-if="!data_sent">
 
