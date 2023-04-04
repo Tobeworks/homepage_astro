@@ -17,19 +17,25 @@ import Accordion from "../components/Accordion.astro"
 import CTA from "../components/CTA.astro"
 import Hero from "../components/Hero.astro"
 import Social from "../components/Social.astro"
+import MainCard from "../components/MainPage-Cards.astro"
 ---
 
 <main id="content-middle">
+  <!-- Cover desktop -->
   <section
     class="bg-erieblack text-orange mainsection titlesection d-none d-xl-block">
     <div style="" class="titlerow row align-items-end">
       <div class="col-sm-6 align-self-end">
         <div id="mover">
-          <h2 class="cover my-2" data-aos="fade-up" data-aos-duration="300">
-            Einzigartige Lösungen<br /> für einzigartige Kunden
-          </h2>
+          <div class="lead">
+            Beeindruckende und intuitive Web-Erlebnisse, <br /> die Marken und Menschen
+            verbinden
+          </div>
+          <h1 class="cover my-2" data-aos="fade-up" data-aos-duration="300">
+            Einzigartige Webentwicklung<br /> für einzigartige Kunden
+          </h1>
 
-          <div class="">
+          <!-- <div class="">
             <p
               id="typewriter"
               class="lead"
@@ -49,14 +55,8 @@ import Social from "../components/Social.astro"
                 die Dich ganz nach oben katapultiert
               </div>
             </div>
-          </div>
+          </div> -->
           <div>
-            <!-- <a
-              href="/about"
-              class="btn btn-erieblack my-2"
-              data-aos="fade-up"
-              data-aos-delay="200">Um was geht`s hier?</a
-            > -->
             <a
               href="/kontakt#contentStart"
               class="btn btn-erieblack my-2"
@@ -158,13 +158,13 @@ import Social from "../components/Social.astro"
                     und leicht verständlich sein.
                   </div>
                 </div>
-                <div class="carousel-footer text-center p-2">
+                <!-- <div class="carousel-footer text-center p-2">
                   <img src={techphp.src} alt="php" />
                   <img src={techreact.src} alt="react.js" />
                   <img src={techjs.src} alt="Jvascript" />
                   <img src={technpm.src} alt="npm" />
                   <img src={techgithub.src} alt="github" />
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -206,12 +206,12 @@ import Social from "../components/Social.astro"
                     Wordpress-Projekt.
                   </div>
                 </div>
-                <div class="carousel-footer text-center p-2">
+                <!-- <div class="carousel-footer text-center p-2">
                   <img src={techwp.src} alt="wordpress" />
                   <img src={techhtml.src} alt="npm" />
                   <img src={techcss.src} alt="npm" />
                   <img src={techjs.src} alt="npm" />
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -251,18 +251,38 @@ import Social from "../components/Social.astro"
                     Struktur aus.
                   </div>
                 </div>
-                <div class="carousel-footer text-center p-2">
+                <!-- <div class="carousel-footer text-center p-2">
                   <img src={techhtml.src} alt="npm" />
                   <img src={techcss.src} alt="npm" />
                   <img src={techjs.src} alt="npm" />
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div
+        class="my-5 d-flex justify-content-center align-items-center text-center text-silver" data-aos="fade-up">
+        <div class="w-25">
+          <i class="fab fa-php logo-big" aria-hidden="true"></i>
+        </div>
+        <div class="w-25">
+          <i class="fab fa-js logo-big" aria-hidden="true"></i>
+        </div>
+        <div class="w-25">
+          <i class="fab fa-python logo-big" aria-hidden="true"></i>
+        </div>
+        <div class="w-25">
+          <i class="fab fa-vuejs logo-big" aria-hidden="true"></i>
+        </div>
+        <div class="w-25">
+          <i class="fab fa-react logo-big" aria-hidden="true"></i>
+        </div>
+      </div>
     </div>
   </section>
+  <!-- Cover desktop end -->
 
   <!-- Cover mobile -->
   <section
@@ -282,13 +302,26 @@ import Social from "../components/Social.astro"
   </section>
   <!-- Cover mobile end -->
 
+  <section class="bg-erieblack text-silver p-4" id="">
+
+  <h2 data-aos="fade-up" class="sectionhead text-center">Erkennst du dein Projekt wieder?</h2>
+    <div class="row justify-content-center">
+      <MainCard title="Besuchermangel">Deine Webseite hat keine oder kaum Besucher?</MainCard>
+      <MainCard title="Zu lange Ladezeiten">Deine Webseite lädt lange und wirkt überladen?</MainCard>
+      <MainCard title="Entwicklungszyklen">Die Entwicklungsprozesse für deine Seiten dauern lange, weil du abhängig von Themes und/oder Plugins von Drittanbietern bist?</MainCard>
+      <MainCard title="Schlechte Usability">Deine Webseite ist mit Plugins zugekleistert, die den Ladeprozess immer weiter erhöhen und die Seiten aber immer unzugänglicher machen?</MainCard>
+      <MainCard title="Sicherheitsprobleme">Du hast keine Ressourcen um dich ständig mit neuen Sicherheitsproblemen zu beschäftigen?</MainCard>
+      <MainCard title="Keine Wartung">Du hast keine Zeit für ständig wiederkehrende Wartungsaufgaben?</MainCard>
+    </div>
+  </section>
+
   <Hero />
- 
+
   <section class="bg-orange text-erieblack cutsection" id="special">
     <div class="row">
       <div class="col-sm-7 align-self-center text-silver" data-aos="fade-right">
         <div class="cut-left">
-          <h3>Warum Tobeworks?</h3>
+          <h2>Warum Tobeworks?</h2>
           <p>
             Als Tech-Nerds und Branchen-Spezialisten kümmern wir uns von der
             ersten Idee bis hin zur fertigen Softwarelösung sowie dem sicheren
@@ -369,7 +402,9 @@ import Social from "../components/Social.astro"
     </div>
   </section>
 
-  <section class="bg-silver text-erieblack mainsection d-none d-md-block" style="min-height:300px">
+  <section
+    class="bg-silver text-erieblack mainsection d-none d-md-block"
+    style="min-height:300px">
     <Social />
   </section>
 
@@ -392,8 +427,7 @@ import Social from "../components/Social.astro"
               class="fab fa-php"
               aria-hidden="true"
               data-bs-toggle="tooltip"
-              data-bs-placement="top"
-      ></i>
+              data-bs-placement="top"></i>
             <i
               class="fab fa-js-square"
               data-bs-toggle="tooltip"
@@ -436,10 +470,8 @@ import Social from "../components/Social.astro"
               aria-hidden="true"
               data-bs-toggle="tooltip"
               data-bs-placement="top"></i>
-            <i
-              class="fab fa-centos"
-              aria-hidden="true"
-              data-bs-toggle="tooltip"></i>
+            <i class="fab fa-centos" aria-hidden="true" data-bs-toggle="tooltip"
+            ></i>
             <i
               class="fab fa-linux"
               aria-hidden="true"

@@ -1,0 +1,15 @@
+---
+const {title} = Astro.props
+---
+
+<div class="col-md-4 col-sm-6 col-12 d-flex justify-content-center align-items-center my-4 mx-0 text-erieblack" data-aos="fade-up">
+  <div class="card landingcards">
+    <div class="card-body">
+      <h5 class="card-title">{title}</h5>
+      <p class="card-text">
+        <slot />
+      </p>
+      <!-- <a href="#" class="card-link">weiter</a> -->
+    </div>
+  </div>
+</div>

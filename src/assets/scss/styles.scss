@@ -23,7 +23,8 @@ header {
     }
   }
 }
-strong,b {
+strong,
+b {
   font-weight: 700;
   letter-spacing: 0.07em;
 }
@@ -34,16 +35,45 @@ strong,b {
   }
 }
 
-.astro-code{
+.astro-code {
   padding: 10px;
 }
-#mover{
-  h2{
+.logo-big {
+  font-size: 2.3em;
+  opacity: 0.5;
+  margin-top: 1.2rem;
+}
+
+#mover {
+  h1,
+  h2 {
     font-size: 2.5rem;
+  }
+  .lead {
+    font-size: 1rem;
   }
 }
 
+.sectionhead{
+  font-size: 1.5rem;
+}
 
+.landingcards {
+  width: 20rem;
+  min-height: 250px;
+  background-color: var(--perlwhite);
+  .card-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+    .card-body{
+    font-size: 1rem;
+    padding: 20px 20px;
+  }
+  .card-text{
+    margin: 20px 0;
+  }
+}
 
 article.blog {
   p {
@@ -109,9 +139,9 @@ article.blog {
     width: 80%;
     margin: 15px auto 15px auto;
   }
-    h4 {
+  h4 {
     text-align: center;
-    font-size: .9em;
+    font-size: 0.9em;
     white-space: pre-line;
     line-height: 30px;
     width: 80%;
@@ -130,19 +160,20 @@ article.blog {
       list-style-position: inside;
     }
   }
- ol, ul{
-	width: 85%;
-	margin: 0px auto;
+  ol,
+  ul {
+    width: 85%;
+    margin: 0px auto;
     li {
       list-style-position: inside;
       margin: 10px 0;
     }
- }
+  }
 
- pre{
-  width: 60%;
-  margin: 25px auto;
- }
+  pre {
+    width: 60%;
+    margin: 25px auto;
+  }
 }
 .grecaptcha-badge {
   visibility: hidden;
@@ -204,7 +235,7 @@ article.blog {
 .cover {
   letter-spacing: 0.05em;
   font-weight: 700;
-  font-size: 3.3em;
+  font-size: 2.5em;
 }
 
 #topnavi,
@@ -247,10 +278,10 @@ h4 {
   padding: 0 100px;
 }
 
-  .card-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 
 /* special cutted */
 #special {
@@ -277,49 +308,46 @@ h4 {
   }
 }
 
-
-
-#special{
-  .card-text{
-    font-size: .9rem;
+#special {
+  .card-text {
+    font-size: 0.9rem;
   }
 }
-
 
 /* special cutted */
 .portfolio-row {
   padding: 10px 25px;
   margin: 30px 0;
-  
-  .card-text .fab {
-  font-size: 25px;
-  color: var(--olive);
-}
 
-.card-text{
-  font-size: .9rem;
-  padding: 1rem 0;
-}
+  .card-text .fab {
+    font-size: 25px;
+    color: var(--olive);
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+  }
   .card-title {
     font-size: 1.8rem !important;
     font-weight: 600;
   }
   .card {
-  background-color: var(--silver);
-  border: 0;
-  color: var(--erieBlack);
+    background-color: var(--silver);
+    border: 0;
+    color: var(--erieBlack);
+  }
+  .card h5,
+  .card h4 {
+    color: var(--erieBlack);
+    font-size: 1em;
+  }
+  .card-footer {
+    padding: 0;
+    background-color: transparent;
+    border-top: 0;
+  }
 }
-.card h5, .card h4 {
-  color: var(--erieBlack);
-  font-size: 1em;
-}
-.card-footer {
-  padding: 0;
-  background-color: transparent;
-  border-top: 0;
-}
-}
-
 
 #brands .fab {
   font-size: 3em;
@@ -342,20 +370,21 @@ h4 {
   display: none;
 }
 
-.kontaktformular .form-control, .formular .form-control {
+.kontaktformular .form-control,
+.formular .form-control {
   color: var(--erieBlack);
   background-color: var(--silver);
   background-clip: padding-box;
   border: 1px solid var(--erieBlack);
   transition: border-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
-.formular{
-  textarea{
-    padding: .5rem;
+.formular {
+  textarea {
+    padding: 0.5rem;
     min-height: 150px;
   }
-  .buttons-group button{
-    margin-right: .5rem;
+  .buttons-group button {
+    margin-right: 0.5rem;
   }
 }
 
@@ -389,7 +418,8 @@ h4 {
 footer {
   padding-top: 25px;
   background-color: var(--erieBlack);
-  h4, h3 {
+  h4,
+  h3 {
     color: var(--silver);
   }
   .nav-link {
@@ -509,9 +539,9 @@ footer {
       font-size: 1.3em;
     }
     h3 {
-    font-size: 1em;
-    line-height: normal;
-  }
+      font-size: 1em;
+      line-height: normal;
+    }
     p {
       padding: 20px 20px;
     }
@@ -530,7 +560,8 @@ footer {
     }
   }
   footer {
-    h4, h3 {
+    h4,
+    h3 {
       font-size: 1.2rem;
     }
   }
