@@ -13,11 +13,11 @@ tags:
   - coding
   - anfänger
 ---
-## Schneller Tipp - Einen eigenen Chatbot als Kommandozeiletool programmieren
+## Einen eigenen Chatbot als Kommandozeilentool in Python programmieren
 Seit dem Release von chatGPT im Dezember 2022 ist nichts mehr wie es einmal war. Die meisten Features sind jedoch nach wie vor in der API versteckt.
 Anhand dieses einfachen Beispiels möchte ich zeigen, wie leicht es ist, ChatGPT in die lokale Konsole einzubinden. So ist es nicht mehr notwendig, ein Browserfenster zu öffnen.
 
-Lege nu neine neue Datei mit dem Namen ``chat.py`` an und lege dort den folgenden Code ab:
+Um mit dem Tutorial zu starten, lege in einem leeren Verzeichnis eine neue Datei mit dem Namen ``chat.py`` an und lege dort den folgenden Code ab:
 
 ```python
 import os
@@ -72,7 +72,7 @@ pip install python-dotenv
 ```
 Das erste Paket openai ist die offizielle Python-Bibliothek für die OpenAI-API, die das Generieren von Texten ermöglicht. Das zweite Paket python-dotenv wird verwendet, um Umgebungsvariablen aus einer .env-Datei zu laden, in der wir unseren OpenAI-API-Schlüssel speichern werden.
 
-Nun solltest du eine Datei mit dem Namen .env im Rootverzeichnis deienr App anlegen und dort deinen API Key hinterlegen:
+Nun solltest du eine Datei mit dem Namen ``.env`` im Verzeichnis deiner App anlegen und dort deinen API Key hinterlegen:
 ```
 OPENAI_API_KEY=sk-schlüssel
 ```
@@ -83,4 +83,7 @@ Dein individueller Chatbot ist fast einsatzbereit, es fehlt nur noch der eigentl
 python chat.py
 ```
 
-Voila, gar nicht ncht so schwer, oder? Viel Spaß beim Erweitern. 
+Voila, gar nicht ncht so schwer, oder? Viel Spaß beim Testen und Erweitern. 
+
+Code via Github laden:
+https://github.com/Tobeworks/console-chat
