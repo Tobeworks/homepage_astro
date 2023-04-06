@@ -51,7 +51,7 @@ const { content, title = "Tobeworks Websolutions", description="Tobeworks Insigh
       easing: "easeOutBounce",
       delay: anime.stagger(100), // increase delay by 100ms for each elements.
     });
-    startTypwriter();
+    //startTypwriter();
   };
 
   const startTypwriter = () => {
@@ -162,6 +162,35 @@ const { content, title = "Tobeworks Websolutions", description="Tobeworks Insigh
       HamburgerEfx("hamburger-bars", "in");
     };
   };
+
+
+
+
+   function animateListItems() {
+      anime({
+        targets: ".start-list li",
+        translateY: [-20, 0], 
+        opacity: [0, 1], 
+        delay: anime.stagger(200), 
+        easing: "easeOutQuad",
+      });
+    }
+
+    // Intersection Observer
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateListItems();
+            observer.disconnect(); // Stop observing after the animation has started
+          }
+        });
+      },
+      { threshold: 0.1 } // Trigger the callback when at least 10% of the element is visible
+    );
+
+    observer.observe(document.querySelector(".start-list"));
+
 </script>
 </MainHead>
 

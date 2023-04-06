@@ -35,6 +35,28 @@ b {
   }
 }
 
+.start-list {
+  list-style-type: none; /* Remove the default bullet points */
+  padding-left: 0; /* Remove the default padding */
+
+  li {
+    position: relative; /* Make the list item a reference point for the pseudo-element */
+    padding-left: 2rem; /* Add padding to the left of the list item */
+    list-style-position: outside;
+    padding-bottom: .4rem;
+     opacity: 0;
+  }
+
+  li::before {
+    content: url('/src/assets/images/dreieck_bullet.png'); 
+    position: relative;
+    left: 0; 
+    line-height: 1;
+    padding-right: .5rem;
+    top: .1rem; /* Vertically align the bullet point with the list item */
+  }
+}
+
 .astro-code {
   padding: 10px;
 }
@@ -54,7 +76,7 @@ b {
   }
 }
 
-.sectionhead{
+.sectionhead {
   font-size: 1.5rem;
 }
 
@@ -62,15 +84,15 @@ b {
   width: 20rem;
   min-height: 250px;
   background-color: var(--perlwhite);
-  .card-title{
+  .card-title {
     text-transform: uppercase;
     font-size: 1.2rem;
   }
-    .card-body{
+  .card-body {
     font-size: 1rem;
     padding: 20px 20px;
   }
-  .card-text{
+  .card-text {
     margin: 20px 0;
   }
 }
