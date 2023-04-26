@@ -36,13 +36,12 @@ b {
 }
 
 .start-list {
-  list-style-type: none; /* Remove the default bullet points */
-  padding-left: 0; /* Remove the default padding */
+  list-style-type: none;
+  padding-left: 0;
 
   li {
-    position: relative; /* Make the list item a reference point for the pseudo-element */
-    padding-left: 2rem; /* Add padding to the left of the list item */
-    list-style-position: outside;
+    padding-left: 2rem;
+    list-style-position: outside !important;
     padding-bottom: .4rem;
      opacity: 0;
   }
@@ -109,6 +108,9 @@ article.blog {
     margin: 1rem 0 1rem 0;
     text-align: center;
   }
+  h3 {
+    font-size: 1.1rem;
+  }
   h4 {
     font-size: 1rem;
     margin: 4rem 0 1rem 0;
@@ -120,7 +122,7 @@ article.blog {
   }
   ol,
   ul {
-    margin: 1rem 1.5rem;
+    margin: 1.2rem 1.5rem;
     padding: 0;
   }
 }

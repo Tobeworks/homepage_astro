@@ -2,19 +2,14 @@
 //import {Image} from "@astrojs/image/components"
 import logo from "../assets/images/logos/TW-EB5E28.svg"
 import hamburger from "../assets/images/hamburger/_bars.svg"
+import LogoAnimation from '../components/Logo-Animation.astro'
 ---
 
 <header class="sticky-top">
   <nav class="navbar navbar-expand-lg navbar-orange bg-erieblack">
     <div class="container-fluid mx-3">
-      <a class="navbar-brand" href="/" title="Home"
-        ><img
-          src={logo.src}
-          class="d-none d-lg-block"
-          alt="logo"
-          data-aos="fade-top"
-          data-aos-delay="200"
-        />
+      <a class="navbar-brand" href="/" title="Home">
+        <LogoAnimation />
       </a>
       <div class="navbar-toggle d-block d-lg-none" id="navbar-toggle-open">
         <img src={hamburger.src} id="hamburger-bars" alt="hamburger" />
