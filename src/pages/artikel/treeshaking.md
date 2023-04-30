@@ -11,8 +11,9 @@ tags:
   - chatgpt
   - python
   - coding
+  - was-ist-eigentlich
 ---
-## Was ist Treeshaking?
+## Was ist eigentlich "Treeshaking"?
 "Treeshaking" bezieht sich auf einen Prozess in der Webentwicklung, bei dem ungenutzter Code aus einem Bundle entfernt wird, um die Dateigröße zu reduzieren und die Geschwindigkeit deiner Webseite oder Applikation zu verbessern.
 Stell dir vor, dein Code besteht aus einem Baum mit vielen Ästen, die verschiedene Funktionen und Module repräsentieren. Wenn deine Webseite nur einen Teil des Baums benötigt, entfernt das Treeshaking die ungenutzten Äste, um die Größe des Baums (und somit den Code) zu reduzieren.
 Nehmen wir als Beispiel eine JavaScript-Bibliothek mit verschiedenen mathematischen Funktionen wie Addieren, Subtrahieren, Multiplizieren und Teilen. Wenn du in deiner Webseite jedoch nur die Additionsfunktion verwendest, erkennt das Treeshaking die ungenutzten Funktionen und entfernt sie aus dem Bundle. Dadurch bleibt nur der tatsächlich verwendete Code übrig, was die Dateigröße verringert und die Leistung deiner Webseite verbessert.
@@ -29,7 +30,7 @@ Treeshaking ist wichtig, weil es einen bedeutenden Einfluss auf die Leistung und
 5. Energieeffizienz: Da weniger Code heruntergeladen und verarbeitet werden muss, verbraucht eine optimierte Webseite weniger Energie, sowohl auf Server- als auch auf Client-Seite. Das trägt zu einer umweltfreundlicheren Internetnutzung bei.
 
 
-## Welche Bundler unterstützen Trershaking?
+## Welche Bundler unterstützen Treeshaking?
 
 Verschiedene Bundler unterstützen heutzutage Treeshaking, um ungenutzten Code aus JavaScript- und CSS-Dateien zu entfernen und die Leistung von Webanwendungen zu verbessern. Hier sind einige der bekanntesten Bundler, die Treeshaking unterstützen:
 
@@ -51,3 +52,6 @@ Bei der Verwendung von Bundlern, die Treeshaking unterstützen, gibt es einige P
 
 ## Fazit
 Treeshaking ist ein wichtiger Optimierungsprozess in der Webentwicklung, der ungenutzten Code aus JavaScript- und CSS-Dateien entfernt, um die Dateigröße teils drastisch zu reduzieren und die Leistung von Webseiten zu verbessern. Bekannte Bundler wie Webpack, Rollup und Parcel unterstützen Treeshaking. Die Vorteile von Treeshaking umfassen schnellere Ladezeiten, verbesserte Performance, höhere Suchmaschinenplatzierung und Energieeffizienz. Bei der Verwendung von Treeshaking sollten Entwickler auf mögliche Probleme achten, wie Seiteneffekte, dynamische Importe, korrekte Konfiguration, Kompatibilität mit Bibliotheken oder Frameworks und ausführliches Testen, um unerwünschte Nebeneffekte zu vermeiden. Insgesamt trägt Treeshaking zur Verbesserung des Nutzererlebnisses und der Benutzerfreundlichkeit von Webseiten bei.
+
+## About
+In der Kategorie "Was ist eigentlich..." ekläre ich kurz und bündig einen Begriff aus der Web- und Software-Entwicklung.
