@@ -1,11 +1,11 @@
 ---
 layout: ../../layouts/Artikel.astro
-title: Was ist eigentlich “PWA”?
+title: Was ist eigentlich... “PWA”?
 publishDate: "2023-05-10 00:00:00"
 img: /artikel/pwa.png
 draft: false
 description: |
- Treesking in der Web Entwicklung
+ PWA in der Web-Entwicklung
 tags:
   - pwa
   - was-ist-eigentlich
@@ -44,4 +44,4 @@ Es gibt zahlreiche Frameworks und Tools, die dir bei der Entwicklung von PWAs he
 
 
 ## About
-In der Kategorie "Was ist eigentlich..." ekläre ich kurz und bündig einen Begriff aus der Web- und Software-Entwicklung.
+Ich bin Tobias, der Gründer von Tobeworks und arbeite seit zwei Dekaden als Fullstack Webdeveloper. In der Kategorie "Was ist eigentlich..." ekläre ich kurz und bündig einen Begriff aus der Web- und Software-Entwicklung für Einsteiger.
