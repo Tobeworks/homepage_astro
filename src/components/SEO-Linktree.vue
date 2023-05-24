@@ -25,6 +25,8 @@ const seo_linkfarm = [
     { text: 'Individuelle Webseitenprogrammierung', link: '/webprogrammierung-mainz-wiesbaden-frankfurt/', active: true },
     { text: 'Wordpress Notfall?', link: '/wordpress-notfall/', active: true },
     { text: 'Wordpress Notfall Mainz Wiesbaden, Rhein Main', link: '/wordpress-wartung-mainz-wiesbaden/', active: true },
+    { text: 'Was kostet eine Webseite?', link: '/was-kostet-eine-webseite/', active: true },
+    { text: 'Was kostet eine Wordpress-Seite?', link: '/was-kostet-eine-wordpress-seite/', active: true },
 
     { text: 'SEO - Convesion Optimierung', link: '/conversion-optimiering-seo/', active: false },
     { text: 'SEO in Webentwicklung und Webdesign', link: '/seo-webentwicklung-webdesign/', active: false },

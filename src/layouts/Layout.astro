@@ -176,20 +176,29 @@ const { content, title = "Tobeworks Websolutions", description="Tobeworks Insigh
       });
     }
 
-    // Intersection Observer
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            animateListItems();
-            observer.disconnect(); // Stop observing after the animation has started
-          }
-        });
-      },
-      { threshold: 0.1 } // Trigger the callback when at least 10% of the element is visible
-    );
+const listCheck = new MutationObserver(() => {
+    const startList = document.querySelector('.start-list');
+    if (startList) {
+        listCheck.disconnect(); // Stop observing once '.start-list' is available
 
-    observer.observe(document.querySelector(".start-list"));
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        animateListItems();
+                        observer.disconnect(); // Stop observing after the animation has started
+                    }
+                });
+            },
+            { threshold: 0.1 } // Trigger the callback when at least 10% of the element is visible
+        );
+
+        observer.observe(startList);
+    }
+});
+
+// Start observing the document with the configured parameters
+listCheck.observe(document, { childList: true, subtree: true });
 
 </script>
 </MainHead>

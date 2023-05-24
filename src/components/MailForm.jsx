@@ -222,7 +222,7 @@ const MailForm = () => {
 
                         {formValid ? (
                             <InlineAlert
-                                msg="Ihre Nachricht wurde erfolgreich gesendet. Ich werde mich zeitnah bei Ihnen melden."
+                                msg="Nachricht wurde erfolgreich gesendet. Ich werde mich zeitnah bei Dir melden. Bis bald!"
                                 color="success"
                             />
                         ) : (
