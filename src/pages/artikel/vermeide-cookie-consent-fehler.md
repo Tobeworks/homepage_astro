@@ -34,7 +34,8 @@ Hier beginnt es kompliziert und für Laien undurchsichtig zu werden. Von kostenl
 Als Anwender oder Betreiber von (WordPress-)Webseiten ist man bei großen PnP-Anbietern wie Borlabs oder OneTrust gut aufgehoben. Grundsätzlich kann man hier nicht viel falsch machen - es sei denn, man konfiguriert diese Tools falsch. Und das sehe ich leider erschreckend oft.
 Diese Programme bzw. Plugins verfügen häufig über eigene Crawling-Systeme, die den Code der Webseite durchsuchen und die Plugins entsprechend automatisch konfigurieren. Praktisch jeder Codescnipsel, der in irgendeiner Weise Drittanbieter-Cookies setzt bzw die entsprechenden Remote-Scripts, müssen im Vorfeld registriert werden. Einige Scripts schaffen es jedoch immer wieder, unter dem Radar der Crawler durchzuschlüpfen. Vor allem bei Scripts von unbekannteren Tracking-Anbietern, die die Crawler nicht ohne Weiteres erkennen, ist manuelle Eingabe bzw Konfiguration erforderlich.
 Da ich standardmäßig alle Tracking-Cookies im Browser blockiere und entsprechend gewarnt werde, erkenne ich auch sofort, wenn Cookie Consents nicht ordnungsgemäß konfiguriert sind. Und das ist bei gefühlt jeder dritten Seite der Fall. Dies kann bei Abmahnungen teuer werden und den Betreiber bis zu sechsstellige Beträge kosten, wenn Tracking.Cookies schon vor dem eigentlich Consent gesetzt werden und munter drauf los tracken. ABer auch das Setzen und spätere Entfernen ist eine öfter gesehen Fehlkonfiguration.
-Wie findest du heraus, ob deine Seite betroffen ist?
+
+Wie findest du heraus, ob deine Seite betroffen ist und was kannst du tun, wenn das der Fall ist?
 
 
 1. **Nutze Browser-Tools:** Tools wie die Entwicklertools in Chrome, Firefox und anderen Browsern können dir anzeigen, welche Cookies deine Webseite setzt. Du kannst damit überprüfen, ob Cookies gesetzt werden, bevor der Nutzer seine Zustimmung gegeben hat. Mehr dazu unten.
@@ -65,6 +66,25 @@ Wie kann ich sofort mit den Developer-Tools des Browsers herausfinden, ob meine 
 4. **Überprüfe die Cookies:** Auf der linken Seite unter "Speicher" findest du eine Option namens "Cookies". Wenn du darauf klickst, siehst du alle Cookies, die deine Webseite setzt.
 5. **Unterscheide die Cookies:** Nun musst du nur noch die Drittanbieter-Cookies von den technischen Cookies unterscheiden können. Das ist für Anfänger sicher nicht immer einfach, aber mit der Zeit klappt es immer besser. Ein Tracking-Cookie von z.B. Google heißt z.B. __gads (für Google Ads).
 
+
+## Meine Webseite ist nicht DSGVO-konform, weil trotz Cookie Consent Tracking Cookies geladen werden. Was kann ich tun? 😱
+
+Du hast festgestellt, dass deine Webseite Tracking-Cookies lädt, obwohl der Nutzer noch nicht zugestimmt hat? Keine Panik, es gibt ein paar Dinge, die du sofort tun kannst:
+
+1. **Ruhe bewahren:** Okay, das mag offensichtlich klingen, aber es ist wichtig, nicht in Hektik zu verfallen. Denke daran, dass wir alle Fehler machen und das Wichtigste ist, wie wir auf diese Fehler reagieren.
+
+2. **Überprüfe deine Cookie-Consent-Einstellungen:** Es ist möglich, dass du nur einen kleinen Fehler bei der Einrichtung deines Cookie-Consent-Tools gemacht hast. Überprüfe die Einstellungen und sieh nach, ob du etwas übersehen hast. Evtl einfach den Crawler nochmal anwerfen?
+
+3. **Wende dich an den Support deines Cookie-Consent-Tools:** Wenn du nicht genau weißt, was du falsch gemacht hast, zögere nicht, den Support deines Tools zu kontaktieren. Sie sind in der Regel gut informiert und können dir möglicherweise bei der Fehlerbehebung helfen.
+
+4. **Entferne vorübergehend alle nicht essentiellen Cookies:** Wenn du nicht herausfindest, was los ist und du dir Sorgen machst, kannst du vorübergehend alle nicht essentiellen Cookies entfernen. Das ist natürlich nicht ideal, da es die Funktionalität deiner Seite beeinträchtigen kann, aber es ist besser als das Risiko, gegen die DSGVO zu verstoßen.
+
+5. **Hole dir professionelle Hilfe:** Wenn du dir immer noch nicht sicher bist, wie du das Problem beheben kannst, könnte es eine gute Idee sein, einen Experten für Datenschutz oder eine Agentur einzuschalten. Sie können dir helfen, das Problem zu identifizieren und zu beheben, und dir dabei helfen, sicherzustellen, dass du zukünftige Datenschutzprobleme vermeidest.
+
+Denke daran, das Wichtigste ist, proaktiv zu sein und das Problem so schnell wie möglich zu beheben. Niemand will gegen die DSGVO verstoßen, aber wenn du schnell und effektiv reagierst, kannst du mögliche negative Auswirkungen minimieren und zeigen, dass du es ernst meinst mit dem Schutz der Daten deiner Nutzer.
+
+## Übrigens...
+...hast du schon bemerkt, dass auf meiner Webseite kein Cookie-Consent zu sehen ist? Der Grund dafür ist einfach: **Meine Seite setzt keine Cookies mehr**. Mir ist das schnelle Laden der Seite wichtiger als ein paar Analyse-Spielereien, die am Ende sowieso mehr als 50% der Nutzer wegklicken. So spare ich mir eine Menge Administrationsaufwand, den ich beispielsweise für das Verfassen von Blogartikeln, wie diesem hier, verwenden kann.
 
 
 ## Fazit
