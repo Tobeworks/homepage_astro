@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/Artikel.astro
 title: "Grav vs. WordPress: Das Duell der CMS-Giganten!"
-publishDate: "2023-05-29 00:00:00"
+publishDate: "2023-06-03 00:00:00"
 img: /artikel/grav_vs_wordpress.png
 draft: false
 description: |
