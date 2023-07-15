@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@astrojs/image": "^0.17.2",
-    "@astrojs/mdx": "^0.18.1",
+    "@astrojs/mdx": "^0.19.7",
     "@astrojs/prism": "^2.1.1",
     "@astrojs/react": "^2.1.0",
     "@astrojs/sitemap": "^1.4.0",
