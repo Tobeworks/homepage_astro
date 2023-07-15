@@ -37,10 +37,10 @@ export default defineConfig({
     },
   },
   site: 'https://tobeworks.de',
-  integrations: [vue(), image({
+  integrations: [vue({ appEntrypoint: '/src/_vue-app.ts' }), image({
     // supported levels: 'debug' | 'info' | 'warn' | 'error' | 'silent'
     // default: 'info'
-    logLevel: 'debug',
+    logLevel: 'info',
     serviceEntryPoint: '@astrojs/image/sharp'
   }), react(), mdx(), sitemap(), robotsTxt(), compress(compressConfig)],
   vite: {}

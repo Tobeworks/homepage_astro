@@ -2,7 +2,8 @@
 //import {Image} from "@astrojs/image/components"
 import logo from "../assets/images/logos/TW-EB5E28.svg"
 import hamburger from "../assets/images/hamburger/_bars.svg"
-import LogoAnimation from '../components/Logo-Animation.astro'
+import LogoAnimation from './LogoAnimation.astro'
+import OverlayMenue from "./Menue.vue";
 ---
 
 <header class="sticky-top">
@@ -12,7 +13,8 @@ import LogoAnimation from '../components/Logo-Animation.astro'
         <LogoAnimation />
       </a>
       <div class="navbar-toggle d-block d-lg-none" id="navbar-toggle-open">
-        <img src={hamburger.src} id="hamburger-bars" alt="hamburger" />
+        <OverlayMenue client:load />
+        <!-- <img src={hamburger.src} id="hamburger-bars" alt="hamburger" /> -->
       </div>
 
       <div class="collapse navbar-collapse justify-content-end" id="topnavi">

@@ -17,7 +17,7 @@ import Accordion from "../components/Accordion.astro"
 import CTA from "../components/CTA.astro"
 import Hero from "../components/Hero.astro"
 import Social from "../components/Social.astro"
-import MainCard from "../components/MainPage-Cards.astro"
+import MainCard from "./Main-Card.vue"
 ---
 
 <main id="content-middle">
@@ -287,28 +287,28 @@ import MainCard from "../components/MainPage-Cards.astro"
     class="bg-erieblack text-silver mainsection border-orange border-top"
     id="">
     <h2 data-aos="fade-up" class="sectionhead text-center">
-      Erkennst du dein Projekt wieder?
+      Kennst du das?
     </h2>
     <div class="row justify-content-center">
-      <MainCard title="Besuchermangel">
+      <MainCard title="Besuchermangel" client:load>
         Deine Webseite hat keine oder kaum Besucher?
       </MainCard>
-      <MainCard title="Lange Ladezeiten">
+      <MainCard title="Lange Ladezeiten" client:load>
         Deine Webseite lädt lange und wirkt überladen?
       </MainCard>
-      <MainCard title="Entwicklungszyklen">
+      <MainCard title="Entwicklungszyklen" client:load>
         Die Entwicklungsprozesse für deine Seiten dauern lange, weil du abhängig
         von Themes und/oder Plugins von Drittanbietern bist?
       </MainCard>
-      <MainCard title="Schlechte Usability">
+      <MainCard title="Schlechte Usability" client:load>
         Deine Webseite ist mit Plugins zugekleistert, die den Ladeprozess immer
         weiter erhöhen und die Seiten aber immer unzugänglicher machen?
       </MainCard>
-      <MainCard title="Sicherheitsprobleme">
+      <MainCard title="Sicherheitsprobleme" client:load>
         Du hast keine Ressourcen um dich ständig mit neuen Sicherheitsproblemen
         zu beschäftigen?
       </MainCard>
-      <MainCard title="Wartung">
+      <MainCard title="Wartung" client:load>
         Du hast keine Zeit für ständig wiederkehrende Wartungsaufgaben?
       </MainCard>
     </div>

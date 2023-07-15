@@ -1,6 +1,8 @@
 ---
 import MainHead from "../components/MainHead.astro";
-import OverlayMenue from "../components/OverlayMenue.astro";
+//import OverlayMenue from "../components/OverlayMenue.astro";
+//import OverlayMenue from "../components/Overlay-Menue.vue";
+
 import '@fontsource/raleway';
 
 const { content, title = "Tobeworks Websolutions", description="Tobeworks Insights",
@@ -42,7 +44,7 @@ const { content, title = "Tobeworks Websolutions", description="Tobeworks Insigh
     });
 
     //arrowScroller();
-    overlayMenu();
+    //overlayMenu();
     anime({
       targets: ".stag-nav",
       translateY: [-50, 0],
@@ -205,8 +207,8 @@ listCheck.observe(document, { childList: true, subtree: true });
 
 <body>
   <div class="container p-0">
-    <OverlayMenue></OverlayMenue>
-    <slot />
+    <!-- <OverlayMenue client:load></OverlayMenue> -->
+       <slot />
   </div>
 </body>
 </html>
