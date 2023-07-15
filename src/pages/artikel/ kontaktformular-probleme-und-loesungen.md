@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/Artikel.astro
-title: "Warum deine Webseiten-Mails im Spamfilter landen."
-publishDate: "2023-06-31 00:00:00"
-img: /artikel/spamfilter.png
+title: "Warum die Mails von deiner Webseite im Spamfilter landen."
+publishDate: "2023-07-06 00:00:00"
+img: /artikel/shield.png
 draft: false
 description: |
   Und 6 Tipps, was du sofort tun kannst
