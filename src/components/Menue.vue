@@ -17,11 +17,11 @@
 
             <div class="overlay-middle">
                 <nav class="nav flex-column" id="fullscreen-menu">
-                    <a ref="menuItems" class="nav-link stag-nav" href="/">Home</a>
-                    <a ref="menuItems" class="nav-link stag-nav" href="/about">About</a>
-                    <a ref="menuItems" class="nav-link stag-nav" href="/projekte">Projekte</a>
-                    <a ref="menuItems" class="nav-link stag-nav" href="/artikel">Insights</a>
-                    <a ref="menuItems" class="nav-link stag-nav" href="/kontakt">Kontakt</a>
+                    <a ref="menuItems" class="nav-link stag-nav" href="/" @click="toggle">Home</a>
+                    <a ref="menuItems" class="nav-link stag-nav" href="/about" @click="toggle">About</a>
+                    <a ref="menuItems" class="nav-link stag-nav" href="/projekte" @click="toggle">Projekte</a>
+                    <a ref="menuItems" class="nav-link stag-nav" href="/artikel" @click="toggle">Insights</a>
+                    <a ref="menuItems" class="nav-link stag-nav" href="/kontakt" @click="toggle">Kontakt</a>
                 </nav>
             </div>
             <div id="overly-logo-bottom">
@@ -71,16 +71,8 @@ const toggle = () => {
             duration: 1,
             y: 0
         });
-
     }
 };
-
-
-onMounted(() => {
-    menuItems.value = document.querySelectorAll('.stag-nav');
-});
-
-
 </script>
 <style scoped>
 #overlay-menu2 {
